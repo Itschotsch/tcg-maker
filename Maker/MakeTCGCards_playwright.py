@@ -5,121 +5,202 @@
 # It then stitches the cards together into a single PNG image and saves it to ./output/cards.png.
 
 dev_mode = False
-
-# Imports
-# Make sure you have done the installation beforehand:
-# pip install --upgrade pip
-# pip install pandas pytest-playwright
-# playwright install
-import os
-import pandas as pd
-import re
-from playwright.sync_api import sync_playwright
-
-__dir__ = os.path.dirname(__file__)
-
-# Load the CSV file, keep "" as empty string, not NaN
-df = pd.read_csv(
-    os.path.join(__dir__, "input", 'cards.csv'),
-    keep_default_na=False
-)
-
-# Load the HTML template
-html_template = ""
-with open(
-    os.path.join(__dir__, "input", 'card.html'),
-    'r',
-    encoding='utf-8'
-) as f:
-    html_template = f.read()
+render_html = True
+render_cards = True
+stitch_cards = True
 
 width_mm = 63
 height_mm = 88
 bleed_mm = 3
 border_radius_mm = 3
 dpi = 300
-width_px = int((width_mm + 2 * bleed_mm) * dpi / 25.4)
-height_px = int((height_mm + 2 * bleed_mm) * dpi / 25.4)
+
+stitch_x = 8
+stitch_y = 5
+stitch_without_bleed = True
+
+width_no_bleed_px = int(width_mm * dpi / 25.4)
+height_no_bleed_px = int(height_mm * dpi / 25.4)
+width_with_bleed_px = int((width_mm + 2 * bleed_mm) * dpi / 25.4)
+height_with_bleed_px = int((height_mm + 2 * bleed_mm) * dpi / 25.4)
 bleed_px = int(bleed_mm * dpi / 25.4)
 border_radius_px = int(border_radius_mm * dpi / 25.4)
 
-# Render the cards
-for index, row in df.iterrows():
-    print(f"Rendering HTML for card {row['Title']}...")
+# Imports
+# Make sure you have done the installation beforehand:
+# pip install --upgrade pip
+# pip install pandas pytest-playwright
+# playwright install
 
-    # Copy the string html_template to template so the original template is not modified
-    template = html_template
+import os
+__dir__ = os.path.dirname(__file__)
+
+if render_html:
+    import pandas as pd
+    import re
     
-    # Replace width, height and bleed
-    template = template.replace("§Width§", str(width_px))
-    template = template.replace("§Height§", str(height_px))
-    template = template.replace("§Bleed§", str(bleed_px) + "px")
-    template = template.replace("§BorderRadius§", str(border_radius_px) + "px")
+    # Load the CSV file, keep "" as empty string, not NaN
+    df = pd.read_csv(
+        os.path.join(__dir__, "input", 'cards.csv'),
+        keep_default_na=False
+    )
 
-    # Prepend all CSS URLs with the correct path
-    template = template.replace('url(', 'url(../../input/images/')
-    # Prepend all <img> srcs with the correct path
-    template = template.replace('src="', 'src="../../input/images/')
-
-    # Find all {{Placeholder}}s in the HTML template
-    placeholders = re.findall(r"§(.*?)§", template)
-
-    # Replace the placeholders in the HTML template
-    for placeholder in placeholders:
-        # if placeholder is not a key in row, skip
-        if placeholder not in row:
-            continue
-        template = template.replace(f"§{placeholder}§", str(row[placeholder]))
-    
-    if not os.path.exists(os.path.join(__dir__, "output")):
-        os.makedirs(os.path.join(__dir__, "output"))
-    if not os.path.exists(os.path.join(__dir__, "output/html")):
-        os.makedirs(os.path.join(__dir__, "output/html"))
-
+    # Load the HTML template
+    html_template = ""
     with open(
-        os.path.join(__dir__, "output/html", f"{row['ID']}_{row['Title']}.html"),
-        'w',
+        os.path.join(__dir__, "input", 'card.html'),
+        'r',
         encoding='utf-8'
     ) as f:
-        f.write(template)
+        html_template = f.read()
 
-    print(f"Rendered HTML for card {row['Title']}.")
-
-    if dev_mode:
-        break
-
-
-# Render the HTML template to a PNG image
-currentProgress = 0
-totalProgress = len(df.index)
-with sync_playwright() as p:
-    browser = p.chromium.launch()
-    page = browser.new_page()
-    page.set_viewport_size({
-        'width': width_px,
-        'height': height_px
-    })
-
+    # Render the HTML
     for index, row in df.iterrows():
-        print(f"Rendering image for card {row['Title']}...")
+        print(f"Rendering HTML for card {row['Title']}...")
 
-        page.goto(
-            os.path.join(__dir__, "output/html", f"{row['ID']}_{row['Title']}.html")
-        )
+        # Copy the string html_template to template so the original template is not modified
+        template = html_template
+        
+        # Replace width, height and bleed
+        template = template.replace("§Width§", str(width_with_bleed_px))
+        template = template.replace("§Height§", str(height_with_bleed_px))
+        template = template.replace("§Bleed§", str(bleed_px) + "px")
+        template = template.replace("§BorderRadius§", str(border_radius_px) + "px")
 
-        page.screenshot(
-            path=os.path.join(
-                __dir__,
-                'output/singles',
-                f"{row['ID']}_{row['Title']}.png"
-            )
-        )
-        currentProgress += 1
-        print(f"Rendered image for card {page.title()}.\n{currentProgress/totalProgress*100}% done.")
+        # Prepend all CSS URLs with the correct path
+        template = template.replace('url(', 'url(../../input/images/')
+        # Prepend all <img> srcs with the correct path
+        template = template.replace('src="', 'src="../../input/images/')
+
+        # Find all {{Placeholder}}s in the HTML template
+        placeholders = re.findall(r"§(.*?)§", template)
+
+        # Replace the placeholders in the HTML template
+        for placeholder in placeholders:
+            # if placeholder is not a key in row, skip
+            if placeholder not in row:
+                continue
+            template = template.replace(f"§{placeholder}§", str(row[placeholder]))
+        
+        if not os.path.exists(os.path.join(__dir__, "output")):
+            os.makedirs(os.path.join(__dir__, "output"))
+        if not os.path.exists(os.path.join(__dir__, "output/html")):
+            os.makedirs(os.path.join(__dir__, "output/html"))
+
+        with open(
+            os.path.join(__dir__, "output/html", f"{row['ID']}_{row['Title']}.html"),
+            'w',
+            encoding='utf-8'
+        ) as f:
+            f.write(template)
+
+        print(f"Rendered HTML for card {row['Title']}.")
 
         if dev_mode:
             break
 
-    browser.close()
 
-print("Done rendering cards.")
+# Render the cards
+# - PNG image
+# - Add bleed
+
+if render_cards:
+    from playwright.sync_api import sync_playwright
+
+    currentProgress = 0
+    totalProgress = len(df.index)
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        page = browser.new_page()
+        page.set_viewport_size({
+            'width': width_with_bleed_px,
+            'height': height_with_bleed_px
+        })
+
+        for index, row in df.iterrows():
+            print(f"Rendering image for card {row['Title']}...")
+
+            page.goto(
+                os.path.join(__dir__, "output/html", f"{row['ID']}_{row['Title']}.html")
+            )
+
+            page.screenshot(
+                path=os.path.join(
+                    __dir__,
+                    'output/singles',
+                    f"{row['ID']}_{row['Title']}.png"
+                )
+            )
+            currentProgress += 1
+            print(f"Rendered image for card {page.title()}.\n{currentProgress/totalProgress*100}% done.")
+
+            if dev_mode:
+                break
+
+        browser.close()
+
+    print("Done rendering cards.")
+
+# Stitch the cards together
+# - single PNG image
+# - stitch_x * stitch_y cards, discard any extra cards
+
+if stitch_cards:
+    from PIL import Image
+
+    print("Preparing stitching cards...")
+    # Get the list of files
+    files = os.listdir(os.path.join(__dir__, "output/singles"))
+    files = [f for f in files if f.endswith('.png')]
+
+    # Sort the files by ID
+    files = sorted(files, key=lambda f: int(f.split('_')[0]))
+
+    # Create the output folder if it doesn't exist
+    if not os.path.exists(os.path.join(__dir__, "output")):
+        os.makedirs(os.path.join(__dir__, "output"))
+
+    # Create the output image
+    width = width_no_bleed_px if stitch_without_bleed else width_with_bleed_px
+    height = height_no_bleed_px if stitch_without_bleed else height_with_bleed_px
+    output_image = Image.new(
+        'RGBA',
+        (
+            stitch_x * width,
+            stitch_y * height
+        ),
+        (255, 255, 255, 255)
+    )
+
+    # Paste the cards into the output image
+    for i in range(stitch_x * stitch_y):
+        if i >= len(files):
+            break
+        print(f"Pasting card {files[i]}...")
+        card = Image.open(os.path.join(__dir__, "output/singles", files[i]))
+        # Remove the bleed around the card and paste it into the output image
+        if stitch_without_bleed:
+            card = card.crop(
+                (
+                    bleed_px,
+                    bleed_px,
+                    width_with_bleed_px - bleed_px,
+                    height_with_bleed_px - bleed_px
+                )
+            )
+        output_image.paste(
+            card,
+            (
+                (i % stitch_x) * width,
+                (i // stitch_x) * height
+            )
+        )
+        print(f"Pasted card {files[i]}.")
+
+    # Save the output image
+    output_image.save(
+        os.path.join(__dir__, "output", "cards.png"),
+        dpi=(dpi, dpi)
+    )
+
+    print("Successfully stitched cards.")

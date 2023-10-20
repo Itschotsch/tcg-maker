@@ -36,9 +36,6 @@
             background-image: url(../../input/images/itschotsch_bautiful_ocean_wave_foaming_water_very_bright_reflec_248525a8-a2e0-4b44-a5de-cebd6ed5cfa6.png);
             background-size: cover;
             background-position: center;
-
-            /* Very soft black text shadow */
-            text-shadow: 0 0 3.75vw black, 0 0 7.5vw black, 0 0 15vw black;
         }
 
         .safe-area {
@@ -68,6 +65,8 @@
         }
 
         .safe-area-preview {
+            /* Only for development: */
+            display: none;
             position: absolute;
             top: 4vw;
             top: 35px;
@@ -86,6 +85,8 @@
             /* shadow, expand 100px in all directions without falloff */
             box-shadow: 0 0 0 calc(2*4vw) rgba(128, 128, 128, 0.666);
             box-shadow: 0 0 0 calc(2*$Bleed$) rgba(128, 128, 128, 0.666);
+
+            pointer-events: none;
         }
 
         .title {
@@ -223,6 +224,16 @@
 
         .flavour-text:empty {
             display: none;
+        }
+
+        .description,
+        .flavour-text {
+            white-space: pre-wrap;
+            /* Very soft black text shadow */
+            text-shadow: 0 0 3.75vw black, 0 0 7.5vw black, 0 0 15vw black;
+            /* -webkit-text-stroke: 0.1px transparent;
+            text-stroke: 0.1px transparent; */
+            /* TODO: Fix shadows over other parts of the text. */
         }
 
         .combat-stats {
