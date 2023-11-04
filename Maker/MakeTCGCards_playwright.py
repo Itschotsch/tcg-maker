@@ -6,9 +6,9 @@
 
 dev_mode = False
 render_html = True
-render_cards = False
-render_special_cards = False
-stitch_cards = False
+render_cards = True
+render_special_cards = True
+stitch_cards = True
 
 width_mm = 63
 height_mm = 88
