@@ -16,7 +16,7 @@ border_radius_mm = 3
 dpi = 300
 
 stitch_x = 8
-stitch_y = 5
+stitch_y = 6
 stitch_without_bleed = True
 
 width_no_bleed_px = int(width_mm * dpi / 25.4)
@@ -173,7 +173,8 @@ if stitch_cards:
     )
 
     # Paste the cards into the output image
-    for i in range(stitch_x * stitch_y):
+    # Reserve the last (bottom right) spot for the hidden card
+    for i in range(stitch_x * stitch_y - 1):
         if i >= len(files):
             break
         print(f"Pasting card {files[i]}...")
@@ -196,6 +197,16 @@ if stitch_cards:
             )
         )
         print(f"Pasted card {files[i]}.")
+    # Paste the hidden card into the bottom right spot
+    hidden_card = Image.open(os.path.join(__dir__, "input", "hidden.png"))
+    output_image.paste(
+        hidden_card,
+        (
+            (stitch_x - 1) * width,
+            (stitch_y - 1) * height
+        )
+    )
+    print(f"Pasted hidden card.")
 
     # Save the output image
     output_image.save(
