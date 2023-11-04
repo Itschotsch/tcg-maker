@@ -1,14 +1,14 @@
 # This Python script renders a set of cards for a TCG game.
-# The layout of a card is defined in ./card.html.
-# The data for the cards is defined in ./cards.csv.
-# This notebook loads the CSV file, replaces the placeholders in the HTML file and renders the cards as PNG images into ./output/singles/[ID]_[NAME].png
-# It then stitches the cards together into a single PNG image and saves it to ./output/cards.png.
+# The layout of a card is defined in input/*.html.
+# The data for the cards is defined in input/cards.csv.
+# This notebook loads the CSV file, replaces the placeholders in the HTML file and renders the cards as PNG images into output/singles/[ID]_[NAME].png
+# It then stitches the cards together into a single PNG image and saves it to output/cards.png.
 
 dev_mode = False
-render_html = False
+render_html = True
 render_cards = False
-render_special_cards = True
-stitch_cards = True
+render_special_cards = False
+stitch_cards = False
 
 width_mm = 63
 height_mm = 88
@@ -46,21 +46,23 @@ if render_html:
         keep_default_na=False
     )
 
-    # Load the HTML template
-    html_template = ""
-    with open(
-        os.path.join(__dir__, "input", 'card.html'),
-        'r',
-        encoding='utf-8'
-    ) as f:
-        html_template = f.read()
-
     # Render the HTML
     for index, row in df.iterrows():
         print(f"Rendering HTML for card {row['Title']}...")
 
-        # Copy the string html_template to template so the original template is not modified
-        template = html_template
+        # Load the HTML template. If it doesn't exist, skip
+        entity_type = row['EntityType']
+        template_path = os.path.join(__dir__, "input", f"{entity_type}.html")
+        if not os.path.exists(template_path):
+            print(f"Template for {entity_type} does not exist. Skipped.")
+            continue
+        template = ""
+        with open(
+            template_path,
+            'r',
+            encoding='utf-8'
+        ) as f:
+            template = f.read()
         
         # Replace width, height and bleed
         template = template.replace("§Width§", str(width_with_bleed_px))
