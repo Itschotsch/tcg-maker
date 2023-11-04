@@ -28,7 +28,7 @@ border_radius_px = int(border_radius_mm * dpi / 25.4)
 
 # Imports
 # Make sure you have done the installation beforehand:
-# pip install --upgrade pip
+# python -m pip install --upgrade pip
 # pip install pandas pytest-playwright
 # playwright install
 
@@ -107,8 +107,9 @@ if render_html:
 if render_cards:
     from playwright.sync_api import sync_playwright
 
+    html_files = os.listdir(os.path.join(__dir__, "output/html"))
     currentProgress = 0
-    totalProgress = len(df.index)
+    totalProgress = len(html_files)
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
@@ -117,18 +118,19 @@ if render_cards:
             'height': height_with_bleed_px
         })
 
-        for index, row in df.iterrows():
-            print(f"Rendering image for card {row['Title']}...")
+        for filename in html_files:
+            name = filename.split('.')[0]
+            print(f"Rendering image for card {name}...")
 
             page.goto(
-                os.path.join(__dir__, "output/html", f"{row['ID']}_{row['Title']}.html")
+                os.path.join(__dir__, "output/html", f"{name}.html")
             )
 
             page.screenshot(
                 path=os.path.join(
                     __dir__,
                     'output/singles',
-                    f"{row['ID']}_{row['Title']}.png"
+                    f"{name}.png"
                 )
             )
             currentProgress += 1
