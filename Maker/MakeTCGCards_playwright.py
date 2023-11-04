@@ -5,8 +5,9 @@
 # It then stitches the cards together into a single PNG image and saves it to ./output/cards.png.
 
 dev_mode = False
-render_html = True
-render_cards = True
+render_html = False
+render_cards = False
+render_special_cards = True
 stitch_cards = True
 
 width_mm = 63
@@ -143,6 +144,57 @@ if render_cards:
 
     print("Done rendering cards.")
 
+# Render the special cards
+
+if render_special_cards:
+    from PIL import Image
+    width = width_no_bleed_px if stitch_without_bleed else width_with_bleed_px
+    height = height_no_bleed_px if stitch_without_bleed else height_with_bleed_px
+
+    # Load the hidden card
+    hidden_card = Image.open(os.path.join(__dir__, "input", "hiddencard.png"))
+    # Crop the hidden card to the correct aspect ratio, centered
+    crop_height = int(hidden_card.width / width * height)
+    hidden_card = hidden_card.crop(
+        (
+            0,
+            (hidden_card.height - crop_height) // 2,
+            hidden_card.width,
+            (hidden_card.height - crop_height) // 2 + crop_height
+        )
+    )
+    # Resize it to the correct size
+    hidden_card = hidden_card.resize(
+        (
+            width,
+            height
+        )
+    )
+    # Save the resized hidden card
+    hidden_card.save(os.path.join(__dir__, "output", "hiddencard.png"))
+
+    # Load the card back
+    card_back = Image.open(os.path.join(__dir__, "input", "cardback.png"))
+    # Crop the card back to the correct aspect ratio, centered
+    crop_height = int(card_back.width / width * height)
+    card_back = card_back.crop(
+        (
+            0,
+            (card_back.height - crop_height) // 2,
+            card_back.width,
+            (card_back.height - crop_height) // 2 + crop_height
+        )
+    )
+    # Resize it to the correct size
+    card_back = card_back.resize(
+        (
+            width,
+            height
+        )
+    )
+    # Save the resized card back
+    card_back.save(os.path.join(__dir__, "output", "cardback.png"))
+
 # Stitch the cards together
 # - single PNG image
 # - stitch_x * stitch_y cards, discard any extra cards
@@ -199,10 +251,11 @@ if stitch_cards:
             )
         )
         print(f"Pasted card {files[i]}.")
+
     # Paste the hidden card into the bottom right spot
-    hidden_card = Image.open(os.path.join(__dir__, "input", "hidden.png"))
+    print(f"Pasting hidden card...")
     output_image.paste(
-        hidden_card,
+        Image.open(os.path.join(__dir__, "output", "hiddencard.png")),
         (
             (stitch_x - 1) * width,
             (stitch_y - 1) * height
