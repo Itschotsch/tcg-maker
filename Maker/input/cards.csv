@@ -1,4 +1,4 @@
-ID,EntityType,Title,Description,CostElement,CostAmount,Artwork,OffensiveStat,DefensiveStat,Faction,TODOType,FlavourText,MetaExplanation,Decks,Status,Creator
+ID,EntityKind,Title,Description,CostElement,CostAmount,Artwork,OffensiveStat,DefensiveStat,Faction,EntityType,FlavourText,MetaExplanation,Decks,Status,Creator
 0,character,Schildheilerin Elaria,"Wenn einer Deiner Charaktere, inklusive <name>Schildheilerin Elaria</name>, erscheint, <key>entdecke</key> einen <key>Schild</key> aus Deinem <key>Deck</key>. Du darfst die erschienene <key>Konstante</key> damit <key>versehen</key>. Andernfalls <key>mische</key> ihn in Dein <key>Deck</key>.",Aqua,4,itschotsch_water_mage_woman_casting_a_blue_magical_shield_in_ac_2555d53b-dd56-42c0-b2e0-87c7d1ca6067.png,15,15,,Heiler,Schutz ist Treue.,"Draw, Buff",Starterdeck Aqua,Untested,Jan Appel
 1,character,Speerfischer Albert,,Aqua,2,00034-370775683.png,30,20,,Gefolge,,,Starterdeck Aqua,Untested,Jan Appel
 2,character,Speerfischer Hans,,Aqua,2,itschotsch_Human_Fisherman_fishing_standing_in_a_river_lake_by__8f931dee-201d-4b48-8b87-a12aa4e5a216.png,20,30,,Gefolge,,,Starterdeck Aqua,Untested,Jan Appel

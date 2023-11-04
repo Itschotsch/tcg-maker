@@ -51,10 +51,10 @@ if render_html:
         print(f"Rendering HTML for card {row['Title']}...")
 
         # Load the HTML template. If it doesn't exist, skip
-        entity_type = row['EntityType']
-        template_path = os.path.join(__dir__, "input", f"{entity_type}.html")
+        entity_kind = row['EntityKind']
+        template_path = os.path.join(__dir__, "input", f"{entity_kind}.html")
         if not os.path.exists(template_path):
-            print(f"Template for {entity_type} does not exist. Skipped.")
+            print(f"Template for {entity_kind} does not exist. Skipped.")
             continue
         template = ""
         with open(
