@@ -33,7 +33,7 @@
             background-color: brown;
             color: white;
 
-            background-image: url(../../input/images/itschotsch_massive_dramatic_tall_wave_foaming_water_splashing_b_e0501fe4-73f5-4eee-9d03-d8a424b24090.png);
+            background-image: url(../../input/images/wilde_wogen.png);
             background-size: cover;
             background-position: center;
         }
@@ -66,7 +66,7 @@
 
         .safe-area-preview {
             /* Only for development: */
-            display: none;
+            /* display: none; */
             position: absolute;
             top: 4vw;
             top: 35px;
@@ -96,16 +96,91 @@
             display: block;
             text-align: center;
 
-            font-size: 6vw;
+            font-size: 4vw;
+            margin-top: 1vw;
 
             padding: 5vw;
+            margin-left: 7vw;
+            margin-right: 7vw;
+
+            background-image: url(../../input/layout/title_background.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            font-variant: small-caps;
+        }
+
+        .cost {
+            position: absolute;
+            transform: translate(4vw, 4vw);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            padding: 5vw;
+            font-size: 5vw;
         }
 
         .cost-element {
             position: absolute;
-            transform: translate(5vw, 5vw);
 
-            border-radius: 50%;
+            aspect-ratio: 1;
+
+            padding: 5vw;
+            font-size: 5vw;
+            background-size: contain;
+
+            background-image: url(../../input/layout/cost_element_ignis.png);
+            /* background-image: url(../../input/layout/cost_element_Aqua.png); */
+
+            z-index: initial;
+        }
+
+        /* .cost-element.Aqua {
+            background-image: url(../../input/layout/cost_element_aqua.png);
+        }
+
+        .cost-element.Terra {
+            background-image: url(../../input/layout/cost_element_terra.png);
+        }
+
+        .cost-element.Ignis {
+            background-image: url(../../input/layout/cost_element_ignis.png);
+        }
+
+        .cost-element.Aeris {
+            background-image: url(../../input/layout/cost_element_aeris.png);
+        }
+
+        .cost-element.Magica {
+            background-image: url(../../input/layout/cost_element_magica.png);
+        } */
+
+        .cost-amount {
+            position: absolute;
+            top: 6.5vw;
+            font-size: 4vw;
+            width: 8vw;
+            /* border: 0.5vw solid white; */
+
+            background-image: url(../../input/layout/cost_amount_background.png);
+            background-size: cover;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+
+            z-index: -1;
+            text-align: center;
+        }
+
+        .faction {
+            position: absolute;
+            right: 0;
+            transform: translate(-4vw, 4vw);
+
+            /* border-radius: 50%; */
             /* background-color: black; */
             aspect-ratio: 1;
 
@@ -114,40 +189,48 @@
             justify-content: center;
             align-items: center;
 
-            padding: 3vw;
-            font-size: 3vw;
-            background-size: cover;
+            padding: 5vw;
+            font-size: 5vw;
+            background-size: contain;
 
-            border: 0.5vw solid white;
-        }
+            /* border: 0.5vw solid white; */
 
-        .cost-element.Aqua {
-            background-image: url(../../input/images/ElementAqua.png);
-        }
-
-        .cost-element.Terra {
-            background-image: url(../../input/images/ElementTerra.png);
-        }
-
-        .cost-element.Ignis {
-            background-image: url(../../input/images/ElementIgnis.png);
-        }
-
-        .cost-element.Aeris {
-            background-image: url(../../input/images/ElementAeris.png);
-        }
-
-        .cost-element.Magica {
-            background-image: url(../../input/images/ElementMagica.png);
-        }
-
-        .cost-amount {
-            position: absolute;
-            font-size: 4vw;
+            /* background-image: url(../../input/layout/faction_.png); */
+            background-image: url(../../input/layout/faction_.png);
         }
 
         .spacer {
             flex-grow: 1;
+        }
+
+        .card-kind-type {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .card-kind-type>div {
+            background-image: url(../../input/layout/card_kind_type_background.png);
+            background-size: auto 100%;
+            background-position: right 40%;
+            background-repeat: no-repeat;
+
+            font-size: 4vw;
+
+            padding-left: calc(4vw + 5vw);
+            padding-left: calc(35px + 5vw);
+            padding-right: 5vw;
+            padding-top: 3vw;
+            padding-bottom: 4vw;
+
+            /* margin-left: -4vw; */
+            /* margin-left: -35px; */
+            margin-top: -1vw;
+            margin-bottom: -2vw;
+
+            /* border: 0.5vw solid white; */
         }
 
         .description {
@@ -156,9 +239,13 @@
             align-items: center; */
             display: block;
 
-            font-size: 5vw;
+            font-size: 4vw;
 
             padding: 3vw;
+            padding-left: 5vw;
+            margin-right: 15vw;
+
+            /* border: 0.5vw solid white; */
 
         }
 
@@ -178,7 +265,7 @@
             font-variant: small-caps;
         }
 
-        element.Aqua::after {
+        element::after {
             background-size: 1em 1em;
             display: inline-block;
             width: 1em;
@@ -188,38 +275,40 @@
             margin-left: 0.25em;
         }
 
-        element.Aqua::after {
-            background-image: url(../../input/images/ElementAqua.png);
+        /* element.Aqua::after {
+            background-image: url(../../input/elements/ElementAqua.png);
         }
 
         element.Terra::after {
-            background-image: url(../../input/images/ElementTerra.png);
+            background-image: url(../../input/elements/ElementTerra.png);
         }
 
         element.Ignis::after {
-            background-image: url(../../input/images/ElementIgnis.png);
+            background-image: url(../../input/elements/ElementIgnis.png);
         }
 
         element.Aeris::after {
-            background-image: url(../../input/images/ElementAeris.png);
+            background-image: url(../../input/elements/ElementAeris.png);
         }
 
         element.Magica::after {
-            background-image: url(../../input/images/ElementMagica.png);
-        }
+            background-image: url(../../input/elements/ElementMagica.png);
+        } */
 
         .flavour-text {
             /* display: flex;
             justify-content: center;
             align-items: center; */
             display: block;
-            text-align: center;
+            text-align: left;
 
             font-size: 4vw;
 
             padding: 3vw;
+            padding-left: 5vw;
 
             font-style: italic;
+            font-size: 3.5vw;
         }
 
         .flavour-text:empty {
@@ -241,10 +330,6 @@
             bottom: 3vw;
             right: 3vw;
 
-            border-radius: 50%;
-            background-color: black;
-            aspect-ratio: 1;
-
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -256,12 +341,93 @@
 
         .offensive {
             position: absolute;
-            transform: translateY(-3vw);
+            transform: translateX(-9vw);
+
+            background-image: url(../../input/layout/combat_stats_offensive_background.png);
+            background-size: auto 100%;
+            background-position: left center;
+            background-repeat: no-repeat;
+
+            text-align: center;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+
+            white-space: nowrap;
         }
 
         .defensive {
             position: absolute;
-            transform: rotate(-90deg) translateY(-3vw);
+            transform: rotate(-90deg) translateX(9vw);
+
+            background-image: url(../../input/layout/combat_stats_defensive_background.png);
+            background-size: auto 100%;
+            background-position: right center;
+            background-repeat: no-repeat;
+
+            text-align: center;
+            padding-right: 5vw;
+            padding-left: 5vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+
+            white-space: nowrap;
+        }
+
+        .shield {
+            position: absolute;
+            transform: translateX(-9vw);
+
+            background-image: url(../../input/layout/combat_stats_shield_background.png);
+            background-size: auto 100%;
+            background-position: left center;
+            background-repeat: no-repeat;
+
+            text-align: center;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+
+            white-space: nowrap;
+        }
+
+        .combat-stats-symbol {
+            font-size: 3vw;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: inline-block;
+            vertical-align: baseline;
+            width: auto;
+            height: 1em;
+            transform: translateY(0.1em);
+            /* border: 0.5vw solid red; */
+        }
+
+        /* .offensive>.combat-stats-symbol {
+            background-image: url(../../input/layout/combat_stats_offensive_symbol.png);
+        }
+
+        .defensive>.combat-stats-symbol {
+            background-image: url(../../input/layout/combat_stats_defensive_symbol.png);
+        } */
+
+        .elemental {
+            position: absolute;
+            padding: 5vw;
+            transform: rotate(180deg);
+
+            background-image: url(../../input/layout/faction_.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            text-align: center;
+            padding-right: 5vw;
+            padding-left: 3vw;
         }
 
         .footer {
@@ -306,25 +472,37 @@
         <div class="safe-area-preview"></div>
         <div class="safe-area top">
             <div class="title">Wilde Wogen</div>
-            <div class="cost-element Aqua">
+            <div class="cost">
+                <div class="cost-element Aqua" style="background-image: url(../../input/layout/cost_element_Aqua.png);"></div>
                 <div class="cost-amount">
+                    <!-- <p>1</p> -->
                     <p>2+2x</p>
                 </div>
             </div>
+            <div class="faction"></div>
         </div>
         <div class="spacer"></div>
+        <div class="card-kind-type">
+            <!-- <div>event - </div> -->
+            <!-- <div>Ereignis ⟐ </div> -->
+            <div>Ereignis <span style="font-size: 0.85em;">⬩</span> </div>
+        </div>
         <div class="safe-area">
             <div class="description">Zerstöre $x$ Charaktere Deiner Wahl, wobei $x$ die Anzahl Deiner Schilde ist.</div>
             <div class="flavour-text"></div>
             <div class="combat-stats">
-                <div class="offensive"></div>
-                <div class="defensive"></div>
+                <!-- <div class="offensive"></div>
+                <div class="defensive"></div> -->
+                <!-- <div class="offensive"><img src="../../input/layout/combat_stats_offensive_symbol.png" class="combat-stats-symbol" />&nbsp;</div>
+                <div class="defensive"><img src="../../input/layout/combat_stats_defensive_symbol.png" class="combat-stats-symbol" />&nbsp;</div> -->
+                <!-- <div class="shield"><img src="../../input/layout/combat_stats_shield_symbol.png" class="combat-stats-symbol" />&nbsp;</div> -->
+                <div class="elemental"></div>
             </div>
         </div>
         <div class="footer">
             <div class="safe-area bottom">
                 <div class="author" style="height: 0.7em">
-                    <img src="../../input/images/AetherlabLogo.png" style="height: 100%; bottom: -0.005em; position: relative;" />
+                    <img src="../../input/layout/AetherlabLogo.png" style="height: 100%; bottom: -0.005em; position: relative;" />
                 </div>
                 <div class="spacer"></div>
                 <div class="edition">Die Anfänge</div>

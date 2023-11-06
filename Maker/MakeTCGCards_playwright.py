@@ -52,7 +52,7 @@ if render_html:
 
         # Load the HTML template. If it doesn't exist, skip
         entity_kind = row['EntityKind']
-        template_path = os.path.join(__dir__, "input", f"{entity_kind}.html")
+        template_path = os.path.join(__dir__, "input/html", f"{entity_kind}.html")
         if not os.path.exists(template_path):
             print(f"Template for {entity_kind} does not exist. Skipped.")
             continue
@@ -71,9 +71,9 @@ if render_html:
         template = template.replace("§BorderRadius§", str(border_radius_px) + "px")
 
         # Prepend all CSS URLs with the correct path
-        template = template.replace('url(', 'url(../../input/images/')
+        # template = template.replace('url(', 'url(../../input/images/')
         # Prepend all <img> srcs with the correct path
-        template = template.replace('src="', 'src="../../input/images/')
+        # template = template.replace('src="', 'src="../../input/images/')
 
         # Find all {{Placeholder}}s in the HTML template
         placeholders = re.findall(r"§(.*?)§", template)
