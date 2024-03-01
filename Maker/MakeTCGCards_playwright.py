@@ -4,7 +4,7 @@
 # This notebook loads the CSV file, replaces the placeholders in the HTML file and renders the cards as PNG images into output/singles/[ID]_[NAME].png
 # It then stitches the cards together into a single PNG image and saves it to output/cards.png.
 
-dev_mode = False
+dev_mode = True
 render_html = True
 render_cards = True
 render_special_cards = True
@@ -51,7 +51,7 @@ if render_html:
         print(f"Rendering HTML for card {row['Title']}...")
 
         # Load the HTML template. If it doesn't exist, skip
-        entity_kind = row['EntityKind']
+        entity_kind = row['Layout']
         template_path = os.path.join(__dir__, "input/html", f"{entity_kind}.html")
         if not os.path.exists(template_path):
             print(f"Template for {entity_kind} does not exist. Skipped.")
@@ -74,6 +74,10 @@ if render_html:
         # template = template.replace('url(', 'url(../../input/images/')
         # Prepend all <img> srcs with the correct path
         # template = template.replace('src="', 'src="../../input/images/')
+
+        # Make sure the EntityType(s) is a list
+        # A,B,C -> A ⌯ B ⌯ C
+        template = template.replace("§EntityType§", " ⌯ ".join(row['EntityType'].split(',')))
 
         # Find all {{Placeholder}}s in the HTML template
         placeholders = re.findall(r"§(.*?)§", template)
@@ -210,7 +214,7 @@ if stitch_cards:
     files = [f for f in files if f.endswith('.png')]
 
     # Sort the files by ID
-    files = sorted(files, key=lambda f: int(f.split('_')[0]))
+    files = sorted(files, key=lambda f: f.split('_')[0])
 
     # Create the output folder if it doesn't exist
     if not os.path.exists(os.path.join(__dir__, "output")):

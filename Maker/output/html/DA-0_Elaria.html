@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <!-- A card measures 63mm x 88mm -->
-    <meta name="viewport" content="width=§Width§, height=§Height§, initial-scale=1.0">
-    <title>§Title§</title>
+    <meta name="viewport" content="width=814, height=1110, initial-scale=1.0">
+    <title>Elaria</title>
 
     <style>
         html,
@@ -61,12 +61,12 @@
 
             width: 100%;
             /* padding: 4vw;
-            padding: §Bleed§; */
+            padding: 35px; */
 
             background-color: brown;
             color: white;
 
-            background-image: url(../../input/images/§Artwork§);
+            background-image: url(../../input/images/schildheilerin_elaria.png);
             background-size: cover;
             background-position: center;
 
@@ -82,21 +82,21 @@
             width: inherit;
             height: inherit;
             max-width: calc(100vw - 2 * 4vw);
-            max-width: calc(100vw - 2 * §Bleed§);
+            max-width: calc(100vw - 2 * 35px);
             margin-left: 4vw;
-            margin-left: §Bleed§;
+            margin-left: 35px;
             margin-right: 4vw;
-            margin-right: §Bleed§;
+            margin-right: 35px;
         }
 
         .safe-area.top {
             padding-top: 4vw;
-            padding-top: §Bleed§;
+            padding-top: 35px;
         }
 
         .safe-area.bottom {
             padding-bottom: 4vw;
-            padding-bottom: §Bleed§;
+            padding-bottom: 35px;
         }
 
         .safe-area-preview {
@@ -104,22 +104,22 @@
             /* display: none; */
             position: absolute;
             top: 4vw;
-            top: §Bleed§;
+            top: 35px;
             left: 4vw;
-            left: §Bleed§;
+            left: 35px;
             width: calc(100% - 8vw);
-            width: calc(100% - §Bleed§ * 2);
+            width: calc(100% - 35px * 2);
             height: calc(100% - 8vw);
-            height: calc(100% - §Bleed§ * 2);
+            height: calc(100% - 35px * 2);
 
             z-index: 10;
 
             border-radius: 3vw;
-            border-radius: §BorderRadius§;
+            border-radius: 35px;
 
             /* shadow, expand 100px in all directions without falloff */
             box-shadow: 0 0 0 calc(2*4vw) rgba(128, 128, 128, 0.666);
-            box-shadow: 0 0 0 calc(2*§Bleed§) rgba(128, 128, 128, 0.666);
+            box-shadow: 0 0 0 calc(2*35px) rgba(128, 128, 128, 0.666);
 
             pointer-events: none;
         }
@@ -174,7 +174,7 @@
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
-            /* background-image: url(../../input/layout/cost_element_§CostElement§.png); */
+            /* background-image: url(../../input/layout/cost_element_Aqua.png); */
 
             z-index: initial;
         }
@@ -235,7 +235,7 @@
             font-size: 5vw;
             background-size: contain;
 
-            background-image: url(../../input/layout/faction_§Faction§.png);
+            background-image: url(../../input/layout/faction_Wasservolk.png);
         } */
 
         .spacer {
@@ -284,13 +284,13 @@
             /* font-size: 4vw; */
 
             /* padding-left: calc(4vw + 5vw);
-            padding-left: calc(§Bleed§ + 5vw);
+            padding-left: calc(35px + 5vw);
             padding-right: 5vw;
             padding-top: 3vw;
             padding-bottom: 4vw; */
 
             /* margin-left: -4vw; */
-            /* margin-left: -§Bleed§; */
+            /* margin-left: -35px; */
             /* margin-top: -1vw;
             margin-bottom: -2vw; */
 
@@ -504,7 +504,7 @@
             height: 9vw;
             transform: rotate(180deg);
 
-            background-image: url(../../input/layout/cost_element_§CostElement§_empty.png);
+            background-image: url(../../input/layout/cost_element_Aqua_empty.png);
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
@@ -575,10 +575,10 @@
     <div class="card">
         <div class="safe-area-preview"></div>
         <div class="safe-area top">
-            <div class="title">§Title§</div>
-            <div class="subtitle">§Subtitle§</div>
+            <div class="title">Elaria</div>
+            <div class="subtitle">Aquatische Schildheilerin</div>
             <div class="cost">
-                <div class="cost-element §CostElement§" style="background-image: url(../../input/layout/cost_element_§CostElement§.png);"></div>
+                <div class="cost-element Aqua" style="background-image: url(../../input/layout/cost_element_Aqua.png);"></div>
                 <div class="cost-amount">
                     <p>6</p>
                 </div>
@@ -589,15 +589,15 @@
         <div class="safe-area">
             <div class="parchment">
                 <div class="card-kind">
-                    <div>§EntityKind§</div>
+                    <div>Einzigartiger Charakter</div>
                 </div>
-                <div class="entity-type">§EntityType§</div>
-                <div class="description">§Description§</div>
-                <div class="flavour-text">§FlavourText§</div>
+                <div class="entity-type">Heiler</div>
+                <div class="description">Wenn einer Deiner Charaktere, inklusive <name>Schildheilerin Elaria</name>, erscheint, <key>entdecke</key> einen <key>Schild</key> aus Deinem <key>Deck</key>. Du darfst die erschienene <key>Konstante</key> damit <key>versehen</key>. Andernfalls <key>mische</key> ihn in Dein <key>Deck</key>.</div>
+                <div class="flavour-text">Schutz ist Treue.</div>
                 <div class="combat-stats">
-                    <div class="offensive"><img src="../../input/layout/combat_stats_offensive_symbol.png" class="combat-stats-symbol" />&nbsp;§OffensiveStat§</div>
-                    <div class="defensive"><img src="../../input/layout/combat_stats_defensive_symbol.png" class="combat-stats-symbol" />&nbsp;§DefensiveStat§</div>
-                    <div class="elemental"><p>§ElementalAmount§</p></div>
+                    <div class="offensive"><img src="../../input/layout/combat_stats_offensive_symbol.png" class="combat-stats-symbol" />&nbsp;15</div>
+                    <div class="defensive"><img src="../../input/layout/combat_stats_defensive_symbol.png" class="combat-stats-symbol" />&nbsp;15</div>
+                    <div class="elemental"><p>1</p></div>
                 </div>
             </div>
         </div>
@@ -607,7 +607,7 @@
                     <img src="../../input/layout/AetherlabLogo.png" style="height: 100%; bottom: -0.005em; position: relative;" />
                 </div>
                 <div class="spacer"></div>
-                <div class="edition">§ID§</div>
+                <div class="edition">DA-0</div>
             </div>
         </div>
     </div>
