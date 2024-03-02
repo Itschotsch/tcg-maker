@@ -5,11 +5,30 @@
 # It then stitches the cards together into a single PNG image and saves it to output/cards.png.
 
 dev_mode = False
-preprocess_csv = True
-render_html = True
-render_cards = True
-render_special_cards = True
+choose_csv = False
+preprocess_csv = False
+render_html = False
+render_cards = False
+render_special_cards = False
 stitch_cards = True
+stitch_cards_ids = [
+    # Deck: Terra-Ignis-Angriff
+    # https://www.notion.so/Test-Deck-Terra-Ignis-Angriff-762b30417c834c3b9c790c2f146c1892?pvs=4
+    304, 304, 304,
+    320, 320, 320,
+    167, 167, 167,
+    292, 292, 292,
+    264, 264, 264,
+    236, 236, 236,
+    190, 190, 190,
+    214, 214, 214,
+    166, 166, 166,
+    266, 266, 266,
+    207, 207, 207,
+    179, 179, 179,
+    191, 191, 191,
+    162, 162, 162,
+]
 
 width_mm = 63
 height_mm = 88
@@ -37,24 +56,25 @@ border_radius_px = int(border_radius_mm * dpi / 25.4)
 import os
 __dir__ = os.path.dirname(__file__)
 
-if preprocess_csv:
-    import pandas as pd
-    import re
-
-    # Open file explorer to select the CSV file
+chosen_csv = os.path.join(__dir__, "input", 'cards.csv')
+if choose_csv:
     import tkinter as tk
     from tkinter import filedialog
     root = tk.Tk()
     root.withdraw()
-    file_path = filedialog.askopenfilename(
+    chosen_csv = filedialog.askopenfilename(
         title="Select the CSV file",
         filetypes=[("CSV files", "*.csv")]
     )
 
+if preprocess_csv:
+    import pandas as pd
+    import re
+
     # Load the CSV file
     # Old columns: Kartenart,Name,Kartentext,Element,Kosten,⚔️,🛡️,⭕️,Kartentyp,Status,Playtesting,ID,Fraktion,Flavourtext,Decks,Created by,Artwork
     old = pd.read_csv(
-        file_path,
+        chosen_csv,
         keep_default_na=False
     )
 
@@ -73,19 +93,19 @@ if preprocess_csv:
         "Legende": "legend",
         "Manifestation": "manifestation",
         "Ritual": "ritual"
-    }[x.split()[0]])
+    }.get(x.split()[0], "") if x else "")
     # Title: Use Name. Is x,y and should be x.
-    new["Title"] = old["Name"].apply(lambda x: x.split(',')[0])
+    new["Title"] = old["Name"].apply(lambda x: x.split(',')[0] if x else "")
     # Subtitle: Use Name. Is x,y and should be y.
     new["Subtitle"] = old["Name"].apply(lambda x: x.split(',')[1] if len(x.split(',')) > 1 else "")
-    # Description: Use Kartentext. Is x and should be x.
-    new["Description"] = old["Kartentext"]
-    # Artwork: Use ID. Is x and should be x.jpg.
-    new["Artwork"] = old["ID"].apply(lambda x: f"{x}.jpg")
+    # Description: Use Kartentext. Is x (http://someurl.com/) y (http://someotherurl.com/) z and should be x y z.
+    new["Description"] = old["Kartentext"].apply(lambda x: re.sub(r'\((https?:\/\/[^)]+)\)', "", x) if x else "")
+    # Artwork: Use ID. Is x and should be x.png.
+    new["Artwork"] = old["ID"].apply(lambda x: f"{x}.png")
     # EntityKind: Use Kartenart. Is Charakter asdf/Ereignis asdf/Legende asdf/Manifestation asdf/Ritual asdf and should be Charakter/Ereignis/Legende/Manifestation/Ritual
-    new["EntityKind"] = old["Kartenart"].apply(lambda x: x.split()[0])
+    new["EntityKind"] = old["Kartenart"].apply(lambda x: x.split()[0] if x else "")
     # EntityType: Use Kartentyp. Is x asdf and should be x.
-    new["EntityType"] = old["Kartentyp"].apply(lambda x: x.split()[0])
+    new["EntityType"] = old["Kartentyp"].apply(lambda x: x.split()[0] if x else "")
     # OffensiveStat: Use ⚔️. Is x and should be x.
     new["OffensiveStat"] = old["⚔️"]
     # DefensiveStat: Use 🛡️. Is x and should be x.
@@ -94,8 +114,15 @@ if preprocess_csv:
     new["ShieldspellStat"] = old["⭕️"]
     # FlavourText: Use Flavourtext. Is x and should be x.
     new["FlavourText"] = old["Flavourtext"]
-    # CostElement: Use Element. Is Aeris asdf/Terra asdf/Ignis asdf/Aqua asdf/Magica asdf and should be Aeris/Terra/Ignis/Aqua/Magica
-    new["CostElement"] = old["Element"].apply(lambda x: x.split()[0])
+    # CostElement: Use Element. Is Aeris asdf/Terra asdf/Ignis asdf/Aqua asdf/Magica asdf/Ungeprägt asdf and should be Aeris/Terra/Ignis/Aqua/Magica/Unshaped
+    new["CostElement"] = old["Element"].apply(lambda x: {
+        "Aeris": "Aeris",
+        "Terra": "Terra",
+        "Ignis": "Ignis",
+        "Aqua": "Aqua",
+        "Magica": "Magica",
+        "Ungeprägt": "Unshaped"
+    }.get(x.split()[0], "") if x else "")
     # CostAmount: Use Kosten. Is x and should be x.
     new["CostAmount"] = old["Kosten"]
     # ElementalAmount: Use 1.
@@ -103,7 +130,7 @@ if preprocess_csv:
 
     # Save the new CSV file
     new.to_csv(
-        os.path.join(__dir__, "input", 'cards.csv'),
+        os.path.join(__dir__, "input", "csv", 'cards.csv'),
         index=False
     )
 
@@ -113,7 +140,7 @@ if render_html:
     
     # Load the CSV file, keep "" as empty string, not NaN
     df = pd.read_csv(
-        os.path.join(__dir__, "input", 'cards.csv'),
+        os.path.join(__dir__, "input", "csv", 'cards.csv'),
         keep_default_na=False
     )
 
@@ -184,7 +211,7 @@ if render_html:
             os.makedirs(os.path.join(__dir__, "output/html"))
 
         with open(
-            os.path.join(__dir__, "output/html", f"{row['ID']}_{row['Title']}.html"),
+            os.path.join(__dir__, "output/html", f"{row['ID']}.html"),
             'w',
             encoding='utf-8'
         ) as f:
@@ -203,6 +230,12 @@ if render_html:
 if render_cards:
     from playwright.sync_api import sync_playwright
 
+    if not os.path.exists(os.path.join(__dir__, "output")):
+        os.makedirs(os.path.join(__dir__, "output"))
+    if not os.path.exists(os.path.join(__dir__, "output", "html")):
+        os.makedirs(os.path.join(__dir__, "output", "html"))
+    if not os.path.exists(os.path.join(__dir__, "output", "singles")):
+        os.makedirs(os.path.join(__dir__, "output", "singles"))
     html_files = os.listdir(os.path.join(__dir__, "output/html"))
     currentProgress = 0
     totalProgress = len(html_files)
@@ -247,7 +280,7 @@ if render_special_cards:
     height = height_no_bleed_px if stitch_without_bleed else height_with_bleed_px
 
     # Load the hidden card
-    hidden_card = Image.open(os.path.join(__dir__, "input", "hiddencard.png"))
+    hidden_card = Image.open(os.path.join(__dir__, "input", "layout", "hiddencard.png"))
     # Crop the hidden card to the correct aspect ratio, centered
     crop_height = int(hidden_card.width / width * height)
     hidden_card = hidden_card.crop(
@@ -266,10 +299,12 @@ if render_special_cards:
         )
     )
     # Save the resized hidden card
-    hidden_card.save(os.path.join(__dir__, "output", "hiddencard.png"))
+    if not os.path.exists(os.path.join(__dir__, "output", "layout")):
+        os.makedirs(os.path.join(__dir__, "output", "layout"))
+    hidden_card.save(os.path.join(__dir__, "output", "layout", "hiddencard.png"))
 
     # Load the card back
-    card_back = Image.open(os.path.join(__dir__, "input", "cardback.png"))
+    card_back = Image.open(os.path.join(__dir__, "input", "layout", "cardback.png"))
     # Crop the card back to the correct aspect ratio, centered
     crop_height = int(card_back.width / width * height)
     card_back = card_back.crop(
@@ -288,7 +323,9 @@ if render_special_cards:
         )
     )
     # Save the resized card back
-    card_back.save(os.path.join(__dir__, "output", "cardback.png"))
+    if not os.path.exists(os.path.join(__dir__, "output", "layout")):
+        os.makedirs(os.path.join(__dir__, "output", "layout"))
+    card_back.save(os.path.join(__dir__, "output", "layout", "cardback.png"))
 
 # Stitch the cards together
 # - single PNG image
@@ -299,15 +336,19 @@ if stitch_cards:
 
     print("Preparing stitching cards...")
     # Get the list of files
-    files = os.listdir(os.path.join(__dir__, "output/singles"))
-    files = [f for f in files if f.endswith('.png')]
+    if not os.path.exists(os.path.join(__dir__, "output")):
+        os.makedirs(os.path.join(__dir__, "output"))
+    if not os.path.exists(os.path.join(__dir__, "output", "singles")):
+        os.makedirs(os.path.join(__dir__, "output", "singles"))
+
+    if stitch_cards_ids == []:
+        files = os.listdir(os.path.join(__dir__, "output", "singles"))
+        files = [f for f in files if f.endswith('.png')]
+    else:
+        files = [f"{i}.png" for i in stitch_cards_ids]
 
     # Sort the files by ID
     files = sorted(files, key=lambda f: f.split('_')[0])
-
-    # Create the output folder if it doesn't exist
-    if not os.path.exists(os.path.join(__dir__, "output")):
-        os.makedirs(os.path.join(__dir__, "output"))
 
     # Create the output image
     width = width_no_bleed_px if stitch_without_bleed else width_with_bleed_px
@@ -349,8 +390,10 @@ if stitch_cards:
 
     # Paste the hidden card into the bottom right spot
     print(f"Pasting hidden card...")
+    if not os.path.exists(os.path.join(__dir__, "output", "layout")):
+        os.makedirs(os.path.join(__dir__, "output", "layout"))
     output_image.paste(
-        Image.open(os.path.join(__dir__, "output", "hiddencard.png")),
+        Image.open(os.path.join(__dir__, "output", "layout", "hiddencard.png")),
         (
             (stitch_x - 1) * width,
             (stitch_y - 1) * height

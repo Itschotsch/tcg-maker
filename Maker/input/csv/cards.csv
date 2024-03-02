@@ -1,44 +1,368 @@
-ID,Layout,EntityKind,Title,Subtitle,"Description",CostElement,CostAmount,ElementalAmount,Artwork,OffensiveStat,DefensiveStat,ShieldspellStat,Faction,EntityType,FlavourText,"MetaExplanation",Status,Creator
-DA-0,character,Einzigartiger Charakter,Elaria,Aquatische Schildheilerin,"Wenn einer Deiner Charaktere, inklusive <name>Schildheilerin Elaria</name>, erscheint, <key>entdecke</key> einen <key>Schild</key> aus Deinem <key>Deck</key>. Du darfst die erschienene <key>Konstante</key> damit <key>versehen</key>. Andernfalls <key>mische</key> ihn in Dein <key>Deck</key>.",Aqua,4,1,schildheilerin_elaria.png,15,15,,Wasservolk,Heiler,Schutz ist Treue.,"Draw, Buff",Untested,Jan Appel
-DA-1,character,Charakter,Speerfischer Albert,,,Aqua,2,1,speerfischer-albert.png,30,20,,,Gefolge,,,Untested,Jan Appel
-DA-2,character,Charakter,Speerfischer Hans,,,Aqua,2,1,speerfischer_hans.png,20,30,,,Gefolge,,,Untested,Jan Appel
-DA-3,character,Charakter,Netzfischer Alto,,"Wenn der Netzfischer Alto eine Konstante zerstört, ziehe eine Karte.",Aqua,3,1,netzfischer_alto.png,20,30,,,Gefolge,,,Untested,Jan Appel
-DA-4,character,Charakter,Schleimkröte,,"Wenn die Schleimkröte ein Ziel angreift, darfst Du dieses in Angriffsposition oder Verteidigungsposition versetzen.",Aqua-Terra,4,1,schleimkröte.png,30,20,,,Wildtier,,,Untested,Jan Appel
-DA-5,character,Charakter,Sumpfkröte,,"Wenn die Sumpfkröte erscheint, darfst Du eine beliebige andere Konstante verschwinden und wieder erscheinen lassen.",Aqua-Terra,3,1,sumpfkröte.png,5,35,,,Wildtier,,,Untested,Jan Appel
-DA-6,character,Charakter,Perlentaucher,,"Verkünde zu <key>Beginn</key> Deines <key>Zuges</key> einen <key>Entitätentyp</key>. Wenn die erste <key>Karte</key>, die Du diesen <key>Zug</key> ziehst, diesem <key>Entitätentyp</key> entspricht, darfst Du sie für <element class='Aqua'>1</element> spielen. Andernfalls nimmst Du sie auf Deine <key>Hand</key>.",Aqua,3,1,perlentaucher.png,15,15,,,Abenteurer,,,Untested,Jan Appel
-DA-7,character,Charakter,Brauner Stummfisch,,"Sofort spielbar.",Aqua,1,1,brauner_stummfisch.png,10,0,,,Wildtier,,,Untested,Jan Appel
-DA-8,character,Charakter,Grauer Stummfisch,,"Sofort spielbar.",Aqua,1,1,grauer_stummfisch.png,0,10,,,Wildtier,,,Untested,Jan Appel
-DA-9,character,Charakter,Regenbogenquappschlappe,,"Die Regenbogenquappschlappe kann in der Verteidigungsposition nicht als Ziel gewählt werden.",Aqua,2,1,regenbogenquappschlappe.png,15,15,,,Magisches Wesen,,,Untested,Jan Appel
-DA-28,character,Charakter,Stacheliger Kugelfisch,,"Wenn Stacheliger Kugelfisch verteidigt, wird die angreifende Karte zerstört.",Aqua,3,1,stacheliger_kugelfisch.png,10,10,,,,,"Deathtouch bei Verteidigung",Untested,Jan Appel
-DA-29,character,Charakter,Ding aus der Tiefe,,"Wenn das Ding aus der Tiefe erscheint, zerstöre eine beliebige Auswahl Deiner Charaktere und lege sie unter diese Karte. Immer, wenn das Ding aus der Tiefe einen Charakter zerstört, lege ihn ebenfalls unter diese Karte. Angriffswert und Verteidigungswert des Ding aus der Tiefe sind stets die entsprechenden Summen der unter ihm liegenden Karten.",Aqua,6,1,ding_aus_der_tiefe.png,0,0,,,Ungeheuer,,,Untested,Jan Appel
-DA-30,character,Charakter,Meerjungfrau Marna,,"Elementarkosten von anderen Wasservolk-Karten sind um 2 Aqua reduziert.<br />Wenn Meerjungfrau Marna angreift, darfst Du den Wassermann Torlan suchen und spielen.",Aqua,3,1,meerjungfrau_marna.png,15,20,,Wasservolk,Magisches Wesen,,,Untested,Jan Appel
-DA-31,character,Charakter,Wassermann Torlan,,"Elementarkosten von anderen Wasservolk-Karten sind um 2 Aqua reduziert.<br />Wenn Wassermann Torlan verteidigt, darfst Du die Meerjungfrau Marna suchen und spielen.",Aqua,3,1,wassermann_torlan.png,20,15,,Wasservolk,Magisches Wesen,,,Untested,Jan Appel
-DA-32,character,Charakter,Nymphe Nerida,,"Wenn die Nymphe Nerida erscheint, darfst Du eine Elementkarte spielen.<br />Wenn die Nymphe Nerida verschwindet, musst Du eine Deiner Elementkarten zerstören.",Aqua,4,1,nymphe_nerida.png,20,20,,Wasservolk,Magisches Wesen,,,Untested,Jan Appel
-DA-33,character,Charakter,Nixe Arvia,,"Versieh einen beliebigen Charakter mit der Nixe Arvia. Der versehene Charakter hat solange ohnmächtig und die Nixe Arvia kann angegriffen werden, aber nicht angreifen.",Aqua,4,1,nixe_arvia.png,0,30,,Wasservolk,Magisches Wesen,,,Untested,Jan Appel
-DA-34,character,Charakter,Sirene Thalassa,,"Versieh einen beliebigen Charakter mit der Sirene Thalassa, dessen Angriffswert und Verteidigungswert zusammen nicht höher als 100 ist. Der versehene Charakter ist solange unter Deiner kontrolle.",Aqua,5,1,sirene_thalassa.png,25,25,,Wasservolk,Magisches Wesen,,,Untested,Jan Appel
-DA-37,character,Charakter,Angler Peter,,"Wenn Angler Peter erscheint, verkünde einen Entitätentyp. ziehe Karten von Deinem Deck, bis Du den verkündeten Entitätentyp ziehst oder Dein Deck leer ist. Wirf schlussendlich gleich viele Karten ab.",Aqua,4,1,angler_peter.png,15,10,,,Abenteurer,,,Untested,Jan Appel
-DA-39,character,Charakter,Die Albatross,,,Aqua,6,1,die_albatross.png,70,50,,,Struktur,,,Untested,Jan Appel
-DA-19,event,Ereignis,Sintflut,,"zerstöre alle Konstanten auf dem Schlachtfeld. Alle Spieler ziehen eine Karte.",Aqua,4,1,sintflut.png,,,,,,,"Board clear",Untested,Jan Appel
-DA-20,event,Ereignis,Wilde Wogen,,"Zerstöre $x$ Charaktere Deiner Wahl, wobei $x$ die Anzahl Deiner Schilde ist.",Aqua,2+2x,1,wilde_wogen.png,,,,,,,"Board clear",Untested,Jan Appel
-DA-21,event,Ereignis,Steter Tropfen,,"Zerstöre alle Konstanten mit Elementarkosten $x$. Falls dabei Konstanten zerstört werden, spiele Steter Tropfen mit $x+1$. Beginne mit $x=1$.",Aqua,2,1,steter_tropfen.png,,,,,,,"Board clear",Untested,Jan Appel
-DA-22,event,Ereignis,Ebbe,,"Zahle $x$ Aqua: plane $x$ Karten.<br />Wenn Du in diesem Zug die Sintflut gespielt hast, suche die Springflut aus Deinem Deck und spiele sie, ohne ihre Elementarkosten zu bezahlen.",Aqua,4,1,ebbe.png,,,,,,,,Untested,Jan Appel
-DA-23,event,Ereignis,Flut,,"Zahle $2x$ Aqua: ziehe $x$ Karten.<br />Wenn Du in diesem Zug die Ebbe gespielt hast, suche die Springflut aus Deinem Deck und spiele sie, ohne ihre Elementarkosten zu bezahlen.",Aqua,2,1,flut.png,,,,,,,,Untested,Jan Appel
-DA-26,event,Ereignis,Fluss der Zeit,,"Mache einen zweiten Zug direkt im Anschluss, ohne Deine Elementkarten zu regenerieren.",Aqua,4,1,fluss_der_zeit.png,,,,,,,,Untested,Jan Appel
-DA-36,event,Ereignis,Schrecken der Meere,,"Wenn der Schrecken der Meere erscheint, zerstöre alle Deine Charaktere. spiele für jeden zerstörten Charakter einen Charakter von Deiner Hand.",Aqua,2,1,schrecken_der_meere.png,,,,,Ungeheuer,,,Untested,Jan Appel
-DA-38,event,Ereignis,Dürre,,"Sofort spielbar.<br />Alle Spieler werfen ihre Hand ab und ziehen 3 Karten.",Aqua,5,1,dürre.png,,,,,,,,Untested,Jan Appel
-DA-41,event,Ereignis,Kreuzsee,,"Sofort spielbar.<br />Neutralisiere ein Ereignis mit Elementarkosten 4 oder weniger.",Aqua,2,1,kreuzsee.png,,,,,,,,Idee,Jan Appel
-DA-42,event,Ereignis,Küstenböe,,"Sofort spielbar.<br />Neutralisiere eine Konstante, die kein Charakter ist, mit Elementarkosten $2x$ oder weniger.",Aqua-Aeris,x,1,küstenböe.png,,,,,,,,Idee,Jan Appel
-DA-24,legend,Legende,Springflut,,"1. Runde: entdecke 3 Charakter aus Deinem Deck und nimm sie auf die Hand.<br />2. Runde: spiele bis zu 3 Charaktere irgendwelcher Elementarkosten für 1 Aqua.<br />3. Runde: zerstöre alle Charaktere auf dem Schlachtfeld.",Aqua,9,1,springflut.png,0,50,2,,,,"Board clear",Untested,Jan Appel
-DA-10,manifestation,Manifestation,Laminarströmung,,"Wenn die versehene Konstante Schaden erleidet, wird stattdessen die Laminarströmung zerstört.",Aqua,3,1,laminarströmung.png,,,2,,Aura,,"Gottesschild",Untested,Jan Appel
-DA-11,manifestation,Manifestation,Wasserschwall,,"Der Verteidigungswert der versehenen Konstante ist um $x$ erhöht, wobei $x$ die Summe aller Elementarkosten Deiner Aqua-Konstanten ist.",Aqua,1,1,wasserschwall.png,,,2,,Aura,,"Buff, extra so billig",Untested,Jan Appel
-DA-12,manifestation,Manifestation,Reißender Fluss,,"Wenn die verseheneKonstante während der verteidigung zerstört wird, wird auch die angreifende Karte zerstört.",Aqua,3,1,reißender_fluss.png,,,2,,Aura,,"Ähnlich wie Deathtouch",Untested,Jan Appel
-DA-13,manifestation,Manifestation,Turbulenter Strom,,"Wenn die versehene Konstante angegriffen wird, darfst du sie mit einem beliebigen Charakter verteidigen. Falls nicht, wird Turbulenter Strom zerstört.",Aqua,2,1,turbulenter-strom.png,,,2,,Aura,,"Deck manipulation, man kann mit gegnerischen Karten verteidigen",Untested,Jan Appel
-DA-14,manifestation,Manifestation,Fresnel'sche Spiegelung,,"Gegner können nur die versehene Konstante als Ziel für ihren Angriff wählen.",Aqua,3,1,fresnelsche_spiegelung.png,,,2,,Aura,,"Taunt",Untested,Jan Appel
-DA-15,manifestation,Manifestation,Brunnen der Persistenz,,"Wenn die versehene Konstante noch lebt, nachdem sie verteidigt, darfst Du einen Schild aus Deinem Deck suchen und für seine Elementarkosten eine andere Konstante mit ihm versehen.",Aqua,3,1,brunnen-der-persistenz.png,,,2,,Struktur,,,Untested,Jan Appel
-DA-16,manifestation,Manifestation,Jungbrunnen,,"Wenn der Jungbrunnen noch lebt, nachdem er verteidigt, versieh eine andere Konstante mit einen Schild, ohne Elementarkosten zu zahlen.",Aqua,5,1,jungbrunnen.png,,,2,,Struktur,,,Untested,Jan Appel
-DA-18,manifestation,Manifestation,Ewiger Urquell,,"Du hast keine maximale Handkartenzahl.",Aqua-Terra,4,1,ewiger_urquell.png,0,50,2,,Struktur,,"Draw-Support",Untested,Jan Appel
-DA-25,manifestation,Manifestation,Fluss der Neugierde,,"Ziehe zwei statt einer Karte zu Beginn Deines Zugs. spiele die billigere, ohne die Elementarkosten zu bezahlen.",Aqua,5,1,fluss_der_neugierde.png,0,20,2,,,,"Draw",Untested,Jan Appel
-DA-27,manifestation,Manifestation,Versiegter Brunnen,,"Versieh einen beliebigen Spieler mit Versiegter Brunnen. Solange kann der Spieler keine Karten ziehen. Am Ende jeden Zuges darf der versehene Spieler 1 Aqua bezahlen, um Versiegter Brunnen zu zerstören, oder 1 beliebiges Element bezahlen, um einen anderen Spieler damit zu versehen.",Aqua,2,1,versiegter_brunnen.png,0,20,2,,,,,Untested,Jan Appel
-DA-35,manifestation,Manifestation,Seemannsgarn,,"Entscheide Dich zu Beginn Deines Zuges, ob Deine Charaktere bis zu Deinem nächsten Zug$+10x$ Angriffswert oder $+10x$ Verteidigungswert haben, wobei $x$ die Anzahl Karten ist, die Du seit der Entscheidung ziehst.",Aqua,3,1,seemannsgarn.png,5,15,2,,,,,Untested,Jan Appel
-DA-40,manifestation,Manifestation,Tosender Wasserfall,,"Immer, wenn Du Karten ziehst, ziehst Du stattdessen eine mehr.",Aqua,5,1,tosender_wasserfall.png,0,30,2,,,,"Draw",Untested,Jan Appel
-DA-17,ritual,Ritual,ritual des Ewigen Urquell,,"1. Kontrolliere mindestens 3 Aqua-Elementkarten → ziehe 1 Karte.<br />2. ziehe in 1 Zug mehrere Karten → ziehe 1 Karte und spiele eine zusätzliche Aqua-Elementkarte.<br />3. Lasse in 1 Zug Karten für GesamtElementarkosten von mindestens 7 Aqua erscheinen → suche und spiele Ewiger Urquell, ohne Elementarkosten zu zahlen.",Aqua,3,1,ritual_des_ewigen_urquell.png,0,50,2,,,,"Draw-Support",Untested,Jan Appel
+ID,Layout,Title,Subtitle,Description,Artwork,EntityKind,EntityType,OffensiveStat,DefensiveStat,ShieldspellStat,FlavourText,CostElement,CostAmount,ElementalAmount
+3,character,Weißer Greif,,"Wenn der Weiße Greif stirbt, kehrt er stattdessen auf Deine Hand zurück.",3.png,Charakter,Ungeheuer,35,20,,,Aeris,7,1
+4,character,Heulende Eulen,,sofort  spielbar.,4.png,Charakter,Wildtier,10,10,,"Niemand sah sie kommen, denn alle blickten gen Himmel.",Terra,2,1
+5,character,Korporal Langhorn,,Alle deine Wölfe Bjarturs haben +10 ⚔️ und +15 🛡️.,5.png,Charakter,Krieger,20,20,,,Terra,4,1
+8,character,Baumsängerin Betula,,Tribute diese Karte; Rufe ein [7] oder weniger “Besungener Baum” aus dem Deck.,8.png,Charakter,,35,30,,,Terra,4,1
+9,event,Lieblicher Lautenklang der Baumsängerinnen,,Suche einen Baumsängerin  Charakter,9.png,Ereignis,,,,,,Terra,2,1
+12,character,Baumsängerin Tilia,,Tribute diese Karte; Rufe ein [8] oder weniger “Besungener Baum” aus dem Deck.,12.png,Charakter,,45,30,,,Terra,5,1
+13,character,Baumsängerin Abies,,Falls diese Karte auf den Friedhof gelegt wird; Rufe ein “Besungener Baum” von deinem Friedhof (Einmal pro Spielzug),13.png,Charakter,,35,20,,,Terra,4,1
+14,event,Heiterer Lautenklang der Baumsängerinnen,,Suche einen Baumsängerin  Charakter,14.png,Ereignis,,,,,,Terra,3,1
+15,character,Baumsängerin Larix,,Tribute diese Karte; Rufe ein [6] oder weniger “Besungener Baum” aus dem Deck.,15.png,Charakter,,30,30,,,Terra,4,1
+16,character,Besungener Baum Fagus,,Alle verbündeten Baumsängerin   und Wildtier   Kosten 1 Element weniger um sie zu rufen,16.png,Charakter,,0,55,,,Terra,6,1
+17,character,Besungener Baum Carpinus,,Bezahle 2 Terra; Zerstöre einen Charakter (Einmal pro Spielzug),17.png,Charakter,,0,85,,,Terra,10,1
+18,character,Besungener Baum Aesculus,,Um den Effekt einer Baumsängerin  zu aktiveren kannst du anstelle sie als Tribut anzubieten 2 Terra bezahlen,18.png,Charakter,,0,55,,,Terra,6,1
+19,event,Schützender Lautenklang der Baumsängerinnen,,Bis zum Ende dieses Spielzugs: eine Baumsängerin  oder ein “Besungener Baum” ist von Karteneffekten unberührt und kann nicht zerstört werden,19.png,Ereignis,,,,,,Terra,2,1
+20,character,Bestie aus dem Wald,,ersch einen. Zerstöre einen Charakter auf dem Feld,20.png,Charakter,,50,10,,,Terra,7,1
+21,character,Brauner Hirsch,,,21.png,Charakter,,45,35,,,Terra,4,1
+22,character,Rasender Bär,,,22.png,Charakter,,60,55,,,Terra,6,1
+23,event,Erwachen des Waldes,,Falls du ein Terra Charakter kontrollierst. Füge deiner Hand bis zu 2 Wildtier  Charaktere hinzu,23.png,Ereignis,,,,,,Terra,4,1
+24,manifestation,Fröhliche Waldlichtung,,Einmal pro Spielzug die Rufkosten für ein Wildtier vom Element Terra sind um bis zu 2 reduziert,24.png,Manifestation,,,,2,,Terra,3,1
+25,character,Schildheilerin Elaria,,"Wenn eine D einer Charakter n, inklusive Schildheilerin Elaria , ersch eint, entdeck e einen Schild  aus D einem Deck . D u darfst die ersch ienene Konstante  damit vers ehen. Andernfalls misches ihn inD ein Deck .",25.png,Charakter,,15,15,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 4",1
+26,ritual,Ritual des Ewigen Urquell,,"1. Kontrolliere mindestens 3 Aqua -Elementkarte n → zieh e 1 Karte .
+2. zieh e in 1 Zug  mehrere Karte n → zieh e 1 Karte  und spiel e eine zusätzliche Aqua -Elementkarte .
+3. Lasse in 1 Zug  Karte n für GesamtElementarkosten  von mindestens 7 Aqua  ersch einen → such e und spiel e Ewiger Urquell , ohne Elementarkosten  zu zahlen.",26.png,Ritual,,0,50,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 3",1
+28,manifestation,Fluss der Neugierde,,"zieh e zwei statt einer Karte  zu Beginn D eines Zug s. spiele die billigere, ohne die Elementarkosten  zu bezahlen.",28.png,Manifestation,,0,20,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 5",1
+29,event,Steter Tropfen,,"zerstör e alle Konstante n mit Elementarkosten  $x$. Falls dabei Konstante n zerstör t werden, spiele Steter Tropfen  mit $x+1$. Beginne mit $x=1$.",29.png,Ereignis,,,,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 2",1
+30,event,Sintflut,,zerstör e alle Konstante n auf dem Schlachtfeld . Alle Spieler  zieh en eine Karte .,30.png,Ereignis,,,,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 4",1
+31,manifestation,Laminarströmung,,"Wenn die vers ehene Konstante  Schaden  erleidet, wird stattdessen die Laminarströmung  zerstör t.",31.png,Manifestation,,,,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 3",1
+32,,Fluss der Zeit,,"Mache einen zweiten Zug  direkt im Anschluss, ohne D eine Elementkarte n zu regenerier en.",32.png,,,,,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 4",1
+33,manifestation,Versiegter Brunnen,,"vers ieh einen beliebigen Spieler  mit Versiegter Brunnen . Solange kann der Spieler  keine Karte n zieh en. Am Ende jeden Zug es darf der vers ehene Spieler  1 Aqua  bezahlen, um Versiegter Brunnen  zu zerstör en, oder 1 beliebiges anderes Element  bezahlen, um einen anderen Spieler  damit zu vers ehen.",33.png,Manifestation,,0,20,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 2",1
+34,event,Dürre,,"sofort  spielbar.
+Alle Spieler  werfen ihre Hand  ab  und zieh en 3 Karte n.",34.png,Ereignis,,,,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 5",1
+35,manifestation,Ewiger Urquell,,D u hast keine maximale Hand kartenzahl.,35.png,Manifestation,,0,50,,,Terra,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 4 oder Terra (https://www.notion.so/Terra-a6762ab5136d4598aafb8d77da6be70f?pvs=21), 4",1
+36,manifestation,Jungbrunnen,,"Wenn der Jungbrunnen  noch leb t, nachdem er verteidig t, vers ieh eine andere Konstante  mit einen Schild , ohne Elementarkosten  zu zahlen.",36.png,Manifestation,,0,40,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 5",1
+37,character,Speerfischer Albert,,-,37.png,Charakter,,30,20,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 2",1
+38,character,Speerfischer Hans,,-,38.png,Charakter,,20,30,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 2",1
+39,character,Schleimkröte,,"Wenn die Schleimkröte  ein Ziel  angr eift, darfst D u dieses in Angriffsposition  oder Verteidigungsposition  versetzen.",39.png,Charakter,,30,20,,,Terra,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 4 oder Terra (https://www.notion.so/Terra-a6762ab5136d4598aafb8d77da6be70f?pvs=21), 4",1
+40,character,Sumpfkröte,,"Wenn die Sumpfkröte  ersch eint, darfst Du eine beliebige andere Konstante  verschwind en und wieder ersch einen lassen.",40.png,Charakter,,5,35,,,Terra,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 3 oder Terra (https://www.notion.so/Terra-a6762ab5136d4598aafb8d77da6be70f?pvs=21), 3",1
+41,character,Stacheliger Kugelfisch,,"Wenn Stacheliger Kugelfisch  verteidig t, wird die angr eifende Karte  zerstör t.",41.png,Charakter,,10,10,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 3",1
+42,manifestation,Wasserschwall,,"Der Verteidigungswert  der vers ehenen Konstante  ist um $x$ erhöht, wobei $x$ die Summe aller Elementarkosten  D einer Aqua -Konstante n ist.",42.png,Manifestation,,,,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 1",1
+43,manifestation,Tosender Wasserfall,,"Immer, wenn D u Karte n zieh st, zieh st D u stattdessen eine mehr.",43.png,Manifestation,,0,1,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 4",1
+44,manifestation,Reissender Fluss,,"Wenn die vers eheneKonstante  während der verteidig ung zerstör t wird, wird auch die angr eifende Karte  zerstör t.",44.png,Manifestation,,,,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 3",1
+45,manifestation,Turbulenter Strom,,"Wenn die vers ehene Konstante  angegr iffen wird, darfst du sie mit einem beliebigen D einer Charakter  verteidig en. Falls nicht, wird Turbulenter Strom  zerstör t.",45.png,Manifestation,,,,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 2",1
+46,manifestation,Brunnen der Persistenz,,"Wenn die vers ehene Konstante  noch leb t, nachdem sie verteidig t, darfst D u einen Schild  aus D einem Deck  such en und für seine Elementarkosten  eine andere Konstante  mit ihm vers ehen.",46.png,Manifestation,,,,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 3",1
+47,event,Wilde Wogen,,"zerstör e $x$ Charakter e D einer Wahl, wobei $x$ die Anzahl  D einer Schild e ist.",47.png,Ereignis,,,,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), $2+2x$",1
+48,event,Ebbe,,"Zahle $x$ Aqua : plan e $x$ Karte n.
+Wenn D u in diesem Zug  die Flut  gespiel t hast, such e die Springflut  aus D einem Deck  und spiel e sie, ohne ihre Elementarkosten  zu bezahlen.",48.png,Ereignis,,,,,,,4,1
+49,event,Flut,,"Zahle $2x$ Aqua : zieh e $x$ Karte n.
+Wenn D u in diesem Zug  die Ebbe  gespiel t hast, such e die Springflut  aus D einem Deck  und spiel e sie, ohne ihre Elementarkosten  zu bezahlen.",49.png,Ereignis,,,,,,,2,1
+50,legend,Springflut,,"1. Runde : entdeck e 3 Charakter  aus D einem Deck  und nimm sie auf  die Hand .
+2. Runde : spiel e bis zu 3 Charakter e irgendwelcher Elementarkosten  für 1 Aqua .
+3. Runde : zerstör e alle Charakter e auf dem Schlachtfeld .",50.png,Legende,,0,50,,,,9,1
+51,character,Ding aus der Tiefe,,"Wenn das Ding aus der Tiefe  ersch eint, zerstör e eine beliebige Auswahl  D einer Charakter e und lege sie unter diese Karte . Immer, wenn das Ding aus der Tiefe  einen Charakter  zerstör t, lege ihn ebenfalls unter diese Karte . Angriffswert  und Verteidigungswert  des Ding aus der Tiefe  sind stets die entsprechenden Summen der unter ihm liegenden Karte n.",51.png,Charakter,,0,0,,,,6,1
+52,character,Perlentaucher,,"verkünde  zu Beginn D eines Zug es einen Entitäten typ. Wenn die erste Karte , die D u diesen Zug  zieh st, diesem Entitäten typ entspricht, darfst D u sie für 1 Aqua  spiel en. Andernfalls nimmst D u sie auf  D eine Hand .",52.png,Charakter,,15,15,,,,3,1
+53,manifestation,Fresnel’sche Spiegelung,,Gegner  können nur die vers ehene Konstante  als Ziel  für ihren Angr iff wählen.,53.png,Manifestation,,,,,,,3,1
+54,character,Magier des Ausgleichs,,"Wenn der Magier des Ausgleichs  eine Karte zerstör t, zieh e eine Karte .",54.png,Charakter,,20,30,,,Magica,4,1
+55,character,Meerjungfrau Marna,,"Wenn Meerjungfrau Marna  angr eift, darfst D u den Wassermann Torlan  such en und spiel en.",55.png,Charakter,,15,20,,,Aeris,4,1
+56,manifestation,Nixe Arvia,,"vers ieh einen beliebigen Charakter  mit der Nixe Arvia . Der vers ehene Charakter  hat solange ohnmächtig  und die Nixe Arvia  kann angegr iffen werden, aber nicht angr eifen.",56.png,Manifestation,,,,0,,Aqua,3,1
+57,character,Nymphe Nerida,,"Wenn die Nymphe Nerida  ersch eint, darfst D u eine Elementkarte  spielen.
+Wenn die Nymphe Nerida  verschwind et, musst D u eine Deiner Elementkarte n zerstör en.",57.png,Charakter,,20,20,,,Aeris,3,1
+58,character,Sirene Thalassa,,"vers ieh einen beliebigen Charakter  mit der Sirene Thalassa , dessen Angriffswert  und Verteidigungswert  zusammen nicht höher als 100 ist. Der versehene Charakter  ist solange unter D einer kontr olle, bis Sirene Thalassa  die gegnerische Linien verlässt, kann seine Position nicht ändern und in diesem Zug  nicht angr eifen.",58.png,Charakter,,25,10,,,Ignis,5,1
+59,manifestation,Seemannsgarn,,"Entscheide D ich zu Beginn D eines Zug es, ob D eine Charakter e bis zu D einem nächsten Zug $+10x$ Angriffswert  oder $+10x$ Verteidigungswert  haben, wobei $x$ die Anzahl  Karte n ist, die D u seit der Entscheidung zieh st.",59.png,Manifestation,,,,1,,Terra,3,1
+60,character,Die Albatross,,,60.png,Charakter,,65,50,,,Ignis,6,1
+61,event,Schrecken der Lüfte,,zerstör e alle D eine Charakter e. spiel e für jeden zerstör ten Charakter  einen Charakter  von D einer Hand .,61.png,Ereignis,,,,,,Aeris,4,1
+62,character,Brauner Stummfisch,,sofort  spiel bar.,62.png,Charakter,,10,0,,,,1,1
+63,character,Regenbogenquappschlappe,,Die Regenbogenquappschlappe  kann in der Verteidigungsposition  nicht als Ziel  gewählt werden.,63.png,Charakter,,15,15,,,Magica,3,1
+65,manifestation,Geld ist Macht,,"vers ieh eine Konstante  mit Geld ist Macht . Lege bis zu 25 Münze n auf diese Konstante . Angriffswert  und Verteidigungswert  der vers ehenen Konstante  sind um diese Anzahl  erhöht. Wird die vers ehene Konstante  zerstör t, erhält der zerstör ende Spieler  die Münze n.",65.png,Manifestation,,,,,,,,1
+66,character,Grauer Stummfisch,,sofort  spiel bar.,66.png,Charakter,,0,10,,,Aqua,2,1
+67,character,Speerfischer Peter,,"Wenn Speerfischer Peter  erscheint, verkünde  eine Karten-Art. zieh e Karte n von D einem Deck , bis D u den verkünde ten Entitäten typ zieh st oder D ein Deck  leer ist. Wirf schlussendlich gleich viele Karte n ab .",67.png,Charakter,,15,10,,,Aeris,3,1
+68,event,Sonntagsmarkt,,"verkünde  einen Entitäten typ. zieh e Karte n von D einem Deck , bis D u den verkünde ten Entitäten typ zieh st. Nimm diese Karte  auf  die Hand . Alle anderen so gezogenen Karte n werden zwischen allen Gegner n für Münze n versteigert, die D u erhältst.",68.png,Ereignis,,,,,,,,1
+69,character,Geisterschiff,,,69.png,Charakter,,,,,,,,1
+72,character,Wassermann Torlan,,"Wenn Wassermann Torlan  verteidig t, darfst D u die Meerjungfrau Marna  such en und spiel en.",72.png,Charakter,,20,15,,,Aqua,4,1
+73,character,Keimling,,,73.png,Charakter,Magisches,40,10,,,Terra,3,1
+74,event,Kreuzsee,,"sofort  spielbar.
+neutralisier e ein Ereignis  mit Elementarkosten  4 oder weniger.",74.png,Ereignis,,,,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), 2",1
+75,event,Küstenböe,,"sofort  spielbar.
+neutralisier e eine Konstante , die kein Charakter  ist, mit Elementarkosten  $2x$ oder weniger.",75.png,Ereignis,,,,,,,"Aqua (https://www.notion.so/Aqua-8c3b1bb2cc364f6ba274d390ac8d3800?pvs=21), $x$ oder Aeris (https://www.notion.so/Aeris-5996f3899d7740fc809fe30a652d20c6?pvs=21), $x$",1
+76,,Klabautermann,,,76.png,,,,,,,,,1
+77,,Neunauge,,,77.png,,,,,,,,,1
+80,manifestation,Angebot & Nachfrage,,Der Spieler  am Zug  darf mit den anderen Spieler n handeln: Karte n und Münze n dürfen beliebig gehandelt und geschenkt werden.,80.png,Manifestation,,0,0,,,,0,1
+81,character,Feuerteufel,,"Um diese Karte  zu spielen, entferne als zusätzlich e Kosten einen D einer Lebenspunkt e aus dem Spiel. Wenn Feuerteufel  eine gegnerisch e Konstante  zerstört, erhältst du den Lebenspunkt  zurück.",81.png,Charakter,,40,30,,Ein Leben für ein Leben,,3,1
+82,event,Sengende Reinigung,,"Als zusätzlich e Kosten, wirf 3 Karte n ab . zerstör e alle Charakter . Wenn dabei mindestens 3 Charakter  zerstör t wurden, ziehe 2 Karte n.",82.png,Ereignis,,,,,,,2,1
+83,manifestation,Versengte Erde,,"Wirf zu beginn D eines Zug s eine Karte  ab . Wenn D u dabei mindestens eine Karte  ab geworfen hast, dürfen bis zu D einem nächsten Zug  keine Konstante n mehr gespiel t werden. D u darfst Versengte Erde  zerstör en.",83.png,Manifestation,,,30,,,,5,1
+84,character,Verrückter Narr,,"Als zusätzlich e Kosten, wirf eine Karte ab . Wenn Verrückter Narr  angreift und überlebt, zieh e eine Karte . Verrückter Narr  muss jeden Zug  angreifen.",84.png,Charakter,,30,20,,,,3,1
+85,event,Funkensprung,,"zerstör e Karte n mit insgesamt bis zu 20*x Verteidigungswert , wobei x die Anzahl aller in diesem Zug  abgeworfenen Karte n ist. ",85.png,Ereignis,,,,,,,2,1
+86,event,Wie du mir, so ich dir,"sofort  spielbar. Wiederhole den Effekt der soeben vom Gegner  gespielten Karte , wobei D u das neue Ziel definierst.",86.png,Ereignis,,,,,,,3,1
+88,character,Flammengeist,,zieh e für jede ab geworfene Karte  eine neue. ,88.png,Charakter,,25,15,,,,2,1
+89,manifestation,Trümmerfeld,,"Statt eine Karte  auf den Friedhof  zu legen, lege sie als unterstes unter Trümmerfeld . Immer wenn du eine Karte  ziehst, darfst du aussuchen, ob du von deinem Deck , oder vom Trümmerfeld  ziehst. Wenn Trümmerfeld  zerstört wird, lege alle darunterliegenden Karte n auf den Friedhof .",89.png,Manifestation,,,40,,,,6,1
+90,character,Feuersalamander,,"sofort  spielbar. Wenn Feuersalamander  von einem Charakter   ﻿zerstör t wird, wird der zerstörende @ gebrandmarkt .",90.png,Charakter,,10,10,,,,1,1
+91,event,Brandmarkender Eid,,"Alle D eine Charakter  werden gebrandmarkt  (Wenn sie zerstör t werden, zieh t der Zerstörende eine Karte ). zieh  eine Karte  für jeden gebrandmarkt en Charakter . ",91.png,Ereignis,,,,,,,3,1
+92,character,Gebrandmarkter Krieger,,Ist gebrandmarkt . ,92.png,Charakter,,45,40,,,,4,1
+93,character,Gebrandmarkter Truppenführer,,"Ist gebrandmarkt . Als zusätzlich e Kosten, wird eine anderer verbündet er Charakter  gebrandmarkt .",93.png,Charakter,,45,45,,,,4,1
+94,event,Den Flammen entkommen,,"D u musst für die nächste Karte , die D u in diesem Zug  spiel st, die zusätzlich en Kosten nicht bezahlen.",94.png,Ereignis,,,,,,,1,1
+95,manifestation,Finger verbrannt,,D u musst nicht mehr als 3 Karte n in einer Runde  abwerfen.,95.png,Manifestation,,,40,,,,5,1
+97,character,Flammenbiest,,"Als zusätzlich e Kosten, zerstör e eine verbündet e Konstante .",97.png,Charakter,,70,60,,,,6,1
+98,manifestation,Alternativer Schmerz,,"Statt für eine Karte  zusätzlich e Kosten zu bezahlen, werfe stattdessen eine Karte  ab . Wenn das passiert, zerstör e Alternativer Schmerz .",98.png,Manifestation,,,30,,,,2,1
+99,character,Brandeisenschmied,,"Immer wenn Brandeisenschmied  verteidig t, muss ein nicht-gebrandmarkt er Charakter   gebrandmarkt  werden. Wenn alle Charakter  gebrandmarkt  sind, kann Brandeisenschmied  nicht verteidig en. ",99.png,Charakter,,20,40,,,,3,1
+100,event,Feuersturm,,"Alle gebrandmarkt en Charakter  werden zerstör t, ohne dass jemand eine Karte  zieh t.",100.png,Ereignis,,,,,,,3,1
+101,ritual,Pech und Schwefel,,"- Wirf 3 oder mehr Karte n in einem Zug  ab  → Mische die obersten 10 Karte n deines Friedhof s in dein Deck .
+- 3 oder mehr Charakter e sind gebrandmarkt  → spiel e eine Karte  und bezahle weder ihre Elementarkosten , noch ihre zusätzlich en Kosten.",101.png,Ritual,,,60,,,,6,1
+102,legend,Weltenbrand,,"1. Eine gewählter Charakter  ist diese Runde  ohnmächtig .
+2. Spiele Karte n für ihre doppelten Elementarkosten , ohne ihre zusätzlich en Kosten zu bezahlen .
+3. Alle gebrandmarkt en Charakter e haben diese Runde  +30/+30",102.png,Legende,,,50,,,,8,1
+103,character,Selbsterkorener Prometheus,,"Als zusätzlich e Kosten, nimm eine D einer Elementkarte n auf die Hand , D u darfst sie diesen Zug  ohne Elementarkosten  und ohne zusätzlich e Kosten spiel en. Wenn Selbsterkorener Prometheus  einen gegnerisch en Lebenspunkt  zerstör t, darfst D u eine weitere Elementkarte  spielen.",103.png,Charakter,,30,40,,,,5,1
+104,event,Feueressenz,,Nimm eine D einer Elementkarte n auf die Hand . D u darfst sie diesen Zug  ohne Elementarkosten  und ohne zusätzlich e Kosten spiel en. ,104.png,Ereignis,,,,,,,1,1
+106,character,Gluthund,,"Als zusätzlich e Kosten, zerstör e einen verbündet en Charakter . Nachdem Gluthund  zerstör t wird, zerstör e einen gegnerisch en Charakter .",106.png,Charakter,,40,30,,,,4,1
+107,character,Funkenstürmer,,"Als zusätzlich e Kosten, bezahle 2 Elementarkosten  dazu.",107.png,Charakter,,25,35,,,,2,1
+108,event,Auflodern,,"zieh  eine Karte . Wenn sie zusätzlich e Kosten hat, wiederhole den Effekt.",108.png,Ereignis,,,,,,,2,1
+109,character,Überläufer,,"Wenn Überläufer  von einem Charakter  zerstört würde, wechselt er stattdessen seinen Besitzer zum zerstörenden Spieler. Wenn das passiert, werfen alle Spieler  eine Karte  ab .",109.png,Charakter,,15,10,,,,2,1
+110,character,Schmied Reckar,,"jedes Mal wenn Schmied Reckar  angr eift, wirf eine Karte  ab.",110.png,Charakter,,35,25,,,,3,1
+111,manifestation,Feuerwand,,"gegnerisch e Charakter , die D ich angr eifen, erhalten dabei -10 Angriffswert . Deine Charakter e haben -10 Angriffswert .",111.png,Manifestation,,,20,,,,3,1
+112,manifestation,Geschlossene Tore,,"Gegner  zieh en keine Karte n, wenn sie D eine gebrandmarkt en Charakter e zerstör en. ",112.png,Manifestation,,,50,,,,4,1
+113,character,Gebrandmarkter Knappe,,Ist gebrandmarkt . ,113.png,Charakter,,40,45,,,,4,1
+114,character,Gebrandmarkter Ritter,,Ist gebrandmarkt . gebrandmarkt e verbündet e haben +10/+10.,114.png,Charakter,,50,45,,,,6,1
+115,event,Dem Feuer entronnen,,"D u musst für die nächste Karte , die D u in diesem Zug  spiel st, die zusätzlich en Kosten nicht bezahlen.",115.png,Ereignis,,,,,,,1,1
+116,event,Feuerstrahl,,"Als zusätzlich e Kosten, bezahle 2 Ignis . zerstör e die gewählte Konstante .",116.png,Ereignis,,,,,,,,1
+117,,Feuertaufe,,,117.png,,,,,,,,,1
+118,,Magmar,,"Als zusätzliche Kosten, lege 3 Karten von deiner Hand zurück auf dein Deck in einer beliebigen Reihenfolge. Jedes Mal wenn Magmar  angreift, ziehe eine Karte.",118.png,,,,,,,,6,1
+119,,Im Keim ersticken,,"Immer wenn Du eine Karte abwirfst, müssen alle anderen Spieler zusammen 3 Mana bezahlen oder eine Karte abwerfen.",119.png,,,,,,,,,1
+120,character,Besungener Baum Juglans,,Einmal pro Spielzug wenn ein Charakter zerstört wird du kannst eine Karte ziehen,120.png,Charakter,,0,55,,,Terra,7,1
+122,character,Besungener Baum Quercus,,Ein anderer Charakter vom Element Terra    darf zweimal Angriffe gleichzeitig blocken,122.png,Charakter,,0,55,,,Terra,6,1
+123,character,Besungener Baum Fraxinus,,Bezahle ein Terra ; entdeck e  ein Wildtier  ,123.png,Charakter,,0,55,,,Terra,7,1
+124,character,Besungener Baum Sylvestris,,Alle deine Terra Karten erhalten + 20 Angriff und Verteidigung ,124.png,Charakter,,0,55,,,Terra,6,1
+125,character,Besungener Baum Giganteum,,einmal in deinem Spielzug annulliere ein Effekt deines Gegners bis zum Ende des nächsten Spielzugs,125.png,Charakter,,0,55,,,Terra,8,1
+126,character,Besungener Baum Ulmus,,eine Baumsängerin oder Wildtier   kann einen zweiten Angriff deklarieren ,126.png,Charakter,,0,55,,,Terra,7,1
+127,event,Magisches Fährtenlesen,,"Ziehe 1 Karten, falls du ein Wildtier  gezogen hast ziehe eine zweite Karte",127.png,Ereignis,,,,,,Terra,3,1
+128,event,Terras Balg ,,sofort : Verhindere die Zerstörung eines Wildtier  ,128.png,Ereignis,,,,,,Terra,3,1
+129,character,Flinker Hase ,,sofort,129.png,Charakter,,0,10,,,Terra,1,1
+130,event,Ewiger Wandel,,"Zerstöre alle Karten auf dem Feld, jeder spieler zieht 3 weitere Karten",130.png,Ereignis,,,,,,Terra,6,1
+131,event,Angsteinjagendes Gebrüll,,"Falls ein Wildtier  angegriffen wird, gebe den Angreifenden Charakter auf die Hand des Besitzers zurück",131.png,Ereignis,,,,,,Terra,3,1
+132,event,Tausch der Jagdgründe,,"Wähle ein Charakter eines Gegners, tausche die Kontrolle mit einem deiner Wildtier  ",132.png,Ereignis,,,,,,Terra,4,1
+133,manifestation,Kreis des Ewigen Gesangs,,"Falls du eine Baumsängerin oder ein Besungener Baum kontrollierst, du kannst ein Karte mit Element Terra vom Friedhof in dein Deck mischen und eine Karte ziehen. (Einmal pro Spielzug)",133.png,Manifestation,,,,1,,Terra,3,1
+134,character,Baumsängerin Sativa,,"Falls diese Karte vom Feld auf den Friedhof gelegt wird, füge eine Baumsängerin deiner Hand hinzu",134.png,Charakter,,10,10,,,Terra,2,1
+135,character,Baumsängerin Avellana,,"Falls diese Karte vom Feld auf den Friedhof gelegt wird, beschwöre eine Baumsängerin aus dem Deck",135.png,Charakter,,20,15,,,Terra,3,1
+137,character,Heimtückischer Frosch,,Diese Karte kann keinen Angriff deklarieren. Falls diese Karte kämpft zerstöre den angreifenden Charakter,137.png,Charakter,,0,0,,,Terra,3,1
+138,character,Wildhüter Orhulf,,"Beim ersch einen, entdeck e ein Wildtier  ",138.png,Charakter,,20,5,,,Terra,3,1
+140,character,Wildhüter Amdulf,,"Beim ersch einen, entdeck e ein Wildtier  ",140.png,Charakter,,35,10,,,Terra,4,1
+141,character,Roter Wildfuchs,,,141.png,Charakter,,40,25,,,Terra,4,1
+142,character,Wald Ratte,,,142.png,Charakter,,35,15,,,Terra,3,1
+143,character,Rasendes Wildschwein,,Nachstürmen  (Dieser Charakter kann nach dem ersten Angriff einen zweiten Angriff machen),143.png,Charakter,,60,0,,,Terra,6,1
+145,character,Einsamer Dachs,,,145.png,Charakter,,35,40,,,Terra,4,1
+146,character,Waldluchs,,,146.png,Charakter,,30,15,,,Terra,3,1
+147,character,Tückischer Igel,,Doppelblocker  (Dieser Charakter kann zwei Angreifer pro Kampf blocken),147.png,Charakter,,15,25,,,Terra,2,1
+148,character,Waldfalke,,,148.png,Charakter,,45,20,,,Terra,4,1
+149,character,Spielfreudiges Wildschwein,,,149.png,Charakter,,45,10,,,Terra,5,1
+150,manifestation,Terrageweihter Steinkreis,,"Einmal pro Spielzug du kannst die oberste Karte von deinem Deck aufdecken. Falls sie vom Element Terra ist lege sie in deine Elementarzone, falls nicht unter dein Deck.
+
+Verlässt diese Karte das Feld, lege zwei Terra Elementare auf den Friedhof",150.png,Manifestation,,,,2,,Terra,2,1
+151,character,Vasalö Terras,,"Duel  (Einmal pro Spielzug: Dieser Charakter kann gegen einen gegnerischen Charakter kämpfen, dieser wird in Angriffsposition gebracht.. Der Gegner darf nicht blocken. Beide Charaktere erhalten +5 Angriff für jeden befreundeten Charakter. Danach dürfen beide Charaktere an keinem Kampf mehr teilnehmen bis zum Ende des Spielzugs)",151.png,Charakter,,45,20,,,Terra,5,1
+152,event,Elementar Wandel,,Mische alle deine Elementare ins Deck. Lege die gleiche Anzahl -1 von deinem Deck in die Elementar Zone,152.png,Ereignis,,,,,,Aeris,2,1
+159,,,,,159.png,,,,,,,,,1
+160,event,Auffrischung,,Du darfst 3 Karten ziehen,160.png,Ereignis,,,,,,Unshaped,3,1
+162,event,Auffrischen,,Ein Spieler deiner Wahl zieht zwei Karten,162.png,Ereignis,,,,,,Unshaped,3,1
+164,character,Infiltrator,,"Kann nicht geblockt werden
+(Min soviel angriff, um ein Schild alleine zu zerstören)",164.png,Charakter,,5,0,,,Aqua,4,1
+165,event,Aeriskraftkugel,,"sofort Spielbar.
+Ein Charakter erhält +20 Verteidigung bis zum Ende des Zuges",165.png,Ereignis,,,,,,Aeris,2,1
+166,event,Ermutigende Ansprache,,Alle deine Charaktere erhalten + 20 Angriff bis zum Ende des Zuges,166.png,Ereignis,,,,,,Terra,4,1
+167,event,Terrakraftkugel,,"sofort spielbar.
+Ein Charakter erhält 20 Angriff bis zum Ende des Zuges",167.png,Ereignis,,,,,,Terra,2,1
+168,event,Aquakraftkugel,,"Sofort Spielbar, 
+Verhindere allen Schaden, der einem Charakter diesen Zug zugefügt wird",168.png,Ereignis,,,,,,Aqua,2,1
+169,event,Igniskraftkugel,,"Sofort spielbar, 
+Füge einem Charakter 20 Schaden zu",169.png,Ereignis,,,,,,Ignis,2,1
+170,event,Magicakraftkugel,,"sofort Spielbar, 
+Ändere das Ziel eines Ereignisses oder einer Fähigkeit, die genau ein Ziel hat",170.png,Ereignis,,,,,,Magica,2,1
+171,manifestation,Tirolitklumpen,,tap: Erzeuge ein ungeprägtes Element,171.png,Manifestation,,,,1,,Unshaped,3,1
+172,character,Feldheiler,,"Wenn dieser Charakter ins Spiel kommt, bringe einen Charakter, der diesen Zug gestorben ist vom Friedhof in Angrffsposition zurück aufs Feld",172.png,Charakter,,10,10,,,Aqua,4,1
+173,event,Wasser des Lebens,,Lege eine oberste Karte von deinem Deck als Schild ab.,173.png,Ereignis,,,,,,Aqua,5,1
+174,event,Magiekontrolle,,"sofort spielbar, 
+Verhindere das eine Karte ins Spiel kommt. (Charakter, Ereignis oder Manifestation)",174.png,Ereignis,,,,,,Magica,4,1
+175,event,Feuerball,,Füge einem Charakter X mal 10 Schaden zu,175.png,Ereignis,,,,,,Ignis,2 + X,1
+176,event,Windstoß,,"Wirf X Karten ab, und ziehe X + 1 neue Karte",176.png,Ereignis,,,,,,Aeris,2 + X,1
+177,event,Wunden Heilen,,Bringe X Karten von deinem Friedhof wieder auf deine Hand,177.png,Ereignis,,,,,,Aqua,4 + X,1
+179,event,Vulkanausbruch,,Füge allen Charakteren und allen Manifestationen 30 Schaden zu,179.png,Ereignis,,,,,,Ignis,5,1
+180,event,Versteinern,,Bringe X Charaktere in Angriffshaltung,180.png,Ereignis,,,,,,Terra,4 + X,1
+181,event,Magie Übertragen,,Bringe X Charaktere in Verteidigungsposition,181.png,Ereignis,,,,,,Magica,3 + X,1
+182,event,Weltenbrand,,"Zerstöre alle Elementare, Charaktere und Mainfestationen im Spiel. Dann wirft jeder Spieler alle Handkarten ab",182.png,Ereignis,,,,,,Unshaped,5,1
+183,event,Wandel,,Opfere einen Charakter. Dann bringe einen Charakter aus deinem Friedhof ins Spiel.,183.png,Ereignis,,,,,,Aeris,5,1
+184,event,Elementare Neuprägung,,Nimm X Elementar in deine Hand zurück. Spiele dann X Karten aus deiner Hand als Elementar aus,184.png,Ereignis,,,,,,Unshaped,2 + X,1
+185,event,Sturmflut,,Jeder Spieler nimmt alle seine Charaktere und alle Manifestationen wieder auf seine Hand,185.png,Ereignis,,,,,,Aqua,5,1
+186,event,Orkan,,"Bringe Jeden Charakter, der in Verteidigungsposition liegt in Angriffsposition, und jeden Charakter, der in Angriffsposition liegt in Verteidigungsposition",186.png,Ereignis,,,,,,Aeris,5,1
+187,event,Erdbeben,,Reduziere den Angriffs- und Verteidigungswert aller Charaktere bis zum Ende des Zuges um 25,187.png,Ereignis,,,,,,Terra,5,1
+188,character,Friedensstifter,,"Sofort Spielbar,
+Wenn der Friedensstifter ins spiel kommt, dürfen in diesem Zug keine Angriffe angesagt werden",188.png,Charakter,,10,25,,,Magica,5,1
+189,character,Zweiköpfige Hydra,,Darf bis zu 2 Charaktere blocken,189.png,Charakter,,10,25,,,Terra,4,1
+190,character,Zweiköpfiger Drachenwelpe,,Darf bis zu 2 Charaktere gleichzeitig Angreifen,190.png,Charakter,,25,10,,,Ignis,4,1
+191,character,Uralter Baumgeist,,,191.png,Charakter,,60,60,,,Terra,6,1
+192,character,Naldar,,"Elementarvolk, Naldar, Bündnispartner
+Immer wenn ein anderes Elementarvolk ins Spiel kommt, ziehe eine Karte.",192.png,Charakter,,20,20,,,Aeris,4,1
+193,character,Sephor’Assil,,"Elementarvolk, Sephor’Assil, Bündnsipartner
+Immer wenn ein Elementarvolk ins Spiel kommt, ziehe eine Karte.",193.png,Charakter,,20,20,,,Aqua,4,1
+194,character,Edalphi,,"Elementarvolk, 
+Immer wenn ein Elementarvolk ins Spiel kommt, ziehe eine Karte.",194.png,Charakter,,20,20,,,Magica,4,1
+195,character,Akata,,"Elementarvolk, Akata
+Immer wenn ein anders Elementarvolk ins Spiel kommt, ziehe eine Karte.",195.png,Charakter,,20,20,,,Ignis,4,1
+196,character,Narech Tuloch,,"Elementarvolk, Narech Tuloch
+Immer wenn ein Elementarvolk ins Spiel kommt, ziehe eine Karte.",196.png,Charakter,,20,20,,,Terra,4,1
+197,manifestation,Kleiner Terraschrein,,Zu Beginn deines Zuges darfst du eine Charakterkarte aus deinem Friedhof auf deine Hand nehmen,197.png,Manifestation,,,,1,,Terra,5,1
+198,manifestation,Kleiner Aerisschrein,,Zu Beginn deines Zuges darfst du dir die oberste Karte deines Decks anschauen. Lege sie dann entweder auf oder unter dein Deck,198.png,Manifestation,,,,1,,Aeris,5,1
+199,manifestation,Prunkvoller Aquaschrein,,Verhindere bei einem verteidigendem Charakter 25 Schaden,199.png,Manifestation,,,,1,,Aqua,5,1
+200,manifestation,Großer Ignisschrein,,"Immer wenn du eine Karte Ziehst, kannst du einem Charakter 30 Schaden zufügen",200.png,Manifestation,,,,1,,Ignis,8,1
+201,manifestation,Kleiner Magicaschrein,,"Zu Beginn deines Zuges, darfst du einen Charakter auf die Hand seines Besitzers schicken",201.png,Manifestation,,,,1,,Magica,5,1
+202,manifestation,Kleiner Aquaschrein,,"Zu Beginn deines Zuges darfst du einen eigenen Charakter vom Spiel auf deine Hand nehmen, und dann einen Chrakter aus deiner Hand ins Spiel bringen",202.png,Manifestation,,,,1,,Aqua,5,1
+203,manifestation,Prunkvoller Aerisschrein,,Zu Beginn des Kampfes darfst du einen eigenen Charakter in Angriffs- oder Verteidigungsaltung bringen,203.png,Manifestation,,,,1,,Aeris,5,1
+204,manifestation,Prunkvoller Ignisschrein,,Füge einem angreifenden Charakter 25 Schaden zu,204.png,Manifestation,,,,1,,Ignis,5,1
+205,manifestation,Kleiner Ignisschrein,,Zu Beginn deines Zuges kannst du einem Charakter 25 Schaden zufügen,205.png,Manifestation,,,,1,,Ignis,5,1
+206,manifestation,Prunkvoller Magicaschrein,,Bestimme einen Angreifer und entferne diesen aus dem Kampf,206.png,Manifestation,,,,1,,Magica,5,1
+207,manifestation,Prunkvoller Terraschrein,,Ein angreifender Charakter deiner Wahl erhält +25 Angriff,207.png,Manifestation,,,,1,,Terra,5,1
+208,manifestation,Großer Aerisschrein,,"Immer wenn du eine Karte ziehst, darfst du eine Karte extra ziehen",208.png,Manifestation,,,,1,,Aeris,8,1
+209,manifestation,Großer Aquaschrein,,"Immer wenn du eine Karte ziehst, darfst du eine Gegnerische Kreatur in Angriffsposition bringen.",209.png,Manifestation,,,,1,,Aqua,8,1
+210,manifestation,Großer Terraschrein,,"Immer wenn du eine Karte ziehst, darfst du eine Charakterkarte aus deinem Friedhof auf die Hand nehmen",210.png,Manifestation,,,,1,,Terra,8,1
+211,manifestation,Großer Magicaschrein,,"Immer wenn du eine Karte ziehst, darfst du eine Ereignis- oder Manifestationskarte aus deinem Friedhof in die Hand nehmen",211.png,Manifestation,,,,1,,Magica,8,1
+212,manifestation,Tempel der Fünf,,Jedes Elementar produziert ein Extraelement seiner Art,212.png,Manifestation,,,,1,,Unshaped,6,1
+213,event,Zeitspiel,,"Bringe die oberste Karte deines Decks als Elementar ins Spiel
+(Extraland)",213.png,Ereignis,,,,,,Aeris,2,1
+214,event,Flammenstrahl,,Füge einem Charakter 50 Schaden zu,214.png,Ereignis,,,,,,Ignis,4,1
+215,event,Den Kreislauf ehren,,Begleite einen Charakter vom Spiel in den Friedhof,215.png,Ereignis,,,,,,Terra,5,1
+216,event,Den Ausgleich schaffen,,"Jeder Spieler opfert soviele Elemetar, bis er soviel Elementar hat, wie der Spieler mit den wenigsten Elementar im Spiel.
+Dann wiederhole das ganze für Charaktere und Manifestationen",216.png,Ereignis,,,,,,Magica,5,1
+217,event,Kraft tanken,,Du darfst 3 Karten ziehen,217.png,Ereignis,,,,,,Unshaped,5,1
+218,manifestation,Duell Arena,,Bestimme zu Beginn deines Zuges einen eigenen und einen gegnerischen Charakter. Diese zwei Charaktere führen sofort einen Kampf aus.,218.png,Manifestation,,,,1,,Ignis,6,1
+219,event,Geschickte Täuschung,,Ein Charakter ist diesen Zug unblockbar,219.png,Ereignis,,,,,,Aqua,3,1
+220,event,Das Gleichgewicht wahren,,"Sofort Spielbar,
+Verhindere das eine Karte ins Spiel kommt (Charakter, Ereignis oder Manifestatin) mit Elementarkosten von X oder weniger",220.png,Ereignis,,,,,,Magica,1 + X,1
+221,event,Weniger Gewusel,,"Sofort Spielbar,
+Verhindere das eine Charakterkarte ins Spiel kommt",221.png,Ereignis,,,,,,Magica,3,1
+222,event,Magiezucken,,"Sofort Spielbar,
+Verhindere das eine Karte ins Spiel kommt (Charakter, Ereignis oder Manifestation), wenn dessen Urheber nicht sofort 3 Elementar ausgibt.",222.png,Ereignis,,,,,,Magica,2,1
+223,event,Vorstürmen,,Du darfst diesen Zug bis zu 2 zusätzliche Elementare auslegen,223.png,Ereignis,,,,,,Ignis,2,1
+224,event,Nachwachsen,,"Bringe einen Charakter, der diesen Zug gestorben ist vom Friedhof in Angrffsposition zurück aufs Feld",224.png,Ereignis,,,,,,Aqua,3,1
+225,event,Spontene Stärkung,,"Sofort Spielbar,
+Ein Charakter erhält 30 Angriff oder 30 Verteidigung bis zum Ende des Zuges.",225.png,Ereignis,,,,,,Terra,4,1
+226,event,Die Sanduhr drehen,,"Ziehe 2 Karten, dann leg 2 Karten aus deine Hand unter dein Deck",226.png,Ereignis,,,,,,Aeris,2,1
+227,event,Schubsen,,Bringe eine Karte vom Feld zurück auf die Hand ihres Besitzers,227.png,Ereignis,,,,,,Aqua,4,1
+228,event,Schneller Stoß,,"Sofort Spielbar,
+Bringe eine Charakterkarte zurück auf die Hand ihres Besitzers",228.png,Ereignis,,,,,,Aqua,5,1
+229,event,Irreführung,,"Sofort Spielbar
+Ändere das Angriffsziel eines Charakters",229.png,Ereignis,,,,,,Aqua,4,1
+230,character,Lona,,"Elementarvolk, Lona",230.png,Charakter,,35,20,,,Ignis,3,1
+231,character,Shir Tanar,,"Elementarvolk, Shir Tanar",231.png,Charakter,,35,20,,,Aeris,3,1
+232,character,Linesti,,"Elementarvolk, Linesti",232.png,Charakter,,30,30,,,Aqua,3,1
+233,character,Eliondar,,"Elementarvolk, Eliondar",233.png,Charakter,,20,35,,,Magica,3,1
+234,character,Boro Mardar,,"Elementarvolk, Boro Madar",234.png,Charakter,,20,35,,,Terra,3,1
+235,character,Feuertänzerin,,"Wenn sie im Angriffposition liegt, und nicht angreift, erhalten alle befreundeten Ignis Angreifer +15 Angriff",235.png,Charakter,,15,15,,,Ignis,4,1
+236,event,Duellforderung,,Bestimme einen eigenen und einen gegnerischen Charakter. Diese zwei Charaktere führen sofort einen Kampf aus.,236.png,Ereignis,,,,,,Ignis,3,1
+237,event,Flammentanz,,Zerstöre ein Schild,237.png,Ereignis,,,,,,Ignis,8,1
+238,event,Zeitsprung,,"Mische deinen Friedhof zurück in dein Deck, und entferne diese Karte aus dem Spiel",238.png,Ereignis,,,,,,Aeris,8,1
+239,event,Kriegslist,,Schicke alle Charaktere auf die Hand ihres Besitzers zurück,239.png,Ereignis,,,,,,Aqua,6,1
+240,event,Sternenfall,,Du erhälst nach diesem Zug einen Extrazug,240.png,Ereignis,,,,,,Magica,9,1
+242,event,Den Schmerz tragen,,Bringe alle Charaktere aus allen Friedhöfen unter der Kontrolle ihrer Besitzer ins Spiel,242.png,Ereignis,,,,,,Terra,8,1
+244,character,Waffenmeister Aeris,,"Waffenmeister
+Wenn er sich im Kampf mit nur einem Charakter befindet, erhält er +30 Angriff und +30 Verteidigung",244.png,Charakter,,25,25,,,Aeris,4,1
+245,character,Kind des Windes,,Zu Beginn deines Zuges: Zeige die oberste Karte von deinem Deck vor. Kind des Windes erhält Angriffspunkte 10X den Elementarkosten bis zum Ende deines Zuges. Lege die vorgezeigte Karte entweder auf oder unter das Deck.,245.png,Charakter,,10,10,,,Aeris,3,1
+246,character,Kraftkugel Sammler,,"Am Ende deines Zuges kannst du eine “Kraftkugel” aus deinem Friedhof aus dem Spiel entfernen. Durchsuche dann dein Deck nach einer “Kraftkugel” eines anderen Elements, zeige sie offen vor und nimm diese auf deine Hand. Mische danach dein Deck.",246.png,Charakter,,5,10,,,Magica,4,1
+249,character,Waffenmeister Magica,,"Waffenmeister
+Wenn er sich im Kampf mit nur einem Charakter befindet, erhält er +30 Angriff und +30 Verteidigung",249.png,Charakter,,25,25,,,Magica,5,1
+250,character,Waffenmeister Terra,,"Waffenmeister
+Wenn er sich im Kampf mit nur einem Charakter befindet, erhält er +30 Angriff und +30 Verteidigung",250.png,Charakter,,25,25,,,Terra,5,1
+251,character,Waffenmeister von Ignis,,"Waffenmeister
+Wenn er sich im Kampf mit nur einem Charakter befindet, erhält er +30 Angriff und +30 Verteidigung",251.png,Charakter,,25,25,,,Ignis,5,1
+252,character,Waffenmeister Aqua,,"Waffenmeister
+Wenn er sich im Kampf mit nur einem Charakter befindet, erhält er +30 Angriff und +30 Verteidigung",252.png,Charakter,,25,25,,,Aqua,5,1
+253,manifestation,Arena der Waffenmeister,,"Solange die Arena der Waffenmeister im Spiel ist, erhält kein Waffenmeister Kampfschaden",253.png,Manifestation,,,,1,,Unshaped,6,1
+254,character,Schreckensklinge der Jagd,,"Schreckensklinge, Bündnispartner
+Jeder Charakter wird vernichtet, der durch eine Schreckensklinge Schaden bekommen hat.",254.png,Charakter,,35,20,,,Aeris,5,1
+255,character,Schreckensklinge des Traums,,"Schreckensklinge, Bündnispartner
+Jeder Charakter wird vernichtet, der durch eine Schreckensklinge Schaden bekommen hat.",255.png,Charakter,,20,35,,,Aqua,5,1
+257,event,Spontane Kreativität,,"Sofort spielbar
+Tausche Angriffs und Verteidigungswert eines Charakters bis zum Ende des Zuges",257.png,Ereignis,,,,,,Aqua,3,1
+258,manifestation,Bündnisschrein,,"Solange der Bündnisschrein im Spiel ist, erhalten alle Bündnispartner +15 Angriff und +15 Verteidigung",258.png,Manifestation,,,,1,,Aqua,6,1
+259,character,Marius Menzen,,"Einzigartig, Schreckensklinge, Bündnispartner, Eisern, Säulen des Südens, Kleriker
+Wenn Marius Menzen nicht geblockt wird, erhält er +15 Angriff ",259.png,Charakter,,35,20,,,Aqua,4,1
+260,character,Aeris Duelant,,"Darf nur Charaktere angreifen, Muss in Angriffsposition liegen",260.png,Charakter,,35,5,,,Aeris,2,1
+262,character,Magica Duelant,,"Darf nur Charaktere angreifen, Muss in Angriffsposition liegen",262.png,Charakter,,35,5,,,Magica,2,1
+263,character,Terra Duelant,,"Darf nur Charaktere angreifen, Muss in Angriffsposition liegen",263.png,Charakter,,35,5,,,Terra,2,1
+264,character,Ignis Duelant,,"Darf nur Charaktere angreifen, Muss in Angriffsposition liegen",264.png,Charakter,,35,5,,,Ignis,2,1
+265,character,Aqua Duelant,,"Darf nur Charaktere angreifen, Muss in Angriffsposition liegen",265.png,Charakter,,35,5,,,Aqua,2,1
+266,character,Johannes von der Schaufel,,"Einzigartig, Krieger, Eisern, Wolfswacht
+Darf nur Charaktere angreifen, Muss in Angriffsposition liegen
+Johannes von der Schaufel kann nicht geblockt werden und muss immer den stärksten Gegner angreifen.",266.png,Charakter,,55,10,,,Ignis,4,1
+268,manifestation,Fluch Mondenhains,,"Nur Spielbar, wenn du ein Charakter aus Mondenhain im Spiel hast.
+Der verfluchte Charakter kann nicht Angreifen oder Blocken",268.png,Manifestation,,,,1,,Terra,2,1
+271,character,Ignis Fanatiker,,"Um diesen Charakter auszuspielen, lege 2 Karten von deiner Hand unter den Deck. Jedes mal wenn dieser Charakter angreift, ziehe eine Karte",271.png,Charakter,,30,20,,,Ignis,2,1
+272,character,Eron von Grauenfurt,,"Einzigartig, Eisern, Kleriker
+Wenn Eron von Grauenfurt ins Spiel kommt, zerstören einen Charakter, der nicht Eisern ist.",272.png,Charakter,,15,30,,,Ignis,4,1
+273,character,Meléthin Meluireth Elenil,,"Einzgartig, Magier
+Wenn Meléthin Meluireth Elenil ins Spiel kommt, bestimme einen gegnerischen Charakter. Dieser kann weder Angreifen nocht blocken.",273.png,Charakter,,10,30,,,Magica,4,1
+274,character,Phillip Altdorf,,"Einzigartig, Krieger, Eisern, Säulen des Südens
+Opfere Phillip Altdorf, wenn du ein Fey, Tierwesen oder Chaosanhänger im Spiel hast. 
+Kann keine Magier angreifen.
+Wenn Phillip Altdorf im Spiel ist, erhält [Keroth] + 20 Angriff und Verteidigung",274.png,Charakter,,15,25,,,Aeris,3,1
+275,character,Ecthelias,,"Einzigartig, Krieger, Schreckensklinge, Bündnispartner
+Wenn Ecthelias im Spiel ist, erhalten alle anderen befreundeten Krieger +10 Angriff und Verteidigung",275.png,Charakter,,25,25,,,Aeris,5,1
+276,character,Cherin Tehilla Yadah de Rihanner,,"Einzigartig, Kleriker, Wölfe Bjaturs
+Wenn Cherin Tehilla Yadah de Rihanner im Spiel ist, erhalten alle anderen befreundeten Kleriker +10 Angriff und Verteidigung",276.png,Charakter,,30,15,,,Aeris,5,1
+277,character,Aselhelm von der schwarzen Lilie,,"Einzigartig, Krieger, Wolfswacht
+Kann keine Magier angreifen
+Wenn Aselhelm von der schwarzen Lilie angreift, erhalten alle anderen Angreifer + 10 Angriff",277.png,Charakter,,35,20,,,Ignis,5,1
+278,character,Beolf von der Wolfswacht,,"Einzigartig, Krieger, Wolfswacht
+Kann keine Magier angreifen.
+Beolf von der Wolfswacht erhält +15 Angriff, wenn er mit einem anderem Charakter das selbe Ziel angreift",278.png,Charakter,,20,30,,,Aqua,4,1
+279,character,Kadienor Edox,,"Einzigartig, Magier, Zeitwächter
+Wenn Kadienor Edox in spiel kommt, nimm eine Ereigniskarte aus deinem Friedhof auf deine Hand",279.png,Charakter,,15,15,,,Aeris,3,1
+280,character,Tekkadahn,,"Einzigartig, Waffenmeister, Tierwesen, Mondenhain
+Wenn Tekkadahn alleine angreift, erhält er +25 Angriff",280.png,Charakter,,40,20,,,Terra,4,1
+281,manifestation,Stärke der Gemeinschaft,,"Immer wenn ein Mitglied einer Gruppe angreift oder verteidigt, erhält es für jedes andere Mitglied der selben Gruppe, das angreift oder verteidigt, +5 Angriff und Verteidigung ",281.png,Manifestation,,,,1,,Ignis,3,1
+282,character,Heinrich von Buntfeste,,"Einzigartig, Magier
+Immer wenn Heinrich von Buntfeste angreift, wirf eine Münze. Bei Kopf erhälst du ein Ereignis aus deinem Friedhof auf deine Hand",282.png,Charakter,,25,20,,,Magica,3,1
+283,character,Sheewa Mondblut,,"Einzigartig, Tierwesen, Mondenhain
+Sheewa Mondblut erhält +15 Angriff und Verteidigung, wenn du ein Narech Tuloch im Spiel hast.",283.png,Charakter,,20,20,,,Terra,3,1
+284,character,Kardes,,"Einzigartig, Mondenhain
+Wenn Kardes in Angriffsposition liegt, erhalten alle deine Verteidiger +15 Verteidigung",284.png,Charakter,,20,20,,,Terra,3,1
+285,character,Iriel-Elisha,,"Einzigartig, Yoah-Tan, Tierwesen, Mondenhain
+Wenn Iriel-Elisha in Angriffsposition liegt, aber nicht kämpft, bestimme einen anderen Charakter. Dieser erhält diese Runde keinen Kampfschaden",285.png,Charakter,,15,15,,,Terra,3,1
+286,character,Ir’yenn,,"Einzigartig, Mondenhain
+Wenn Ir’yenn in Spiel kommt, zerstöre alle Archonten.
+Ir’yenn muss immer in Verteigungsposition liegen.
+Wenn du Iriel-Elisha kontrollierst, erhält sie +15 Angriff und Verteidigung, und Ir’yenn kann nicht angegriffen werden",286.png,Charakter,,5,5,,,Aeris,1,1
+287,character,Sirka Sorlissos,,"Enzigartig, Yoah-Tan, Magier, Amaroqianer
+Zu Beginn deines Zuges kannst du einen anderen Charakter opfern. Wenn du dies tust, ziehe eine Karte",287.png,Charakter,,25,20,,,Terra,3,1
+288,character,Eisernes Aeriskind,,"Eisern
+",288.png,Charakter,,25,10,,,Aeris,2,1
+291,character,Eisernes Aquakind,,"Eisern
+",291.png,Charakter,,25,10,,,Aqua,2,1
+292,character,Eisernes Terrakind,,"Eisern
+",292.png,Charakter,,25,10,,,Terra,2,1
+293,character,Eisernes Magicakind,,"Eisern
+",293.png,Charakter,,25,10,,,Magica,2,1
+294,character,Eisernes Igniskind,,"Eisern
+",294.png,Charakter,,25,10,,,Ignis,2,1
+295,manifestation,Der Eiseren Eid,,"Solange du nur Eiserne Charaktere im Spiel hast, erhalten alle Charaktere +20 Angriff und Verteidigung",295.png,Manifestation,,,,1,,Unshaped,4,1
+296,character,Laytja,,"Einzigartig, Kleriker
+Laytja erhält für jeden Naldar, den du kontrollierst, +5 Angriff und Verteidigung",296.png,Charakter,,10,25,,,Aeris,2,1
+297,character,Tristan,,"Einzigartig, Krieger, Wölfe Bjaturs
+Tristan erhält für jeden anderen Wolf Bjaturs, den du kontrollierst, +10 Verteidigung.",297.png,Charakter,,30,15,,,Terra,3,1
+299,character,Vertreter der Botengilde,,Gildenmitglied,299.png,Charakter,,5,5,,,Aeris,1,1
+300,character,Vertreter der Magiergilde,,Gildenmitglied,300.png,Charakter,,5,5,,,Aeris,1,1
+301,character,Vertreter der Alchemistengilde,,Gildenmitglied,301.png,Charakter,,5,5,,,Ignis,1,1
+302,character,Vertreter der Seehandelsgilde,,Gildenmitglied,302.png,Charakter,,5,5,,,Aqua,1,1
+303,character,Vertreter der Zeitungsgilde,,Gildenmitglied,303.png,Charakter,,5,5,,,Aqua,1,1
+304,character,Vertreter der Bardengilde,,Gildenmitglied,304.png,Charakter,,5,5,,,Ignis,1,1
+305,manifestation,Gildenbeschluss,,"Zu beginn deines Zuges: Wenn du mindestens vier verschiedene Gildenvertreter hast, lege ein Bannkreis auf den Gildenbeschluss. Wenn der Gildenbeschluss dann über drei oder mehr Bannkreise verfügt, hast du das Spiel gewonnen.",305.png,Manifestation,,,,1,,Magica,5,1
+306,character,Vertreter der Kartographengilde,,Gildenmitglied,306.png,Charakter,,5,5,,,Terra,1,1
+307,character,Vertreter der Stadtwache,,Gildenmitglied,307.png,Charakter,,5,5,,,Terra,1,1
+308,character,Wächter aus Istan Sylvana,,,308.png,Charakter,,15,15,,,Aeris,2,1
+309,character,Wächter aus Eliars Hain,,,309.png,Charakter,,5,20,,,Aeris,2,1
+310,character,Wächter aus Auenfeste,,,310.png,Charakter,,20,5,,,Aeris,2,1
+311,character,Wächter aus  Lichtensee,,,311.png,Charakter,,15,15,,,Aqua,2,1
+312,character,Wächter aus Edoran,,,312.png,Charakter,,5,20,,,Aqua,2,1
+313,character,Wächter aus Porto Jawahir,,,313.png,Charakter,,20,5,,,Aqua,2,1
+314,character,Wächter aus  Ignistrutz,,,314.png,Charakter,,20,5,,,Ignis,2,1
+315,character,Wächter aus Wolfsfeste,,,315.png,Charakter,,15,15,,,Ignis,2,1
+316,character,Wächter aus Alithea,,,316.png,Charakter,,5,20,,,Ignis,2,1
+317,character,Wächter aus Dun Aisleang,,,317.png,Charakter,,15,15,,,Magica,2,1
+318,character,Wächter aus Terras Wacht,,,318.png,Charakter,,20,5,,,Magica,2,1
+319,character,Wächter aus Goryo,,,319.png,Charakter,,5,20,,,Magica,2,1
+320,character,Wächter aus Mayas Ruh,,,320.png,Charakter,,5,20,,,Terra,2,1
+321,character,Wächter aus Caladh Mahair,,,321.png,Charakter,,15,15,,,Terra,2,1
+322,character,Wächter aus Zwergenfestung,,,322.png,Charakter,,20,5,,,Terra,2,1
+323,character,Gefallener Stern,,,323.png,Charakter,,60,60,,,Magica,7,1
+324,manifestation,Schwäche des Landes,,"Immer wenn ein Spieler eine KArte zieht, muss er 3 Elementar bezahlen, oder er verliert einen Schild",324.png,Manifestation,,,,1,,Unshaped,4,1
+326,character,GGT Ultra,,"Zu begnn deines Zuges kannst du den GGT Ultra opfern. Wenn du das tust, darfst du einen Charakter deiner Wahl zerstören.",326.png,Charakter,,5,20,,,Ignis,4,1
+327,character,Nordwind,,,327.png,Charakter,,60,60,,,Aeris,7,1
+328,character,Meeresströmung,,,328.png,Charakter,,60,60,,,Aqua,7,1
+329,character,Vulkanausbruch,,,329.png,Charakter,,60,60,,,Ignis,7,1
+330,,,,,330.png,,,,,,,Magica,,1
+331,character,Erdlawine,,,331.png,Charakter,,60,60,,,Terra,7,1
+333,,,,,333.png,,,,,,,Terra,,1

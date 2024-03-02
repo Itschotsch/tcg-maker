@@ -121,6 +121,10 @@ body {
     pointer-events: none;
 }
 
+.titles {
+    text-shadow: 0 0.4vw 0vw rgb(0, 0, 0), 0 0 5vw rgb(0, 0, 0);
+}
+
 .title,
 .subtitle {
     display: block;
@@ -130,7 +134,7 @@ body {
     padding: 3vw;
 
     font-family: "TitleFont", serif;
-    text-shadow: 0 0.5vw 0 black;
+    /* text-shadow: 0 0.5vw 0 black; */
 }
 
 .title {
@@ -254,6 +258,7 @@ body {
 
     position: relative;
 
+    min-height: 15vw;
     margin: 8vw;
     padding: 5vw;
 
@@ -327,10 +332,6 @@ body {
     /* border: 0.5vw solid white; */
 }
 
-.description:empty {
-    display: none;
-}
-
 .card-kind+.entity-type,
 .entity-type+.description,
 .description+.flavour-text {
@@ -350,10 +351,6 @@ body {
     font-size: 2.5vw;
 }
 
-.flavour-text:empty {
-    display: none;
-}
-
 .entity-type,
 .description,
 .flavour-text {
@@ -368,6 +365,21 @@ body {
     /* border: 0.5vw solid white; */
 }
 
+.layout-event .entity-type:empty,
+.layout-event .description:empty,
+.layout-event .flavour-text:empty,
+.layout-legend .entity-type:empty,
+.layout-legend .description:empty,
+.layout-legend .flavour-text:empty,
+.layout-manifestation .entity-type:empty,
+.layout-manifestation .description:empty,
+.layout-manifestation .flavour-text:empty,
+.layout-ritual .entity-type:empty,
+.layout-ritual .description:empty,
+.layout-ritual .flavour-text:empty {
+    display: none;
+}
+  
 key {
     font-style: italic;
 }
