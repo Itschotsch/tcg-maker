@@ -5,6 +5,7 @@
 # It then stitches the cards together into a single PNG image and saves it to output/cards.png.
 
 dev_mode = False
+preprocess_csv = True
 render_html = True
 render_cards = True
 render_special_cards = True
@@ -35,6 +36,76 @@ border_radius_px = int(border_radius_mm * dpi / 25.4)
 
 import os
 __dir__ = os.path.dirname(__file__)
+
+if preprocess_csv:
+    import pandas as pd
+    import re
+
+    # Open file explorer to select the CSV file
+    import tkinter as tk
+    from tkinter import filedialog
+    root = tk.Tk()
+    root.withdraw()
+    file_path = filedialog.askopenfilename(
+        title="Select the CSV file",
+        filetypes=[("CSV files", "*.csv")]
+    )
+
+    # Load the CSV file
+    # Old columns: Kartenart,Name,Kartentext,Element,Kosten,⚔️,🛡️,⭕️,Kartentyp,Status,Playtesting,ID,Fraktion,Flavourtext,Decks,Created by,Artwork
+    old = pd.read_csv(
+        file_path,
+        keep_default_na=False
+    )
+
+    # New columns: ID,Layout,Title,Subtitle,Description,Artwork,EntityKind,EntityType,OffensiveStat,DefensiveStat,ShieldspellStat,FlavourText,CostElement,CostAmount,ElementalAmount
+    new = pd.DataFrame(columns=[
+        "ID", "Layout", "Title", "Subtitle", "Description", "Artwork", "EntityKind", "EntityType", "OffensiveStat", "DefensiveStat", "ShieldspellStat", "FlavourText", "CostElement", "CostAmount", "ElementalAmount"
+    ])
+
+    # Go through the new columns one by one and fill them with the old values, processed if necessary
+    # ID: Use ID. Is x and should be x.
+    new["ID"] = old["ID"]
+    # Layout: Use Kartenart. Is Charakter asdf/Ereignis asdf/Legende asdf/Manifestation asdf/Ritual asdf and should be character/event/legend/manifestation/ritual
+    new["Layout"] = old["Kartenart"].apply(lambda x: {
+        "Charakter": "character",
+        "Ereignis": "event",
+        "Legende": "legend",
+        "Manifestation": "manifestation",
+        "Ritual": "ritual"
+    }[x.split()[0]])
+    # Title: Use Name. Is x,y and should be x.
+    new["Title"] = old["Name"].apply(lambda x: x.split(',')[0])
+    # Subtitle: Use Name. Is x,y and should be y.
+    new["Subtitle"] = old["Name"].apply(lambda x: x.split(',')[1] if len(x.split(',')) > 1 else "")
+    # Description: Use Kartentext. Is x and should be x.
+    new["Description"] = old["Kartentext"]
+    # Artwork: Use ID. Is x and should be x.jpg.
+    new["Artwork"] = old["ID"].apply(lambda x: f"{x}.jpg")
+    # EntityKind: Use Kartenart. Is Charakter asdf/Ereignis asdf/Legende asdf/Manifestation asdf/Ritual asdf and should be Charakter/Ereignis/Legende/Manifestation/Ritual
+    new["EntityKind"] = old["Kartenart"].apply(lambda x: x.split()[0])
+    # EntityType: Use Kartentyp. Is x asdf and should be x.
+    new["EntityType"] = old["Kartentyp"].apply(lambda x: x.split()[0])
+    # OffensiveStat: Use ⚔️. Is x and should be x.
+    new["OffensiveStat"] = old["⚔️"]
+    # DefensiveStat: Use 🛡️. Is x and should be x.
+    new["DefensiveStat"] = old["🛡️"]
+    # ShieldspellStat: Use ⭕️. Is x and should be x.
+    new["ShieldspellStat"] = old["⭕️"]
+    # FlavourText: Use Flavourtext. Is x and should be x.
+    new["FlavourText"] = old["Flavourtext"]
+    # CostElement: Use Element. Is Aeris asdf/Terra asdf/Ignis asdf/Aqua asdf/Magica asdf and should be Aeris/Terra/Ignis/Aqua/Magica
+    new["CostElement"] = old["Element"].apply(lambda x: x.split()[0])
+    # CostAmount: Use Kosten. Is x and should be x.
+    new["CostAmount"] = old["Kosten"]
+    # ElementalAmount: Use 1.
+    new["ElementalAmount"] = 1
+
+    # Save the new CSV file
+    new.to_csv(
+        os.path.join(__dir__, "input", 'cards.csv'),
+        index=False
+    )
 
 if render_html:
     import pandas as pd
