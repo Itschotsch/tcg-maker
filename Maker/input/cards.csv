@@ -1,4 +1,4 @@
-ID,Layout,EntityKind,Title,Subtitle,"Description",CostElement,CostAmount,ElementalAmount,Artwork,OffensiveStat,DefensiveStat,ShieldStat,Faction,EntityType,FlavourText,"MetaExplanation",Status,Creator
+ID,Layout,EntityKind,Title,Subtitle,"Description",CostElement,CostAmount,ElementalAmount,Artwork,OffensiveStat,DefensiveStat,ShieldspellStat,Faction,EntityType,FlavourText,"MetaExplanation",Status,Creator
 DA-0,character,Einzigartiger Charakter,Elaria,Aquatische Schildheilerin,"Wenn einer Deiner Charaktere, inklusive <name>Schildheilerin Elaria</name>, erscheint, <key>entdecke</key> einen <key>Schild</key> aus Deinem <key>Deck</key>. Du darfst die erschienene <key>Konstante</key> damit <key>versehen</key>. Andernfalls <key>mische</key> ihn in Dein <key>Deck</key>.",Aqua,4,1,schildheilerin_elaria.png,15,15,,Wasservolk,Heiler,Schutz ist Treue.,"Draw, Buff",Untested,Jan Appel
 DA-1,character,Charakter,Speerfischer Albert,,,Aqua,2,1,speerfischer-albert.png,30,20,,,Gefolge,,,Untested,Jan Appel
 DA-2,character,Charakter,Speerfischer Hans,,,Aqua,2,1,speerfischer_hans.png,20,30,,,Gefolge,,,Untested,Jan Appel

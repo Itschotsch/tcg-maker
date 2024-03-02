@@ -4,7 +4,7 @@
 # This notebook loads the CSV file, replaces the placeholders in the HTML file and renders the cards as PNG images into output/singles/[ID]_[NAME].png
 # It then stitches the cards together into a single PNG image and saves it to output/cards.png.
 
-dev_mode = True
+dev_mode = False
 render_html = True
 render_cards = True
 render_special_cards = True
@@ -46,6 +46,15 @@ if render_html:
         keep_default_na=False
     )
 
+    # Load the CSS file
+    css = ""
+    with open(
+        os.path.join(__dir__, "input", "html", "style.css"),
+        'r',
+        encoding='utf-8'
+    ) as f:
+        css = f.read()
+
     # Render the HTML
     for index, row in df.iterrows():
         print(f"Rendering HTML for card {row['Title']}...")
@@ -65,10 +74,19 @@ if render_html:
             template = f.read()
         
         # Replace width, height and bleed
-        template = template.replace("§Width§", str(width_with_bleed_px))
-        template = template.replace("§Height§", str(height_with_bleed_px))
-        template = template.replace("§Bleed§", str(bleed_px) + "px")
-        template = template.replace("§BorderRadius§", str(border_radius_px) + "px")
+        # template = template.replace("§Width§", str(width_with_bleed_px))
+        # template = template.replace("§Height§", str(height_with_bleed_px))
+        # template = template.replace("§Bleed§", str(bleed_px) + "px")
+        # template = template.replace("§BorderRadius§", str(border_radius_px) + "px")
+
+        # Make sure the CSS is in the HTML first
+        template = template.replace("§Style§", css)
+        # Set other variables
+        row["Width"] = str(width_with_bleed_px)
+        row["Height"] = str(height_with_bleed_px)
+        row["Bleed"] = str(bleed_px) + "px"
+        row["BorderRadius"] = str(border_radius_px) + "px"
+        row["EntityType"] = " ⌯ ".join(row['EntityType'].split(','))
 
         # Prepend all CSS URLs with the correct path
         # template = template.replace('url(', 'url(../../input/images/')
@@ -77,7 +95,7 @@ if render_html:
 
         # Make sure the EntityType(s) is a list
         # A,B,C -> A ⌯ B ⌯ C
-        template = template.replace("§EntityType§", " ⌯ ".join(row['EntityType'].split(',')))
+        # template = template.replace("§EntityType§", " ⌯ ".join(row['EntityType'].split(',')))
 
         # Find all {{Placeholder}}s in the HTML template
         placeholders = re.findall(r"§(.*?)§", template)
