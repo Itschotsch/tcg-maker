@@ -4,7 +4,7 @@
 # This notebook loads the CSV file, replaces the placeholders in the HTML file and renders the cards as PNG images into output/singles/[ID]_[NAME].png
 # It then stitches the cards together into a single PNG image and saves it to output/cards.png.
 
-dev_mode = False
+dev_mode = False # Only processes first card
 choose_csv = False
 preprocess_csv = False
 render_html = False
@@ -14,20 +14,34 @@ stitch_cards = True
 stitch_cards_ids = [
     # Deck: Terra-Ignis-Angriff
     # https://www.notion.so/Test-Deck-Terra-Ignis-Angriff-762b30417c834c3b9c790c2f146c1892?pvs=4
-    304, 304, 304,
-    320, 320, 320,
-    167, 167, 167,
-    292, 292, 292,
-    264, 264, 264,
-    236, 236, 236,
-    190, 190, 190,
-    214, 214, 214,
-    166, 166, 166,
-    266, 266, 266,
-    207, 207, 207,
-    179, 179, 179,
-    191, 191, 191,
-    162, 162, 162,
+    # 304, 304, 304,
+    # 320, 320, 320,
+    # 167, 167, 167,
+    # 292, 292, 292,
+    # 264, 264, 264,
+    # 236, 236, 236,
+    # 190, 190, 190,
+    # 214, 214, 214,
+    # 166, 166, 166,
+    # 266, 266, 266,
+    # 207, 207, 207,
+    # 179, 179, 179,
+    # 191, 191, 191,
+    # 162, 162, 162,
+    # Deck: Bündnispartner
+    # https://www.notion.so/Deck-B-ndnispartner-994c536443434f9a8ccd1ede966f8dfd?pvs=4
+    258, 258, 258,
+    224, 224, 224,
+    255, 255, 255,
+    259, 259, 259,
+    193, 193, 193,
+    192, 192, 192,
+    275, 275, 275,
+    254, 254, 254,
+    226, 226, 226,
+    176, 176, 176,
+    198, 198, 198,
+    231, 231, 231,
 ]
 
 width_mm = 63
