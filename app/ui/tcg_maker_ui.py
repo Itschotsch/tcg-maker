@@ -6,8 +6,11 @@ import sys
 import csv
 from typing import Literal
 
+import pandas as pd
+
 from app.tcg_maker import TCGMaker
 from app.tcg_maker_io import TCGMakerIO
+from app.tcg_maker_util import TCGMakerUtil
 
 class TCGMakerUI:
     
@@ -208,7 +211,7 @@ class TCGMakerUI:
         )
         return element
 
-    def make_window(self) -> None:
+    def start_window(self) -> None:
         # Open the window
         self.window.mainloop()
 
@@ -225,8 +228,9 @@ class TCGMakerUI:
         if type(self.file_picker_entry) is not tk.Entry:
             raise ValueError("file_picker_entry is not an Entry")
         
-        settings = {
+        settings = TCGMakerUtil.complete_settings({
             "csv_file": self.file_picker_entry.get(),
+            "csv": TCGMakerIO.read_csv_file(self.file_picker_entry.get()),
             "preprocess_csv": self.preprocess_csv_var.get(),
             "render_html": self.render_html_var.get(),
             "render_images": self.render_images_var.get(),
@@ -234,18 +238,7 @@ class TCGMakerUI:
             "stitch_images": self.stitch_images_var.get(),
             "render_all": self.render_all_var.get(),
             "card_ids": self.card_ids_entry.get() if not self.render_all_var.get() else None,
-
-            # TODO: Make these settings configurable in the UI
-            "input_path": os.path.join(TCGMakerIO.pwd, "input"),
-            "output_path": os.path.join(TCGMakerIO.pwd, "output"),
-            "card_width_mm": 63,
-            "card_height_mm": 88,
-            "bleed_mm": 3,
-            "border_radius_mm": 3,
-            "dpi": 300,
-            "stitch_x": 8,
-            "stitch_y": 6,
-        }
+        })
         
         # Checks
         ## CSV file
@@ -255,14 +248,7 @@ class TCGMakerUI:
         ## Card IDs
         if not settings["render_all"]:
             try:
-                # Strip all whitespace and newlines from the string
-                card_ids_string:str = "".join(settings["card_ids"].split())
-                # Split the string by commas and remove any empty strings
-                card_ids = [x for x in card_ids_string.split(",") if x]
-                # Convert the strings to integers
-                card_ids = [int(x) for x in card_ids]
-                # Set the card IDs
-                settings["card_ids"] = card_ids
+                settings["card_ids"] = TCGMakerUtil.parse_comma_seprarated_ints(settings["card_ids"])
             except ValueError:
                 messagebox.showerror("Error", "The specified card IDs are not valid.\nUse a comma-separated list of integers.")
                 return
@@ -279,7 +265,7 @@ class TCGMakerUI:
         
         # Run the TCG Maker program
         tcg_maker:TCGMaker = TCGMaker()
-        tcg_maker.run(settings)
+        output_path = tcg_maker.run(settings)
 
         # Open the output folder
-        os.startfile(settings["output_path"])
+        os.startfile(output_path)

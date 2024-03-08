@@ -1,7 +1,8 @@
 import os
 import pandas as pd
 import re
-        
+      
+from typing import List  
 from playwright.sync_api import sync_playwright
 from PIL import Image
 
@@ -11,17 +12,18 @@ class TCGMaker:
     def __init__(self) -> None:
         pass
 
-    def run(self, settings: dict) -> None:
+    def run(self, settings: dict) -> str:
         print("Running TCG Maker with settings: ", settings)
 
         # Check whether the settings are valid
         # TODO
 
         # Load CSV file
-        csv = pd.read_csv(
-            settings["csv_file"],
-            keep_default_na=False
-        )
+        # csv = pd.read_csv(
+        #     settings["csv_file"],
+        #     keep_default_na=False
+        # )
+        csv = settings["csv"]
 
         if settings["preprocess_csv"] == True:
             csv = self.preprocess_csv(csv)
@@ -101,6 +103,7 @@ class TCGMaker:
             )
 
         print("Done.")
+        return os.path.join(settings["output_path"], "images")
 
     def preprocess_csv(self, old_csv: pd.DataFrame) -> pd.DataFrame:
         print("Preprocessing CSV...")
@@ -237,7 +240,7 @@ class TCGMaker:
     
     def render_images(
         self,
-        card_ids: list[int],
+        card_ids: List[int],
         html_input_path: str,
         image_output_path: str,
         width_with_bleed_px: int,
@@ -337,7 +340,7 @@ class TCGMaker:
         self,
         image_input_path: str,
         image_output_path: str,
-        card_ids: list[int],
+        card_ids: List[int],
         card_width_px: int,
         card_height_px: int,
         stitch_x: int,
