@@ -2,11 +2,7 @@ import tkinter as tk
 import tkinter.filedialog as filedialog
 import tkinter.messagebox as messagebox
 import os
-import sys
-import csv
 from typing import Literal
-
-import pandas as pd
 
 from app.tcg_maker import TCGMaker
 from app.tcg_maker_io import TCGMakerIO
