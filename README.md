@@ -12,3 +12,4 @@ A way to automate the creation of TCG cards from a CSV table using HTML and CSS.
 ## Usage
 - `python3 main.py --web` launches a GUI interface.
 - `python3 main.py --web` launches a web interface on `localhost:8000`.
+- `nohup python3 main.py --web &` launches a web interface on `localhost:8000` in the background.
