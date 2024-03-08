@@ -266,7 +266,7 @@ class TCGMaker:
 
                 print(f"Going to page {os.path.join(html_input_path, f'{name}.html')}.")
                 page.goto(
-                    os.path.join(html_input_path, f"{name}.html")
+                    "file://" + os.path.join(html_input_path, f"{name}.html")
                 )
 
                 page.screenshot(
