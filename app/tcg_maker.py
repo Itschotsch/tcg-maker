@@ -264,6 +264,7 @@ class TCGMaker:
                 name = filename.split('.')[0]
                 print(f"Rendering image for card {name}...")
 
+                print(f"Going to page {os.path.join(html_input_path, f'{name}.html')}.")
                 page.goto(
                     os.path.join(html_input_path, f"{name}.html")
                 )
