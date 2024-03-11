@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCG Maker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="section">
+            <h1 class="title">TCG Maker</h1>
+            <form action="/api/create" method="post" enctype="multipart/form-data">
+                <div class="field">
+                    <label class="label" for="csv_file">CSV File:</label>
+                    <div class="control">
+                        <input class="input" type="file" name="csv_file" id="csv_file">
+                    </div>
+                </div>
+                <div class="field">
+                    <input class="is-checkradio" type="checkbox" name="preprocess_csv" id="preprocess_csv" checked>
+                    <label class="checkbox" for="preprocess_csv">Pre-process CSV file (necessary if it was exported from Notion)</label>
+                </div>
+                <div class="field">
+                    <input class="is-checkradio" type="checkbox" name="render_html" id="render_html" checked>
+                    <label class="checkbox" for="render_html">Render HTML files (necessary if any card data changed)</label>
+                </div>
+                <div class="field">
+                    <input class="is-checkradio" type="checkbox" name="render_images" id="render_images" checked>
+                    <label class="checkbox" for="render_images">Render card images (necessary if any card data changed)</label>
+                </div>
+                <div class="field">
+                    <input class="is-checkradio" type="checkbox" name="render_special" id="render_special" checked>
+                    <label class="checkbox" for="render_special">Render special cards (necessary if the hidden card or the card back changed)</label>
+                </div>
+                <div class="field">
+                    <input class="is-checkradio" type="checkbox" name="stitch_images" id="stitch_images" checked>
+                    <label class="checkbox" for="stitch_images">Stitch card images for Tabletop Simulator (necessary if any card data or special cards changed)</label>
+                </div>
+                <div class="field">
+                    <input class="is-checkradio" type="radio" name="render_selection" id="render_all" value="all" checked onclick="document.getElementById('card_ids').disabled = true">
+                    <label class="radio" for="render_all">Render all cards</label>
+                    <input class="is-checkradio" type="radio" name="render_selection" id="render_ids" value="ids" onclick="document.getElementById('card_ids').disabled = false">
+                    <label class="radio" for="render_ids">Only render cards with the following IDs</label>
+                </div>
+                <div class="field">
+                    <label class="label" for="card_ids">Card IDs:</label>
+                    <div class="control">
+                        <input class="input" type="text" name="card_ids" id="card_ids" value="1,2,3" disabled>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-primary" type="submit">Run</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>
