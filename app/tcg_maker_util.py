@@ -19,6 +19,7 @@ class TCGMakerUtil:
     
     @staticmethod
     def complete_settings(settings: dict) -> dict:
+        # TODO make these adjustable
         settings["input_path"] = os.path.join(TCGMakerIO.pwd, "input")
         settings["output_path"] = os.path.join(TCGMakerIO.pwd, "output")
         settings["card_width_mm"] = 63

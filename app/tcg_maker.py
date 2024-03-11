@@ -15,14 +15,6 @@ class TCGMaker:
     def run(self, settings: dict) -> str:
         print("Running TCG Maker with settings: ", settings)
 
-        # Check whether the settings are valid
-        # TODO
-
-        # Load CSV file
-        # csv = pd.read_csv(
-        #     settings["csv_file"],
-        #     keep_default_na=False
-        # )
         csv = settings["csv"]
 
         if settings["preprocess_csv"] == True:
@@ -56,11 +48,6 @@ class TCGMaker:
                 csv,
                 html_input_path=os.path.join(settings["input_path"], "html"),
                 html_output_path=os.path.join(settings["output_path"], "html"),
-                # card_width_mm=settings["card_width_mm"],
-                # card_height_mm=settings["card_height_mm"],
-                # bleed_mm=settings["bleed_mm"],
-                # border_radius_mm=settings["border_radius_mm"],
-                # dpi=settings["dpi"],
                 width_no_bleed_px=width_no_bleed_px,
                 height_no_bleed_px=height_no_bleed_px,
                 width_with_bleed_px=width_with_bleed_px,
@@ -80,12 +67,9 @@ class TCGMaker:
             
 
         if settings["render_special"] == True:
-            # stitch_without_bleed = settings["stitch_without_bleed"] == True
             self.render_special(
                 image_input_path=os.path.join(settings["input_path"], "images"),
                 image_output_path=os.path.join(settings["output_path"], "images"),
-                # card_width=width_no_bleed_px if stitch_without_bleed else width_with_bleed_px,
-                # card_height=height_no_bleed_px if stitch_without_bleed else height_with_bleed_px,
                 card_width_px=width_no_bleed_px,
                 card_height_px=height_no_bleed_px,
             )
@@ -165,11 +149,6 @@ class TCGMaker:
         csv: pd.DataFrame,
         html_input_path: str,
         html_output_path: str,
-        # card_width_mm: int,
-        # card_height_mm: int,
-        # bleed_mm: int,
-        # border_radius_mm: int,
-        # dpi: int,
         width_no_bleed_px: int,
         height_no_bleed_px: int,
         width_with_bleed_px: int,
@@ -180,7 +159,7 @@ class TCGMaker:
         print("Rendering HTML...")
 
         # Load the CSS style file
-        # TODO this could be done by automatically finding the CSS from the HTML header
+        # TODO: This could be done by automatically finding the CSS from the HTML header.
         css = ""
         with open(
             os.path.join(html_input_path, "style.css"),
@@ -248,9 +227,6 @@ class TCGMaker:
     ) -> None:
         print("Rendering images...")
 
-        # html_files = TCGMakerIO.listdir(html_input_path)
-        # currentProgress = 0
-        # totalProgress = len(html_files)
         html_files = [f"{i}.html" for i in card_ids]
         with sync_playwright() as context_manager:
             browser = context_manager.chromium.launch()
@@ -278,8 +254,6 @@ class TCGMaker:
                         f"{name}.png"
                     )
                 )
-                # currentProgress += 1
-                # print(f"Rendered image for card {page.title()}.\n{currentProgress/totalProgress*100}% done.")
                 print(f"Rendered image for card {page.title()}.")
 
             browser.close()
@@ -353,25 +327,9 @@ class TCGMaker:
     ) -> None:
         print("Preparing stitching cards...")
 
-        # Get the list of files
-        # if not os.path.exists(os.path.join(__dir__, "output")):
-        #     os.makedirs(os.path.join(__dir__, "output"))
-        # if not os.path.exists(os.path.join(__dir__, "output", "singles")):
-        #     os.makedirs(os.path.join(__dir__, "output", "singles"))
-
-        # if stitch_cards_ids == []:
-        #     files = os.listdir(os.path.join(__dir__, "output", "singles"))
-        #     files = [f for f in files if f.endswith('.png')]
-        # else:
-        #     files = [f"{i}.png" for i in stitch_cards_ids]
         files = [f"{i}.png" for i in card_ids]
 
-        # Sort the files by ID
-        # files = sorted(files, key=lambda f: f.split('_')[0])
-
         # Create the output image
-        # width = width_no_bleed_px if stitch_without_bleed else width_with_bleed_px
-        # height = height_no_bleed_px if stitch_without_bleed else height_with_bleed_px
         output_image = Image.new(
             'RGBA',
             (
@@ -389,15 +347,6 @@ class TCGMaker:
             print(f"Pasting card {files[i]}...")
             card = Image.open(os.path.join(image_input_path, files[i]))
             # Remove the bleed around the card and paste it into the output image
-            # if stitch_without_bleed:
-            #     card = card.crop(
-            #         (
-            #             bleed_px,
-            #             bleed_px,
-            #             width_with_bleed_px - bleed_px,
-            #             height_with_bleed_px - bleed_px
-            #         )
-            #     )
             # Crop the card to the correct aspect ratio, centered
             card = card.crop(
                 (
