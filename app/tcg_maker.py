@@ -269,6 +269,9 @@ class TCGMaker:
                     "file://" + os.path.join(html_input_path, f"{name}.html")
                 )
 
+                # Wait for all images to load
+                page.wait_for_load_state("networkidle")
+
                 page.screenshot(
                     path=os.path.join(
                         image_output_path,
