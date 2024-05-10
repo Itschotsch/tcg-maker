@@ -284,12 +284,12 @@ class TCGMaker:
 
         # Create the output image
         output_image = Image.new(
-            'RGBA',
+            'RGB',
             (
                 stitch_x * card_width_px,
                 stitch_y * card_height_px
             ),
-            (255, 255, 255, 255)
+            (255, 255, 255)
         )
 
         # Paste the cards into the output image
