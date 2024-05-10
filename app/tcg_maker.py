@@ -92,8 +92,55 @@ class TCGMaker:
     def preprocess_csv(self, old_csv: pd.DataFrame) -> pd.DataFrame:
         print("Preprocessing CSV...")
         
-        # TODO: Pre-process your CSV here
-        new_csv = old_csv
+        # Set new columns
+        new_csv = pd.DataFrame(columns=[
+            "ID", "Layout", "Title", "Subtitle", "Description", "Artwork", "EntityKind", "EntityType", "OffensiveStat", "DefensiveStat", "ShieldspellStat", "FlavourText", "CostElement", "CostAmount", "ElementalAmount"
+        ])
+
+        # Go through the new columns one by one and fill them with the old values, processed if necessary
+        # ID: Use ID. Is x and should be x.
+        new_csv["ID"] = old_csv["ID"]
+        # Layout: Use Kartenart. Is Charakter asdf/Ereignis asdf/Legende asdf/Manifestation asdf/Ritual asdf and should be character/event/legend/manifestation/ritual
+        new_csv["Layout"] = old_csv["Kartenart"].apply(lambda x: {
+            "Charakter": "character",
+            "Ereignis": "event",
+            "Legende": "legend",
+            "Manifestation": "manifestation",
+            "Ritual": "ritual"
+        }.get(x.split()[0], "") if x else "")
+        # Title: Use Name. Is x,y and should be x.
+        new_csv["Title"] = old_csv["Name"].apply(lambda x: x.split(",")[0] if x else "")
+        # Subtitle: Use Name. Is x,y and should be y.
+        new_csv["Subtitle"] = old_csv["Name"].apply(lambda x: x.split(",")[1] if len(x.split(",")) > 1 else "")
+        # Description: Use Kartentext. Is x (http://someurl.com/) y (http://someotherurl.com/) z and should be x y z.
+        new_csv["Description"] = old_csv["Kartentext"].apply(lambda x: re.sub(r"\((https?:\/\/[^)]+)\)", "", x) if x else "")
+        # Artwork: Use ID. Is x and should be x.png.
+        new_csv["Artwork"] = old_csv["ID"].apply(lambda x: f"{x}.png")
+        # EntityKind: Use Kartenart. Is Charakter asdf/Ereignis asdf/Legende asdf/Manifestation asdf/Ritual asdf and should be Charakter/Ereignis/Legende/Manifestation/Ritual
+        new_csv["EntityKind"] = old_csv["Kartenart"].apply(lambda x: x.split()[0] if x else "")
+        # EntityType: Use Kartentyp. Is x asdf and should be x.
+        new_csv["EntityType"] = old_csv["Kartentyp"].apply(lambda x: x.split()[0] if x else "")
+        # OffensiveStat: Use ⚔️. Is x and should be x.
+        new_csv["OffensiveStat"] = old_csv["⚔️"]
+        # DefensiveStat: Use 🛡️. Is x and should be x.
+        new_csv["DefensiveStat"] = old_csv["🛡️"]
+        # ShieldspellStat: Use ⭕️. Is x and should be x.
+        new_csv["ShieldspellStat"] = old_csv["⭕️"]
+        # FlavourText: Use Flavourtext. Is x and should be x.
+        new_csv["FlavourText"] = old_csv["Flavourtext"]
+        # CostElement: Use Element. Is Aeris asdf/Terra asdf/Ignis asdf/Aqua asdf/Magica asdf/Ungeprägt asdf and should be Aeris/Terra/Ignis/Aqua/Magica/Unshaped
+        new_csv["CostElement"] = old_csv["Element"].apply(lambda x: {
+            "Aeris": "Aeris",
+            "Terra": "Terra",
+            "Ignis": "Ignis",
+            "Aqua": "Aqua",
+            "Magica": "Magica",
+            "Ungeprägt": "Unshaped"
+        }.get(x.split()[0], "") if x else "")
+        # CostAmount: Use Kosten. Is x and should be x.
+        new_csv["CostAmount"] = old_csv["Kosten"]
+        # ElementalAmount: Use 1.
+        new_csv["ElementalAmount"] = 1
 
         return new_csv
     
