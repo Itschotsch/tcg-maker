@@ -18,7 +18,7 @@ EXPOSE 8000
 VOLUME /app
 
 # Install the required dependencies
-COPY app/requirements.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Initialize Playwright
