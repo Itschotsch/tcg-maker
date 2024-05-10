@@ -130,12 +130,12 @@ class TCGMaker:
         new_csv["FlavourText"] = old_csv["Flavourtext"]
         # CostElement: Use Element. Is Aeris asdf/Terra asdf/Ignis asdf/Aqua asdf/Magica asdf/Ungeprägt asdf and should be Aeris/Terra/Ignis/Aqua/Magica/Unshaped
         new_csv["CostElement"] = old_csv["Element"].apply(lambda x: {
-            "Aeris": "Aeris",
-            "Terra": "Terra",
-            "Ignis": "Ignis",
-            "Aqua": "Aqua",
-            "Magica": "Magica",
-            "Ungeprägt": "Unshaped"
+            "Aeris": "aeris",
+            "Terra": "terra",
+            "Ignis": "ignis",
+            "Aqua": "aqua",
+            "Magica": "magica",
+            "Ungeprägt": "unshaped"
         }.get(x.split()[0], "") if x else "")
         # CostAmount: Use Kosten. Is x and should be x.
         new_csv["CostAmount"] = old_csv["Kosten"]
