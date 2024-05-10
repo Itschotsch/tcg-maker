@@ -13,10 +13,10 @@ class TCGMakerWeb:
         pass
 
     def start_web(self) -> None:
-        server_address = ("", 8000)
+        server_address = ("0.0.0.0", 8000)
         handler = TCGMakerHTTPRequestHandler
         httpd = http.server.HTTPServer(server_address, handler)
-        print("Server running on port 8000")
+        print(f"Server running on {server_address[0]}:{server_address[1]}")
         httpd.serve_forever()
 
 class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):

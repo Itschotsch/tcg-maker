@@ -27,7 +27,7 @@ class TCGMakerUtil:
         settings["bleed_mm"] = 3
         settings["border_radius_mm"] = 3
         settings["dpi"] = 300
-        settings["stitch_x"] = 8
-        settings["stitch_y"] = 6
+        settings["stitch_x"] = 10
+        settings["stitch_y"] = 7
 
         return settings

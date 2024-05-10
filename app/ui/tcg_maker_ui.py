@@ -1,6 +1,3 @@
-import tkinter as tk
-import tkinter.filedialog as filedialog
-import tkinter.messagebox as messagebox
 import os
 from typing import Literal
 

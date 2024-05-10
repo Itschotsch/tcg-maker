@@ -1,11 +1,10 @@
 import os
 import sys
 
-from app.ui.tcg_maker_ui import TCGMakerUI
-from app.web.tcg_maker_web import TCGMakerWeb
 from app.tcg_maker_io import TCGMakerIO
 
 def start_gui() -> None:
+    from app.ui.tcg_maker_ui import TCGMakerUI
     # Initialize the TCG Maker IO
     TCGMakerIO.init(os.getcwd())
     # Create a new TCG Maker object
@@ -14,6 +13,7 @@ def start_gui() -> None:
     ui.start_window()
 
 def start_web() -> None:
+    from app.web.tcg_maker_web import TCGMakerWeb
     # Initialize the TCG Maker IO
     TCGMakerIO.init(os.getcwd())
     # Create a new TCG Maker object
