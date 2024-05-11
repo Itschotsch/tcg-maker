@@ -174,7 +174,7 @@ class TCGMaker:
 
         # Render the HTML
         for index, row in csv.iterrows():
-            print(f"Rendering HTML for card {row['Title']}...")
+            print(f"Rendering HTML for card{' ' + row['Title'] if 'Title' in row else ''}...")
 
             # Load the respective HTML template for the entity kind.
             entity_kind = row["Layout"]
@@ -273,50 +273,54 @@ class TCGMaker:
     ) -> None:
         print("Rendering special...")
 
-        # Load the hidden card.
-        hidden_card = Image.open(os.path.join(image_input_path, "hiddencard.png"))
-        # Crop the hidden card to the correct aspect ratio, centered.
-        crop_height = int(hidden_card.width / card_width_px * card_height_px)
-        hidden_card = hidden_card.crop(
-            (
-                0,
-                (hidden_card.height - crop_height) // 2,
-                hidden_card.width,
-                (hidden_card.height - crop_height) // 2 + crop_height
+        # If the hidden card exists:
+        if TCGMakerIO.exists(os.path.join(image_input_path, "hiddencard.png")):
+            # Load the hidden card.
+            hidden_card = Image.open(os.path.join(image_input_path, "hiddencard.png"))
+            # Crop the hidden card to the correct aspect ratio, centered.
+            crop_height = int(hidden_card.width / card_width_px * card_height_px)
+            hidden_card = hidden_card.crop(
+                (
+                    0,
+                    (hidden_card.height - crop_height) // 2,
+                    hidden_card.width,
+                    (hidden_card.height - crop_height) // 2 + crop_height
+                )
             )
-        )
-        # Resize it to the correct size.
-        hidden_card = hidden_card.resize(
-            (
-                card_width_px,
-                card_height_px
+            # Resize it to the correct size.
+            hidden_card = hidden_card.resize(
+                (
+                    card_width_px,
+                    card_height_px
+                )
             )
-        )
-        # Save the resized hidden card
-        TCGMakerIO.ensure_path_exists(image_output_path)
-        hidden_card.save(os.path.join(image_output_path, "hiddencard.png"))
+            # Save the resized hidden card
+            TCGMakerIO.ensure_path_exists(image_output_path)
+            hidden_card.save(os.path.join(image_output_path, "hiddencard.png"))
 
-        # Load the card back
-        card_back = Image.open(os.path.join(image_input_path, "cardback.png"))
-        # Crop the card back to the correct aspect ratio, centered
-        crop_height = int(card_back.width / card_width_px * card_height_px)
-        card_back = card_back.crop(
-            (
-                0,
-                (card_back.height - crop_height) // 2,
-                card_back.width,
-                (card_back.height - crop_height) // 2 + crop_height
+        # If the card back exists:
+        if TCGMakerIO.exists(os.path.join(image_input_path, "cardback.png")):
+            # Load the card back
+            card_back = Image.open(os.path.join(image_input_path, "cardback.png"))
+            # Crop the card back to the correct aspect ratio, centered
+            crop_height = int(card_back.width / card_width_px * card_height_px)
+            card_back = card_back.crop(
+                (
+                    0,
+                    (card_back.height - crop_height) // 2,
+                    card_back.width,
+                    (card_back.height - crop_height) // 2 + crop_height
+                )
             )
-        )
-        # Resize it to the correct size
-        card_back = card_back.resize(
-            (
-                card_width_px,
-                card_height_px
+            # Resize it to the correct size
+            card_back = card_back.resize(
+                (
+                    card_width_px,
+                    card_height_px
+                )
             )
-        )
-        # Save the resized card back
-        card_back.save(os.path.join(image_output_path, "cardback.png"))
+            # Save the resized card back
+            card_back.save(os.path.join(image_output_path, "cardback.png"))
     
     def stitch_images(
         self,
@@ -369,16 +373,20 @@ class TCGMaker:
             )
             print(f"Pasted card {files[i]}.")
 
-        # Paste the hidden card into the bottom right spot.
-        print(f"Pasting hidden card...")
-        output_image.paste(
-            Image.open(os.path.join(image_input_path, "hiddencard.png")),
-            (
-                (stitch_x - 1) * card_width_px,
-                (stitch_y - 1) * card_height_px
+        # If the hidden card exists:
+        if TCGMakerIO.exists(os.path.join(image_input_path, "hiddencard.png")):
+            # Paste the hidden card into the bottom right spot.
+            print(f"Pasting hidden card...")
+            output_image.paste(
+                Image.open(os.path.join(image_input_path, "hiddencard.png")),
+                (
+                    (stitch_x - 1) * card_width_px,
+                    (stitch_y - 1) * card_height_px
+                )
             )
-        )
-        print(f"Pasted hidden card.")
+            print(f"Pasted hidden card.")
+        else:
+            print("No hidden card found. Skipping.")
 
         # Save the output image
         output_image.save(
