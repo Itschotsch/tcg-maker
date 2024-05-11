@@ -16,6 +16,5 @@ A way to automate the creation of TCG cards from a CSV table using HTML and CSS.
 6. If you're on Ubuntu: `sudo apt-get install libgbm1 libasound2`
 
 ## Usage
-- `python3 main.py --web` launches a GUI interface.
-- `python3 main.py --web` launches a web interface on `localhost:8000`.
-- `nohup python3 main.py --web &` launches a web interface on `localhost:8000` in the background.
+- `python3 main.py --ip localhost --port 8000` launches a web interface on `localhost:8000`.
+- `nohup python3 main.py --ip localhost --port 8000 &` launches a web interface on `localhost:8000` in the background.
