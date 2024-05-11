@@ -15,7 +15,11 @@ class TCGMaker:
     def run(self, settings: dict) -> str:
         print("Running TCG Maker with settings: ", settings)
 
-        csv = settings["csv"]
+        csv: pd.DataFrame
+        if settings["fetch_remote_csv"] == True:
+            csv = TCGMakerIO.fetch_remote_csv()
+        else: # settings["provided_local_csv"] == True
+            csv = settings["csv"]
 
         if settings["preprocess_csv"] == True:
             csv = self.preprocess_csv(csv)
@@ -25,7 +29,7 @@ class TCGMaker:
             card_ids = settings["card_ids"]
             csv = csv[csv["ID"].isin(card_ids)]
             card_ids = [i for i in card_ids if i in csv["ID"].tolist()]
-        else:
+        else: # settings["render_ids"] == True
             card_ids = csv["ID"].tolist()
 
         # Read layout settings

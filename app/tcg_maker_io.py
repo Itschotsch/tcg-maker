@@ -49,3 +49,7 @@ class TCGMakerIO:
             print("CSV string is empty.")
             return pd.DataFrame()
         return pd.read_csv(StringIO(csv_string), keep_default_na=False)
+
+    @staticmethod
+    def fetch_remote_csv() -> pd.DataFrame:
+        return pd.DataFrame()

@@ -61,8 +61,8 @@ class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         )
 
         settings = {
-            "fetch_csv": "fetch_csv" in form and form["csv_selection"].value == "fetch",
-            "provided_csv": "provided_csv" in form and form["csv_selection"].value == "provided",
+            "fetch_remote_csv": "csv_selection" in form and form["csv_selection"].value == "fetch",
+            "provided_local_csv": "csv_selection" in form and form["csv_selection"].value == "provided",
             "csv": TCGMakerIO.read_csv_string(form["csv_file"].value.decode("utf-8")),
             "preprocess_csv": "preprocess_csv" in form and form["preprocess_csv"].value == "on",
             "render_html": "render_html" in form and form["render_html"].value == "on",
@@ -73,9 +73,6 @@ class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             "render_ids": "render_selection" in form and form["render_selection"].value == "ids",
             "card_ids": TCGMakerUtil.parse_comma_seprarated_ints(form["card_ids"].value) if "card_ids" in form else None,
         }
-
-        for field in settings:
-            print(f"{field}: {settings[field]}")
 
         settings = TCGMakerUtil.complete_settings(settings)
 
