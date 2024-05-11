@@ -63,7 +63,7 @@ class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         settings = {
             "fetch_remote_csv": "csv_selection" in form and form["csv_selection"].value == "fetch",
             "provided_local_csv": "csv_selection" in form and form["csv_selection"].value == "provided",
-            "csv": TCGMakerIO.read_csv_string(form["csv_file"].value.decode("utf-8")),
+            "csv": TCGMakerIO.read_csv_string(form["csv_file"].value.decode("utf-8")) if "csv_file" in form else None,
             "preprocess_csv": "preprocess_csv" in form and form["preprocess_csv"].value == "on",
             "render_html": "render_html" in form and form["render_html"].value == "on",
             "render_images": "render_images" in form and form["render_images"].value == "on",

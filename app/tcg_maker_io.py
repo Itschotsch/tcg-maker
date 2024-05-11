@@ -52,4 +52,5 @@ class TCGMakerIO:
 
     @staticmethod
     def fetch_remote_csv() -> pd.DataFrame:
-        return pd.DataFrame()
+        return pd.DataFrame(columns=["ID"])
+            
