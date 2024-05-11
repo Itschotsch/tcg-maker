@@ -12,8 +12,12 @@ class TCGMakerWeb:
     def __init__(self) -> None:
         pass
 
-    def start_web(self) -> None:
-        server_address = ("0.0.0.0", 8000)
+    def start_web(self, ip: str | None = None, port: int | None = None) -> None:
+        if ip is None:
+            ip = "0.0.0.0"
+        if port is None:
+            port = 8000
+        server_address = (ip, port)
         handler = TCGMakerHTTPRequestHandler
         httpd = http.server.HTTPServer(server_address, handler)
         print(f"Server running on {server_address[0]}:{server_address[1]}")
@@ -57,6 +61,8 @@ class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         )
 
         settings = {
+            "fetch_csv": "fetch_csv" in form and form["csv_selection"].value == "fetch",
+            "provided_csv": "provided_csv" in form and form["csv_selection"].value == "provided",
             "csv": TCGMakerIO.read_csv_string(form["csv_file"].value.decode("utf-8")),
             "preprocess_csv": "preprocess_csv" in form and form["preprocess_csv"].value == "on",
             "render_html": "render_html" in form and form["render_html"].value == "on",

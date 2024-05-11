@@ -19,6 +19,7 @@ VOLUME /app
 
 # Install the required dependencies
 COPY requirements.txt .
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Initialize Playwright
@@ -26,6 +27,4 @@ RUN python -m playwright install
 RUN python -m playwright install-deps
 
 # Set the entrypoint to run the application
-# Use the arguments: --web
-# ENTRYPOINT ["python", "main.py"]
-CMD ["python", "-u", "main.py", "--web"]
+CMD ["python", "-u", "main.py", "--ip", "0.0.0.0", "--port", "8000"]
