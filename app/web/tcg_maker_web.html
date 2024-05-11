@@ -14,10 +14,10 @@
             <h1 class="title">TCG Maker</h1>
             <form action="/api/create" method="post" enctype="multipart/form-data">
                 <div class="field">
-                    <input class="is-checkradio" type="radio" name="csv_selection" id="fetch_csv" value="fetch" checked onclick="document.getElementById('csv_file').disabled = true">
-                    <label class="radio" for="fetch_csv">Fetch the CSV from source</label>
-                    <input class="is-checkradio" type="radio" name="csv_selection" id="provided_csv" value="provided" onclick="document.getElementById('csv_file').disabled = false">
-                    <label class="radio" for="provided_csv">Use the following CSV</label>
+                    <input class="is-checkradio" type="radio" name="csv_selection" id="fetch_remote_csv" value="fetch" checked onclick="document.getElementById('csv_file').disabled = true">
+                    <label class="radio" for="fetch_remote_csv">Fetch the CSV from source</label>
+                    <input class="is-checkradio" type="radio" name="csv_selection" id="provided_local_csv" value="provided" onclick="document.getElementById('csv_file').disabled = false">
+                    <label class="radio" for="provided_local_csv">Use the following CSV</label>
                 </div>
                 <div class="field">
                     <label class="label" for="csv_file">CSV File:</label>
@@ -27,7 +27,7 @@
                 </div>
                 <div class="field">
                     <input class="is-checkradio" type="checkbox" name="preprocess_csv" id="preprocess_csv" checked>
-                    <label class="checkbox" for="preprocess_csv">Pre-process CSV file (necessary if it was exported from Notion)</label>
+                    <label class="checkbox" for="preprocess_csv">Pre-process CSV file (necessary if not in the correct format)</label>
                 </div>
                 <div class="field">
                     <input class="is-checkradio" type="checkbox" name="render_html" id="render_html" checked>
