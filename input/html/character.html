@@ -6,7 +6,7 @@
     <!-- A card measures 63mm x 88mm -->
     <meta name="viewport" content="width=§Width§, height=§Height§, initial-scale=1.0">
     <title>§Title§</title>
-    
+
     <link rel="stylesheet" href="../../input/html/style.css">
     <style>
         §Style§
@@ -21,10 +21,42 @@
                 <div class="title">§Title§</div>
                 <div class="subtitle">§Subtitle§</div>
             </div>
-            <div class="cost">
-                <div class="cost-element §CostElement§" style="background-image: url(../../input/layout/cost_element_§CostElement§.png);"></div>
-                <div class="cost-amount">
-                    <p>§CostAmount§</p>
+            <div class="cost-list">
+                <div class="cost">
+                    <div class="cost-element terra"></div>
+                    <div class="cost-amount">
+                        <p>§CostTerra§</p>
+                    </div>
+                </div>
+                <div class="cost">
+                    <div class="cost-element aqua"></div>
+                    <div class="cost-amount">
+                        <p>§CostAqua§</p>
+                    </div>
+                </div>
+                <div class="cost">
+                    <div class="cost-element aeris"></div>
+                    <div class="cost-amount">
+                        <p>§CostAeris§</p>
+                    </div>
+                </div>
+                <div class="cost">
+                    <div class="cost-element ignis"></div>
+                    <div class="cost-amount">
+                        <p>§CostIgnis§</p>
+                    </div>
+                </div>
+                <div class="cost">
+                    <div class="cost-element magica"></div>
+                    <div class="cost-amount">
+                        <p>§CostMagica§</p>
+                    </div>
+                </div>
+                <div class="cost">
+                    <div class="cost-element unshaped"></div>
+                    <div class="cost-amount">
+                        <p>§CostUnshaped§</p>
+                    </div>
                 </div>
             </div>
             <div class="faction"></div>
@@ -41,7 +73,9 @@
                 <div class="combat-stats">
                     <div class="offensive"><img src="../../input/layout/combat_stats_offensive_symbol.png" class="combat-stats-symbol" />&nbsp;§OffensiveStat§</div>
                     <div class="defensive"><img src="../../input/layout/combat_stats_defensive_symbol.png" class="combat-stats-symbol" />&nbsp;§DefensiveStat§</div>
-                    <div class="elemental"><p>§ElementalAmount§</p></div>
+                    <div class="elemental">
+                        <p>§ElementalAmount§</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -55,6 +89,15 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        // Remove all .cost elements whose .cost-amount is non-numeric or 0
+        let costAmounts = document.getElementsByClassName("cost-amount");
+        Array.from(costAmounts).forEach(function (costAmount) {
+            if (!/^[0-9]+$/.test(costAmount.textContent.trim()) || costAmount.textContent.trim() == 0) {
+                costAmount.parentElement.remove();
+            }
+        });
+    </script>
 </body>
 
 </html>

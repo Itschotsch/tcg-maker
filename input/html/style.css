@@ -149,8 +149,21 @@ body {
     padding-top: 0;
 }
 
-.cost {
+.cost-list {
     position: absolute;
+    /* transform: translate(4vw, 4vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5vw;
+    font-size: 5vw;
+    height: 100vh;
+    width: 100vw; */
+}
+
+.cost {
+    /* position: absolute; */
     transform: translate(4vw, 4vw);
 
     display: flex;
@@ -159,6 +172,7 @@ body {
     align-items: center;
 
     padding: 5vw;
+    padding-bottom: 17vw;
     font-size: 5vw;
 }
 
@@ -182,25 +196,29 @@ body {
     z-index: initial;
 }
 
-/* .cost-element.Aqua {
-    background-image: url(../../input/layout/cost_element_aqua.png);
-}
-
-.cost-element.Terra {
+.cost-element.terra {
     background-image: url(../../input/layout/cost_element_terra.png);
 }
 
-.cost-element.Ignis {
-    background-image: url(../../input/layout/cost_element_ignis.png);
+.cost-element.aqua {
+    background-image: url(../../input/layout/cost_element_aqua.png);
 }
 
-.cost-element.Aeris {
+.cost-element.aeris {
     background-image: url(../../input/layout/cost_element_aeris.png);
 }
 
-.cost-element.Magica {
+.cost-element.ignis {
+    background-image: url(../../input/layout/cost_element_ignis.png);
+}
+
+.cost-element.magica {
     background-image: url(../../input/layout/cost_element_magica.png);
-} */
+}
+
+.cost-element.unshaped {
+    background-image: url(../../input/layout/cost_element_unshaped.png);
+}
 
 .cost-amount {
     position: absolute;

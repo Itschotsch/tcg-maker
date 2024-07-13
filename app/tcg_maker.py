@@ -98,7 +98,27 @@ class TCGMaker:
         
         # Set new columns
         new_csv = pd.DataFrame(columns=[
-            "ID", "Layout", "Title", "Subtitle", "Description", "Artwork", "EntityKind", "EntityType", "OffensiveStat", "DefensiveStat", "ShieldspellStat", "FlavourText", "CostElement", "CostAmount", "ElementalAmount"
+            "ID",
+            "Layout",
+            "Title",
+            "Subtitle",
+            "Description",
+            "Artwork",
+            "EntityKind",
+            "EntityType",
+            "OffensiveStat",
+            "DefensiveStat",
+            "ShieldspellStat",
+            "FlavourText",
+            # "CostElement",
+            # "CostAmount",
+            "CostTerra",
+            "CostAqua",
+            "CostAeris",
+            "CostIgnis",
+            "CostMagica",
+            "CostUnshaped",
+            "ElementalAmount"
         ])
 
         # Go through the new columns one by one and fill them with the old values, processed if necessary
@@ -133,16 +153,28 @@ class TCGMaker:
         # FlavourText: Use Flavourtext. Is x and should be x.
         new_csv["FlavourText"] = old_csv["Flavourtext"]
         # CostElement: Use Element. Is Aeris asdf/Terra asdf/Ignis asdf/Aqua asdf/Magica asdf/Ungeprägt asdf and should be Aeris/Terra/Ignis/Aqua/Magica/Unshaped
-        new_csv["CostElement"] = old_csv["Element"].apply(lambda x: {
-            "Aeris": "aeris",
-            "Terra": "terra",
-            "Ignis": "ignis",
-            "Aqua": "aqua",
-            "Magica": "magica",
-            "Ungeprägt": "unshaped"
-        }.get(x.split()[0], "") if x else "")
+        # new_csv["CostElement"] = old_csv["Element"].apply(lambda x: {
+        #     "Aeris": "aeris",
+        #     "Terra": "terra",
+        #     "Ignis": "ignis",
+        #     "Aqua": "aqua",
+        #     "Magica": "magica",
+        #     "Ungeprägt": "unshaped"
+        # }.get(x.split()[0], "") if x else "")
         # CostAmount: Use Kosten. Is x and should be x.
-        new_csv["CostAmount"] = old_csv["Kosten"]
+        # new_csv["CostAmount"] = old_csv["Kosten"]
+        # CostTerra: Use Kosten Terra. Is x and should be x.
+        new_csv["CostTerra"] = old_csv["Kosten Terra"]
+        # CostAqua: Use Kosten Aqua. Is x and should be x.
+        new_csv["CostAqua"] = old_csv["Kosten Aqua"]
+        # CostAeris: Use Kosten Aeris. Is x and should be x.
+        new_csv["CostAeris"] = old_csv["Kosten Aeris"]
+        # CostIgnis: Use Kosten Ignis. Is x and should be x.
+        new_csv["CostIgnis"] = old_csv["Kosten Ignis"]
+        # CostMagica: Use Kosten Magica. Is x and should be x.
+        new_csv["CostMagica"] = old_csv["Kosten Magica"]
+        # CostUnshaped: Use Kosten Ungeprägt. Is x and should be x.
+        new_csv["CostUnshaped"] = old_csv["Kosten Ungeprägt"]
         # ElementalAmount: Use 1.
         new_csv["ElementalAmount"] = 1
 
