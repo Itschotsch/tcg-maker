@@ -49,11 +49,6 @@ class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         
         print("Processing form data")
 
-        self.send_response(200)
-        self.send_header("Content-type", "image/png")
-        self.send_header("Content-Disposition", "attachment; filename=cards.png")
-        self.end_headers()
-
         form = cgi.FieldStorage(
             fp=self.rfile,
             headers=self.headers,
@@ -68,10 +63,11 @@ class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             "render_html": "render_html" in form and form["render_html"].value == "on",
             "render_images": "render_images" in form and form["render_images"].value == "on",
             "render_special": "render_special" in form and form["render_special"].value == "on",
-            "stitch_images": "stitch_images" in form and form["stitch_images"].value == "on",
+            # "stitch_images": "stitch_images" in form and form["stitch_images"].value == "on",
             "render_all": "render_selection" in form and form["render_selection"].value == "all",
             "render_ids": "render_selection" in form and form["render_selection"].value == "ids",
             "card_ids": TCGMakerUtil.parse_comma_seprarated_ints(form["card_ids"].value) if "card_ids" in form else None,
+            "render_pdf": "render_pdf_tts" in form and form["render_pdf_tts"].value == "pdf",
         }
 
         settings = TCGMakerUtil.complete_settings(settings)
@@ -80,7 +76,17 @@ class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         tcg_maker = TCGMaker()
         output_path = tcg_maker.run(settings)
 
+        # Send the headers
+        self.send_response(200)
+        if settings["render_pdf"]:
+            self.send_header("Content-type", "application/pdf")
+            self.send_header("Content-Disposition", "attachment; filename=cards.pdf")
+        else:
+            self.send_header("Content-type", "image/png")
+            self.send_header("Content-Disposition", "attachment; filename=cards.png")
+        self.end_headers()
+
         # Return the result:
-        with open(os.path.join(output_path, "cards.png"), "rb") as file:
+        with open(output_path, "rb") as file:
             self.wfile.write(file.read())
         

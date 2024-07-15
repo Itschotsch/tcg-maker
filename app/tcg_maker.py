@@ -33,17 +33,19 @@ class TCGMaker:
             card_ids = csv["ID"].tolist()
 
         # Read layout settings
-        card_width_mm = settings["card_width_mm"]
-        card_height_mm = settings["card_height_mm"]
+        card_width_no_bleed_mm = settings["card_width_mm"]
+        card_height_no_bleed_mm = settings["card_height_mm"]
         bleed_mm = settings["bleed_mm"]
+        card_width_with_bleed_mm = card_width_no_bleed_mm + 2 * bleed_mm
+        card_height_with_bleed_mm = card_height_no_bleed_mm + 2 * bleed_mm
         border_radius_mm = settings["border_radius_mm"]
         dpi = settings["dpi"]
 
         # Convert mm to px
-        width_no_bleed_px = int(card_width_mm * dpi / 25.4)
-        height_no_bleed_px = int(card_height_mm * dpi / 25.4)
-        width_with_bleed_px = int((card_width_mm + 2 * bleed_mm) * dpi / 25.4)
-        height_with_bleed_px = int((card_height_mm + 2 * bleed_mm) * dpi / 25.4)
+        card_width_no_bleed_px = int(card_width_no_bleed_mm * dpi / 25.4)
+        card_height_no_bleed_px = int(card_height_no_bleed_mm * dpi / 25.4)
+        card_width_with_bleed_px = int(card_width_with_bleed_mm * dpi / 25.4)
+        card_height_with_bleed_px = int(card_height_with_bleed_mm * dpi / 25.4)
         bleed_px = int(bleed_mm * dpi / 25.4)
         border_radius_px = int(border_radius_mm * dpi / 25.4)
         
@@ -52,10 +54,10 @@ class TCGMaker:
                 csv,
                 html_input_path=os.path.join(settings["input_path"], "html"),
                 html_output_path=os.path.join(settings["output_path"], "html"),
-                width_no_bleed_px=width_no_bleed_px,
-                height_no_bleed_px=height_no_bleed_px,
-                width_with_bleed_px=width_with_bleed_px,
-                height_with_bleed_px=height_with_bleed_px,
+                width_no_bleed_px=card_width_no_bleed_px,
+                height_no_bleed_px=card_height_no_bleed_px,
+                width_with_bleed_px=card_width_with_bleed_px,
+                height_with_bleed_px=card_height_with_bleed_px,
                 bleed_px=bleed_px,
                 border_radius_px=border_radius_px,
             )
@@ -65,8 +67,8 @@ class TCGMaker:
                 card_ids=list(set(card_ids)), # Remove duplicates
                 html_input_path=os.path.join(settings["output_path"], "html"),
                 image_output_path=os.path.join(settings["output_path"], "images"),
-                width_with_bleed_px=width_with_bleed_px,
-                height_with_bleed_px=height_with_bleed_px,
+                width_with_bleed_px=card_width_with_bleed_px,
+                height_with_bleed_px=card_height_with_bleed_px,
             )
             
 
@@ -74,24 +76,55 @@ class TCGMaker:
             self.render_special(
                 image_input_path=os.path.join(settings["input_path"], "images"),
                 image_output_path=os.path.join(settings["output_path"], "images"),
-                card_width_px=width_no_bleed_px,
-                card_height_px=height_no_bleed_px,
+                card_width_px=card_width_no_bleed_px,
+                card_height_px=card_height_no_bleed_px,
             )
 
-        if settings["stitch_images"] == True:
-            self.stitch_images(
+        result_path = os.path.join(settings["output_path"], "images")
+
+        # if settings["stitch_images"] == True:
+        #     result_path = self.stitch_images(
+        #         image_input_path=os.path.join(settings["output_path"], "images"),
+        #         image_output_path=os.path.join(settings["output_path"], "images"),
+        #         card_ids=card_ids, # Keep duplicates
+        #         card_width_px=width_no_bleed_px,
+        #         card_height_px=height_no_bleed_px,
+        #         stitch_x=settings["stitch_x"],
+        #         stitch_y=settings["stitch_y"],
+        #         dpi=dpi,
+        #     )
+
+        if settings["render_pdf"] == True:
+            settings["stitch_x"] = 3
+            settings["stitch_y"] = 3
+            result_path = self.render_pdf(
+                image_input_path=os.path.join(settings["output_path"], "images"),
+                pdf_output_path=os.path.join(settings["output_path"], "images"),
+                card_ids=card_ids, # Keep duplicates
+                card_width_no_bleed_mm=card_width_no_bleed_mm,
+                card_height_no_bleed_mm=card_height_no_bleed_mm,
+                card_width_no_bleed_px=card_width_no_bleed_px,
+                card_height_no_bleed_px=card_height_no_bleed_px,
+                stitch_x=settings["stitch_x"],
+                stitch_y=settings["stitch_y"],
+                dpi=dpi,
+            )
+        else:
+            settings["stitch_x"] = 10
+            settings["stitch_y"] = 7
+            result_path = self.stitch_images(
                 image_input_path=os.path.join(settings["output_path"], "images"),
                 image_output_path=os.path.join(settings["output_path"], "images"),
                 card_ids=card_ids, # Keep duplicates
-                card_width_px=width_no_bleed_px,
-                card_height_px=height_no_bleed_px,
+                card_width_px=card_width_no_bleed_px,
+                card_height_px=card_height_no_bleed_px,
                 stitch_x=settings["stitch_x"],
                 stitch_y=settings["stitch_y"],
                 dpi=dpi,
             )
 
         print("Done.")
-        return os.path.join(settings["output_path"], "images")
+        return result_path
 
     def preprocess_csv(self, old_csv: pd.DataFrame) -> pd.DataFrame:
         print("Preprocessing CSV...")
@@ -364,7 +397,7 @@ class TCGMaker:
         stitch_x: int,
         stitch_y: int,
         dpi: int,
-    ) -> None:
+    ) -> str:
         print("Preparing stitching cards...")
 
         files = [f"{i}.png" for i in card_ids]
@@ -421,9 +454,104 @@ class TCGMaker:
             print("No hidden card found. Skipping.")
 
         # Save the output image
+        result_path = os.path.join(image_output_path, "cards.png")
         output_image.save(
-            os.path.join(image_output_path, "cards.png"),
+            result_path,
             dpi=(dpi, dpi)
         )
 
         print("Successfully stitched cards.")
+        return result_path
+
+    def render_pdf(
+        self,
+        image_input_path: str,
+        pdf_output_path: str,
+        card_ids: List[int],
+        card_width_no_bleed_mm: int,
+        card_height_no_bleed_mm: int,
+        card_width_no_bleed_px: int,
+        card_height_no_bleed_px: int,
+        stitch_x: int,
+        stitch_y: int,
+        dpi: int,
+    ) -> str:
+        from PIL import Image
+        from fpdf import FPDF
+        from PyPDF2 import PdfFileReader, PdfFileWriter
+        from os import system
+
+        print("Preparing rendering PDF...")
+
+        files = [f"{i}.png" for i in card_ids]
+
+        # Make pages of stitch_x * stitch_y cards each
+
+        pdf = FPDF()
+
+        page_width = pdf.w
+        page_height = pdf.h
+        print(f"Page width: {page_width}, Page height: {page_height}")
+
+        offset_x = (page_width - stitch_x * card_width_no_bleed_mm) // 2
+        offset_y = (page_height - stitch_y * card_height_no_bleed_mm) // 2
+        print(f"Offset x: {offset_x}, Offset y: {offset_y}")
+
+        pdf.auto_page_break = False
+        pdf.set_font("Arial", "", 8)
+        caption_margin = 3
+        caption_line_height = 4
+
+        for i in range(len(files)):
+            print(f"Stitching card {files[i]}...")
+            x = i % (stitch_x * stitch_y) % stitch_x
+            y = i % (stitch_x * stitch_y) // stitch_x
+
+            if x == 0 and y == 0:
+                pdf.add_page()
+                # Add page caption:
+                pdf.set_xy(0, 0)
+                pdf.multi_cell(
+                    page_width,
+                    offset_y,
+                    ", ".join(str(x) for x in card_ids),
+                    padding=caption_margin,
+                    max_line_height=caption_line_height
+                )
+
+            # pdf.image(
+            #     os.path.join(image_input_path, files[i]),
+            #     x * card_width_mm,
+            #     y * card_height_mm,
+            #     card_width_mm,
+            #     card_height_mm
+            # )
+
+            # Remove bleed around image
+            print(f"Removing bleed from card {files[i]}...")
+            card = Image.open(os.path.join(image_input_path, files[i]))
+            card = card.crop(
+                (
+                    (card.width - card_width_no_bleed_px) // 2,
+                    (card.height - card_height_no_bleed_px) // 2,
+                    (card.width - card_width_no_bleed_px) // 2 + card_width_no_bleed_px,
+                    (card.height - card_height_no_bleed_px) // 2 + card_height_no_bleed_px
+                )
+            )
+            print(f"Placing card at {x * card_width_no_bleed_mm}mm, {y * card_height_no_bleed_mm}mm...")
+            pdf.image(
+                card,
+                x * card_width_no_bleed_mm + offset_x,
+                y * card_height_no_bleed_mm + offset_y,
+                card_width_no_bleed_mm,
+                card_height_no_bleed_mm
+            )
+
+            print(f"Stitched card {files[i]}.")
+
+        result_path = os.path.join(pdf_output_path, "cards.pdf")
+
+        pdf.output(result_path, "F")
+
+        print("Successfully rendered PDF.")
+        return result_path
