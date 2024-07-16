@@ -478,8 +478,6 @@ class TCGMaker:
     ) -> str:
         from PIL import Image
         from fpdf import FPDF
-        from PyPDF2 import PdfFileReader, PdfFileWriter
-        from os import system
 
         print("Preparing rendering PDF...")
 

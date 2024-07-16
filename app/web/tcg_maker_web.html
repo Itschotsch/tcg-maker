@@ -14,15 +14,15 @@
             <h1 class="title">TCG Maker</h1>
             <form action="/api/create" method="post" enctype="multipart/form-data">
                 <div class="field">
-                    <input type="radio" name="csv_selection" id="fetch_remote_csv" value="fetch" checked onclick="document.getElementById('csv_file').disabled = true">
+                    <input type="radio" name="csv_selection" id="fetch_remote_csv" value="fetch" onclick="document.getElementById('csv_file').disabled = true">
                     <label class="radio" for="fetch_remote_csv">Fetch the CSV from source</label>
-                    <input type="radio" name="csv_selection" id="provided_local_csv" value="provided" onclick="document.getElementById('csv_file').disabled = false">
+                    <input type="radio" name="csv_selection" id="provided_local_csv" value="provided" checked onclick="document.getElementById('csv_file').disabled = false">
                     <label class="radio" for="provided_local_csv">Use the following CSV</label>
                 </div>
                 <div class="field">
                     <label class="label" for="csv_file">CSV File:</label>
                     <div class="control">
-                        <input class="input" type="file" name="csv_file" id="csv_file" disabled>
+                        <input class="input" type="file" name="csv_file" id="csv_file">
                     </div>
                 </div>
                 <div class="field">
