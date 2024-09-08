@@ -239,52 +239,55 @@ class TCGMaker:
 
         # Render the HTML
         for index, row in csv.iterrows():
-            print(f"Rendering HTML for card{' ' + row['Title'] if 'Title' in row else ''}...")
+            try:
+                print(f"Rendering HTML for card{' ' + row['Title'] if 'Title' in row else ''}...")
 
-            # Load the respective HTML template for the entity kind.
-            entity_kind = row["Layout"]
-            template_path = os.path.join(html_input_path, f"{entity_kind}.html")
-            
-            # If the template does not exist, skip this card.
-            if not TCGMakerIO.exists(template_path):
-                print(f"Template for {entity_kind} does not exist. Skipped.")
-                continue
-
-            # Read the template file.
-            template = ""
-            with open(
-                template_path,
-                "r",
-                encoding="utf-8"
-            ) as f:
-                template = f.read()
-
-            # Replace §Variable§s in the HTML template.
-            ## Make sure the CSS is in the HTML first.
-            template = template.replace("§Style§", css)
-            ## Set other variables
-            row["Width"] = str(width_with_bleed_px)
-            row["Height"] = str(height_with_bleed_px)
-            row["Bleed"] = str(bleed_px) + "px"
-            row["BorderRadius"] = str(border_radius_px) + "px"
-            row["EntityType"] = " ⌯ ".join(row["EntityType"].split(","))
-
-            # Find all §Variable§s in the HTML template.
-            variables = re.findall(r"§(.*?)§", template)
-            # Replace the variables in the HTML template.
-            for variable in variables:
-                # If variable is unknown, skip it.
-                if variable not in row:
+                # Load the respective HTML template for the entity kind.
+                entity_kind = row["Layout"]
+                template_path = os.path.join(html_input_path, f"{entity_kind}.html")
+                
+                # If the template does not exist, skip this card.
+                if not TCGMakerIO.exists(template_path):
+                    print(f"Template for {entity_kind} does not exist. Skipped.")
                     continue
-                # Otherwise, replace it.
-                template = template.replace(f"§{variable}§", str(row[variable]))
-            
-            TCGMakerIO.write_file(
-                os.path.join(html_output_path, f"{row['ID']}.html"),
-                template
-            )
 
-            print(f"Rendered HTML for card {row['Title']}.")
+                # Read the template file.
+                template = ""
+                with open(
+                    template_path,
+                    "r",
+                    encoding="utf-8"
+                ) as f:
+                    template = f.read()
+
+                # Replace §Variable§s in the HTML template.
+                ## Make sure the CSS is in the HTML first.
+                template = template.replace("§Style§", css)
+                ## Set other variables
+                row["Width"] = str(width_with_bleed_px)
+                row["Height"] = str(height_with_bleed_px)
+                row["Bleed"] = str(bleed_px) + "px"
+                row["BorderRadius"] = str(border_radius_px) + "px"
+                row["EntityType"] = " ⌯ ".join(row["EntityType"].split(","))
+
+                # Find all §Variable§s in the HTML template.
+                variables = re.findall(r"§(.*?)§", template)
+                # Replace the variables in the HTML template.
+                for variable in variables:
+                    # If variable is unknown, skip it.
+                    if variable not in row:
+                        continue
+                    # Otherwise, replace it.
+                    template = template.replace(f"§{variable}§", str(row[variable]))
+                
+                TCGMakerIO.write_file(
+                    os.path.join(html_output_path, f"{row['ID']}.html"),
+                    template
+                )
+
+                print(f"Rendered HTML for card {row['Title']}.")
+            except Exception as e:
+                print(f"Error rendering HTML for card {row['Title']}: {e}")
     
     def render_images(
         self,
@@ -306,24 +309,27 @@ class TCGMaker:
             })
 
             for filename in html_files:
-                name = filename.split('.')[0]
-                print(f"Rendering image for card {name}...")
+                try:
+                    name = filename.split('.')[0]
+                    print(f"Rendering image for card {name}...")
 
-                print(f"Going to page {os.path.join(html_input_path, f'{name}.html')}.")
-                page.goto(
-                    "file://" + os.path.join(html_input_path, f"{name}.html")
-                )
-
-                # Wait for all images to load
-                page.wait_for_load_state("networkidle")
-
-                page.screenshot(
-                    path=os.path.join(
-                        image_output_path,
-                        f"{name}.png"
+                    print(f"Going to page {os.path.join(html_input_path, f'{name}.html')}.")
+                    page.goto(
+                        "file://" + os.path.join(html_input_path, f"{name}.html")
                     )
-                )
-                print(f"Rendered image for card {page.title()}.")
+
+                    # Wait for all images to load
+                    page.wait_for_load_state("networkidle")
+
+                    page.screenshot(
+                        path=os.path.join(
+                            image_output_path,
+                            f"{name}.png"
+                        )
+                    )
+                    print(f"Rendered image for card {page.title()}.")
+                except Exception as e:
+                    print(f"Error rendering image for card {name}: {e}")
 
             browser.close()
 
@@ -415,28 +421,31 @@ class TCGMaker:
         # Paste the cards into the output image
         # Reserve the last (bottom right) spot for the hidden card
         for i in range(stitch_x * stitch_y - 1):
-            if i >= len(files):
-                break
-            print(f"Pasting card {files[i]}...")
-            card = Image.open(os.path.join(image_input_path, files[i]))
-            # Remove the bleed around the card and paste it into the output image
-            # Crop the card to the correct aspect ratio, centered
-            card = card.crop(
-                (
-                    (card.width - card_width_px) // 2,
-                    (card.height - card_height_px) // 2,
-                    (card.width - card_width_px) // 2 + card_width_px,
-                    (card.height - card_height_px) // 2 + card_height_px
+            try:
+                if i >= len(files):
+                    break
+                print(f"Pasting card {files[i]}...")
+                card = Image.open(os.path.join(image_input_path, files[i]))
+                # Remove the bleed around the card and paste it into the output image
+                # Crop the card to the correct aspect ratio, centered
+                card = card.crop(
+                    (
+                        (card.width - card_width_px) // 2,
+                        (card.height - card_height_px) // 2,
+                        (card.width - card_width_px) // 2 + card_width_px,
+                        (card.height - card_height_px) // 2 + card_height_px
+                    )
                 )
-            )
-            output_image.paste(
-                card,
-                (
-                    (i % stitch_x) * card_width_px,
-                    (i // stitch_x) * card_height_px
+                output_image.paste(
+                    card,
+                    (
+                        (i % stitch_x) * card_width_px,
+                        (i // stitch_x) * card_height_px
+                    )
                 )
-            )
-            print(f"Pasted card {files[i]}.")
+                print(f"Pasted card {files[i]}.")
+            except Exception as e:
+                print(f"Error pasting card {files[i]}: {e}")
 
         # If the hidden card exists:
         if TCGMakerIO.exists(os.path.join(image_input_path, "hiddencard.png")):
@@ -501,51 +510,54 @@ class TCGMaker:
         caption_line_height = 4
 
         for i in range(len(files)):
-            print(f"Stitching card {files[i]}...")
-            x = i % (stitch_x * stitch_y) % stitch_x
-            y = i % (stitch_x * stitch_y) // stitch_x
+            try:
+                print(f"Stitching card {files[i]}...")
+                x = i % (stitch_x * stitch_y) % stitch_x
+                y = i % (stitch_x * stitch_y) // stitch_x
 
-            if x == 0 and y == 0:
-                pdf.add_page()
-                # Add page caption:
-                pdf.set_xy(0, 0)
-                pdf.multi_cell(
-                    page_width,
-                    offset_y,
-                    ", ".join(str(x) for x in card_ids),
-                    padding=caption_margin,
-                    max_line_height=caption_line_height
+                if x == 0 and y == 0:
+                    pdf.add_page()
+                    # Add page caption:
+                    pdf.set_xy(0, 0)
+                    pdf.multi_cell(
+                        page_width,
+                        offset_y,
+                        ", ".join(str(x) for x in card_ids),
+                        padding=caption_margin,
+                        max_line_height=caption_line_height
+                    )
+
+                # pdf.image(
+                #     os.path.join(image_input_path, files[i]),
+                #     x * card_width_mm,
+                #     y * card_height_mm,
+                #     card_width_mm,
+                #     card_height_mm
+                # )
+
+                # Remove bleed around image
+                print(f"Removing bleed from card {files[i]}...")
+                card = Image.open(os.path.join(image_input_path, files[i]))
+                card = card.crop(
+                    (
+                        (card.width - card_width_no_bleed_px) // 2,
+                        (card.height - card_height_no_bleed_px) // 2,
+                        (card.width - card_width_no_bleed_px) // 2 + card_width_no_bleed_px,
+                        (card.height - card_height_no_bleed_px) // 2 + card_height_no_bleed_px
+                    )
+                )
+                print(f"Placing card at {x * card_width_no_bleed_mm}mm, {y * card_height_no_bleed_mm}mm...")
+                pdf.image(
+                    card,
+                    x * card_width_no_bleed_mm + offset_x,
+                    y * card_height_no_bleed_mm + offset_y,
+                    card_width_no_bleed_mm,
+                    card_height_no_bleed_mm
                 )
 
-            # pdf.image(
-            #     os.path.join(image_input_path, files[i]),
-            #     x * card_width_mm,
-            #     y * card_height_mm,
-            #     card_width_mm,
-            #     card_height_mm
-            # )
-
-            # Remove bleed around image
-            print(f"Removing bleed from card {files[i]}...")
-            card = Image.open(os.path.join(image_input_path, files[i]))
-            card = card.crop(
-                (
-                    (card.width - card_width_no_bleed_px) // 2,
-                    (card.height - card_height_no_bleed_px) // 2,
-                    (card.width - card_width_no_bleed_px) // 2 + card_width_no_bleed_px,
-                    (card.height - card_height_no_bleed_px) // 2 + card_height_no_bleed_px
-                )
-            )
-            print(f"Placing card at {x * card_width_no_bleed_mm}mm, {y * card_height_no_bleed_mm}mm...")
-            pdf.image(
-                card,
-                x * card_width_no_bleed_mm + offset_x,
-                y * card_height_no_bleed_mm + offset_y,
-                card_width_no_bleed_mm,
-                card_height_no_bleed_mm
-            )
-
-            print(f"Stitched card {files[i]}.")
+                print(f"Stitched card {files[i]}.")
+            except Exception as e:
+                print(f"Error stitching card {files[i]}: {e}")
 
         result_path = os.path.join(pdf_output_path, "cards.pdf")
 
