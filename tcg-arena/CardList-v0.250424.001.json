@@ -35,7 +35,7 @@
     "Angriff-Bannkreise": 1,
     "Verteidigung-Schaden": 15,
     "Verteidigung-Schild": 20,
-    "Verteidigung-Bannkreise": 1,
+    "Verteidigung-Bannkreise": 1
   },
   "492": {
     "id": "492",
@@ -73,7 +73,7 @@
     "Angriff-Bannkreise": 0,
     "Verteidigung-Schaden": 15,
     "Verteidigung-Schild": 20,
-    "Verteidigung-Bannkreise": 0,
+    "Verteidigung-Bannkreise": 0
   },
   "494": {
     "id": "494",
@@ -111,6 +111,6 @@
     "Angriff-Bannkreise": 0,
     "Verteidigung-Schaden": 0,
     "Verteidigung-Schild": 0,
-    "Verteidigung-Bannkreise": 0,
+    "Verteidigung-Bannkreise": 0
   }
 }
