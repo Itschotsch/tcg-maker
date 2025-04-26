@@ -1,9 +1,9 @@
 {
   "name": "Aiṓn V",
-  "menuBackgroundImage": "https://itschotsch.github.io/tcg-maker/tcg-arena/GameImage.png",
+  "menuBackgroundImage": "https://itschotsch.github.io/tcg-maker/tcg-arena/GameImage-v0.250424.001.png",
   "defaultRessources": {
     "backgrounds": [
-      "https://itschotsch.github.io/tcg-maker/tcg-arena/GameImage.png"
+      "https://itschotsch.github.io/tcg-maker/tcg-arena/GameImage-v0.250424.001.png"
     ],
     "decksUrl": ""
   },
@@ -13,12 +13,16 @@
     "cardBack": "https://itschotsch.github.io/tcg-maker/output/images/cardback.png"
   },
   "deckBuilding": {
-    "mainFilters": [],
+    "mainFilters": [
+      "Klassisch"
+    ],
     "formats": [
       {
         "title": "Klassisch",
         "gameplay": "Klassisch",
-        "customCategories": []
+        "customCategories": [
+          "Klassisch"
+        ]
       }
     ]
   },
