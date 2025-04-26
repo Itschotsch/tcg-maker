@@ -1,0 +1,141 @@
+{
+  "name": "Aiṓn V",
+  "menuBackgroundImage": "https://itschotsch.github.io/tcg-maker/tcg-arena/GameImage.png",
+  "defaultRessources": {
+    "backgrounds": [
+      "https://itschotsch.github.io/tcg-maker/tcg-arena/GameImage.png"
+    ],
+    "decksUrl": ""
+  },
+  "customHelp": "Contact us on Discord.",
+  "cards": {
+    "dataUrl": "https://itschotsch.github.io/tcg-maker/tcg-arena/CardList-v0.250424.001.json",
+    "cardBack": "https://itschotsch.github.io/tcg-maker/output/images/cardback.png"
+  },
+  "deckBuilding": {
+    "mainFilters": [],
+    "formats": [
+      {
+        "title": "Klassisch",
+        "gameplay": "Klassisch",
+        "customCategories": []
+      }
+    ]
+  },
+  "gameplay": {
+    "Klassisch": {
+      "mulligan": {
+        "info": "Neue Starthand ziehen",
+        "startingHandSize": "6",
+        "drawNewHand": true,
+        "putSelectionAtBottom": false,
+        "drawNewSelectedCards": false
+      },
+      "newTurn": {
+        "drawOnStart": true,
+        "sharedTurn": false,
+        "firstPlayerTokenName": "Erstspieler",
+        "drawPerTurn": 1
+      },
+      "defaultNotes": "",
+      "tokens": [],
+      "countersStartingValues": [
+        0
+      ],
+      "hideFacedDownCards": true,
+      "sections": {
+        "customSections": [
+          "Kampflinie",
+          "Verteidigungslinie",
+          "Unterstützungslinie"
+        ],
+        "layout": {
+          "direction": "column",
+          "isSymetricalForOpponents": false,
+          "content": [
+            {
+              "direction": "column",
+              "style": false,
+              "content": [
+                {
+                  "section": "Kampflinie",
+                  "style": false
+                },
+                {
+                  "section": "Verteidigungslinie",
+                  "style": false
+                },
+                {
+                  "section": "Unterstützungslinie",
+                  "style": false
+                }
+              ],
+              "isSymetricalForOpponents": false
+            }
+          ]
+        },
+        "categoriesAlreadyOnBoard": [],
+        "autoPlayFromHand": {
+          "Kreatur": "Kampflinie",
+          "Manifestation": "Kampflinie",
+          "Ereignis": "Friedhof"
+        },
+        "autoPlayFromStack": {
+          "Kreatur": "Friedhof",
+          "Manifestation": "Friedhof",
+          "Ereignis": "Friedhof"
+        },
+        "sectionsDict": {
+          "Unterstützungslinie": {
+            "title": "Unterstützungslinie",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": true,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Kampflinie": {
+            "title": "Kampflinie",
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "",
+            "enterTapped": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": true,
+            "showHiddenCardInHistory": false,
+            "noQuickActions": false,
+            "enterSpun": false
+          },
+          "Verteidigungslinie": {
+            "title": "Verteidigungslinie",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "CENTER",
+            "opponentAlignment": false,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          }
+        }
+      }
+    }
+  }
+}
