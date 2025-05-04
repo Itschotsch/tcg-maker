@@ -1,0 +1,142 @@
+{
+  "name": "Chronor",
+  "menuBackgroundImage": "https://itschotsch.github.io/tcg-maker/tcg-arena/GameImage-v0.250424.001.png",
+  "deckBuilding": {
+    "mainFilters": [
+      "Kartentyp",
+      "Element",
+      "Kosten"
+    ],
+    "formats": [
+      {
+        "title": "Klassisch",
+        "gameplay": "Classic"
+      }
+    ]
+  },
+  "gameplay": {
+    "Classic": {
+      "mulligan": {
+        "info": "Draw seven cards again every time you mulligan. Once satisfied, put a card back on the bottom of your library for each time you have mulliganed (click those cards).",
+        "startingHandSize": "6",
+        "drawNewHand": false
+      },
+      "newTurn": {
+        "drawOnStart": true,
+        "sharedTurn": false
+      },
+      "countersStartingValues": [
+        "1",
+        0
+      ],
+      "sections": {
+        "customSections": [
+          "Feld",
+          "Elementar",
+          "Schild"
+        ],
+        "layout": {
+          "direction": "column",
+          "content": [
+            {
+              "section": "Feld"
+            },
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "Elementar"
+                },
+                {
+                  "section": "Schild"
+                }
+              ]
+            }
+          ]
+        },
+        "autoPlayFromHand": {
+          "Charakter": "Feld",
+          "Ereignis": "Stack",
+          "Manifestation": "Feld"
+        },
+        "autoPlayFromStack": {
+          "Charakter": "Feld",
+          "Ereignis": "Stack",
+          "Manifestation": "Feld"
+        },
+        "sectionsDict": {
+          "Elementar": {
+            "title": "Elementar",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "START",
+            "isHorizontalAllowed": false,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": true,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Feld": {
+            "title": "Feld",
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "isHorizontalAllowed": true,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Schild": {
+            "title": "Schild",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "END",
+            "isHorizontalAllowed": false,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          }
+        }
+      },
+      "defaultNotes": "",
+      "tokens": [],
+      "hideFacedDownCards": false
+    }
+  },
+  "defaultRessources": {
+    "backgrounds": [
+      "https://i.imgur.com/zV2lcZW.jpeg",
+      "https://i.imgur.com/lJdO0uy.jpeg",
+      "https://i.imgur.com/2TjUNMF.jpeg",
+      "https://i.imgur.com/Poao2W2.jpeg",
+      "https://i.imgur.com/0K1Jj33.jpeg",
+      "https://i.imgur.com/G8ceHWa.jpeg",
+      "https://i.imgur.com/BiCECcO.jpeg",
+      "https://i.imgur.com/AAMW7sU.jpeg",
+      "https://i.imgur.com/HjVTFec.jpeg"
+    ],
+    "decksUrl": ""
+  },
+  "customHelp": "The app will tap cards in your mana section without looking at colors when paying the cost of cards. It will considere all cards in the ressource section like a card that produce 1 mana (artifacts producing mana can be put in this section to be used automatically when paying mana costs). If you are expecting reactions from a permanent you play, remember that all cards can be put in the stack to resolve interactions.",
+  "cards": {
+    "dataUrl": "https://itschotsch.github.io/tcg-maker/tcg-arena/Chronor_CardList_v1_.json",
+    "cardBack": "https://itschotsch.github.io/tcg-maker/output/images/cardback.png"
+  }
+}
