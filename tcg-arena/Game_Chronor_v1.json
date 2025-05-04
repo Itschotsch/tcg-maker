@@ -3,9 +3,9 @@
   "menuBackgroundImage": "https://itschotsch.github.io/tcg-maker/tcg-arena/GameImage-v0.250424.001.png",
   "deckBuilding": {
     "mainFilters": [
-      "Kartentyp",
+      "type",
       "Element",
-      "Kosten"
+      "cost"
     ],
     "formats": [
       {
