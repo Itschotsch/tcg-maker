@@ -1,18 +1,33 @@
 {
-  "461": {
-    "id": "461",
-    "name": "Gottes Gefängnis",
-    "type": "Manifestation",
+  "494": {
+    "id": "494",
+    "name": "Keilformation bilden!",
+    "type": "Ereignis",
     "face": {
       "front": {
-        "name": "Gottes Gefängnis",
-        "type": "Manifestation",
+        "name": "Keilformation bilden!",
+        "type": "Ereignis",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/output/images/461.png"
+        "image": "https://itschotsch.github.io/tcg-maker/output/images/494.png"
       }
     },
     "cost": 3,
-    "Element": "Harmonie"
+    "Element": "Terra"
+  },
+  "493": {
+    "id": "493",
+    "name": "Phillip Altdorf",
+    "type": "Charakter",
+    "face": {
+      "front": {
+        "name": "Phillip Altdorf",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/output/images/493.png"
+      }
+    },
+    "cost": 4,
+    "Element": "Terra"
   },
   "492": {
     "id": "492",
@@ -22,11 +37,26 @@
       "front": {
         "name": "Liam Lustenberg",
         "type": "Charakter",
-        "cost": 2,
+        "cost": 0,
         "image": "https://itschotsch.github.io/tcg-maker/output/images/492.png"
       }
     },
-    "cost": 2,
+    "cost": 0,
     "Element": "Ignis"
+  },
+  "491": {
+    "id": "491",
+    "name": "Sheewa, Bote Terras",
+    "type": "Charakter",
+    "face": {
+      "front": {
+        "name": "Sheewa, Bote Terras",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/output/images/491.png"
+      }
+    },
+    "cost": 4,
+    "Element": "Terra"
   }
 }
