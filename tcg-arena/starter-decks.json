@@ -1,0 +1,194 @@
+[
+    {
+  "title": "Kontrolle",
+  "id": "ed9f1a10-d64f-44a6-a1ce-6ac81b90f093",
+  "game": "Chronor",
+  "format": "Klassisch",
+  "cardCount": 40,
+  "createdAt": "2025-05-05T19:19:33.207Z",
+  "lastModifiedAt": "2025-05-05T19:25:51.673Z",
+  "deckList": {
+    "categoriesOrder": [
+      "Charakter",
+      "Manifestation",
+      "Ereignis"
+    ],
+    "Charakter": [
+      {
+        "count": 2,
+        "id": "466"
+      },
+      {
+        "count": 2,
+        "id": "66"
+      },
+      {
+        "count": 2,
+        "id": "164"
+      },
+      {
+        "count": 2,
+        "id": "338"
+      },
+      {
+        "count": 2,
+        "id": "342"
+      },
+      {
+        "count": 2,
+        "id": "407"
+      },
+      {
+        "count": 3,
+        "id": "300"
+      },
+      {
+        "count": 2,
+        "id": "400"
+      },
+      {
+        "count": 2,
+        "id": "246"
+      }
+    ],
+    "Manifestation": [
+      {
+        "count": 1,
+        "id": "201"
+      },
+      {
+        "count": 2,
+        "id": "461"
+      },
+      {
+        "count": 1,
+        "id": "211"
+      }
+    ],
+    "Ereignis": [
+      {
+        "count": 2,
+        "id": "168"
+      },
+      {
+        "count": 2,
+        "id": "343"
+      },
+      {
+        "count": 2,
+        "id": "170"
+      },
+      {
+        "count": 3,
+        "id": "221"
+      },
+      {
+        "count": 2,
+        "id": "459"
+      },
+      {
+        "count": 1,
+        "id": "460"
+      },
+      {
+        "count": 3,
+        "id": "222"
+      },
+      {
+        "count": 2,
+        "id": "361"
+      }
+    ]
+  }
+},
+{
+    "title": "Armee des Südens",
+    "id": "ed7d81bf-cded-421d-91f8-b4340331b8dc",
+    "game": "Chronor",
+    "format": "Klassisch",
+    "cardCount": 40,
+    "createdAt": "2025-05-05T19:28:24.281Z",
+    "lastModifiedAt": "2025-05-05T19:28:24.281Z",
+    "deckList": {
+      "categoriesOrder": [
+        "Charakter",
+        "Ereignis",
+        "Manifestation"
+      ],
+      "Charakter": [
+        {
+          "count": 2,
+          "id": "350"
+        },
+        {
+          "count": 2,
+          "id": "480"
+        },
+        {
+          "count": 2,
+          "id": "351"
+        },
+        {
+          "count": 2,
+          "id": "356"
+        },
+        {
+          "count": 2,
+          "id": "490"
+        },
+        {
+          "count": 2,
+          "id": "487"
+        },
+        {
+          "count": 2,
+          "id": "478"
+        },
+        {
+          "count": 2,
+          "id": "189"
+        },
+        {
+          "count": 3,
+          "id": "482"
+        },
+        {
+          "count": 3,
+          "id": "470"
+        },
+        {
+          "count": 3,
+          "id": "483"
+        },
+        {
+          "count": 2,
+          "id": "493"
+        }
+      ],
+      "Ereignis": [
+        {
+          "count": 3,
+          "id": "167"
+        },
+        {
+          "count": 3,
+          "id": "365"
+        },
+        {
+          "count": 3,
+          "id": "494"
+        },
+        {
+          "count": 2,
+          "id": "361"
+        }
+      ],
+      "Manifestation": [
+        {
+          "count": 2,
+          "id": "197"
+        }
+      ]
+    }
+  }
+]
