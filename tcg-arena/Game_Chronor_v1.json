@@ -135,6 +135,7 @@
     "decksUrl": "https://itschotsch.github.io/tcg-maker/tcg-arena/starter-decks.json"
   },
   "customHelp": "The app will tap cards in your mana section without looking at colors when paying the cost of cards. It will considere all cards in the ressource section like a card that produce 1 mana (artifacts producing mana can be put in this section to be used automatically when paying mana costs). If you are expecting reactions from a permanent you play, remember that all cards can be put in the stack to resolve interactions.",
+  "cardRotation": "90",
   "cards": {
     "dataUrl": "https://itschotsch.github.io/tcg-maker/tcg-arena/Chronor_CardList_v1_.json",
     "cardBack": "https://itschotsch.github.io/tcg-maker/output/images/cardback.png"
