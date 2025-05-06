@@ -86,7 +86,7 @@
             "isHidden": "no",
             "height": "MEDIUM",
             "alignment": "CENTER",
-            "isHorizontalAllowed": true,
+            "isHorizontalAllowed": false,
             "opponentAlignment": false,
             "noAutoPayTo": false,
             "displayedTitle": "",
