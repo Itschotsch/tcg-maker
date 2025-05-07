@@ -128,8 +128,8 @@
   "defaultRessources": {
     "backgrounds": [
       "https://itschotsch.github.io/tcg-maker/tcg-arena/playmat-1.jpg",
-      "https://i.imgur.com/zV2lcZW.jpeg",
-      "https://i.imgur.com/HjVTFec.jpeg"
+      "https://itschotsch.github.io/tcg-maker/tcg-arena/playmat-2.jpg",
+      "https://itschotsch.github.io/tcg-maker/tcg-arena/playmat-3.jpg"
     ],
     "decksUrl": "https://itschotsch.github.io/tcg-maker/tcg-arena/starter-decks.json"
   },
