@@ -127,14 +127,8 @@
   },
   "defaultRessources": {
     "backgrounds": [
+      "https://itschotsch.github.io/tcg-maker/tcg-arena/tcg-arena/playmat-1.jpg",
       "https://i.imgur.com/zV2lcZW.jpeg",
-      "https://i.imgur.com/lJdO0uy.jpeg",
-      "https://i.imgur.com/2TjUNMF.jpeg",
-      "https://i.imgur.com/Poao2W2.jpeg",
-      "https://i.imgur.com/0K1Jj33.jpeg",
-      "https://i.imgur.com/G8ceHWa.jpeg",
-      "https://i.imgur.com/BiCECcO.jpeg",
-      "https://i.imgur.com/AAMW7sU.jpeg",
       "https://i.imgur.com/HjVTFec.jpeg"
     ],
     "decksUrl": "https://itschotsch.github.io/tcg-maker/tcg-arena/starter-decks.json"
