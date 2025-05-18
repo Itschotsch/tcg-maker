@@ -110,13 +110,13 @@
             "isHorizontalAllowed": false,
             "opponentAlignment": false,
             "noAutoPayTo": false,
-            "displayedTitle": "",
-            "noQuickActions": false,
+            "displayedTitle": "Schild",
+            "noQuickActions": true,
             "enterTapped": false,
             "enterSpun": false,
-            "isGroupForbidden": false,
+            "isGroupForbidden": true,
             "keepTappedNewTurn": true,
-            "showHiddenCardInHistory": false
+            "showHiddenCardInHistory": true
           }
         }
       },
