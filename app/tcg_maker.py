@@ -160,7 +160,8 @@ class TCGMaker:
             "CostIgnis",
             "CostMagica",
             "CostUnshaped",
-            "ElementalAmount"
+            "Elemental",
+            "ElementalAmount",
         ])
 
         # Go through the new columns one by one and fill them with the old values, processed if necessary
@@ -217,8 +218,21 @@ class TCGMaker:
         new_csv["CostMagica"] = old_csv["Kosten Magica"]
         # CostUnshaped: Use Kosten Ungeprägt. Is x and should be x.
         new_csv["CostUnshaped"] = old_csv["Kosten Ungeprägt"]
+        # Elemental: Use Element. Is Aeris asdf/Terra asdf/Ignis asdf/Aqua asdf/Magica asdf/Ungeprägt asdf and should be Aeris/Terra/Ignis/Aqua/Magica/Unshaped
+        new_csv["Elemental"] = old_csv["Element"].apply(lambda x: {
+            "Aeris": "aeris",
+            "Terra": "terra",
+            "Ignis": "ignis",
+            "Aqua": "aqua",
+            "Magica": "magica",
+            "Dunkelheit": "malice",
+            "Ungeprägt": "unshaped",
+        }.get(x.split()[0], "") if x else "")
         # ElementalAmount: Use 1.
         new_csv["ElementalAmount"] = 1
+        # Print Element of ID 195
+        print(old_csv.loc[old_csv['ID'] == 195, 'Element'].values[0])
+        print(new_csv.loc[old_csv['ID'] == 195, 'Elemental'].values[0])
 
         return new_csv
     
