@@ -62,15 +62,14 @@ class TCGMaker:
                 border_radius_px=border_radius_px,
             )
 
-        if settings["render_images"] == True:
-            self.render_images(
+        if settings["render_png"] == True:
+            self.render_png(
                 card_ids=list(set(card_ids)), # Remove duplicates
                 html_input_path=os.path.join(settings["output_path"], "html"),
                 image_output_path=os.path.join(settings["output_path"], "images"),
                 width_with_bleed_px=card_width_with_bleed_px,
                 height_with_bleed_px=card_height_with_bleed_px,
             )
-            
 
         if settings["render_special"] == True:
             self.render_special(
@@ -80,7 +79,7 @@ class TCGMaker:
                 card_height_px=card_height_no_bleed_px,
             )
 
-        result_path = os.path.join(settings["output_path"], "images")
+        result_path = []
 
         # if settings["stitch_images"] == True:
         #     result_path = self.stitch_images(
@@ -94,10 +93,20 @@ class TCGMaker:
         #         dpi=dpi,
         #     )
 
+        if settings["render_jpg"] == True:
+            result_path.append(self.convert_png_to_jpg(
+                card_ids=list(set(card_ids)), # Remove duplicates
+                png_input_path=os.path.join(settings["output_path"], "images"),
+                jpg_output_path=os.path.join(settings["tcg_arena_path"], "images"),
+                width_with_bleed_px=card_width_with_bleed_px,
+                height_with_bleed_px=card_height_with_bleed_px,
+                width_no_bleed_px=card_width_no_bleed_px,
+                height_no_bleed_px=card_height_no_bleed_px,
+            ))
         if settings["render_pdf"] == True:
             settings["stitch_x"] = 3
             settings["stitch_y"] = 3
-            result_path = self.render_pdf(
+            result_path.append(self.render_pdf(
                 image_input_path=os.path.join(settings["output_path"], "images"),
                 pdf_output_path=os.path.join(settings["output_path"], "images"),
                 card_ids=card_ids, # Keep duplicates
@@ -108,11 +117,11 @@ class TCGMaker:
                 stitch_x=settings["stitch_x"],
                 stitch_y=settings["stitch_y"],
                 dpi=dpi,
-            )
-        else:
+            ))
+        if settings["render_tts"] == True:
             settings["stitch_x"] = 10
             settings["stitch_y"] = 7
-            result_path = self.stitch_images(
+            result_path.append(self.stitch_images(
                 image_input_path=os.path.join(settings["output_path"], "images"),
                 image_output_path=os.path.join(settings["output_path"], "images"),
                 card_ids=card_ids, # Keep duplicates
@@ -121,7 +130,7 @@ class TCGMaker:
                 stitch_x=settings["stitch_x"],
                 stitch_y=settings["stitch_y"],
                 dpi=dpi,
-            )
+            ))
 
         print("Done.")
         return result_path
@@ -289,7 +298,7 @@ class TCGMaker:
             except Exception as e:
                 print(f"Error rendering HTML for card {row['Title']}: {e}")
     
-    def render_images(
+    def render_png(
         self,
         card_ids: List[int],
         html_input_path: str,
@@ -471,6 +480,56 @@ class TCGMaker:
 
         print("Successfully stitched cards.")
         return result_path
+    
+    def convert_png_to_jpg(
+        self,
+        card_ids: List[int],
+        png_input_path: str,
+        jpg_output_path: str,
+        width_with_bleed_px: int,
+        height_with_bleed_px: int,
+        width_no_bleed_px: int,
+        height_no_bleed_px: int,
+    ) -> str:
+        print("Converting images to JPEGs...")
+
+        for filename in os.listdir(png_input_path):
+            if filename.endswith(".png"):
+                name = filename.split('.')[0]
+                # Check if the image name is a number.
+                if not name.isdigit():
+                    continue
+
+                # Check if the image is in the list of cards to convert.
+                if int(name) not in card_ids:
+                    continue
+                
+                print(f"Converting image for card {name}...")
+
+                # Load the image.
+                image = Image.open(os.path.join(png_input_path, filename))
+
+                # Crop away the bleed.
+                topLeftCorner = (width_with_bleed_px - width_no_bleed_px) // 2, (height_with_bleed_px - height_no_bleed_px) // 2
+                image = image.crop(
+                    (
+                        topLeftCorner[0],
+                        topLeftCorner[1],
+                        topLeftCorner[0] + width_no_bleed_px,
+                        topLeftCorner[1] + height_no_bleed_px
+                    )
+                )
+
+                # Convert it to JPEG.
+                image = image.convert("RGB")
+                # Save the JPEG.
+                image.save(os.path.join(jpg_output_path, f"{name}.jpg"), "JPEG")
+
+                print(f"Converted image for card {name}.")
+
+        print("Done converting images to JPEGs.")
+
+        return jpg_output_path
 
     def render_pdf(
         self,

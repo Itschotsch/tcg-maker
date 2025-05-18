@@ -2,6 +2,7 @@ import os
 
 import http.server
 import cgi
+import json
 
 from app.tcg_maker import TCGMaker
 from app.tcg_maker_io import TCGMakerIO
@@ -61,32 +62,56 @@ class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             "csv": TCGMakerIO.read_csv_string(form["csv_file"].value.decode("utf-8")) if "csv_file" in form else None,
             "preprocess_csv": "preprocess_csv" in form and form["preprocess_csv"].value == "on",
             "render_html": "render_html" in form and form["render_html"].value == "on",
-            "render_images": "render_images" in form and form["render_images"].value == "on",
+            "render_png": "render_png" in form and form["render_png"].value == "on",
             "render_special": "render_special" in form and form["render_special"].value == "on",
             # "stitch_images": "stitch_images" in form and form["stitch_images"].value == "on",
             "render_all": "render_selection" in form and form["render_selection"].value == "all",
             "render_ids": "render_selection" in form and form["render_selection"].value == "ids",
             "card_ids": TCGMakerUtil.parse_comma_seprarated_ints(form["card_ids"].value) if "card_ids" in form else None,
-            "render_pdf": "render_pdf_tts" in form and form["render_pdf_tts"].value == "pdf",
+            # "render_pdf": "render_pdf_tts" in form and form["render_pdf_tts"].value == "pdf",
+            "render_jpg": "render_jpg" in form and form["render_jpg"].value == "on",
+            "render_pdf": "render_pdf" in form and form["render_pdf"].value == "on",
+            "render_tts": "render_tts" in form and form["render_tts"].value == "on",
         }
 
         settings = TCGMakerUtil.complete_settings(settings)
 
         # Run the TCG Maker
-        tcg_maker = TCGMaker()
-        output_path = tcg_maker.run(settings)
+        tcg_maker: TCGMaker = TCGMaker()
+        output_paths: List[str] = tcg_maker.run(settings)
 
-        # Send the headers
+        # Send the headers and return the result
         self.send_response(200)
-        if settings["render_pdf"]:
-            self.send_header("Content-type", "application/pdf")
-            self.send_header("Content-Disposition", "attachment; filename=cards.pdf")
+        if len(output_paths) == 0:
+            self.send_header("Content-type", "application/json")
+            self.send_header("Content-Disposition", "inline")
+            self.end_headers()
+            self.wfile.write(json.dumps({"status": "success", "message": "No output files generated"}).encode("utf-8"))
+        elif len(output_paths) == 1:
+            if settings["render_pdf"]:
+                self.send_header("Content-type", "application/pdf")
+                self.send_header("Content-Disposition", "attachment; filename=cards.pdf")
+                self.end_headers()
+                with open(output_paths[0], "rb") as file:
+                    self.wfile.write(file.read())
+            elif settings["render_tts"]:
+                self.send_header("Content-type", "image/png")
+                self.send_header("Content-Disposition", "attachment; filename=cards.png")
+                self.end_headers()
+                with open(output_paths[0], "rb") as file:
+                    self.wfile.write(file.read())
+            elif settings["render_jpg"]:
+                self.send_header("Content-type", "application/json")
+                self.send_header("Content-Disposition", "inline")
+                self.end_headers()
+                self.wfile.write(json.dumps({"status": "success", "message": "JPG output files generated", "path": output_paths[0]}).encode("utf-8"))
+            else:
+                self.send_header("Content-type", "application/json")
+                self.send_header("Content-Disposition", "inline")
+                self.end_headers()
+                self.wfile.write(json.dumps({"status": "success", "message": "Output files generated", "path": output_paths[0]}).encode("utf-8"))
         else:
-            self.send_header("Content-type", "image/png")
-            self.send_header("Content-Disposition", "attachment; filename=cards.png")
-        self.end_headers()
-
-        # Return the result:
-        with open(output_path, "rb") as file:
-            self.wfile.write(file.read())
-        
+            self.send_header("Content-type", "application/json")
+            self.send_header("Content-Disposition", "inline")
+            self.end_headers()
+            self.wfile.write(json.dumps({"status": "success", "message": "Output files generated", "paths": output_paths}).encode("utf-8"))

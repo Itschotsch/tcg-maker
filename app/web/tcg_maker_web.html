@@ -34,8 +34,8 @@
                     <label class="checkbox" for="render_html">Render HTML files (necessary if any card data changed)</label>
                 </div>
                 <div class="field">
-                    <input type="checkbox" name="render_images" id="render_images" checked>
-                    <label class="checkbox" for="render_images">Render card images (necessary if any card data changed)</label>
+                    <input type="checkbox" name="render_png" id="render_png" checked>
+                    <label class="checkbox" for="render_png">Render card PNG images (necessary if any card data changed)</label>
                 </div>
                 <div class="field">
                     <input type="checkbox" name="render_special" id="render_special" checked>
@@ -57,11 +57,23 @@
                         <input class="input" type="text" name="card_ids" id="card_ids" value="1,2,3">
                     </div>
                 </div>
-                <div class="field">
+                <!-- <div class="field">
                     <input type="radio" name="render_pdf_tts" id="render_pdf" value="pdf" checked>
                     <label class="radio" for="render_pdf">Render PDF for printing</label>
                     <input type="radio" name="render_pdf_tts" id="render_tts" value="tts">
                     <label class="radio" for="render_tts">Render PNG for TTS</label>
+                </div> -->
+                <div class="field">
+                    <input type="checkbox" name="render_jpg" id="render_jpg" checked>
+                    <label class="checkbox" for="render_jpg">Render JPG for <a href="https://tcg-arena.fr/">TCG-Arena</a></label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" name="render_pdf" id="render_pdf">
+                    <label class="checkbox" for="render_pdf">Render PDF for printing</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" name="render_tts" id="render_tts">
+                    <label class="checkbox" for="render_tts">Render PNG for TTS</label>
                 </div>
                 <div class="field">
                     <div class="control">

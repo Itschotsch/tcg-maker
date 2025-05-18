@@ -22,6 +22,7 @@ class TCGMakerUtil:
         # TODO make these adjustable
         settings["input_path"] = os.path.join(TCGMakerIO.pwd, "input")
         settings["output_path"] = os.path.join(TCGMakerIO.pwd, "output")
+        settings["tcg_arena_path"] = os.path.join(TCGMakerIO.pwd, "tcg-arena")
         settings["card_width_mm"] = 63
         settings["card_height_mm"] = 88
         settings["bleed_mm"] = 3
