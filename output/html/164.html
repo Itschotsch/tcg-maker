@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!-- A card measures 63mm x 88mm -->
     <meta name="viewport" content="width=814, height=1110, initial-scale=1.0">
-    <title>Infiltrator</title>
+    <title>Namenloser Ryv'Jorl</title>
 
     <link rel="stylesheet" href="../../input/html/style.css">
     <style>
@@ -75,7 +75,8 @@ body {
     color: white;
 
     background-image: url(../../input/images/164.png);
-    background-size: cover; /* 100% auto; */
+    background-size: cover;
+    /* 100% auto; */
     background-position: center;
 
     z-index: 0;
@@ -389,7 +390,7 @@ body {
     /* -webkit-text-stroke: 0.1px transparent;
     text-stroke: 0.1px transparent; */
     /* TODO: Fix shadows over other parts of the text. */
-    
+
     color: black;
     /* border: 0.5vw solid white; */
 }
@@ -408,7 +409,7 @@ body {
 .layout-ritual .flavour-text:empty {
     display: none;
 }
-  
+
 key {
     font-style: italic;
 }
@@ -496,7 +497,7 @@ element.Magica::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     /* border: 0.5vw solid greenyellow;
     z-index: 1; */
 }
@@ -559,7 +560,7 @@ element.Magica::after {
     height: 9vw;
     transform: rotate(180deg);
 
-    background-image: url(../../input/layout/cost_element_§CostElement§_empty.png);
+    background-image: url(../../input/layout/cost_element_unshaped_empty.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -572,6 +573,30 @@ element.Magica::after {
     padding-left: 3vw; */
     font-family: "StatsFont", serif;
     font-size: 5vw;
+}
+
+.elemental.terra {
+    background-image: url(../../input/layout/cost_element_terra_empty.png);
+}
+
+.elemental.aqua {
+    background-image: url(../../input/layout/cost_element_aqua_empty.png);
+}
+
+.elemental.aeris {
+    background-image: url(../../input/layout/cost_element_aeris_empty.png);
+}
+
+.elemental.ignis {
+    background-image: url(../../input/layout/cost_element_ignis_empty.png);
+}
+
+.elemental.magica {
+    background-image: url(../../input/layout/cost_element_magica_empty.png);
+}
+
+.elemental.unshaped {
+    background-image: url(../../input/layout/cost_element_unshaped_empty.png);
 }
 
 .elemental>p {
@@ -640,9 +665,7 @@ element.Magica::after {
 
 /* .edition {} */
 
-.id {
-    
-}
+.id {}
     </style>
 </head>
 
@@ -651,8 +674,8 @@ element.Magica::after {
         <div class="safe-area-preview"></div>
         <div class="safe-area top">
             <div class="titles">
-                <div class="title">Infiltrator</div>
-                <div class="subtitle"></div>
+                <div class="title">Namenloser Ryv'Jorl</div>
+                <div class="subtitle"> Stiller Infiltrator</div>
             </div>
             <div class="cost-list">
                 <div class="cost">
@@ -706,7 +729,7 @@ element.Magica::after {
                 <div class="combat-stats">
                     <div class="offensive"><img src="../../input/layout/combat_stats_offensive_symbol.png" class="combat-stats-symbol" />&nbsp;5/10</div>
                     <div class="defensive"><img src="../../input/layout/combat_stats_defensive_symbol.png" class="combat-stats-symbol" />&nbsp;10/10</div>
-                    <div class="elemental">
+                    <div class="elemental aqua">
                         <p>1</p>
                     </div>
                 </div>
