@@ -179,8 +179,14 @@ class TCGMaker:
         new_csv["Title"] = old_csv["Name"].apply(lambda x: x.split(",")[0] if x else "")
         # Subtitle: Use Name. Is x,y and should be y.
         new_csv["Subtitle"] = old_csv["Name"].apply(lambda x: x.split(",")[1] if len(x.split(",")) > 1 else "")
-        # Description: Use Kartentext. Is x (http://someurl.com/) y (http://someotherurl.com/) z and should be x y z.
-        new_csv["Description"] = old_csv["Kartentext"].apply(lambda x: re.sub(r"\((https?:\/\/[^)]+)\)", "", x) if x else "")
+        # Description: Use Kartentext.
+        new_csv["Description"] = old_csv["Kartentext"].apply(
+            lambda x:
+                # Is <ignis/> or <ignis> and should be <ignis></ignis>
+                re.sub(r"<(ignis|terra|aqua|aeris|magica|unshaped)(/?)>", r"<\1></\1>", 
+                # Is x (http://someurl.com/) y (http://someotherurl.com/) z and should be x y z.
+                re.sub(r"\((https?:\/\/[^)]+)\)", "", x)) if x else x
+        )
         # Artwork: Use ID. Is x and should be x.png.
         new_csv["Artwork"] = old_csv["ID"].apply(lambda x: f"{x}.png")
         # EntityKind: Use Kartenart. Is Charakter asdf/Ereignis asdf/Legende asdf/Manifestation asdf/Ritual asdf and should be Charakter/Ereignis/Legende/Manifestation/Ritual

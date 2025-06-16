@@ -399,12 +399,50 @@ body {
     display: none;
 }
 
-key {
+effect {
+    font-weight: 600;
+}
+
+typ {
     font-style: italic;
 }
 
 name {
     font-variant: small-caps;
+}
+
+/* ??? {
+    font-variant: small-caps;
+} */
+
+ignis, terra, aqua, aeris, magica, unshaped {
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1em;
+    height: 1em;
+    aspect-ratio: 1;
+    vertical-align: sub;
+}
+
+ignis {
+    background-image: url(../../input/layout/cost_element_ignis.png);
+}
+terra {
+    background-image: url(../../input/layout/cost_element_terra.png);
+}
+aqua {
+    background-image: url(../../input/layout/cost_element_aqua.png);
+}
+aeris {
+    background-image: url(../../input/layout/cost_element_aeris.png);
+}
+magica {
+    background-image: url(../../input/layout/cost_element_magica.png);
+}
+unshaped {
+    background-image: url(../../input/layout/cost_element_unshaped.png);
 }
 
 element::after {
@@ -653,5 +691,3 @@ element.Magica::after {
 } */
 
 /* .edition {} */
-
-.id {}
