@@ -103,6 +103,21 @@ class TCGMaker:
                 width_no_bleed_px=card_width_no_bleed_px,
                 height_no_bleed_px=card_height_no_bleed_px,
             ))
+        if settings["render_pdf_singles"] == True:
+            result_path.append(self.render_pdf_singles(
+                image_input_path=os.path.join(settings["output_path"], "images"),
+                pdf_output_path=os.path.join(settings["output_path"], "images"),
+                card_ids=card_ids, # Keep duplicates
+                card_width_with_bleed_mm=card_width_with_bleed_mm,
+                card_height_with_bleed_mm=card_height_with_bleed_mm,
+                card_width_with_bleed_px=card_width_with_bleed_px,
+                card_height_with_bleed_px=card_height_with_bleed_px,
+                # card_width_no_bleed_mm=card_width_no_bleed_mm,
+                # card_height_no_bleed_mm=card_height_no_bleed_mm,
+                # card_width_no_bleed_px=card_width_no_bleed_px,
+                # card_height_no_bleed_px=card_height_no_bleed_px,
+                dpi=dpi,
+            ))
         if settings["render_pdf"] == True:
             settings["stitch_x"] = 3
             settings["stitch_y"] = 3
@@ -643,4 +658,58 @@ class TCGMaker:
         pdf.output(result_path, "F")
 
         print("Successfully rendered PDF.")
+        return result_path
+    
+    def render_pdf_singles(
+        self,
+        image_input_path: str,
+        pdf_output_path: str,
+        card_ids: List[int],
+        card_width_with_bleed_mm: int,
+        card_height_with_bleed_mm: int,
+        card_width_with_bleed_px: int,
+        card_height_with_bleed_px: int,
+        dpi: int,
+    ) -> str:
+        from PIL import Image
+        from fpdf import FPDF
+        import os
+
+        print("Preparing rendering PDF (one card per page)...")
+
+        files = [f"{i}.png" for i in card_ids]
+
+        class CardPDF(FPDF):
+            def __init__(self):
+                super().__init__(orientation='P', unit='mm', format=(card_width_with_bleed_mm, card_height_with_bleed_mm))
+                self.set_auto_page_break(False)
+
+        pdf = CardPDF()
+
+        for i, file_name in enumerate(files):
+            try:
+                print(f"Adding card {file_name} as a full-page...")
+
+                img_path = os.path.join(image_input_path, file_name)
+                card = Image.open(img_path)
+
+                if card.size != (card_width_with_bleed_px, card_height_with_bleed_px):
+                    print(f"Warning: Image size mismatch for {file_name}. Expected {card_width_with_bleed_px}x{card_height_with_bleed_px}, got {card.size}")
+
+                pdf.add_page()
+                pdf.image(
+                    img_path,
+                    x=0,
+                    y=0,
+                    w=card_width_with_bleed_mm,
+                    h=card_height_with_bleed_mm
+                )
+
+            except Exception as e:
+                print(f"Error processing card {file_name}: {e}")
+
+        result_path = os.path.join(pdf_output_path, "cards_singles.pdf")
+        pdf.output(result_path, "F")
+
+        print("Successfully rendered single-card-per-page PDF.")
         return result_path

@@ -70,6 +70,7 @@ class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             "card_ids": TCGMakerUtil.parse_comma_seprarated_ints(form["card_ids"].value) if "card_ids" in form else None,
             # "render_pdf": "render_pdf_tts" in form and form["render_pdf_tts"].value == "pdf",
             "render_jpg": "render_jpg" in form and form["render_jpg"].value == "on",
+            "render_pdf_singles": "render_pdf_singles" in form and form["render_pdf_singles"].value == "on",
             "render_pdf": "render_pdf" in form and form["render_pdf"].value == "on",
             "render_tts": "render_tts" in form and form["render_tts"].value == "on",
         }
@@ -91,6 +92,12 @@ class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             if settings["render_pdf"]:
                 self.send_header("Content-type", "application/pdf")
                 self.send_header("Content-Disposition", "attachment; filename=cards.pdf")
+                self.end_headers()
+                with open(output_paths[0], "rb") as file:
+                    self.wfile.write(file.read())
+            elif settings["render_pdf_singles"]:
+                self.send_header("Content-type", "application/pdf")
+                self.send_header("Content-Disposition", "attachment; filename=cards_singles.pdf")
                 self.end_headers()
                 with open(output_paths[0], "rb") as file:
                     self.wfile.write(file.read())
