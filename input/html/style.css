@@ -93,8 +93,11 @@ body {
 }
 
 .safe-area.bottom {
-    padding-bottom: 4vw;
-    padding-bottom: §Bleed§;
+    /* padding-bottom: 4vw;
+    padding-bottom: §Bleed§; */
+    margin-left: calc(§Bleed§ + 10.5vw);
+    margin-right: calc(§Bleed§ + 10.5vw);
+    margin-bottom: calc(§Bleed§ + 2vw);
 }
 
 .safe-area-preview {
@@ -278,8 +281,8 @@ body {
     position: relative;
 
     min-height: 15vw;
-    margin: 8vw;
-    padding: 5vw;
+    margin: 7vw;
+    padding: 5vw 3.5vw;
 
     z-index: -1;
 }
@@ -349,6 +352,8 @@ body {
     /* margin-right: 15vw; */
 
     /* border: 0.5vw solid white; */
+
+    hyphens: auto;
 }
 
 .card-kind+.entity-type,
@@ -368,6 +373,10 @@ body {
 
     font-style: italic;
     font-size: 2.5vw;
+}
+
+.flavour-text:empty {
+    display: none;
 }
 
 .entity-type,
@@ -399,50 +408,113 @@ body {
     display: none;
 }
 
-effect {
+ability {
     font-weight: 600;
 }
 
-typ {
+cost:after {
+    content: ":";
+}
+
+desc {
     font-style: italic;
 }
+
+desc:before {
+    content: "(";
+}
+
+desc:after {
+    content: ")";
+}
+
+/* kind,
+typ {
+    font-style: italic;
+} */
 
 name {
     font-variant: small-caps;
 }
 
-/* ??? {
-    font-variant: small-caps;
-} */
+self {
+    font-style: italic;
+    /* font-weight: bold; */
+}
 
-ignis, terra, aqua, aeris, magica, unshaped {
+ignis,
+terra,
+aqua,
+aeris,
+magica,
+unshaped,
+unshaped1,
+unshaped2,
+unshaped3,
+unshaped4,
+unshaped5,
+unshapedX,
+opt {
     display: inline-block;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    width: 1em;
-    height: 1em;
+    width: 1.15em;
+    height: 1.15em;
     aspect-ratio: 1;
     vertical-align: sub;
 }
 
 ignis {
-    background-image: url(../../input/layout/cost_element_ignis.png);
+    background-image: url(../../input/layout/cost_element_ignis_inline.png);
 }
+
 terra {
-    background-image: url(../../input/layout/cost_element_terra.png);
+    background-image: url(../../input/layout/cost_element_terra_inline.png);
 }
+
 aqua {
-    background-image: url(../../input/layout/cost_element_aqua.png);
+    background-image: url(../../input/layout/cost_element_aqua_inline.png);
 }
+
 aeris {
-    background-image: url(../../input/layout/cost_element_aeris.png);
+    background-image: url(../../input/layout/cost_element_aeris_inline.png);
 }
+
 magica {
-    background-image: url(../../input/layout/cost_element_magica.png);
+    background-image: url(../../input/layout/cost_element_magica_inline.png);
 }
+
 unshaped {
-    background-image: url(../../input/layout/cost_element_unshaped.png);
+    background-image: url(../../input/layout/cost_element_unshaped_inline.png);
+}
+
+unshaped1 {
+    background-image: url(../../input/layout/cost_element_unshaped_inline_1.png);
+}
+
+unshaped2 {
+    background-image: url(../../input/layout/cost_element_unshaped_inline_2.png);
+}
+
+unshaped3 {
+    background-image: url(../../input/layout/cost_element_unshaped_inline_3.png);
+}
+
+unshaped4 {
+    background-image: url(../../input/layout/cost_element_unshaped_inline_4.png);
+}
+
+unshaped5 {
+    background-image: url(../../input/layout/cost_element_unshaped_inline_5.png);
+}
+
+unshapedX {
+    background-image: url(../../input/layout/cost_element_unshaped_inline_X.png);
+}
+
+opt {
+    background-image: url(../../input/layout/cost_opt_inline.png);
 }
 
 element::after {
@@ -583,8 +655,8 @@ element.Magica::after {
 .elemental {
     position: absolute;
     /* padding: 5.5vw; */
-    width: 9vw;
-    height: 9vw;
+    width: 11vw;
+    height: 11vw;
     transform: rotate(180deg);
 
     background-image: url(../../input/layout/cost_element_unshaped_empty.png);
@@ -599,7 +671,7 @@ element.Magica::after {
     /* padding-right: 5vw;
     padding-left: 3vw; */
     font-family: "StatsFont", serif;
-    font-size: 5vw;
+    font-size: 7.5vw;
 }
 
 .elemental.terra {
@@ -649,7 +721,7 @@ element.Magica::after {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
 
     width: 100%;
 
@@ -657,28 +729,39 @@ element.Magica::after {
 
     /* background-color: black; */
 
-    padding-bottom: 2vw;
-    padding-top: 1vw;
+    /* padding-bottom: 2vw;
+    padding-top: 1vw; */
 
     /* TODO this seems hacky, not the way it's supposed to be #1: */
-    height: 4vw;
+    /* height: 4vw;
     height: calc(3vw + §Bleed§);
     margin-top: -4vw;
     margin-top: calc((-3vw - §Bleed§) * 0.75);
     margin-bottom: -4vw;
     margin-bottom: calc((-3vw - §Bleed§) * 0.25);
     margin-left: 3vw;
-    margin-right: 3vw;
+    margin-right: 3vw; */
+
+    /* height: 4vw;
+    height: calc(3vw + §Bleed§); */
+
+    height: 5vw;
+    margin-top: calc(§Bleed§ - 5vw);
+    /* margin-bottom: 4vw;
+    margin-bottom: calc(1.5vw + §Bleed§); */
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
 }
 
 .footer * {
     /* TODO this seems hacky, not the way it's supposed to be #1: */
-    display: flex;
+    /* display: flex;
     margin-left: 4vw;
-    margin-left: calc(3vw + §Bleed§);
+    margin-left: calc(1.5vw + §Bleed§);
     margin-right: 4vw;
-    margin-right: calc(3vw + §Bleed§);
+    margin-right: calc(1.5vw + §Bleed§);
     height: 100%;
+
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 1); */
 }
 
 /* .author {} */

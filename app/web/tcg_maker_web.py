@@ -84,6 +84,11 @@ class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         try:
             output_paths = tcg_maker.run(settings)
         except Exception as e:
+            print(f"Error running TCG Maker: {e}")
+            # Print traceback
+            import traceback
+            traceback.print_exc()
+            # Send the error
             self.send_response(500)
             self.send_header("Content-type", "application/json")
             self.end_headers()

@@ -208,7 +208,11 @@ class TCGMaker:
             "Ritual": "ritual"
         }.get(x.split()[0], "") if x else "")
         # Title: Use Name. Is x,y and should be x.
-        new_csv["Title"] = old_csv["Name"].apply(lambda x: x.split(",")[0] if x else "")
+        def truncate_after_comma(string):
+            if string is None:
+                return ""
+            return string.split(',', 1)[0] + (',' if ',' in string else '')
+        new_csv["Title"] = old_csv["Name"].apply(truncate_after_comma)
         # Subtitle: Use Name. Is x,y and should be y.
         new_csv["Subtitle"] = old_csv["Name"].apply(lambda x: x.split(",")[1] if len(x.split(",")) > 1 else "")
         # Description: Use Kartentext.
@@ -221,8 +225,30 @@ class TCGMaker:
         )
         # Artwork: Use ID. Is x and should be x.png.
         new_csv["Artwork"] = old_csv["ID"].apply(lambda x: f"{x}.png")
+        # Unique: Use Einzigartig. Is Yes and should be True. Is No and should be False.
+        new_csv["Unique"] = old_csv["Einzigartig"].apply(lambda x: x == "Yes")
         # EntityKind: Use Kartenart. Is Charakter asdf/Ereignis asdf/Legende asdf/Manifestation asdf/Ritual asdf and should be Charakter/Ereignis/Legende/Manifestation/Ritual
-        new_csv["EntityKind"] = old_csv["Kartenart"].apply(lambda x: x.split()[0] if x else "")
+        # new_csv["EntityKind"] = old_csv["Kartenart"].apply(lambda x: x.split()[0] if x else "")
+        def get_entity_kind(row):
+            unique = row["Einzigartig"] == "Yes"
+            kind = row["Kartenart"].split()[0] if row["Kartenart"] else ""
+            if unique:
+                return {
+                    "Charakter": "Einzigartiger Charakter",
+                    "Ereignis": "Einzigartiges Ereignis",
+                    "Legende": "Einzigartige Legende",
+                    "Manifestation": "Einzigartige Manifestation",
+                    "Ritual": "Einzigartiges Ritual"
+                }.get(kind, "")
+            else:
+                return {
+                    "Charakter": "Charakter",
+                    "Ereignis": "Ereignis",
+                    "Legende": "Legende",
+                    "Manifestation": "Manifestation",
+                    "Ritual": "Ritual"
+                }.get(kind, "")
+        new_csv["EntityKind"] = old_csv.apply(get_entity_kind, axis=1)
         # EntityType: Use Kartentyp. Is x asdf and should be x.
         new_csv["EntityType"] = old_csv["Kartentyp"].apply(lambda x: x.split()[0] if x else "")
         # OffensiveStat: Use ⚔️. Is x and should be x.
