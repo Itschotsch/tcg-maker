@@ -79,7 +79,16 @@ class TCGMakerHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
 
         # Run the TCG Maker
         tcg_maker: TCGMaker = TCGMaker()
-        output_paths: List[str] = tcg_maker.run(settings)
+
+        output_paths: List[str]
+        try:
+            output_paths = tcg_maker.run(settings)
+        except Exception as e:
+            self.send_response(500)
+            self.send_header("Content-type", "application/json")
+            self.end_headers()
+            self.wfile.write(json.dumps({"status": "error", "message": str(e)}).encode("utf-8"))
+            return
 
         # Send the headers and return the result
         self.send_response(200)

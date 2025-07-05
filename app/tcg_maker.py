@@ -20,6 +20,8 @@ class TCGMaker:
             csv = TCGMakerIO.fetch_remote_csv()
         else: # settings["provided_local_csv"] == True
             csv = settings["csv"]
+            if csv.empty:
+                raise Exception("No CSV file provided")
 
         if settings["preprocess_csv"] == True:
             csv = self.preprocess_csv(csv)
@@ -48,6 +50,21 @@ class TCGMaker:
         card_height_with_bleed_px = int(card_height_with_bleed_mm * dpi / 25.4)
         bleed_px = int(bleed_mm * dpi / 25.4)
         border_radius_px = int(border_radius_mm * dpi / 25.4)
+
+        print("Calculated additional settings: ", {
+            "card_width_no_bleed_mm": card_width_no_bleed_mm,
+            "card_height_no_bleed_mm": card_height_no_bleed_mm,
+            "card_width_no_bleed_px": card_width_no_bleed_px,
+            "card_height_no_bleed_px": card_height_no_bleed_px,
+            "card_width_with_bleed_mm": card_width_with_bleed_mm,
+            "card_height_with_bleed_mm": card_height_with_bleed_mm,
+            "card_width_with_bleed_px": card_width_with_bleed_px,
+            "card_height_with_bleed_px": card_height_with_bleed_px,
+            "bleed_mm": bleed_mm,
+            "bleed_px": bleed_px,
+            "border_radius_mm": border_radius_mm,
+            "border_radius_px": border_radius_px,  
+        })
         
         if settings["render_html"] == True:
             self.render_html(
@@ -198,7 +215,7 @@ class TCGMaker:
         new_csv["Description"] = old_csv["Kartentext"].apply(
             lambda x:
                 # Is <ignis/> or <ignis> and should be <ignis></ignis>
-                re.sub(r"<(ignis|terra|aqua|aeris|magica|unshaped)(/?)>", r"<\1></\1>", 
+                re.sub(r"<(ignis|terra|aqua|aeris|magica|unshaped|opt)(/?)>", r"<\1></\1>", 
                 # Is x (http://someurl.com/) y (http://someotherurl.com/) z and should be x y z.
                 re.sub(r"\((https?:\/\/[^)]+)\)", "", x)) if x else x
         )
