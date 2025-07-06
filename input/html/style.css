@@ -162,7 +162,7 @@ body {
 .subtitle {
     font-size: 4.5vw;
 
-    margin-top: -2vw;
+    margin-top: -3vw;
     padding-top: 0;
 }
 
@@ -307,7 +307,9 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-image: url(../../input/layout/card_kind_type_background.png);
+    background-image: url(../../input/layout/kind_background_new.png);
+    transform: scale(1.2);
+    /*temp*/
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -373,7 +375,7 @@ body {
 .card-kind+.entity-type,
 .entity-type+.description,
 .description+.flavour-text {
-    padding-top: 2vw;
+    padding-top: 1.2vw;
 }
 
 .flavour-text {
@@ -454,6 +456,10 @@ name {
 self {
     font-style: italic;
     /* font-weight: bold; */
+}
+
+cost> :not(:first-child) {
+    margin-left: 0.1em;
 }
 
 ignis,
@@ -788,3 +794,13 @@ element.Magica::after {
 } */
 
 /* .edition {} */
+
+ul {
+    margin: 0;
+    margin-top: -3vw;
+    margin-bottom: -5vw;
+}
+
+li+li {
+    margin-top: -1em;
+}
