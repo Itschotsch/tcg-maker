@@ -14,9 +14,11 @@
             <h1 class="title">TCG Maker</h1>
             <form action="/api/create" method="post" enctype="multipart/form-data">
                 <div class="field">
-                    <input type="radio" name="csv_selection" id="fetch_remote_csv" value="fetch" onclick="document.getElementById('csv_file').disabled = true">
+                    <input type="radio" name="csv_selection" id="fetch_remote_csv" value="fetch"
+                        onclick="document.getElementById('csv_file').disabled = true">
                     <label class="radio" for="fetch_remote_csv">Fetch the CSV from source</label>
-                    <input type="radio" name="csv_selection" id="provided_local_csv" value="provided" checked onclick="document.getElementById('csv_file').disabled = false">
+                    <input type="radio" name="csv_selection" id="provided_local_csv" value="provided" checked
+                        onclick="document.getElementById('csv_file').disabled = false">
                     <label class="radio" for="provided_local_csv">Use the following CSV</label>
                 </div>
                 <div class="field">
@@ -27,28 +29,34 @@
                 </div>
                 <div class="field">
                     <input type="checkbox" name="preprocess_csv" id="preprocess_csv" checked>
-                    <label class="checkbox" for="preprocess_csv">Pre-process CSV file (necessary if not in the correct format)</label>
+                    <label class="checkbox" for="preprocess_csv">Pre-process CSV file (necessary if not in the correct
+                        format)</label>
                 </div>
                 <div class="field">
                     <input type="checkbox" name="render_html" id="render_html" checked>
-                    <label class="checkbox" for="render_html">Render HTML files (necessary if any card data changed)</label>
+                    <label class="checkbox" for="render_html">Render HTML files (necessary if any card data
+                        changed)</label>
                 </div>
                 <div class="field">
                     <input type="checkbox" name="render_png" id="render_png" checked>
-                    <label class="checkbox" for="render_png">Render card PNG images (necessary if any card data changed)</label>
+                    <label class="checkbox" for="render_png">Render card PNG images (necessary if any card data
+                        changed)</label>
                 </div>
                 <div class="field">
                     <input type="checkbox" name="render_special" id="render_special" checked>
-                    <label class="checkbox" for="render_special">Render special cards (necessary if the hidden card or the card back changed)</label>
+                    <label class="checkbox" for="render_special">Render special cards (necessary if the hidden card or
+                        the card back changed)</label>
                 </div>
                 <!-- <div class="field">
                     <input type="checkbox" name="stitch_images" id="stitch_images" checked>
                     <label class="checkbox" for="stitch_images">Stitch card images for Tabletop Simulator (necessary if any card data or special cards changed)</label>
                 </div> -->
                 <div class="field">
-                    <input type="radio" name="render_selection" id="render_all" value="all" onclick="document.getElementById('card_ids').disabled = true">
+                    <input type="radio" name="render_selection" id="render_all" value="all"
+                        onclick="document.getElementById('card_ids').disabled = true">
                     <label class="radio" for="render_all">Render all cards</label>
-                    <input type="radio" name="render_selection" id="render_ids" value="ids" checked onclick="document.getElementById('card_ids').disabled = false">
+                    <input type="radio" name="render_selection" id="render_ids" value="ids" checked
+                        onclick="document.getElementById('card_ids').disabled = false">
                     <label class="radio" for="render_ids">Only render cards with the following IDs</label>
                 </div>
                 <div class="field">
@@ -65,11 +73,16 @@
                 </div> -->
                 <div class="field">
                     <input type="checkbox" name="render_jpg" id="render_jpg" checked>
-                    <label class="checkbox" for="render_jpg">Render JPG for <a href="https://tcg-arena.fr/">TCG-Arena</a></label>
+                    <label class="checkbox" for="render_jpg">Render JPG for <a
+                            href="https://tcg-arena.fr/">TCG-Arena</a></label>
                 </div>
                 <div class="field">
                     <input type="checkbox" name="render_pdf_singles" id="render_pdf_singles">
                     <label class="checkbox" for="render_pdf_singles">Render PDF singles for printing</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" name="render_pdf_singles_cardbacks" id="render_pdf_singles_cardbacks">
+                    <label class="checkbox" for="render_pdf_singles_cardbacks">Render PDF singles cardbacks for printing</label>
                 </div>
                 <div class="field">
                     <input type="checkbox" name="render_pdf" id="render_pdf">

@@ -129,10 +129,17 @@ class TCGMaker:
                 card_height_with_bleed_mm=card_height_with_bleed_mm,
                 card_width_with_bleed_px=card_width_with_bleed_px,
                 card_height_with_bleed_px=card_height_with_bleed_px,
-                # card_width_no_bleed_mm=card_width_no_bleed_mm,
-                # card_height_no_bleed_mm=card_height_no_bleed_mm,
-                # card_width_no_bleed_px=card_width_no_bleed_px,
-                # card_height_no_bleed_px=card_height_no_bleed_px,
+                dpi=dpi,
+            ))
+        if settings["render_pdf_singles_cardbacks"] == True:
+            result_path.append(self.render_pdf_singles_cardbacks(
+                cardback_input_path=os.path.join(settings["output_path"], "images"),
+                pdf_output_path=os.path.join(settings["output_path"], "images"),
+                number_of_card_ids=len(card_ids), # Keep duplicates
+                card_width_with_bleed_mm=card_width_with_bleed_mm,
+                card_height_with_bleed_mm=card_height_with_bleed_mm,
+                card_width_with_bleed_px=card_width_with_bleed_px,
+                card_height_with_bleed_px=card_height_with_bleed_px,
                 dpi=dpi,
             ))
         if settings["render_pdf"] == True:
@@ -755,4 +762,52 @@ class TCGMaker:
         pdf.output(result_path, "F")
 
         print("Successfully rendered single-card-per-page PDF.")
+        return result_path
+    
+    # Repeat the same cardback page n times, with n=number_of_card_ids
+    def render_pdf_singles_cardbacks(
+        self,
+        cardback_input_path: str,
+        pdf_output_path: str,
+        number_of_card_ids: int,
+        card_width_with_bleed_mm: int,
+        card_height_with_bleed_mm: int,
+        card_width_with_bleed_px: int,
+        card_height_with_bleed_px: int,
+        dpi: int,
+    ) -> str:
+        from PIL import Image
+        from fpdf import FPDF
+        import os
+
+        print("Preparing rendering PDF (one cardback per page)...")
+
+        cardback_path = os.path.join(cardback_input_path, "cardback.png")
+        cardback = Image.open(cardback_path)
+        if cardback.size != (card_width_with_bleed_px, card_height_with_bleed_px):
+            print(f"Warning: Image size mismatch for cardback. Expected {card_width_with_bleed_px}x{card_height_with_bleed_px}, got {cardback.size}")
+
+        class CardPDF(FPDF):
+            def __init__(self):
+                super().__init__(orientation='P', unit='mm', format=(card_width_with_bleed_mm, card_height_with_bleed_mm))
+                self.set_auto_page_break(False)
+
+        pdf = CardPDF()
+
+        for i in range(number_of_card_ids):
+            print(f"Adding cardback {i} as a full-page...")
+
+            pdf.add_page()
+            pdf.image(
+                cardback_path,
+                x=0,
+                y=0,
+                w=card_width_with_bleed_mm,
+                h=card_height_with_bleed_mm
+            )
+
+        result_path = os.path.join(pdf_output_path, "cards_singles_cardbacks.pdf")
+        pdf.output(result_path, "F")
+
+        print("Successfully rendered single-cardback-per-page PDF.")
         return result_path
