@@ -219,7 +219,7 @@ class TCGMaker:
         new_csv["Description"] = old_csv["Kartentext"].apply(
             lambda x:
                 # Is <ignis/> or <ignis> and should be <ignis></ignis>
-                re.sub(r"<(ignis|terra|aqua|aeris|magica|unshaped|opt)(/?)>", r"<\1></\1>", 
+                re.sub(r"<(ignis|terra|aqua|aeris|magica|unshaped.?|opt)(/?)>", r"<\1></\1>", 
                 # Is x (http://someurl.com/) y (http://someotherurl.com/) z and should be x y z.
                 re.sub(r"\((https?:\/\/[^)]+)\)", "", x)) if x else x
         )
