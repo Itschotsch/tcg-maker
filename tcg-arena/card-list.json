@@ -134,21 +134,6 @@
     },
     "type": "Ereignis "
   },
-  "181": {
-    "id": "181",
-    "name": "“Schildwall!”",
-    "cost": 2,
-    "Element": "Magica ",
-    "face": {
-      "front": {
-        "name": "“Schildwall!”",
-        "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/181.jpg",
-        "type": "Ereignis "
-      }
-    },
-    "type": "Ereignis "
-  },
   "185": {
     "id": "185",
     "name": "Sturmflut",
