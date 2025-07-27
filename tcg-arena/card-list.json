@@ -1439,6 +1439,21 @@
     },
     "type": "Charakter"
   },
+  "302": {
+    "id": "302",
+    "name": "Vertreter der Seehandelsgilde",
+    "cost": 1,
+    "Element": "Aqua",
+    "face": {
+      "front": {
+        "name": "Vertreter der Seehandelsgilde",
+        "cost": 1,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/302.jpg",
+        "type": "Charakter"
+      }
+    },
+    "type": "Charakter"
+  },
   "499": {
     "id": "499",
     "name": "Martin Kräuterer, Alchemist Terras",
