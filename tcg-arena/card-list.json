@@ -1454,6 +1454,36 @@
     },
     "type": "Charakter"
   },
+  "496": {
+    "id": "496",
+    "name": "Kenrik, Söldner der Morgenröte",
+    "cost": 4,
+    "Element": "Ignis",
+    "face": {
+      "front": {
+        "name": "Kenrik, Söldner der Morgenröte",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/496.jpg",
+        "type": "Charakter"
+      }
+    },
+    "type": "Charakter"
+  },
+  "503": {
+    "id": "503",
+    "name": "Rekrut Diego, Bannerträger der Wolfswacht",
+    "cost": 3,
+    "Element": "Ignis",
+    "face": {
+      "front": {
+        "name": "Rekrut Diego, Bannerträger der Wolfswacht",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/503.jpg",
+        "type": "Charakter"
+      }
+    },
+    "type": "Charakter"
+  },
   "499": {
     "id": "499",
     "name": "Martin Kräuterer, Alchemist Terras",
