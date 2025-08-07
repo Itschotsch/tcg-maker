@@ -116,7 +116,7 @@
             "enterSpun": false,
             "isGroupForbidden": true,
             "keepTappedNewTurn": true,
-            "showHiddenCardInHistory": true
+            "showHiddenCardInHistory": false
           }
         }
       },
