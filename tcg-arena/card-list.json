@@ -1127,12 +1127,12 @@
   "475": {
     "id": "475",
     "name": "Sirka Sorlissos, Hüterin der Halephischen Wälder",
-    "cost": 3,
+    "cost": 4,
     "Element": "Terra",
     "face": {
       "front": {
         "name": "Sirka Sorlissos, Hüterin der Halephischen Wälder",
-        "cost": 3,
+        "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/475.jpg",
         "type": "Charakter"
       }
@@ -1277,12 +1277,12 @@
   "486": {
     "id": "486",
     "name": "Sarius, Kundschafter der Hofkanzlei",
-    "cost": 3,
+    "cost": 4,
     "Element": "Aqua",
     "face": {
       "front": {
         "name": "Sarius, Kundschafter der Hofkanzlei",
-        "cost": 3,
+        "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/486.jpg",
         "type": "Charakter"
       }
@@ -1427,12 +1427,12 @@
   "498": {
     "id": "498",
     "name": "Jasper, Wellentänzer der Saphirküste",
-    "cost": 3,
+    "cost": 5,
     "Element": "Ignis",
     "face": {
       "front": {
         "name": "Jasper, Wellentänzer der Saphirküste",
-        "cost": 3,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/498.jpg",
         "type": "Charakter"
       }
@@ -1494,6 +1494,81 @@
         "name": "Martin Kräuterer, Alchemist Terras",
         "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/499.jpg",
+        "type": "Charakter"
+      }
+    },
+    "type": "Charakter"
+  },
+  "223": {
+    "id": "223",
+    "name": "Vorstürmen",
+    "cost": 3,
+    "Element": "Terra",
+    "face": {
+      "front": {
+        "name": "Vorstürmen",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/223.jpg",
+        "type": "Ereignis"
+      }
+    },
+    "type": "Ereignis"
+  },
+  "327": {
+    "id": "327",
+    "name": "Drache des Südlichen Siegels",
+    "cost": 6,
+    "Element": "Aeris",
+    "face": {
+      "front": {
+        "name": "Drache des Südlichen Siegels",
+        "cost": 6,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/327.jpg",
+        "type": "Charakter"
+      }
+    },
+    "type": "Charakter"
+  },
+  "328": {
+    "id": "328",
+    "name": "Koloss aus der Tiefe",
+    "cost": 7,
+    "Element": "Aqua",
+    "face": {
+      "front": {
+        "name": "Koloss aus der Tiefe",
+        "cost": 7,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/328.jpg",
+        "type": "Charakter"
+      }
+    },
+    "type": "Charakter"
+  },
+  "329": {
+    "id": "329",
+    "name": "Vulkan-Golem",
+    "cost": 7,
+    "Element": "Ignis",
+    "face": {
+      "front": {
+        "name": "Vulkan-Golem",
+        "cost": 7,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/329.jpg",
+        "type": "Charakter"
+      }
+    },
+    "type": "Charakter"
+  },
+  "271": {
+    "id": "271",
+    "name": "Ignis-Fanatiker",
+    "cost": 3,
+    "Element": "Ignis",
+    "face": {
+      "front": {
+        "name": "Ignis-Fanatiker",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/271.jpg",
         "type": "Charakter"
       }
     },
