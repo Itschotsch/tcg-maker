@@ -497,12 +497,12 @@
   "338": {
     "id": "338",
     "name": "Hofkanzler Gandur, Meister der Propaganda",
-    "cost": 4,
+    "cost": 5,
     "Element": "Aqua",
     "face": {
       "front": {
         "name": "Hofkanzler Gandur, Meister der Propaganda",
-        "cost": 4,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/338.jpg",
         "type": "Charakter"
       }
