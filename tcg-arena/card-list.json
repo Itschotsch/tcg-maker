@@ -152,12 +152,12 @@
   "187": {
     "id": "187",
     "name": "Giftiges Dornengestrüpp",
-    "cost": 5,
+    "cost": 4,
     "Element": "Terra",
     "face": {
       "front": {
         "name": "Giftiges Dornengestrüpp",
-        "cost": 5,
+        "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/187.jpg",
         "type": "Ereignis"
       }
