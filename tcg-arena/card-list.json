@@ -1079,21 +1079,6 @@
     },
     "type": "Charakter"
   },
-  "471": {
-    "id": "471",
-    "name": "Eurestes, Archon des Südlichen Siegels",
-    "cost": 7,
-    "Element": "Aeris",
-    "face": {
-      "front": {
-        "name": "Eurestes, Archon des Südlichen Siegels",
-        "cost": 7,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/471.jpg",
-        "type": "Charakter"
-      }
-    },
-    "type": "Charakter"
-  },
   "472": {
     "id": "472",
     "name": "Carmille, Beamtin der Hofkanzlei",
