@@ -129,7 +129,10 @@
     "backgrounds": [
       "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/playmat-1.jpg",
       "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/playmat-2.jpg",
-      "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/playmat-3.jpg"
+      "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/playmat-3.jpg",
+      "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/playmat-4.jpg",
+      "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/playmat-5.jpg",
+      "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/playmat-6.jpg"
     ],
     "decksUrl": "https://itschotsch.github.io/tcg-maker/tcg-arena/starter-decks.json"
   },
