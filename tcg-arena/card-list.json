@@ -754,12 +754,12 @@
     "name": "Rast in der Schankstube",
     "type": "Ereignis",
     "Element": "Ungeprägt",
-    "cost": 5,
+    "cost": 6,
     "face": {
       "front": {
         "name": "Rast in der Schankstube",
         "type": "Ereignis",
-        "cost": 5,
+        "cost": 6,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/361.jpg"
       }
     }
@@ -1099,12 +1099,12 @@
     "name": "Aramis von Rabenstein, Priester des Lichts",
     "type": "Charakter",
     "Element": "Terra",
-    "cost": 6,
+    "cost": 5,
     "face": {
       "front": {
         "name": "Aramis von Rabenstein, Priester des Lichts",
         "type": "Charakter",
-        "cost": 6,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/453.jpg"
       }
     }
@@ -1369,12 +1369,12 @@
     "name": "Thulmann, Weibel der Armee Bjarturs",
     "type": "Charakter",
     "Element": "Terra",
-    "cost": 6,
+    "cost": 5,
     "face": {
       "front": {
         "name": "Thulmann, Weibel der Armee Bjarturs",
         "type": "Charakter",
-        "cost": 6,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/482.jpg"
       }
     }
@@ -1474,12 +1474,12 @@
     "name": "Markus Morgenwind, Leibwächter",
     "type": "Charakter",
     "Element": "Terra",
-    "cost": 4,
+    "cost": 5,
     "face": {
       "front": {
         "name": "Markus Morgenwind, Leibwächter",
         "type": "Charakter",
-        "cost": 4,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/489.jpg"
       }
     }
@@ -1594,12 +1594,12 @@
     "name": "Jasper, Wellentänzer der Saphirküste",
     "type": "Charakter",
     "Element": "Ignis",
-    "cost": 6,
+    "cost": 4,
     "face": {
       "front": {
         "name": "Jasper, Wellentänzer der Saphirküste",
         "type": "Charakter",
-        "cost": 6,
+        "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/498.jpg"
       }
     }
