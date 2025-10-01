@@ -47,10 +47,6 @@
                     <label class="checkbox" for="render_special">Render special cards (necessary if the hidden card or
                         the card back changed)</label>
                 </div>
-                <!-- <div class="field">
-                    <input type="checkbox" name="stitch_images" id="stitch_images" checked>
-                    <label class="checkbox" for="stitch_images">Stitch card images for Tabletop Simulator (necessary if any card data or special cards changed)</label>
-                </div> -->
                 <div class="field">
                     <input type="radio" name="render_selection" id="render_all" value="all"
                         onclick="document.getElementById('card_ids').disabled = true">
@@ -65,12 +61,19 @@
                         <input class="input" type="text" name="card_ids" id="card_ids" value="1,2,3">
                     </div>
                 </div>
-                <!-- <div class="field">
-                    <input type="radio" name="render_pdf_tts" id="render_pdf" value="pdf" checked>
-                    <label class="radio" for="render_pdf">Render PDF for printing</label>
-                    <input type="radio" name="render_pdf_tts" id="render_tts" value="tts">
-                    <label class="radio" for="render_tts">Render PNG for TTS</label>
-                </div> -->
+                <div class="field">
+                    <label class="label" for="release_label">Release Label:</label>
+                    <div class="control">
+                        <input class="input" type="text" name="release_label" id="release_label" value="α">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="backside_filename">Backside Filename:</label>
+                    <div class="control">
+                        <input class="input" type="text" name="backside_filename" id="backside_filename"
+                            value="cardback.png">
+                    </div>
+                </div>
                 <div class="field">
                     <input type="checkbox" name="render_jpg" id="render_jpg" checked>
                     <label class="checkbox" for="render_jpg">Render JPG for <a
@@ -82,7 +85,8 @@
                 </div>
                 <div class="field">
                     <input type="checkbox" name="render_pdf_singles_cardbacks" id="render_pdf_singles_cardbacks">
-                    <label class="checkbox" for="render_pdf_singles_cardbacks">Render PDF singles cardbacks for printing</label>
+                    <label class="checkbox" for="render_pdf_singles_cardbacks">Render PDF singles cardbacks for
+                        printing</label>
                 </div>
                 <div class="field">
                     <input type="checkbox" name="render_pdf" id="render_pdf">

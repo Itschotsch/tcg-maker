@@ -23,6 +23,10 @@ class TCGMaker:
             if csv.empty:
                 raise Exception("No CSV file provided")
 
+        # Add column "ReleaseLabel" to CSV, set every row to settings["release_label"]
+        csv["ReleaseLabel"] = settings["release_label"]
+
+        # Preprocess CSV
         if settings["preprocess_csv"] == True:
             csv = self.preprocess_csv(csv)
 
@@ -94,6 +98,7 @@ class TCGMaker:
                 image_output_path=os.path.join(settings["output_path"], "images"),
                 card_width_px=card_width_no_bleed_px,
                 card_height_px=card_height_no_bleed_px,
+                card_back_path=os.path.join(settings["backside_filename"]),
             )
 
         result_path = []
@@ -141,6 +146,7 @@ class TCGMaker:
                 card_width_with_bleed_px=card_width_with_bleed_px,
                 card_height_with_bleed_px=card_height_with_bleed_px,
                 dpi=dpi,
+                card_back_path=os.path.join(settings["backside_filename"]),
             ))
         if settings["render_pdf"] == True:
             settings["stitch_x"] = 3
@@ -201,6 +207,7 @@ class TCGMaker:
             "CostUnshaped",
             "Elemental",
             "ElementalAmount",
+            "ReleaseLabel",
         ])
 
         # Go through the new columns one by one and fill them with the old values, processed if necessary
@@ -301,9 +308,7 @@ class TCGMaker:
         }.get(x.split()[0], "") if x else "")
         # ElementalAmount: Use 1.
         new_csv["ElementalAmount"] = 1
-        # Print Element of ID 195
-        print(old_csv.loc[old_csv['ID'] == 195, 'Element'].values[0])
-        print(new_csv.loc[old_csv['ID'] == 195, 'Elemental'].values[0])
+        new_csv["ReleaseLabel"] = old_csv["ReleaseLabel"]
 
         return new_csv
     
@@ -435,6 +440,7 @@ class TCGMaker:
         image_output_path: str,
         card_width_px: int,
         card_height_px: int,
+        card_back_path: str = "cardback.png",
     ) -> None:
         print("Rendering special...")
 
@@ -464,9 +470,9 @@ class TCGMaker:
             hidden_card.save(os.path.join(image_output_path, "hiddencard.png"))
 
         # If the card back exists:
-        if TCGMakerIO.exists(os.path.join(image_input_path, "cardback.png")):
+        if TCGMakerIO.exists(os.path.join(image_input_path, card_back_path)):
             # Load the card back
-            card_back = Image.open(os.path.join(image_input_path, "cardback.png"))
+            card_back = Image.open(os.path.join(image_input_path, card_back_path))
             # Crop the card back to the correct aspect ratio, centered
             crop_height = int(card_back.width / card_width_px * card_height_px)
             card_back = card_back.crop(
@@ -485,7 +491,7 @@ class TCGMaker:
                 )
             )
             # Save the resized card back
-            card_back.save(os.path.join(image_output_path, "cardback.png"))
+            card_back.save(os.path.join(image_output_path, card_back_path))
     
     def stitch_images(
         self,
@@ -775,6 +781,7 @@ class TCGMaker:
         card_width_with_bleed_px: int,
         card_height_with_bleed_px: int,
         dpi: int,
+        card_back_path: str = "cardback.png",
     ) -> str:
         from PIL import Image
         from fpdf import FPDF
@@ -782,7 +789,7 @@ class TCGMaker:
 
         print("Preparing rendering PDF (one cardback per page)...")
 
-        cardback_path = os.path.join(cardback_input_path, "cardback.png")
+        cardback_path = os.path.join(cardback_input_path, card_back_path)
         cardback = Image.open(cardback_path)
         if cardback.size != (card_width_with_bleed_px, card_height_with_bleed_px):
             print(f"Warning: Image size mismatch for cardback. Expected {card_width_with_bleed_px}x{card_height_with_bleed_px}, got {cardback.size}")
