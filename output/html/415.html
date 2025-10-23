@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,8 @@ body {
 
 @font-face {
     font-family: "TitleFont";
-    src: url("../../input/fonts/seagram_tfb/Seagram tfb.ttf") format("truetype");
+    /* src: url("../../input/fonts/seagram_tfb/Seagram tfb.ttf") format("truetype"); */
+    src: url("../../input/fonts/gold_and_after/GoldAndAfter.otf") format("opentype");
 }
 
 @font-face {
@@ -75,7 +76,8 @@ body {
     color: white;
 
     background-image: url(../../input/images/415.png);
-    background-size: cover; /* 100% auto; */
+    background-size: cover;
+    /* 100% auto; */
     background-position: center;
 
     z-index: 0;
@@ -103,8 +105,11 @@ body {
 }
 
 .safe-area.bottom {
-    padding-bottom: 4vw;
-    padding-bottom: 35px;
+    /* padding-bottom: 4vw;
+    padding-bottom: 35px; */
+    margin-left: calc(35px + 10.5vw);
+    margin-right: calc(35px + 10.5vw);
+    margin-bottom: calc(35px + 2vw);
 }
 
 .safe-area-preview {
@@ -133,7 +138,19 @@ body {
 }
 
 .titles {
-    text-shadow: 0 0.4vw 0vw rgb(0, 0, 0), 0 0 5vw rgb(0, 0, 0);
+    text-shadow:
+        0.1vw 0.2vw 0vw rgb(0, 0, 0),
+        0.15vw 0.3vw 0vw rgb(0, 0, 0),
+        0.2vw 0.4vw 0vw rgb(0, 0, 0),
+        0.25vw 0.5vw 0vw rgb(0, 0, 0),
+        0.3vw 0.6vw 0vw rgb(0, 0, 0),
+        -0.2rem -0.2rem 1vw rgba(0, 0, 0, 0.4),
+        0 0 5vw rgb(0, 0, 0);
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0.075rem;
+    -webkit-text-stroke-color: hsla(0, 0%, 0%, 0.5);
+    paint-order: stroke fill;
 }
 
 .title,
@@ -149,12 +166,12 @@ body {
 }
 
 .title {
-    font-size: 5vw;
+    font-size: 6vw;
     margin-top: 2.5vw;
 }
 
 .subtitle {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
 
     margin-top: -3vw;
     padding-top: 0;
@@ -288,8 +305,8 @@ body {
     position: relative;
 
     min-height: 15vw;
-    margin: 8vw;
-    padding: 5vw;
+    margin: 7vw;
+    padding: 5vw 3.5vw;
 
     z-index: -1;
 }
@@ -301,7 +318,9 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-image: url(../../input/layout/card_kind_type_background.png);
+    background-image: url(../../input/layout/kind_background_new.png);
+    transform: scale(1.2);
+    /*temp*/
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -359,12 +378,15 @@ body {
     /* margin-right: 15vw; */
 
     /* border: 0.5vw solid white; */
+
+    /* hyphens: auto; */
+    line-height: 1.35em;
 }
 
 .card-kind+.entity-type,
 .entity-type+.description,
 .description+.flavour-text {
-    padding-top: 2vw;
+    padding-top: 1.2vw;
 }
 
 .flavour-text {
@@ -380,6 +402,10 @@ body {
     font-size: 2.5vw;
 }
 
+.flavour-text:empty {
+    display: none;
+}
+
 .entity-type,
 .description,
 .flavour-text {
@@ -389,7 +415,7 @@ body {
     /* -webkit-text-stroke: 0.1px transparent;
     text-stroke: 0.1px transparent; */
     /* TODO: Fix shadows over other parts of the text. */
-    
+
     color: black;
     /* border: 0.5vw solid white; */
 }
@@ -408,13 +434,118 @@ body {
 .layout-ritual .flavour-text:empty {
     display: none;
 }
-  
-key {
+
+ability {
+    font-weight: 600;
+}
+
+cost:after {
+    content: ":";
+}
+
+desc {
     font-style: italic;
 }
 
+desc:before {
+    content: "(";
+}
+
+desc:after {
+    content: ")";
+}
+
+/* kind,
+typ {
+    font-style: italic;
+} */
+
 name {
     font-variant: small-caps;
+}
+
+self {
+    font-style: italic;
+    /* font-weight: bold; */
+}
+
+cost> :not(:first-child) {
+    margin-left: 0.1em;
+}
+
+ignis,
+terra,
+aqua,
+aeris,
+magica,
+unshaped,
+unshaped1,
+unshaped2,
+unshaped3,
+unshaped4,
+unshaped5,
+unshapedX,
+opt {
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 1.35em;
+    height: 1.35em;
+    aspect-ratio: 1;
+    vertical-align: bottom;
+}
+
+ignis {
+    background-image: url(../../input/layout/cost_element_ignis_inline.png);
+}
+
+terra {
+    background-image: url(../../input/layout/cost_element_terra_inline.png);
+}
+
+aqua {
+    background-image: url(../../input/layout/cost_element_aqua_inline.png);
+}
+
+aeris {
+    background-image: url(../../input/layout/cost_element_aeris_inline.png);
+}
+
+magica {
+    background-image: url(../../input/layout/cost_element_magica_inline.png);
+}
+
+unshaped {
+    background-image: url(../../input/layout/cost_element_unshaped_inline.png);
+}
+
+unshaped1 {
+    background-image: url(../../input/layout/cost_element_unshaped_inline_1.png);
+}
+
+unshaped2 {
+    background-image: url(../../input/layout/cost_element_unshaped_inline_2.png);
+}
+
+unshaped3 {
+    background-image: url(../../input/layout/cost_element_unshaped_inline_3.png);
+}
+
+unshaped4 {
+    background-image: url(../../input/layout/cost_element_unshaped_inline_4.png);
+}
+
+unshaped5 {
+    background-image: url(../../input/layout/cost_element_unshaped_inline_5.png);
+}
+
+unshapedX {
+    background-image: url(../../input/layout/cost_element_unshaped_inline_X.png);
+}
+
+opt {
+    background-image: url(../../input/layout/cost_opt_inline.png);
 }
 
 element::after {
@@ -496,7 +627,7 @@ element.Magica::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     /* border: 0.5vw solid greenyellow;
     z-index: 1; */
 }
@@ -555,11 +686,11 @@ element.Magica::after {
 .elemental {
     position: absolute;
     /* padding: 5.5vw; */
-    width: 9vw;
-    height: 9vw;
+    width: 11vw;
+    height: 11vw;
     transform: rotate(180deg);
 
-    background-image: url(../../input/layout/cost_element_§CostElement§_empty.png);
+    background-image: url(../../input/layout/cost_element_unshaped_empty.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -571,7 +702,31 @@ element.Magica::after {
     /* padding-right: 5vw;
     padding-left: 3vw; */
     font-family: "StatsFont", serif;
-    font-size: 5vw;
+    font-size: 7.5vw;
+}
+
+.elemental.terra {
+    background-image: url(../../input/layout/cost_element_terra_empty.png);
+}
+
+.elemental.aqua {
+    background-image: url(../../input/layout/cost_element_aqua_empty.png);
+}
+
+.elemental.aeris {
+    background-image: url(../../input/layout/cost_element_aeris_empty.png);
+}
+
+.elemental.ignis {
+    background-image: url(../../input/layout/cost_element_ignis_empty.png);
+}
+
+.elemental.magica {
+    background-image: url(../../input/layout/cost_element_magica_empty.png);
+}
+
+.elemental.unshaped {
+    background-image: url(../../input/layout/cost_element_unshaped_empty.png);
 }
 
 .elemental>p {
@@ -588,7 +743,7 @@ element.Magica::after {
 .defensive,
 .shieldspell,
 .elemental {
-    text-shadow: 0 -0.3vw 0 black;
+    text-shadow: 0 -0.25vw 0 black;
     font-weight: bold;
 }
 
@@ -597,7 +752,7 @@ element.Magica::after {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
 
     width: 100%;
 
@@ -605,28 +760,39 @@ element.Magica::after {
 
     /* background-color: black; */
 
-    padding-bottom: 2vw;
-    padding-top: 1vw;
+    /* padding-bottom: 2vw;
+    padding-top: 1vw; */
 
     /* TODO this seems hacky, not the way it's supposed to be #1: */
-    height: 4vw;
+    /* height: 4vw;
     height: calc(3vw + 35px);
     margin-top: -4vw;
     margin-top: calc((-3vw - 35px) * 0.75);
     margin-bottom: -4vw;
     margin-bottom: calc((-3vw - 35px) * 0.25);
     margin-left: 3vw;
-    margin-right: 3vw;
+    margin-right: 3vw; */
+
+    /* height: 4vw;
+    height: calc(3vw + 35px); */
+
+    height: 5vw;
+    margin-top: calc(35px - 5vw);
+    /* margin-bottom: 4vw;
+    margin-bottom: calc(1.5vw + 35px); */
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 1);
 }
 
 .footer * {
     /* TODO this seems hacky, not the way it's supposed to be #1: */
-    display: flex;
+    /* display: flex;
     margin-left: 4vw;
-    margin-left: calc(3vw + 35px);
+    margin-left: calc(1.5vw + 35px);
     margin-right: 4vw;
-    margin-right: calc(3vw + 35px);
+    margin-right: calc(1.5vw + 35px);
     height: 100%;
+
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 1); */
 }
 
 /* .author {} */
@@ -640,8 +806,14 @@ element.Magica::after {
 
 /* .edition {} */
 
-.id {
-    
+ul {
+    margin: 0;
+    margin-top: -3vw;
+    margin-bottom: -5vw;
+}
+
+li+li {
+    margin-top: -1em;
 }
     </style>
 </head>
@@ -698,17 +870,17 @@ element.Magica::after {
         <div class="safe-area">
             <div class="parchment">
                 <div class="card-kind">
-                    <div>Charakter</div>
+                    <div>Einzigartiger Charakter</div>
                 </div>
                 <div class="entity-type"></div>
-                <div class="description">Kultist
-Einzigartig, Verteidiger,
-Wenn dieser Charakter das Schlachtfeld betritt und du “Graf von Altberg-Ehrenstein” kontrollierst, durchsuche dein Deck, deine Hand und dein Friedhof nach “Der Tempel” und lege ihn auf das Schlachtfeld.</div>
+                <div class="description"></div>
                 <div class="flavour-text"></div>
                 <div class="combat-stats">
-                    <div class="offensive"><img src="../../input/layout/combat_stats_offensive_symbol.png" class="combat-stats-symbol" />&nbsp;-/-</div>
-                    <div class="defensive"><img src="../../input/layout/combat_stats_defensive_symbol.png" class="combat-stats-symbol" />&nbsp;30/30</div>
-                    <div class="elemental">
+                    <div class="offensive"><img src="../../input/layout/combat_stats_offensive_symbol.png"
+                            class="combat-stats-symbol" />&nbsp;-/-</div>
+                    <div class="defensive"><img src="../../input/layout/combat_stats_defensive_symbol.png"
+                            class="combat-stats-symbol" />&nbsp;30/30</div>
+                    <div class="elemental unshaped">
                         <p>1</p>
                     </div>
                 </div>
@@ -716,7 +888,7 @@ Wenn dieser Charakter das Schlachtfeld betritt und du “Graf von Altberg-Ehrens
         </div>
         <div class="footer">
             <div class="safe-area bottom">
-                <div class="id">415</div>
+                <div class="id">α–415</div>
                 <!--<div class="author" style="height: 0.7em">
                     <img src="../../input/layout/AetherlabLogo.png" style="height: 100%; bottom: -0.005em; position: relative;" />
                 </div>-->
