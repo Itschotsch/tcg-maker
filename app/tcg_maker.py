@@ -24,7 +24,8 @@ class TCGMaker:
                 raise Exception("No CSV file provided")
 
         # Add column "ReleaseLabel" to CSV, set every row to settings["release_label"]
-        csv["ReleaseLabel"] = settings["release_label"]
+        csv["ReleaseLabelDisplay"] = settings["release_label_display"]
+        csv["ReleaseLabelFilename"] = settings["release_label_filename"]
 
         # Preprocess CSV
         if settings["preprocess_csv"] == True:
@@ -119,7 +120,7 @@ class TCGMaker:
             result_path.append(self.convert_png_to_jpg(
                 card_ids=list(set(card_ids)), # Remove duplicates
                 png_input_path=os.path.join(settings["output_path"], "images"),
-                jpg_output_path=os.path.join(settings["tcg_arena_path"], "images"),
+                jpg_output_path=os.path.join(settings["tcg_arena_path"], "images", settings["release_label_filename"]),
                 width_with_bleed_px=card_width_with_bleed_px,
                 height_with_bleed_px=card_height_with_bleed_px,
                 width_no_bleed_px=card_width_no_bleed_px,
@@ -207,7 +208,8 @@ class TCGMaker:
             "CostUnshaped",
             "Elemental",
             "ElementalAmount",
-            "ReleaseLabel",
+            "ReleaseLabelDisplay",
+            "ReleaseLabelFilename",
         ])
 
         # Go through the new columns one by one and fill them with the old values, processed if necessary
@@ -308,7 +310,8 @@ class TCGMaker:
         }.get(x.split()[0], "") if x else "")
         # ElementalAmount: Use 1.
         new_csv["ElementalAmount"] = 1
-        new_csv["ReleaseLabel"] = old_csv["ReleaseLabel"]
+        new_csv["ReleaseLabelDisplay"] = old_csv["ReleaseLabelDisplay"]
+        new_csv["ReleaseLabelFilename"] = old_csv["ReleaseLabelFilename"]
 
         return new_csv
     
@@ -378,7 +381,9 @@ class TCGMaker:
                         continue
                     # Otherwise, replace it.
                     template = template.replace(f"§{variable}§", str(row[variable]))
-                
+                # Make sure the path exists.
+                TCGMakerIO.ensure_path_exists(html_output_path)
+                # Save the HTML.
                 TCGMakerIO.write_file(
                     os.path.join(html_output_path, f"{row['ID']}.html"),
                     template
@@ -417,9 +422,11 @@ class TCGMaker:
                         "file://" + os.path.join(html_input_path, f"{name}.html")
                     )
 
-                    # Wait for all images to load
+                    # Wait for all images to load.
                     page.wait_for_load_state("networkidle")
-
+                    # Make sure the path exists.
+                    TCGMakerIO.ensure_path_exists(image_output_path)
+                    # Save the image.
                     page.screenshot(
                         path=os.path.join(
                             image_output_path,
@@ -490,6 +497,8 @@ class TCGMaker:
                     card_height_px
                 )
             )
+            # Make sure the path exists
+            TCGMakerIO.ensure_path_exists(image_output_path)
             # Save the resized card back
             card_back.save(os.path.join(image_output_path, card_back_path))
     
@@ -564,6 +573,8 @@ class TCGMaker:
 
         # Save the output image
         result_path = os.path.join(image_output_path, "cards.png")
+        # Make sure the path exists
+        TCGMakerIO.ensure_path_exists(image_output_path)
         output_image.save(
             result_path,
             dpi=(dpi, dpi)
@@ -613,6 +624,8 @@ class TCGMaker:
 
                 # Convert it to JPEG.
                 image = image.convert("RGB")
+                # Make sure the path exists
+                TCGMakerIO.ensure_path_exists(jpg_output_path)
                 # Save the JPEG.
                 image.save(os.path.join(jpg_output_path, f"{name}.jpg"), "JPEG")
 
@@ -710,7 +723,8 @@ class TCGMaker:
                 print(f"Error stitching card {files[i]}: {e}")
 
         result_path = os.path.join(pdf_output_path, "cards.pdf")
-
+        # Make sure the path exists
+        TCGMakerIO.ensure_path_exists(pdf_output_path)
         pdf.output(result_path, "F")
 
         print("Successfully rendered PDF.")
@@ -765,6 +779,8 @@ class TCGMaker:
                 print(f"Error processing card {file_name}: {e}")
 
         result_path = os.path.join(pdf_output_path, "cards_singles.pdf")
+        # Make sure the path exists
+        TCGMakerIO.ensure_path_exists(pdf_output_path)
         pdf.output(result_path, "F")
 
         print("Successfully rendered single-card-per-page PDF.")
@@ -814,6 +830,8 @@ class TCGMaker:
             )
 
         result_path = os.path.join(pdf_output_path, "cards_singles_cardbacks.pdf")
+        # Make sure the path exists
+        TCGMakerIO.ensure_path_exists(pdf_output_path)
         pdf.output(result_path, "F")
 
         print("Successfully rendered single-cardback-per-page PDF.")
