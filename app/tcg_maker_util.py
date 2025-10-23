@@ -24,13 +24,13 @@ class TCGMakerUtil:
         settings["output_path"] = os.path.join(TCGMakerIO.pwd, "output")
         settings["tcg_arena_path"] = os.path.join(TCGMakerIO.pwd, "tcg-arena")
         # meinspiel.de
-        settings["card_width_mm"] = 63
-        settings["card_height_mm"] = 88
+        # settings["card_width_mm"] = 63
+        # settings["card_height_mm"] = 88
         # printerstudio.de
         # settings["card_width_mm"] = 64
         # settings["card_height_mm"] = 89
-        settings["bleed_mm"] = 3
-        settings["border_radius_mm"] = 3
-        settings["dpi"] = 300
+        # settings["bleed_mm"] = 3
+        # settings["border_radius_mm"] = 3
+        # settings["dpi"] = 300
 
         return settings
