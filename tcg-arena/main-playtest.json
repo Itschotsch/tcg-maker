@@ -259,7 +259,7 @@
   "customHelp": "",
   "cardRotation": "90",
   "cards": {
-    "dataUrl": "https://itschotsch.github.io/tcg-maker/tcg-arena/card-list.json",
+    "dataUrl": "https://itschotsch.github.io/tcg-maker/tcg-arena/card-list-public.json",
     "cardBack": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/cardback.jpg"
   }
 }
