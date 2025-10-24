@@ -10,7 +10,7 @@
         "name": "Weißer Greif",
         "type": "Charakter",
         "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/3.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/3.jpg"
       }
     }
   },
@@ -25,7 +25,7 @@
         "name": "Magierin des Ausgleichs",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/54.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/54.jpg"
       }
     }
   },
@@ -40,7 +40,7 @@
         "name": "Grauer Stummfisch",
         "type": "Charakter",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/66.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/66.jpg"
       }
     }
   },
@@ -55,7 +55,7 @@
         "name": "Namenloser Ryv'Jorl, stiller Infiltrator",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/164.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/164.jpg"
       }
     }
   },
@@ -70,7 +70,7 @@
         "name": "Aeris-Kraftkugel",
         "type": "Ereignis",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/165.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/165.jpg"
       }
     }
   },
@@ -85,7 +85,7 @@
         "name": "Terra-Kraftkugel",
         "type": "Ereignis",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/167.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/167.jpg"
       }
     }
   },
@@ -100,7 +100,7 @@
         "name": "Aqua-Kraftkugel",
         "type": "Ereignis",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/168.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/168.jpg"
       }
     }
   },
@@ -115,7 +115,7 @@
         "name": "Ignis-Kraftkugel",
         "type": "Ereignis",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/169.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/169.jpg"
       }
     }
   },
@@ -130,7 +130,7 @@
         "name": "Magica-Kraftkugel",
         "type": "Ereignis",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/170.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/170.jpg"
       }
     }
   },
@@ -145,7 +145,7 @@
         "name": "Sturmflut",
         "type": "Ereignis",
         "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/185.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/185.jpg"
       }
     }
   },
@@ -160,7 +160,7 @@
         "name": "Giftiges Dornengestrüpp",
         "type": "Ereignis",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/187.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/187.jpg"
       }
     }
   },
@@ -175,7 +175,7 @@
         "name": "Friedensbote",
         "type": "Charakter",
         "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/188.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/188.jpg"
       }
     }
   },
@@ -190,7 +190,7 @@
         "name": "Sir Tristan, Ritter von Bjartur",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/189.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/189.jpg"
       }
     }
   },
@@ -205,7 +205,7 @@
         "name": "Terraschrein des Kreislaufs",
         "type": "Manifestation",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/197.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/197.jpg"
       }
     }
   },
@@ -220,7 +220,7 @@
         "name": "Stürmischer Aerisschrein",
         "type": "Manifestation",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/198.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/198.jpg"
       }
     }
   },
@@ -235,7 +235,7 @@
         "name": "Trügerischer Aqua-Brunnen",
         "type": "Manifestation",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/201.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/201.jpg"
       }
     }
   },
@@ -250,7 +250,7 @@
         "name": "Großer Magicaschrein",
         "type": "Manifestation",
         "cost": 8,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/211.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/211.jpg"
       }
     }
   },
@@ -265,7 +265,7 @@
         "name": "Zeitspiel",
         "type": "Ereignis",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/213.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/213.jpg"
       }
     }
   },
@@ -280,7 +280,7 @@
         "name": "Den Kreislauf ehren",
         "type": "Ereignis",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/215.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/215.jpg"
       }
     }
   },
@@ -295,7 +295,7 @@
         "name": "Elementare Täuschung",
         "type": "Ereignis",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/219.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/219.jpg"
       }
     }
   },
@@ -310,7 +310,7 @@
         "name": "“Halt!”",
         "type": "Ereignis",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/221.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/221.jpg"
       }
     }
   },
@@ -325,7 +325,7 @@
         "name": "Magiezucken",
         "type": "Ereignis",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/222.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/222.jpg"
       }
     }
   },
@@ -340,7 +340,7 @@
         "name": "Vorstürmen",
         "type": "Ereignis",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/223.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/223.jpg"
       }
     }
   },
@@ -355,7 +355,7 @@
         "name": "Nachwachsen",
         "type": "Ereignis",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/224.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/224.jpg"
       }
     }
   },
@@ -370,7 +370,7 @@
         "name": "Die Sanduhr drehen",
         "type": "Ereignis",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/226.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/226.jpg"
       }
     }
   },
@@ -385,7 +385,7 @@
         "name": "Feuertänzerin",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/235.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/235.jpg"
       }
     }
   },
@@ -400,7 +400,7 @@
         "name": "Kraftkugelsammler",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/246.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/246.jpg"
       }
     }
   },
@@ -415,7 +415,7 @@
         "name": "Ignis-Fanatiker",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/271.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/271.jpg"
       }
     }
   },
@@ -430,7 +430,7 @@
         "name": "Meléthin, die stürmische Gefährtin",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/273.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/273.jpg"
       }
     }
   },
@@ -445,7 +445,7 @@
         "name": "Kadienor Edox, die Zeitwächterin",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/279.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/279.jpg"
       }
     }
   },
@@ -460,7 +460,7 @@
         "name": "Eisernes Terrakind",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/292.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/292.jpg"
       }
     }
   },
@@ -475,7 +475,7 @@
         "name": "Vertreter der Botengilde",
         "type": "Charakter",
         "cost": 1,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/299.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/299.jpg"
       }
     }
   },
@@ -490,7 +490,7 @@
         "name": "Vertreterin der Magiergilde",
         "type": "Charakter",
         "cost": 1,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/300.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/300.jpg"
       }
     }
   },
@@ -505,7 +505,7 @@
         "name": "Vertreter der Seehandelsgilde",
         "type": "Charakter",
         "cost": 1,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/302.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/302.jpg"
       }
     }
   },
@@ -520,7 +520,7 @@
         "name": "Vertreter der Kartographengilde",
         "type": "Charakter",
         "cost": 1,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/306.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/306.jpg"
       }
     }
   },
@@ -535,7 +535,7 @@
         "name": "Aurelia, die Lichtverpflichtete",
         "type": "Charakter",
         "cost": 7,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/323.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/323.jpg"
       }
     }
   },
@@ -550,7 +550,7 @@
         "name": "Drache des Südlichen Siegels",
         "type": "Charakter",
         "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/327.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/327.jpg"
       }
     }
   },
@@ -565,7 +565,7 @@
         "name": "Koloss aus der Tiefe",
         "type": "Charakter",
         "cost": 7,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/328.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/328.jpg"
       }
     }
   },
@@ -580,7 +580,7 @@
         "name": "Vulkan-Golem",
         "type": "Charakter",
         "cost": 7,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/329.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/329.jpg"
       }
     }
   },
@@ -595,7 +595,7 @@
         "name": "Atlas, der Wanderer",
         "type": "Charakter",
         "cost": 7,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/331.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/331.jpg"
       }
     }
   },
@@ -610,7 +610,7 @@
         "name": "Hofkanzler Gandur, Meister der Propaganda",
         "type": "Charakter",
         "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/338.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/338.jpg"
       }
     }
   },
@@ -625,7 +625,7 @@
         "name": "Moriel, Novizin der Alchemie",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/342.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/342.jpg"
       }
     }
   },
@@ -640,7 +640,7 @@
         "name": "Stoßgebet zu den Elementen",
         "type": "Ereignis",
         "cost": 1,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/343.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/343.jpg"
       }
     }
   },
@@ -655,7 +655,7 @@
         "name": "Rasender Rekrut",
         "type": "Charakter",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/350.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/350.jpg"
       }
     }
   },
@@ -670,7 +670,7 @@
         "name": "Stürmischer Veteran",
         "type": "Charakter",
         "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/351.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/351.jpg"
       }
     }
   },
@@ -685,7 +685,7 @@
         "name": "Stadtwache",
         "type": "Charakter",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/352.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/352.jpg"
       }
     }
   },
@@ -700,7 +700,7 @@
         "name": "Baumgeist",
         "type": "Charakter",
         "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/354.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/354.jpg"
       }
     }
   },
@@ -715,7 +715,7 @@
         "name": "Vertreter der Bardengilde",
         "type": "Charakter",
         "cost": 1,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/356.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/356.jpg"
       }
     }
   },
@@ -730,7 +730,7 @@
         "name": "Johannes v.d. Schaufel, leichtsinniger Duellant",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/359.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/359.jpg"
       }
     }
   },
@@ -745,7 +745,7 @@
         "name": "Schrein der Jagt",
         "type": "Manifestation",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/360.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/360.jpg"
       }
     }
   },
@@ -760,7 +760,7 @@
         "name": "Rast in der Schankstube",
         "type": "Ereignis",
         "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/361.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/361.jpg"
       }
     }
   },
@@ -775,7 +775,7 @@
         "name": "Duellforderung",
         "type": "Ereignis",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/363.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/363.jpg"
       }
     }
   },
@@ -790,7 +790,7 @@
         "name": "Flammenstrahl",
         "type": "Ereignis",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/364.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/364.jpg"
       }
     }
   },
@@ -805,7 +805,7 @@
         "name": "Ermutigende Ansprache",
         "type": "Ereignis",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/365.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/365.jpg"
       }
     }
   },
@@ -820,7 +820,7 @@
         "name": "Vulkanausbruch",
         "type": "Ereignis",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/366.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/366.jpg"
       }
     }
   },
@@ -835,7 +835,7 @@
         "name": "Sternenschauer",
         "type": "Ereignis",
         "cost": 8,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/367.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/367.jpg"
       }
     }
   },
@@ -850,7 +850,7 @@
         "name": "Gottesschrein",
         "type": "Manifestation",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/368.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/368.jpg"
       }
     }
   },
@@ -865,7 +865,7 @@
         "name": "Namenloser Soldat",
         "type": "Charakter",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/370.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/370.jpg"
       }
     }
   },
@@ -880,7 +880,7 @@
         "name": "Rekrut aus Steinfurt",
         "type": "Charakter",
         "cost": 1,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/371.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/371.jpg"
       }
     }
   },
@@ -895,7 +895,7 @@
         "name": "Veteran",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/372.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/372.jpg"
       }
     }
   },
@@ -910,7 +910,7 @@
         "name": "Standhafter Verteidiger",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/373.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/373.jpg"
       }
     }
   },
@@ -925,7 +925,7 @@
         "name": "Schneller Säbel",
         "type": "Charakter",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/381.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/381.jpg"
       }
     }
   },
@@ -940,7 +940,7 @@
         "name": "Bogenschütze",
         "type": "Charakter",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/382.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/382.jpg"
       }
     }
   },
@@ -955,7 +955,7 @@
         "name": "Hühne",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/389.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/389.jpg"
       }
     }
   },
@@ -970,7 +970,7 @@
         "name": "Mord",
         "type": "Ereignis",
         "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/392.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/392.jpg"
       }
     }
   },
@@ -985,7 +985,7 @@
         "name": "Sprengmeister",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/397.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/397.jpg"
       }
     }
   },
@@ -1000,7 +1000,7 @@
         "name": "Glücksritter",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/400.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/400.jpg"
       }
     }
   },
@@ -1015,7 +1015,7 @@
         "name": "Trügerischer See",
         "type": "Manifestation",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/401.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/401.jpg"
       }
     }
   },
@@ -1030,7 +1030,7 @@
         "name": "Dahlia bint Ishaq al-Bahar, die Wissenssucherin",
         "type": "Charakter",
         "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/402.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/402.jpg"
       }
     }
   },
@@ -1045,7 +1045,7 @@
         "name": "Provozierender Frosch",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/403.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/403.jpg"
       }
     }
   },
@@ -1060,7 +1060,7 @@
         "name": "Kasha, Champion des Wandels",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/406.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/406.jpg"
       }
     }
   },
@@ -1075,7 +1075,7 @@
         "name": "Annun Kamik, der Eismagier",
         "type": "Charakter",
         "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/407.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/407.jpg"
       }
     }
   },
@@ -1090,7 +1090,7 @@
         "name": "Verheerendes Beben",
         "type": "Ereignis",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/452.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/452.jpg"
       }
     }
   },
@@ -1105,7 +1105,7 @@
         "name": "Aramis von Rabenstein, Priester des Lichts",
         "type": "Charakter",
         "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/453.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/453.jpg"
       }
     }
   },
@@ -1120,7 +1120,7 @@
         "name": "Celia, Priesterin des Sol",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/454.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/454.jpg"
       }
     }
   },
@@ -1135,7 +1135,7 @@
         "name": "Artillerie-Bombardment",
         "type": "Ereignis",
         "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/456.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/456.jpg"
       }
     }
   },
@@ -1150,7 +1150,7 @@
         "name": "Die wilde Jagt",
         "type": "Ereignis",
         "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/457.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/457.jpg"
       }
     }
   },
@@ -1165,7 +1165,7 @@
         "name": "Ausmerzen",
         "type": "Ereignis",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/459.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/459.jpg"
       }
     }
   },
@@ -1180,7 +1180,7 @@
         "name": "Weltenbrand",
         "type": "Ereignis",
         "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/460.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/460.jpg"
       }
     }
   },
@@ -1195,7 +1195,7 @@
         "name": "Siegelpyramide",
         "type": "Manifestation",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/461.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/461.jpg"
       }
     }
   },
@@ -1210,7 +1210,7 @@
         "name": "Pekars Segen",
         "type": "Manifestation",
         "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/464.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/464.jpg"
       }
     }
   },
@@ -1225,7 +1225,7 @@
         "name": "Alvar, dem König sein Knecht",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/466.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/466.jpg"
       }
     }
   },
@@ -1240,7 +1240,7 @@
         "name": "Keroth, Thul'Heen des Südlichen Siegels",
         "type": "Charakter",
         "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/470.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/470.jpg"
       }
     }
   },
@@ -1255,7 +1255,7 @@
         "name": "Carmille, Beamtin der Hofkanzlei",
         "type": "Charakter",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/472.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/472.jpg"
       }
     }
   },
@@ -1270,7 +1270,7 @@
         "name": "Laytja, Heilerin der Lüfte",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/473.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/473.jpg"
       }
     }
   },
@@ -1285,7 +1285,7 @@
         "name": "Sirka Sorlissos, Hüterin der Halephischen Wälder",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/475.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/475.jpg"
       }
     }
   },
@@ -1300,7 +1300,7 @@
         "name": "Kardes, der Feldkoch",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/477.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/477.jpg"
       }
     }
   },
@@ -1315,7 +1315,7 @@
         "name": "Tekkadahn, Waffenmeister Terras",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/478.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/478.jpg"
       }
     }
   },
@@ -1330,7 +1330,7 @@
         "name": "Sir Beolf, Leutnant des Südlichen Siegels",
         "type": "Charakter",
         "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/479.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/479.jpg"
       }
     }
   },
@@ -1345,7 +1345,7 @@
         "name": "Aselhelm, Knapporal der Schwarzen Lilie",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/480.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/480.jpg"
       }
     }
   },
@@ -1360,7 +1360,7 @@
         "name": "Ectelias, der Waldläufer",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/481.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/481.jpg"
       }
     }
   },
@@ -1375,7 +1375,7 @@
         "name": "Thulmann, Weibel der Armee Bjarturs",
         "type": "Charakter",
         "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/482.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/482.jpg"
       }
     }
   },
@@ -1390,7 +1390,7 @@
         "name": "Konrad, Waffenknecht in Bjartur",
         "type": "Charakter",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/483.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/483.jpg"
       }
     }
   },
@@ -1405,7 +1405,7 @@
         "name": "Eron, Ignis-Priester im Orden von Grauenfurt",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/484.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/484.jpg"
       }
     }
   },
@@ -1420,7 +1420,7 @@
         "name": "Cherin, Aeris-Priesterin",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/485.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/485.jpg"
       }
     }
   },
@@ -1435,7 +1435,7 @@
         "name": "Sarius, Kundschafter der Hofkanzlei",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/486.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/486.jpg"
       }
     }
   },
@@ -1450,7 +1450,7 @@
         "name": "Corvin, die Rückhand Bjarturs",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/487.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/487.jpg"
       }
     }
   },
@@ -1465,7 +1465,7 @@
         "name": "Theo, Wächter des Waldes",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/488.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/488.jpg"
       }
     }
   },
@@ -1480,7 +1480,7 @@
         "name": "Markus Morgenwind, Leibwächter",
         "type": "Charakter",
         "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/489.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/489.jpg"
       }
     }
   },
@@ -1495,7 +1495,7 @@
         "name": "Jean-Jacques, Waffenknecht in Bjartur",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/490.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/490.jpg"
       }
     }
   },
@@ -1510,7 +1510,7 @@
         "name": "Sheewa, Kommandantin der Boten Terras",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/491.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/491.jpg"
       }
     }
   },
@@ -1525,7 +1525,7 @@
         "name": "Liam Lustenberg, Künstler",
         "type": "Charakter",
         "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/492.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/492.jpg"
       }
     }
   },
@@ -1540,7 +1540,7 @@
         "name": "Phillipp Altdorf, Meldeläufer des Thul'Heens",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/493.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/493.jpg"
       }
     }
   },
@@ -1555,7 +1555,7 @@
         "name": "“Keilformation bilden!”",
         "type": "Ereignis",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/494.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/494.jpg"
       }
     }
   },
@@ -1570,7 +1570,7 @@
         "name": "Kenrik, Söldner der Morgenröte",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/496.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/496.jpg"
       }
     }
   },
@@ -1585,7 +1585,7 @@
         "name": "Henrik, Kurator verborgener Kostbarkeiten",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/497.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/497.jpg"
       }
     }
   },
@@ -1600,7 +1600,7 @@
         "name": "Jasper, Wellentänzer der Saphirküste",
         "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/498.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/498.jpg"
       }
     }
   },
@@ -1615,7 +1615,7 @@
         "name": "Martin Kräuterer, Alchemist Terras",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/499.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/499.jpg"
       }
     }
   },
@@ -1630,7 +1630,7 @@
         "name": "Rekrut Diego, Bannerträger der Wolfswacht",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/503.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/503.jpg"
       }
     }
   }
