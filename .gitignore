@@ -3,8 +3,4 @@ __pycache__/
 .venv/
 .DS_STORE
 
-output/images/cards.pdf
-output/images/cards.png
-output/images/cards_singles.pdf
-output/images/cards_singles_cardbacks.pdf
-
+output/
