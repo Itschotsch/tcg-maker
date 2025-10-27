@@ -123,6 +123,122 @@
       "defaultNotes": "",
       "tokens": [],
       "hideFacedDownCards": true
+    },
+     "Monarch": {
+      "mulligan": {
+        "info": "Wähle eine beliebige Anzahl Karten, lege sie ab und ziehe ebenso viele neue. Danach lege eine Karte unter das Deck.",
+        "startingHandSize": "6",
+        "drawNewHand": false,
+        "putSelectionAtBottom": true,
+        "drawNewSelectedCards": true
+      },
+      "newTurn": {
+        "drawOnStart": true,
+        "sharedTurn": false
+      },
+      "countersStartingValues": [
+        0,
+        0
+      ],
+      "sections": {
+        "customSections": [
+          "Feld",
+          "Elementar",
+          "Schild"
+        ],
+        "layout": {
+          "direction": "column",
+          "content": [
+            {
+              "section": "Feld"
+            },
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "Elementar"
+                },
+                {
+                  "section": "Schild",
+                  "style": {
+                    "max-width": "18vw"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "autoPlayFromHand": {
+          "Charakter": "Feld",
+          "Ereignis": "Stack",
+          "Manifestation": "Feld"
+        },
+        "autoPlayFromStack": {
+          "Charakter": "Feld",
+          "Ereignis": "Discard",
+          "Manifestation": "Feld"
+        },
+        "sectionsDict": {
+          "Elementar": {
+            "title": "Elementar",
+            "isHidden": "no",
+            "height": "SMALL",
+            "alignment": "START",
+            "isHorizontalAllowed": false,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": true,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
+          },
+          "Feld": {
+            "title": "Feld",
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER",
+            "isHorizontalAllowed": false,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "",
+            "noQuickActions": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": true,
+            "showHiddenCardInHistory": false
+          },
+          "Schild": {
+            "title": "Schild",
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "END",
+            "isHorizontalAllowed": false,
+            "opponentAlignment": false,
+            "noAutoPayTo": false,
+            "displayedTitle": "Schild",
+            "noQuickActions": true,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": true,
+            "keepTappedNewTurn": true,
+            "showHiddenCardInHistory": false
+          }
+        }
+      },
+      "defaultNotes": "",
+      "tokens": [
+        {
+          "name": "Monarch",
+          "image": "https://i.imgur.com/qqAlWZI.png",
+          "isUnique": true,
+          "leavesAtEndOfTurn": false
+        }
+      ],
+      "hideFacedDownCards": true
     }
   },
   "defaultRessources": {

@@ -3,7 +3,10 @@
   "title": "Magie der Kontrolle",
   "id": "ed9f1a10-d64f-44a6-a1ce-6ac81b90f093",
   "game": "Chronor",
-  "format": "Klassisch",
+   "format": [
+    "Klassisch",
+    "Monarch"
+  ],
   "cardCount": 40,
   "createdAt": "2025-05-05T19:19:33.207Z",
   "lastModifiedAt": "2025-05-05T19:25:51.673Z",
@@ -105,8 +108,9 @@
   "title": "Sturm der Giganten",
   "id": "3d135904-24dc-464c-a230-e0966cbdf880",
   "game": "Chronor – Beta",
-  "format": [
-    "Klassisch"
+   "format": [
+    "Klassisch",
+    "Monarch"
   ],
   "cardCount": 44,
   "createdAt": "2025-05-27T15:37:42.778Z",
@@ -199,8 +203,9 @@
   "title": "Agrresion des Feuers",
   "id": "e9a05ed1-6193-4dc5-8053-8757a36f925d",
   "game": "Chronor – Beta",
-  "format": [
-    "Klassisch"
+   "format": [
+    "Klassisch",
+    "Monarch"
   ],
   "cardCount": 42,
   "createdAt": "2025-07-31T18:44:49.241Z",
@@ -289,7 +294,10 @@
     "title": "Armee des Südens",
     "id": "ed7d81bf-cded-421d-91f8-b4340331b8dc",
     "game": "Chronor",
-    "format": "Klassisch",
+     "format": [
+    "Klassisch",
+    "Monarch"
+  ],
     "cardCount": 40,
     "createdAt": "2025-05-05T19:28:24.281Z",
     "lastModifiedAt": "2025-05-05T19:28:24.281Z",
