@@ -95,7 +95,7 @@
         // Remove all .cost elements whose .cost-amount is non-numeric or 0
         let costAmounts = document.getElementsByClassName("cost-amount");
         Array.from(costAmounts).forEach(function (costAmount) {
-            if (!/^[0-9]+$/.test(costAmount.textContent.trim()) || costAmount.textContent.trim() == 0) {
+            if (!/^[0-9XxYyZz\+\-]+$/.test(costAmount.textContent.trim()) || costAmount.textContent.trim() == 0) {
                 costAmount.parentElement.remove();
             }
         });
