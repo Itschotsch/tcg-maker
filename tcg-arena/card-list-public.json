@@ -16,13 +16,13 @@
   },
   "54": {
     "id": "54",
-    "name": "Magierin des Ausgleichs",
+    "name": "Aufstrebende Pyromanin",
     "type": "Charakter",
     "Element": "Ignis",
     "cost": 4,
     "face": {
       "front": {
-        "name": "Magierin des Ausgleichs",
+        "name": "Aufstrebende Pyromanin",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/54.jpg"
@@ -1159,12 +1159,12 @@
     "name": "Ausmerzen",
     "type": "Ereignis",
     "Element": "Magica",
-    "cost": 4,
+    "cost": 5,
     "face": {
       "front": {
         "name": "Ausmerzen",
         "type": "Ereignis",
-        "cost": 4,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/459.jpg"
       }
     }
