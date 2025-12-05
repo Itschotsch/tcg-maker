@@ -35,6 +35,18 @@
         0,
         0
       ],
+      "draggableTokens": [
+              {
+                  "id": "target",
+                  "name": "Ziel",
+                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-target"
+              },
+              {
+                  "id": "bannkreis",
+                  "name": "Bannkreis",
+                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-bannkreis"
+              }
+      ],
       "sections": {
         "customSections": [
           "Feld",
@@ -143,6 +155,18 @@
       "countersStartingValues": [
         0,
         0
+      ],
+      "draggableTokens": [
+              {
+                  "id": "target",
+                  "name": "Ziel",
+                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-target"
+              },
+              {
+                  "id": "bannkreis",
+                  "name": "Bannkreis",
+                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-bannkreis"
+              }
       ],
       "sections": {
         "customSections": [
