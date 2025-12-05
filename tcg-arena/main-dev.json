@@ -39,12 +39,12 @@
               {
                   "id": "target",
                   "name": "Ziel",
-                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-target"
+                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-target.png"
               },
               {
                   "id": "bannkreis",
                   "name": "Bannkreis",
-                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-bannkreis"
+                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-bannkreis.png"
               }
       ],
       "sections": {
@@ -160,12 +160,12 @@
               {
                   "id": "target",
                   "name": "Ziel",
-                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-target"
+                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-target.png"
               },
               {
                   "id": "bannkreis",
                   "name": "Bannkreis",
-                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-bannkreis"
+                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-bannkreis.png"
               }
       ],
       "sections": {
