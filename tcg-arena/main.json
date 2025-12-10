@@ -16,11 +16,27 @@
   },
   "gameplay": {
     "Classic": {
+      "beforeGameStart": {
+        "initialBoardSetup":
+          [
+            {
+              "drawFromTop": "Deck",
+              "count": 3,
+              "destination": "Schild"
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 2,
+              "destination": "Elementar"
+            }
+          ]
+      },
       "mulligan": {
         "info": "Wähle eine beliebige Anzahl Karten, lege sie ab und ziehe ebenso viele neue. Danach lege eine Karte unter das Deck.",
         "startingHandSize": "6",
         "drawNewHand": false,
         "putSelectionAtBottom": true,
+        "triggeredByButton": false,
         "drawNewSelectedCards": true
       },
       "newTurn": {
@@ -28,8 +44,20 @@
         "sharedTurn": false
       },
       "countersStartingValues": [
-        "1",
+        0,
         0
+      ],
+      "draggableTokens": [
+              {
+                  "id": "target",
+                  "name": "Ziel",
+                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-target.png"
+              },
+              {
+                  "id": "bannkreis",
+                  "name": "Bannkreis",
+                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-bannkreis.png"
+              }
       ],
       "sections": {
         "customSections": [
@@ -124,7 +152,7 @@
       "tokens": [],
       "hideFacedDownCards": true
     },
-     "Monarch": {
+    "Monarch": {
       "mulligan": {
         "info": "Wähle eine beliebige Anzahl Karten, lege sie ab und ziehe ebenso viele neue. Danach lege eine Karte unter das Deck.",
         "startingHandSize": "6",
@@ -139,6 +167,18 @@
       "countersStartingValues": [
         0,
         0
+      ],
+      "draggableTokens": [
+              {
+                  "id": "target",
+                  "name": "Ziel",
+                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-target.png"
+              },
+              {
+                  "id": "bannkreis",
+                  "name": "Bannkreis",
+                  "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/assets/token-bannkreis.png"
+              }
       ],
       "sections": {
         "customSections": [
