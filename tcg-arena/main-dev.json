@@ -40,7 +40,7 @@
         "startingHandSize": "6",
         "drawNewHand": false,
         "putSelectionAtBottom": true,
-        "triggeredByButton": true,
+        "triggeredByButton": false,
         "drawNewSelectedCards": true
       },
       "newTurn": {
@@ -157,11 +157,27 @@
       "hideFacedDownCards": true
     },
     "Monarch": {
+      "beforeGameStart": {
+        "initialBoardSetup":
+          [
+            {
+              "drawFromTop": "Deck",
+              "count": 3,
+              "destination": "Schild"
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 2,
+              "destination": "Elementar"
+            }
+          ]
+      },
       "mulligan": {
         "info": "Wähle eine beliebige Anzahl Karten, lege sie ab und ziehe ebenso viele neue. Danach lege eine Karte unter das Deck.",
         "startingHandSize": "6",
         "drawNewHand": false,
         "putSelectionAtBottom": true,
+        "triggeredByButton": false,
         "drawNewSelectedCards": true
       },
       "newTurn": {
