@@ -1633,5 +1633,35 @@
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/503.jpg"
       }
     }
+  },
+  "578": {
+    "id": "578",
+    "name": "Santa Klaus, erzürnter weißer Mann",
+    "type": "Charakter",
+    "cost": 4,
+    "Element": "Ungeprägt",
+    "face": {
+      "front": {
+        "name": "Santa Klaus, erzürnter weißer Mann",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/578.jpg"
+      }
+    }
+  },
+  "579": {
+    "id": "579",
+    "name": "Liebevolles Geschenk",
+    "type": "Manifestation",
+    "cost": 2,
+    "Element": "Ungeprägt",
+    "face": {
+      "front": {
+        "name": "Liebevolles Geschenk",
+        "type": "Manifestation",
+        "cost": 2,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/579.jpg"
+      }
+    }
   }
 }
