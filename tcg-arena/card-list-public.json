@@ -1634,34 +1634,64 @@
       }
     }
   },
-  "578": {
-    "id": "578",
-    "name": "Santa Klaus, erzürnter weißer Mann",
+  "551": {
+    "id": "551",
+    "name": "Bromus",
+    "face": {
+      "front": {
+        "name": "Bromus",
+        "cost": 6,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/551.jpg",
+        "type": "Charakter"
+      }
+    },
+    "cost": 6,
     "type": "Charakter",
-    "cost": 4,
-    "Element": "Ungeprägt",
-    "face": {
-      "front": {
-        "name": "Santa Klaus, erzürnter weißer Mann",
-        "type": "Charakter",
-        "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/578.jpg"
-      }
-    }
+    "Element": "Terra"
   },
-  "579": {
-    "id": "579",
-    "name": "Liebevolles Geschenk",
-    "type": "Manifestation",
-    "cost": 2,
-    "Element": "Ungeprägt",
+  "552": {
+    "id": "552",
+    "name": "Miriam",
     "face": {
       "front": {
-        "name": "Liebevolles Geschenk",
-        "type": "Manifestation",
-        "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/579.jpg"
+        "name": "Miriam",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/552.jpg",
+        "type": "Charakter"
       }
-    }
+    },
+    "cost": 4,
+    "type": "Charakter",
+    "Element": "Ignis"
+  },
+  "592": {
+    "id": "592",
+    "name": "Dr. Viktoire Ladon Crick",
+    "face": {
+      "front": {
+        "name": "Dr. Viktoire Ladon Crick",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/592.jpg",
+        "type": "Charakter"
+      }
+    },
+    "cost": 3,
+    "type": "Charakter",
+    "Element": "Aqua"
+  },
+  "594": {
+    "id": "594",
+    "name": "Eron Breitenstein",
+    "face": {
+      "front": {
+        "name": "Eron Breitenstein",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/594.jpg",
+        "type": "Charakter"
+      }
+    },
+    "cost": 5,
+    "type": "Charakter",
+    "Element": "Aeris"
   }
 }
