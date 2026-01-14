@@ -1,5 +1,204 @@
 [
- {
+{
+  "title": "Weg des Löwen & Schlang",
+  "id": "2a567847-ff8c-4f78-854b-abb37da386cf",
+  "game": "Anor – Beta",
+  "format": [
+    "Klassisch"
+  ],
+  "cardCount": 40,
+  "createdAt": "2026-01-13T19:43:36.267Z",
+  "lastModifiedAt": "2026-01-13T19:50:29.887Z",
+  "deckList": {
+    "categoriesOrder": [
+      "Charakter",
+      "Ereignis",
+      "Manifestation"
+    ],
+    "Sideboard": [],
+    "Charakter": [
+      {
+        "count": 2,
+        "id": "356"
+      },
+      {
+        "count": 2,
+        "id": "302"
+      },
+      {
+        "count": 2,
+        "id": "480"
+      },
+      {
+        "count": 2,
+        "id": "271"
+      },
+      {
+        "count": 3,
+        "id": "592"
+      },
+      {
+        "count": 2,
+        "id": "164"
+      },
+      {
+        "count": 3,
+        "id": "552"
+      },
+      {
+        "count": 3,
+        "id": "359"
+      },
+      {
+        "count": 2,
+        "id": "486"
+      },
+      {
+        "count": 2,
+        "id": "338"
+      },
+      {
+        "count": 2,
+        "id": "329"
+      }
+    ],
+    "Ereignis": [
+      {
+        "count": 3,
+        "id": "168"
+      },
+      {
+        "count": 2,
+        "id": "169"
+      },
+      {
+        "count": 2,
+        "id": "363"
+      },
+      {
+        "count": 2,
+        "id": "185"
+      },
+      {
+        "count": 2,
+        "id": "361"
+      }
+    ],
+    "Manifestation": [
+      {
+        "count": 2,
+        "id": "201"
+      },
+      {
+        "count": 2,
+        "id": "401"
+      }
+    ]
+  }
+},
+
+  {
+  "title": "Weg des Bären & Adlers",
+  "id": "f803996b-9645-4810-afc5-f03807080eec",
+  "game": "Chronor – Beta",
+  "format": [
+    "Klassisch"
+  ],
+  "cardCount": 40,
+  "createdAt": "2026-01-14T19:04:48.180Z",
+  "lastModifiedAt": "2026-01-14T20:09:54.682Z",
+  "deckList": {
+    "categoriesOrder": [
+      "Charakter",
+      "Ereignis",
+      "Manifestation"
+    ],
+    "Sideboard": [],
+    "Charakter": [
+      {
+        "count": 2,
+        "id": "306"
+      },
+      {
+        "count": 2,
+        "id": "299"
+      },
+      {
+        "count": 2,
+        "id": "488"
+      },
+      {
+        "count": 2,
+        "id": "485"
+      },
+      {
+        "count": 2,
+        "id": "497"
+      },
+      {
+        "count": 2,
+        "id": "489"
+      },
+      {
+        "count": 3,
+        "id": "594"
+      },
+      {
+        "count": 3,
+        "id": "551"
+      },
+      {
+        "count": 2,
+        "id": "475"
+      },
+      {
+        "count": 2,
+        "id": "382"
+      },
+      {
+        "count": 2,
+        "id": "327"
+      },
+      {
+        "count": 2,
+        "id": "352"
+      },
+      {
+        "count": 2,
+        "id": "370"
+      },
+      {
+        "count": 2,
+        "id": "389"
+      }
+    ],
+    "Ereignis": [
+      {
+        "count": 2,
+        "id": "452"
+      },
+      {
+        "count": 2,
+        "id": "213"
+      },
+      {
+        "count": 2,
+        "id": "494"
+      },
+      {
+        "count": 2,
+        "id": "367"
+      }
+    ],
+    "Manifestation": [
+      {
+        "count": 2,
+        "id": "197"
+      }
+    ]
+  }
+},
+{
   "title": "Magie der Kontrolle",
   "id": "ed9f1a10-d64f-44a6-a1ce-6ac81b90f093",
   "game": "Chronor",
