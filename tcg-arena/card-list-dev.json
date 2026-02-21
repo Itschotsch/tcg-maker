@@ -12,7 +12,8 @@
       }
     },
     "cost": 6,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "4": {
     "id": "4",
@@ -27,7 +28,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "54": {
     "id": "54",
@@ -42,7 +44,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "66": {
     "id": "66",
@@ -57,7 +60,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "152": {
     "id": "152",
@@ -72,7 +76,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "164": {
     "id": "164",
@@ -87,7 +92,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "165": {
     "id": "165",
@@ -102,7 +108,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "167": {
     "id": "167",
@@ -117,7 +124,8 @@
       }
     },
     "cost": 2,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "168": {
     "id": "168",
@@ -132,7 +140,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "169": {
     "id": "169",
@@ -147,7 +156,8 @@
       }
     },
     "cost": 2,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "170": {
     "id": "170",
@@ -162,7 +172,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "173": {
     "id": "173",
@@ -177,7 +188,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "174": {
     "id": "174",
@@ -192,7 +204,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "181": {
     "id": "181",
@@ -207,7 +220,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "185": {
     "id": "185",
@@ -222,7 +236,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "187": {
     "id": "187",
@@ -237,7 +252,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "188": {
     "id": "188",
@@ -252,7 +268,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "189": {
     "id": "189",
@@ -267,7 +284,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "197": {
     "id": "197",
@@ -282,7 +300,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "198": {
     "id": "198",
@@ -297,7 +316,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "200": {
     "id": "200",
@@ -312,7 +332,8 @@
       }
     },
     "cost": 5,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "201": {
     "id": "201",
@@ -327,7 +348,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "205": {
     "id": "205",
@@ -342,7 +364,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "211": {
     "id": "211",
@@ -357,7 +380,8 @@
       }
     },
     "cost": 8,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "213": {
     "id": "213",
@@ -372,7 +396,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "215": {
     "id": "215",
@@ -387,7 +412,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "217": {
     "id": "217",
@@ -402,7 +428,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "218": {
     "id": "218",
@@ -417,7 +444,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "219": {
     "id": "219",
@@ -432,7 +460,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "220": {
     "id": "220",
@@ -447,7 +476,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "221": {
     "id": "221",
@@ -462,7 +492,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "222": {
     "id": "222",
@@ -477,7 +508,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "223": {
     "id": "223",
@@ -492,7 +524,8 @@
       }
     },
     "cost": 2,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "224": {
     "id": "224",
@@ -507,7 +540,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "225": {
     "id": "225",
@@ -522,7 +556,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "226": {
     "id": "226",
@@ -537,7 +572,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "227": {
     "id": "227",
@@ -552,7 +588,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "229": {
     "id": "229",
@@ -567,7 +604,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "235": {
     "id": "235",
@@ -582,7 +620,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "237": {
     "id": "237",
@@ -597,7 +636,8 @@
       }
     },
     "cost": 8,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "257": {
     "id": "257",
@@ -612,7 +652,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "271": {
     "id": "271",
@@ -627,7 +668,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "273": {
     "id": "273",
@@ -642,7 +684,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "279": {
     "id": "279",
@@ -657,7 +700,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "285": {
     "id": "285",
@@ -672,7 +716,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "292": {
     "id": "292",
@@ -687,7 +732,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "299": {
     "id": "299",
@@ -702,7 +748,8 @@
       }
     },
     "cost": 1,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "300": {
     "id": "300",
@@ -717,7 +764,8 @@
       }
     },
     "cost": 1,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "302": {
     "id": "302",
@@ -732,7 +780,8 @@
       }
     },
     "cost": 1,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "306": {
     "id": "306",
@@ -747,7 +796,8 @@
       }
     },
     "cost": 1,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "311": {
     "id": "311",
@@ -762,7 +812,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "317": {
     "id": "317",
@@ -777,7 +828,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "319": {
     "id": "319",
@@ -792,7 +844,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "323": {
     "id": "323",
@@ -807,7 +860,8 @@
       }
     },
     "cost": 7,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "327": {
     "id": "327",
@@ -822,7 +876,8 @@
       }
     },
     "cost": 6,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "328": {
     "id": "328",
@@ -837,7 +892,8 @@
       }
     },
     "cost": 7,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "329": {
     "id": "329",
@@ -852,7 +908,8 @@
       }
     },
     "cost": 7,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "331": {
     "id": "331",
@@ -867,7 +924,8 @@
       }
     },
     "cost": 7,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "337": {
     "id": "337",
@@ -882,7 +940,8 @@
       }
     },
     "cost": 6,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "338": {
     "id": "338",
@@ -897,7 +956,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "342": {
     "id": "342",
@@ -912,7 +972,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "343": {
     "id": "343",
@@ -927,7 +988,8 @@
       }
     },
     "cost": 1,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "345": {
     "id": "345",
@@ -942,7 +1004,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "350": {
     "id": "350",
@@ -957,7 +1020,8 @@
       }
     },
     "cost": 2,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "351": {
     "id": "351",
@@ -972,7 +1036,8 @@
       }
     },
     "cost": 5,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "352": {
     "id": "352",
@@ -987,7 +1052,8 @@
       }
     },
     "cost": 2,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "353": {
     "id": "353",
@@ -1002,7 +1068,8 @@
       }
     },
     "cost": 2,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "354": {
     "id": "354",
@@ -1017,7 +1084,8 @@
       }
     },
     "cost": 6,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "356": {
     "id": "356",
@@ -1032,7 +1100,8 @@
       }
     },
     "cost": 1,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "358": {
     "id": "358",
@@ -1047,7 +1116,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "359": {
     "id": "359",
@@ -1062,7 +1132,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "363": {
     "id": "363",
@@ -1077,7 +1148,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "364": {
     "id": "364",
@@ -1092,7 +1164,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "365": {
     "id": "365",
@@ -1107,7 +1180,8 @@
       }
     },
     "cost": 5,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "366": {
     "id": "366",
@@ -1122,7 +1196,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "368": {
     "id": "368",
@@ -1137,7 +1212,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "370": {
     "id": "370",
@@ -1152,7 +1228,8 @@
       }
     },
     "cost": 2,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "371": {
     "id": "371",
@@ -1167,7 +1244,8 @@
       }
     },
     "cost": 1,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "372": {
     "id": "372",
@@ -1182,7 +1260,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "373": {
     "id": "373",
@@ -1197,7 +1276,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "374": {
     "id": "374",
@@ -1212,7 +1292,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "376": {
     "id": "376",
@@ -1227,7 +1308,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "378": {
     "id": "378",
@@ -1242,7 +1324,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "380": {
     "id": "380",
@@ -1257,7 +1340,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "381": {
     "id": "381",
@@ -1272,7 +1356,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "382": {
     "id": "382",
@@ -1287,7 +1372,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "384": {
     "id": "384",
@@ -1302,7 +1388,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "386": {
     "id": "386",
@@ -1317,7 +1404,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "389": {
     "id": "389",
@@ -1332,7 +1420,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "390": {
     "id": "390",
@@ -1347,7 +1436,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "391": {
     "id": "391",
@@ -1362,7 +1452,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "393": {
     "id": "393",
@@ -1377,7 +1468,8 @@
       }
     },
     "cost": 8,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "394": {
     "id": "394",
@@ -1392,7 +1484,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "397": {
     "id": "397",
@@ -1407,7 +1500,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "400": {
     "id": "400",
@@ -1422,7 +1516,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "401": {
     "id": "401",
@@ -1437,7 +1532,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "402": {
     "id": "402",
@@ -1452,7 +1548,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "403": {
     "id": "403",
@@ -1467,7 +1564,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "404": {
     "id": "404",
@@ -1482,7 +1580,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "406": {
     "id": "406",
@@ -1497,7 +1596,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "407": {
     "id": "407",
@@ -1512,7 +1612,8 @@
       }
     },
     "cost": 5,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "452": {
     "id": "452",
@@ -1527,7 +1628,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "453": {
     "id": "453",
@@ -1542,7 +1644,8 @@
       }
     },
     "cost": 5,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "454": {
     "id": "454",
@@ -1557,7 +1660,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "456": {
     "id": "456",
@@ -1572,7 +1676,8 @@
       }
     },
     "cost": 6,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "457": {
     "id": "457",
@@ -1587,7 +1692,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "459": {
     "id": "459",
@@ -1602,7 +1708,8 @@
       }
     },
     "cost": 5,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "460": {
     "id": "460",
@@ -1617,7 +1724,8 @@
       }
     },
     "cost": 6,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "461": {
     "id": "461",
@@ -1632,7 +1740,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "464": {
     "id": "464",
@@ -1647,7 +1756,8 @@
       }
     },
     "cost": 5,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "465": {
     "id": "465",
@@ -1662,7 +1772,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "466": {
     "id": "466",
@@ -1677,7 +1788,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "467": {
     "id": "467",
@@ -1692,7 +1804,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "468": {
     "id": "468",
@@ -1707,7 +1820,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "469": {
     "id": "469",
@@ -1722,7 +1836,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "470": {
     "id": "470",
@@ -1737,7 +1852,8 @@
       }
     },
     "cost": 6,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "471": {
     "id": "471",
@@ -1752,7 +1868,8 @@
       }
     },
     "cost": 7,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Mythic"
   },
   "472": {
     "id": "472",
@@ -1767,7 +1884,8 @@
       }
     },
     "cost": 2,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "473": {
     "id": "473",
@@ -1782,7 +1900,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "475": {
     "id": "475",
@@ -1797,7 +1916,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "476": {
     "id": "476",
@@ -1812,7 +1932,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "477": {
     "id": "477",
@@ -1827,7 +1948,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "478": {
     "id": "478",
@@ -1842,7 +1964,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "479": {
     "id": "479",
@@ -1857,7 +1980,8 @@
       }
     },
     "cost": 5,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "480": {
     "id": "480",
@@ -1872,7 +1996,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "481": {
     "id": "481",
@@ -1887,7 +2012,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "482": {
     "id": "482",
@@ -1902,7 +2028,8 @@
       }
     },
     "cost": 5,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "483": {
     "id": "483",
@@ -1917,7 +2044,8 @@
       }
     },
     "cost": 2,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "484": {
     "id": "484",
@@ -1932,7 +2060,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "485": {
     "id": "485",
@@ -1947,7 +2076,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "486": {
     "id": "486",
@@ -1962,7 +2092,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "487": {
     "id": "487",
@@ -1977,7 +2108,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "488": {
     "id": "488",
@@ -1992,7 +2124,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "489": {
     "id": "489",
@@ -2007,7 +2140,8 @@
       }
     },
     "cost": 5,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "490": {
     "id": "490",
@@ -2022,7 +2156,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "491": {
     "id": "491",
@@ -2037,7 +2172,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "492": {
     "id": "492",
@@ -2052,7 +2188,8 @@
       }
     },
     "cost": 2,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "493": {
     "id": "493",
@@ -2067,7 +2204,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "494": {
     "id": "494",
@@ -2082,7 +2220,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "496": {
     "id": "496",
@@ -2097,7 +2236,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "497": {
     "id": "497",
@@ -2112,7 +2252,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "498": {
     "id": "498",
@@ -2127,7 +2268,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "499": {
     "id": "499",
@@ -2142,7 +2284,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "503": {
     "id": "503",
@@ -2157,7 +2300,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "506": {
     "id": "506",
@@ -2172,7 +2316,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "507": {
     "id": "507",
@@ -2187,7 +2332,8 @@
       }
     },
     "cost": 2,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "508": {
     "id": "508",
@@ -2202,7 +2348,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "509": {
     "id": "509",
@@ -2217,7 +2364,8 @@
       }
     },
     "cost": 5,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "510": {
     "id": "510",
@@ -2232,22 +2380,24 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "512": {
     "id": "512",
-    "name": "Turbulent Soldatin",
+    "name": "Turbulente Soldatin",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Turbulent Soldatin",
+        "name": "Turbulente Soldatin",
         "type": "Charakter",
         "cost": 1,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/512.jpg"
       }
     },
     "cost": 1,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "513": {
     "id": "513",
@@ -2262,7 +2412,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "514": {
     "id": "514",
@@ -2277,7 +2428,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "515": {
     "id": "515",
@@ -2292,7 +2444,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "516": {
     "id": "516",
@@ -2307,7 +2460,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "517": {
     "id": "517",
@@ -2322,7 +2476,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "518": {
     "id": "518",
@@ -2337,7 +2492,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "519": {
     "id": "519",
@@ -2352,7 +2508,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "520": {
     "id": "520",
@@ -2367,7 +2524,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "521": {
     "id": "521",
@@ -2382,7 +2540,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "522": {
     "id": "522",
@@ -2397,7 +2556,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "523": {
     "id": "523",
@@ -2412,7 +2572,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "524": {
     "id": "524",
@@ -2427,7 +2588,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "525": {
     "id": "525",
@@ -2442,7 +2604,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "526": {
     "id": "526",
@@ -2457,7 +2620,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "527": {
     "id": "527",
@@ -2472,7 +2636,8 @@
       }
     },
     "cost": 2,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "528": {
     "id": "528",
@@ -2487,7 +2652,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "530": {
     "id": "530",
@@ -2502,7 +2668,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "531": {
     "id": "531",
@@ -2517,7 +2684,8 @@
       }
     },
     "cost": 1,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "533": {
     "id": "533",
@@ -2532,7 +2700,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "534": {
     "id": "534",
@@ -2547,7 +2716,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "535": {
     "id": "535",
@@ -2562,7 +2732,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "536": {
     "id": "536",
@@ -2577,7 +2748,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "537": {
     "id": "537",
@@ -2592,7 +2764,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "538": {
     "id": "538",
@@ -2607,7 +2780,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "539": {
     "id": "539",
@@ -2622,7 +2796,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "540": {
     "id": "540",
@@ -2637,7 +2812,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "543": {
     "id": "543",
@@ -2652,7 +2828,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Common"
   },
   "544": {
     "id": "544",
@@ -2667,7 +2844,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Common"
   },
   "545": {
     "id": "545",
@@ -2682,7 +2860,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "546": {
     "id": "546",
@@ -2697,7 +2876,8 @@
       }
     },
     "cost": 2,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "547": {
     "id": "547",
@@ -2712,7 +2892,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "548": {
     "id": "548",
@@ -2727,7 +2908,8 @@
       }
     },
     "cost": 6,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "549": {
     "id": "549",
@@ -2742,7 +2924,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Common"
   },
   "551": {
     "id": "551",
@@ -2757,7 +2940,8 @@
       }
     },
     "cost": 6,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "552": {
     "id": "552",
@@ -2772,7 +2956,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "553": {
     "id": "553",
@@ -2787,7 +2972,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "554": {
     "id": "554",
@@ -2802,7 +2988,8 @@
       }
     },
     "cost": 5,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "555": {
     "id": "555",
@@ -2817,7 +3004,8 @@
       }
     },
     "cost": 7,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "556": {
     "id": "556",
@@ -2832,7 +3020,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "557": {
     "id": "557",
@@ -2847,7 +3036,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "558": {
     "id": "558",
@@ -2862,7 +3052,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "559": {
     "id": "559",
@@ -2877,7 +3068,8 @@
       }
     },
     "cost": 6,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Uncommon"
   },
   "560": {
     "id": "560",
@@ -2892,7 +3084,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "561": {
     "id": "561",
@@ -2907,7 +3100,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "562": {
     "id": "562",
@@ -2922,7 +3116,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "563": {
     "id": "563",
@@ -2937,7 +3132,8 @@
       }
     },
     "cost": 6,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "564": {
     "id": "564",
@@ -2952,7 +3148,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "565": {
     "id": "565",
@@ -2967,7 +3164,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "566": {
     "id": "566",
@@ -2982,7 +3180,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "567": {
     "id": "567",
@@ -2997,7 +3196,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "568": {
     "id": "568",
@@ -3012,7 +3212,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "569": {
     "id": "569",
@@ -3027,7 +3228,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "570": {
     "id": "570",
@@ -3042,7 +3244,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "571": {
     "id": "571",
@@ -3057,7 +3260,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "572": {
     "id": "572",
@@ -3072,7 +3276,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "573": {
     "id": "573",
@@ -3087,7 +3292,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Uncommon"
   },
   "574": {
     "id": "574",
@@ -3102,7 +3308,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "580": {
     "id": "580",
@@ -3117,7 +3324,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "581": {
     "id": "581",
@@ -3132,7 +3340,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "582": {
     "id": "582",
@@ -3147,7 +3356,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "583": {
     "id": "583",
@@ -3162,7 +3372,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "584": {
     "id": "584",
@@ -3177,7 +3388,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "585": {
     "id": "585",
@@ -3192,7 +3404,8 @@
       }
     },
     "cost": 1,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "586": {
     "id": "586",
@@ -3207,7 +3420,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "587": {
     "id": "587",
@@ -3222,7 +3436,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "588": {
     "id": "588",
@@ -3237,7 +3452,8 @@
       }
     },
     "cost": 5,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "589": {
     "id": "589",
@@ -3252,7 +3468,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "590": {
     "id": "590",
@@ -3267,7 +3484,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Uncommon"
   },
   "592": {
     "id": "592",
@@ -3282,7 +3500,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "594": {
     "id": "594",
@@ -3297,7 +3516,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "595": {
     "id": "595",
@@ -3312,7 +3532,8 @@
       }
     },
     "cost": 5,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "596": {
     "id": "596",
@@ -3327,7 +3548,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "597": {
     "id": "597",
@@ -3342,7 +3564,8 @@
       }
     },
     "cost": 7,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "598": {
     "id": "598",
@@ -3357,7 +3580,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "599": {
     "id": "599",
@@ -3372,7 +3596,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "600": {
     "id": "600",
@@ -3387,7 +3612,8 @@
       }
     },
     "cost": 6,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "601": {
     "id": "601",
@@ -3402,7 +3628,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "602": {
     "id": "602",
@@ -3417,7 +3644,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "603": {
     "id": "603",
@@ -3432,7 +3660,8 @@
       }
     },
     "cost": 6,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "604": {
     "id": "604",
@@ -3447,7 +3676,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "605": {
     "id": "605",
@@ -3462,7 +3692,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "606": {
     "id": "606",
@@ -3477,7 +3708,8 @@
       }
     },
     "cost": 6,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "607": {
     "id": "607",
@@ -3492,7 +3724,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "608": {
     "id": "608",
@@ -3507,7 +3740,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Uncommon"
   },
   "610": {
     "id": "610",
@@ -3522,7 +3756,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "612": {
     "id": "612",
@@ -3537,7 +3772,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "613": {
     "id": "613",
@@ -3552,7 +3788,8 @@
       }
     },
     "cost": 5,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "614": {
     "id": "614",
@@ -3567,7 +3804,8 @@
       }
     },
     "cost": 6,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "615": {
     "id": "615",
@@ -3582,7 +3820,8 @@
       }
     },
     "cost": 2,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "616": {
     "id": "616",
@@ -3597,7 +3836,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "617": {
     "id": "617",
@@ -3612,7 +3852,8 @@
       }
     },
     "cost": 2,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "618": {
     "id": "618",
@@ -3627,7 +3868,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "619": {
     "id": "619",
@@ -3642,7 +3884,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "620": {
     "id": "620",
@@ -3657,7 +3900,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "621": {
     "id": "621",
@@ -3672,7 +3916,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Common"
   },
   "622": {
     "id": "622",
@@ -3687,7 +3932,8 @@
       }
     },
     "cost": 5,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "623": {
     "id": "623",
@@ -3702,7 +3948,8 @@
       }
     },
     "cost": 5,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "624": {
     "id": "624",
@@ -3717,7 +3964,8 @@
       }
     },
     "cost": 5,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "625": {
     "id": "625",
@@ -3732,7 +3980,8 @@
       }
     },
     "cost": 5,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "626": {
     "id": "626",
@@ -3747,7 +3996,8 @@
       }
     },
     "cost": 7,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "627": {
     "id": "627",
@@ -3762,7 +4012,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Uncommon"
   },
   "628": {
     "id": "628",
@@ -3777,7 +4028,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "629": {
     "id": "629",
@@ -3792,7 +4044,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "630": {
     "id": "630",
@@ -3807,7 +4060,8 @@
       }
     },
     "cost": 6,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "631": {
     "id": "631",
@@ -3822,7 +4076,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "632": {
     "id": "632",
@@ -3837,7 +4092,8 @@
       }
     },
     "cost": 6,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "633": {
     "id": "633",
@@ -3852,7 +4108,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "634": {
     "id": "634",
@@ -3867,7 +4124,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "635": {
     "id": "635",
@@ -3882,7 +4140,8 @@
       }
     },
     "cost": 5,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "636": {
     "id": "636",
@@ -3897,7 +4156,8 @@
       }
     },
     "cost": 5,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "637": {
     "id": "637",
@@ -3912,7 +4172,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "638": {
     "id": "638",
@@ -3927,7 +4188,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "639": {
     "id": "639",
@@ -3942,7 +4204,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "640": {
     "id": "640",
@@ -3957,7 +4220,8 @@
       }
     },
     "cost": 6,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "641": {
     "id": "641",
@@ -3972,7 +4236,8 @@
       }
     },
     "cost": 7,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "643": {
     "id": "643",
@@ -3987,7 +4252,8 @@
       }
     },
     "cost": 3,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "644": {
     "id": "644",
@@ -4002,7 +4268,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "645": {
     "id": "645",
@@ -4017,7 +4284,8 @@
       }
     },
     "cost": 4,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "646": {
     "id": "646",
@@ -4032,7 +4300,8 @@
       }
     },
     "cost": 7,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "647": {
     "id": "647",
@@ -4047,7 +4316,8 @@
       }
     },
     "cost": 2,
-    "Element": "Terra"
+    "Element": "Terra",
+    "rarity": "Rare"
   },
   "648": {
     "id": "648",
@@ -4062,7 +4332,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Common"
   },
   "649": {
     "id": "649",
@@ -4077,7 +4348,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "650": {
     "id": "650",
@@ -4092,7 +4364,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "651": {
     "id": "651",
@@ -4107,7 +4380,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "652": {
     "id": "652",
@@ -4122,7 +4396,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "653": {
     "id": "653",
@@ -4137,7 +4412,8 @@
       }
     },
     "cost": 6,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "654": {
     "id": "654",
@@ -4152,7 +4428,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aeris"
+    "Element": "Aeris",
+    "rarity": "Rare"
   },
   "655": {
     "id": "655",
@@ -4167,7 +4444,8 @@
       }
     },
     "cost": 5,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "656": {
     "id": "656",
@@ -4182,7 +4460,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "657": {
     "id": "657",
@@ -4197,7 +4476,8 @@
       }
     },
     "cost": 2,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "658": {
     "id": "658",
@@ -4212,7 +4492,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "659": {
     "id": "659",
@@ -4227,7 +4508,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "660": {
     "id": "660",
@@ -4242,7 +4524,8 @@
       }
     },
     "cost": 5,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "661": {
     "id": "661",
@@ -4257,7 +4540,8 @@
       }
     },
     "cost": 4,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "662": {
     "id": "662",
@@ -4272,7 +4556,8 @@
       }
     },
     "cost": 3,
-    "Element": "Magica"
+    "Element": "Magica",
+    "rarity": "Rare"
   },
   "663": {
     "id": "663",
@@ -4287,7 +4572,8 @@
       }
     },
     "cost": 4,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "664": {
     "id": "664",
@@ -4302,7 +4588,8 @@
       }
     },
     "cost": 6,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "665": {
     "id": "665",
@@ -4317,7 +4604,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "666": {
     "id": "666",
@@ -4332,7 +4620,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "667": {
     "id": "667",
@@ -4347,7 +4636,8 @@
       }
     },
     "cost": 2,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "668": {
     "id": "668",
@@ -4362,7 +4652,8 @@
       }
     },
     "cost": 5,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "669": {
     "id": "669",
@@ -4377,7 +4668,8 @@
       }
     },
     "cost": 3,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "670": {
     "id": "670",
@@ -4392,7 +4684,8 @@
       }
     },
     "cost": 6,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "671": {
     "id": "671",
@@ -4407,7 +4700,8 @@
       }
     },
     "cost": 1,
-    "Element": "Aqua"
+    "Element": "Aqua",
+    "rarity": "Rare"
   },
   "672": {
     "id": "672",
@@ -4422,7 +4716,8 @@
       }
     },
     "cost": 1,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "673": {
     "id": "673",
@@ -4437,7 +4732,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "674": {
     "id": "674",
@@ -4452,7 +4748,8 @@
       }
     },
     "cost": 3,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "675": {
     "id": "675",
@@ -4467,7 +4764,8 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "676": {
     "id": "676",
@@ -4482,7 +4780,8 @@
       }
     },
     "cost": 5,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   },
   "677": {
     "id": "677",
@@ -4496,7 +4795,8 @@
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/677.jpg"
       }
     },
-    "cost": 4
+    "cost": 4,
+    "rarity": "Rare"
   },
   "678": {
     "id": "678",
@@ -4511,6 +4811,7 @@
       }
     },
     "cost": 4,
-    "Element": "Ignis"
+    "Element": "Ignis",
+    "rarity": "Rare"
   }
 }
