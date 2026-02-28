@@ -2503,11 +2503,11 @@
       "front": {
         "name": "Labor des Giftmischers",
         "type": "Manifestation",
-        "cost": 4,
+        "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/519.jpg"
       }
     },
-    "cost": 4,
+    "cost": 3,
     "Element": "Aqua",
     "rarity": "Common"
   },
@@ -3655,11 +3655,11 @@
       "front": {
         "name": "Seitenwechsel",
         "type": "Ereignis",
-        "cost": 6,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/603.jpg"
       }
     },
-    "cost": 6,
+    "cost": 5,
     "Element": "Aqua",
     "rarity": "Uncommon"
   },
@@ -3735,11 +3735,11 @@
       "front": {
         "name": "AU19",
         "type": "Manifestation",
-        "cost": 4,
+        "cost": 2,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/608.jpg"
       }
     },
-    "cost": 4,
+    "cost": 2,
     "Element": "Aqua",
     "rarity": "Uncommon"
   },
@@ -4583,11 +4583,11 @@
       "front": {
         "name": "Annektieren",
         "type": "Manifestation",
-        "cost": 6,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/664.jpg"
       }
     },
-    "cost": 6,
+    "cost": 5,
     "Element": "Aqua",
     "rarity": "Rare"
   },
@@ -4615,11 +4615,11 @@
       "front": {
         "name": "Quelle des Vergessens",
         "type": "Manifestation",
-        "cost": 5,
+        "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/666.jpg"
       }
     },
-    "cost": 5,
+    "cost": 3,
     "Element": "Aqua",
     "rarity": "Rare"
   },
@@ -4695,11 +4695,11 @@
       "front": {
         "name": "Stilles Wasser",
         "type": "Ereignis",
-        "cost": 1,
+        "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/671.jpg"
       }
     },
-    "cost": 1,
+    "cost": 3,
     "Element": "Aqua",
     "rarity": "Rare"
   },
