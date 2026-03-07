@@ -13,7 +13,8 @@
     },
     "cost": 6,
     "Element": "Aeris",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Bestie"
   },
   "4": {
     "id": "4",
@@ -29,7 +30,8 @@
     },
     "cost": 4,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Bestie"
   },
   "54": {
     "id": "54",
@@ -45,7 +47,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Magier"
   },
   "66": {
     "id": "66",
@@ -61,7 +64,8 @@
     },
     "cost": 2,
     "Element": "Aqua",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Bestie"
   },
   "152": {
     "id": "152",
@@ -93,7 +97,8 @@
     },
     "cost": 3,
     "Element": "Aqua",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Abenteurer"
   },
   "165": {
     "id": "165",
@@ -269,7 +274,8 @@
     },
     "cost": 5,
     "Element": "Aqua",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Gefolge"
   },
   "189": {
     "id": "189",
@@ -285,7 +291,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Adel"
   },
   "197": {
     "id": "197",
@@ -621,7 +628,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Gefolge"
   },
   "237": {
     "id": "237",
@@ -669,7 +677,8 @@
     },
     "cost": 3,
     "Element": "Ignis",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Krieger"
   },
   "273": {
     "id": "273",
@@ -685,7 +694,8 @@
     },
     "cost": 4,
     "Element": "Aeris",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Magier, Abenteurer"
   },
   "279": {
     "id": "279",
@@ -701,7 +711,8 @@
     },
     "cost": 3,
     "Element": "Aeris",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Magier"
   },
   "285": {
     "id": "285",
@@ -717,7 +728,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Abenteurer"
   },
   "292": {
     "id": "292",
@@ -733,7 +745,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "299": {
     "id": "299",
@@ -749,7 +762,8 @@
     },
     "cost": 1,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Gefolge"
   },
   "300": {
     "id": "300",
@@ -765,7 +779,8 @@
     },
     "cost": 1,
     "Element": "Magica",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Gefolge"
   },
   "302": {
     "id": "302",
@@ -781,7 +796,8 @@
     },
     "cost": 1,
     "Element": "Aqua",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Gefolge"
   },
   "306": {
     "id": "306",
@@ -797,7 +813,8 @@
     },
     "cost": 1,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Gefolge"
   },
   "311": {
     "id": "311",
@@ -813,7 +830,8 @@
     },
     "cost": 3,
     "Element": "Aqua",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "317": {
     "id": "317",
@@ -829,7 +847,8 @@
     },
     "cost": 2,
     "Element": "Magica",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Soldat"
   },
   "319": {
     "id": "319",
@@ -845,7 +864,8 @@
     },
     "cost": 2,
     "Element": "Magica",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "323": {
     "id": "323",
@@ -861,7 +881,8 @@
     },
     "cost": 7,
     "Element": "Magica",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Priester"
   },
   "327": {
     "id": "327",
@@ -877,7 +898,8 @@
     },
     "cost": 6,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Bestie"
   },
   "328": {
     "id": "328",
@@ -893,7 +915,8 @@
     },
     "cost": 7,
     "Element": "Aqua",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Bestie"
   },
   "329": {
     "id": "329",
@@ -909,7 +932,8 @@
     },
     "cost": 7,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Elementarwesen"
   },
   "331": {
     "id": "331",
@@ -925,7 +949,8 @@
     },
     "cost": 7,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Elementarwesen"
   },
   "337": {
     "id": "337",
@@ -941,7 +966,8 @@
     },
     "cost": 6,
     "Element": "Ignis",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Elementarwesen"
   },
   "338": {
     "id": "338",
@@ -957,7 +983,8 @@
     },
     "cost": 5,
     "Element": "Aqua",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Gelehrter"
   },
   "342": {
     "id": "342",
@@ -973,7 +1000,8 @@
     },
     "cost": 4,
     "Element": "Magica",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Gefolge"
   },
   "343": {
     "id": "343",
@@ -1021,7 +1049,8 @@
     },
     "cost": 2,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "351": {
     "id": "351",
@@ -1037,7 +1066,8 @@
     },
     "cost": 5,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "352": {
     "id": "352",
@@ -1053,7 +1083,8 @@
     },
     "cost": 2,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "353": {
     "id": "353",
@@ -1069,7 +1100,8 @@
     },
     "cost": 2,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "354": {
     "id": "354",
@@ -1085,7 +1117,8 @@
     },
     "cost": 6,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Elementarwesen"
   },
   "356": {
     "id": "356",
@@ -1101,7 +1134,8 @@
     },
     "cost": 1,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Gefolge"
   },
   "358": {
     "id": "358",
@@ -1117,7 +1151,8 @@
     },
     "cost": 3,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "359": {
     "id": "359",
@@ -1133,7 +1168,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Adel"
   },
   "363": {
     "id": "363",
@@ -1229,7 +1265,8 @@
     },
     "cost": 2,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "371": {
     "id": "371",
@@ -1245,7 +1282,8 @@
     },
     "cost": 1,
     "Element": "Aqua",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "372": {
     "id": "372",
@@ -1261,7 +1299,8 @@
     },
     "cost": 3,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "373": {
     "id": "373",
@@ -1277,7 +1316,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "374": {
     "id": "374",
@@ -1293,7 +1333,8 @@
     },
     "cost": 4,
     "Element": "Aqua",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "376": {
     "id": "376",
@@ -1309,7 +1350,8 @@
     },
     "cost": 4,
     "Element": "Magica",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Magier"
   },
   "378": {
     "id": "378",
@@ -1325,7 +1367,8 @@
     },
     "cost": 4,
     "Element": "Magica",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "380": {
     "id": "380",
@@ -1341,7 +1384,8 @@
     },
     "cost": 3,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "381": {
     "id": "381",
@@ -1357,7 +1401,8 @@
     },
     "cost": 2,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "382": {
     "id": "382",
@@ -1373,7 +1418,8 @@
     },
     "cost": 2,
     "Element": "Aeris",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Soldat"
   },
   "384": {
     "id": "384",
@@ -1389,7 +1435,8 @@
     },
     "cost": 3,
     "Element": "Aqua",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Anführer"
   },
   "386": {
     "id": "386",
@@ -1405,7 +1452,8 @@
     },
     "cost": 3,
     "Element": "Aqua",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Magier"
   },
   "389": {
     "id": "389",
@@ -1421,7 +1469,8 @@
     },
     "cost": 3,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "390": {
     "id": "390",
@@ -1437,7 +1486,8 @@
     },
     "cost": 3,
     "Element": "Ignis",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Krieger"
   },
   "391": {
     "id": "391",
@@ -1453,7 +1503,8 @@
     },
     "cost": 2,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "393": {
     "id": "393",
@@ -1469,7 +1520,8 @@
     },
     "cost": 8,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Elementarwesen"
   },
   "394": {
     "id": "394",
@@ -1485,7 +1537,8 @@
     },
     "cost": 3,
     "Element": "Aqua",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Gefolge"
   },
   "397": {
     "id": "397",
@@ -1501,7 +1554,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Gefolge"
   },
   "400": {
     "id": "400",
@@ -1517,7 +1571,8 @@
     },
     "cost": 4,
     "Element": "Magica",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Abenteurer"
   },
   "401": {
     "id": "401",
@@ -1549,7 +1604,8 @@
     },
     "cost": 5,
     "Element": "Aqua",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Abenteurer"
   },
   "403": {
     "id": "403",
@@ -1565,7 +1621,8 @@
     },
     "cost": 3,
     "Element": "Aqua",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Bestie"
   },
   "404": {
     "id": "404",
@@ -1597,7 +1654,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Krieger"
   },
   "407": {
     "id": "407",
@@ -1613,7 +1671,8 @@
     },
     "cost": 5,
     "Element": "Magica",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Magier"
   },
   "452": {
     "id": "452",
@@ -1645,7 +1704,8 @@
     },
     "cost": 5,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Priester"
   },
   "454": {
     "id": "454",
@@ -1661,7 +1721,8 @@
     },
     "cost": 4,
     "Element": "Magica",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Priester"
   },
   "456": {
     "id": "456",
@@ -1789,7 +1850,8 @@
     },
     "cost": 3,
     "Element": "Aqua",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Gefolge"
   },
   "467": {
     "id": "467",
@@ -1805,7 +1867,8 @@
     },
     "cost": 3,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Abenteurer"
   },
   "468": {
     "id": "468",
@@ -1821,7 +1884,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Abenteurer"
   },
   "469": {
     "id": "469",
@@ -1837,7 +1901,8 @@
     },
     "cost": 3,
     "Element": "Terra",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Soldat"
   },
   "470": {
     "id": "470",
@@ -1853,7 +1918,8 @@
     },
     "cost": 6,
     "Element": "Terra",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Anführer"
   },
   "471": {
     "id": "471",
@@ -1869,7 +1935,8 @@
     },
     "cost": 7,
     "Element": "Aeris",
-    "rarity": "Mythic"
+    "rarity": "Mythic",
+    "Kartentyp": "Anführer"
   },
   "472": {
     "id": "472",
@@ -1885,7 +1952,8 @@
     },
     "cost": 2,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Gefolge"
   },
   "473": {
     "id": "473",
@@ -1901,7 +1969,8 @@
     },
     "cost": 3,
     "Element": "Aeris",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Priester"
   },
   "475": {
     "id": "475",
@@ -1917,7 +1986,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Magier"
   },
   "476": {
     "id": "476",
@@ -1933,7 +2003,8 @@
     },
     "cost": 3,
     "Element": "Magica",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Priester"
   },
   "477": {
     "id": "477",
@@ -1949,7 +2020,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Gefolge"
   },
   "478": {
     "id": "478",
@@ -1965,7 +2037,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "479": {
     "id": "479",
@@ -1981,7 +2054,8 @@
     },
     "cost": 5,
     "Element": "Terra",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Anführer"
   },
   "480": {
     "id": "480",
@@ -1997,7 +2071,8 @@
     },
     "cost": 3,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Anführer"
   },
   "481": {
     "id": "481",
@@ -2013,7 +2088,8 @@
     },
     "cost": 4,
     "Element": "Aeris",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Abenteurer"
   },
   "482": {
     "id": "482",
@@ -2029,7 +2105,8 @@
     },
     "cost": 5,
     "Element": "Terra",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Anführer"
   },
   "483": {
     "id": "483",
@@ -2045,7 +2122,8 @@
     },
     "cost": 2,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "484": {
     "id": "484",
@@ -2055,13 +2133,14 @@
       "front": {
         "name": "Eron von Grauenfurt, Ignis-Priester",
         "type": "Charakter",
-        "cost": 4,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/484.jpg"
       }
     },
-    "cost": 4,
+    "cost": 5,
     "Element": "Ignis",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Priester"
   },
   "485": {
     "id": "485",
@@ -2077,7 +2156,8 @@
     },
     "cost": 5,
     "Element": "Aeris",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Magier"
   },
   "486": {
     "id": "486",
@@ -2093,7 +2173,8 @@
     },
     "cost": 5,
     "Element": "Aqua",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Abenteurer"
   },
   "487": {
     "id": "487",
@@ -2109,7 +2190,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Soldat"
   },
   "488": {
     "id": "488",
@@ -2125,7 +2207,8 @@
     },
     "cost": 3,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "489": {
     "id": "489",
@@ -2141,7 +2224,8 @@
     },
     "cost": 5,
     "Element": "Terra",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Krieger"
   },
   "490": {
     "id": "490",
@@ -2157,7 +2241,8 @@
     },
     "cost": 3,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "491": {
     "id": "491",
@@ -2173,7 +2258,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Abenteurer"
   },
   "492": {
     "id": "492",
@@ -2189,7 +2275,8 @@
     },
     "cost": 2,
     "Element": "Ignis",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Gefolge"
   },
   "493": {
     "id": "493",
@@ -2205,7 +2292,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Soldat"
   },
   "494": {
     "id": "494",
@@ -2237,7 +2325,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Krieger"
   },
   "497": {
     "id": "497",
@@ -2253,7 +2342,8 @@
     },
     "cost": 3,
     "Element": "Aeris",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Gefolge"
   },
   "498": {
     "id": "498",
@@ -2269,7 +2359,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Abenteurer"
   },
   "499": {
     "id": "499",
@@ -2285,7 +2376,8 @@
     },
     "cost": 3,
     "Element": "Terra",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Gelehrter"
   },
   "503": {
     "id": "503",
@@ -2301,7 +2393,8 @@
     },
     "cost": 3,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "506": {
     "id": "506",
@@ -2317,7 +2410,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "507": {
     "id": "507",
@@ -2397,7 +2491,8 @@
     },
     "cost": 1,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "513": {
     "id": "513",
@@ -2413,7 +2508,8 @@
     },
     "cost": 2,
     "Element": "Aqua",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Abenteurer"
   },
   "514": {
     "id": "514",
@@ -2429,7 +2525,8 @@
     },
     "cost": 4,
     "Element": "Aqua",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Bestie"
   },
   "515": {
     "id": "515",
@@ -2445,7 +2542,8 @@
     },
     "cost": 5,
     "Element": "Aqua",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Priester"
   },
   "516": {
     "id": "516",
@@ -2461,7 +2559,8 @@
     },
     "cost": 4,
     "Element": "Aqua",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Magier"
   },
   "517": {
     "id": "517",
@@ -2525,7 +2624,8 @@
     },
     "cost": 2,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Gefolge"
   },
   "521": {
     "id": "521",
@@ -2541,15 +2641,16 @@
     },
     "cost": 4,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Adel"
   },
   "522": {
     "id": "522",
-    "name": "Sir Trystan Eisenfaust",
+    "name": "Ser Trystan Eisenfaust",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Sir Trystan Eisenfaust",
+        "name": "Ser Trystan Eisenfaust",
         "type": "Charakter",
         "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/522.jpg"
@@ -2557,7 +2658,8 @@
     },
     "cost": 5,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Adel"
   },
   "523": {
     "id": "523",
@@ -2573,7 +2675,8 @@
     },
     "cost": 4,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "524": {
     "id": "524",
@@ -2589,7 +2692,8 @@
     },
     "cost": 4,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "525": {
     "id": "525",
@@ -2605,7 +2709,8 @@
     },
     "cost": 4,
     "Element": "Aeris",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "526": {
     "id": "526",
@@ -2637,7 +2742,8 @@
     },
     "cost": 2,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "528": {
     "id": "528",
@@ -2653,7 +2759,8 @@
     },
     "cost": 3,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "530": {
     "id": "530",
@@ -2669,7 +2776,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "531": {
     "id": "531",
@@ -2701,7 +2809,8 @@
     },
     "cost": 4,
     "Element": "Magica",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Magier"
   },
   "534": {
     "id": "534",
@@ -2717,7 +2826,8 @@
     },
     "cost": 4,
     "Element": "Magica",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "535": {
     "id": "535",
@@ -2797,7 +2907,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Krieger"
   },
   "540": {
     "id": "540",
@@ -2813,7 +2924,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Soldat"
   },
   "543": {
     "id": "543",
@@ -2839,11 +2951,11 @@
       "front": {
         "name": "Fesseln",
         "type": "Ereignis",
-        "cost": 4,
+        "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/544.jpg"
       }
     },
-    "cost": 4,
+    "cost": 3,
     "Element": "Aeris",
     "rarity": "Common"
   },
@@ -2909,7 +3021,8 @@
     },
     "cost": 6,
     "Element": "Terra",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Elementarwesen"
   },
   "549": {
     "id": "549",
@@ -2941,7 +3054,8 @@
     },
     "cost": 6,
     "Element": "Terra",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Anführer"
   },
   "552": {
     "id": "552",
@@ -2957,7 +3071,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Priester"
   },
   "553": {
     "id": "553",
@@ -2973,7 +3088,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Soldat"
   },
   "554": {
     "id": "554",
@@ -2989,7 +3105,8 @@
     },
     "cost": 5,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Krieger"
   },
   "555": {
     "id": "555",
@@ -3005,7 +3122,8 @@
     },
     "cost": 7,
     "Element": "Terra",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Bestie"
   },
   "556": {
     "id": "556",
@@ -3085,7 +3203,8 @@
     },
     "cost": 4,
     "Element": "Aeris",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Abenteurer"
   },
   "561": {
     "id": "561",
@@ -3101,7 +3220,8 @@
     },
     "cost": 3,
     "Element": "Aeris",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Soldat"
   },
   "562": {
     "id": "562",
@@ -3117,7 +3237,8 @@
     },
     "cost": 4,
     "Element": "Aeris",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Krieger"
   },
   "563": {
     "id": "563",
@@ -3127,13 +3248,14 @@
       "front": {
         "name": "Henning aus Gloria",
         "type": "Charakter",
-        "cost": 6,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/563.jpg"
       }
     },
-    "cost": 6,
+    "cost": 5,
     "Element": "Aeris",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Krieger"
   },
   "564": {
     "id": "564",
@@ -3149,7 +3271,8 @@
     },
     "cost": 4,
     "Element": "Aeris",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Krieger"
   },
   "565": {
     "id": "565",
@@ -3165,7 +3288,8 @@
     },
     "cost": 3,
     "Element": "Aeris",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Soldat"
   },
   "566": {
     "id": "566",
@@ -3207,11 +3331,11 @@
       "front": {
         "name": "EU14",
         "type": "Ereignis",
-        "cost": 2,
+        "cost": 1,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/568.jpg"
       }
     },
-    "cost": 2,
+    "cost": 1,
     "Element": "Aeris",
     "rarity": "Uncommon"
   },
@@ -3255,11 +3379,11 @@
       "front": {
         "name": "EU16",
         "type": "Ereignis",
-        "cost": 4,
+        "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/571.jpg"
       }
     },
-    "cost": 4,
+    "cost": 3,
     "Element": "Aeris",
     "rarity": "Uncommon"
   },
@@ -3287,11 +3411,11 @@
       "front": {
         "name": "EU19",
         "type": "Manifestation",
-        "cost": 5,
+        "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/573.jpg"
       }
     },
-    "cost": 5,
+    "cost": 3,
     "Element": "Aeris",
     "rarity": "Uncommon"
   },
@@ -3309,7 +3433,8 @@
     },
     "cost": 4,
     "Element": "Aqua",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Abenteurer"
   },
   "580": {
     "id": "580",
@@ -3325,7 +3450,8 @@
     },
     "cost": 4,
     "Element": "Magica",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Magier"
   },
   "581": {
     "id": "581",
@@ -3473,17 +3599,17 @@
   },
   "590": {
     "id": "590",
-    "name": "MU17",
-    "type": "Manifestation",
+    "name": "Amara",
+    "type": "Charakter",
     "face": {
       "front": {
-        "name": "MU17",
-        "type": "Manifestation",
-        "cost": 3,
+        "name": "Amara",
+        "type": "Charakter",
+        "cost": 0,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/590.jpg"
       }
     },
-    "cost": 3,
+    "cost": 0,
     "Element": "Magica",
     "rarity": "Uncommon"
   },
@@ -3501,7 +3627,8 @@
     },
     "cost": 3,
     "Element": "Aqua",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Priester"
   },
   "594": {
     "id": "594",
@@ -3517,7 +3644,8 @@
     },
     "cost": 5,
     "Element": "Aeris",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Anführer"
   },
   "595": {
     "id": "595",
@@ -3533,15 +3661,16 @@
     },
     "cost": 5,
     "Element": "Ignis",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Magier"
   },
   "596": {
     "id": "596",
-    "name": "Holger, der Dreimaster",
+    "name": "Bootsmann Holger, der Dreimaster",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Holger, der Dreimaster",
+        "name": "Bootsmann Holger, der Dreimaster",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/596.jpg"
@@ -3549,7 +3678,8 @@
     },
     "cost": 4,
     "Element": "Aqua",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Abenteurer"
   },
   "597": {
     "id": "597",
@@ -3565,7 +3695,8 @@
     },
     "cost": 7,
     "Element": "Aeris",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Anführer"
   },
   "598": {
     "id": "598",
@@ -3581,7 +3712,8 @@
     },
     "cost": 3,
     "Element": "Aqua",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Abenteurer"
   },
   "599": {
     "id": "599",
@@ -3597,7 +3729,8 @@
     },
     "cost": 4,
     "Element": "Aqua",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Gefolge"
   },
   "600": {
     "id": "600",
@@ -3613,7 +3746,8 @@
     },
     "cost": 6,
     "Element": "Aqua",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Elementarwesen"
   },
   "601": {
     "id": "601",
@@ -3757,7 +3891,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Krieger"
   },
   "612": {
     "id": "612",
@@ -3773,7 +3908,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Bestie"
   },
   "613": {
     "id": "613",
@@ -3789,7 +3925,8 @@
     },
     "cost": 5,
     "Element": "Ignis",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Magier"
   },
   "614": {
     "id": "614",
@@ -3805,7 +3942,8 @@
     },
     "cost": 6,
     "Element": "Ignis",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Anführer"
   },
   "615": {
     "id": "615",
@@ -3873,11 +4011,11 @@
   },
   "619": {
     "id": "619",
-    "name": "Hungriger Fant",
+    "name": "Taverne “Hungriger Fant”",
     "type": "Manifestation",
     "face": {
       "front": {
-        "name": "Hungriger Fant",
+        "name": "Taverne “Hungriger Fant”",
         "type": "Manifestation",
         "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/619.jpg"
@@ -3917,7 +4055,8 @@
     },
     "cost": 3,
     "Element": "Magica",
-    "rarity": "Common"
+    "rarity": "Common",
+    "Kartentyp": "Magier"
   },
   "622": {
     "id": "622",
@@ -3933,7 +4072,8 @@
     },
     "cost": 5,
     "Element": "Magica",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Priester"
   },
   "623": {
     "id": "623",
@@ -3949,7 +4089,8 @@
     },
     "cost": 5,
     "Element": "Ignis",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Adel"
   },
   "624": {
     "id": "624",
@@ -3965,7 +4106,8 @@
     },
     "cost": 5,
     "Element": "Ignis",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Krieger"
   },
   "625": {
     "id": "625",
@@ -3981,7 +4123,8 @@
     },
     "cost": 5,
     "Element": "Ignis",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Adel"
   },
   "626": {
     "id": "626",
@@ -3997,7 +4140,8 @@
     },
     "cost": 7,
     "Element": "Ignis",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Anführer"
   },
   "627": {
     "id": "627",
@@ -4013,7 +4157,8 @@
     },
     "cost": 4,
     "Element": "Ignis",
-    "rarity": "Uncommon"
+    "rarity": "Uncommon",
+    "Kartentyp": "Priester"
   },
   "628": {
     "id": "628",
@@ -4029,7 +4174,8 @@
     },
     "cost": 4,
     "Element": "Aqua",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Gelehrter"
   },
   "629": {
     "id": "629",
@@ -4045,7 +4191,8 @@
     },
     "cost": 4,
     "Element": "Aqua",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Adel"
   },
   "630": {
     "id": "630",
@@ -4061,7 +4208,8 @@
     },
     "cost": 6,
     "Element": "Aqua",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Anführer"
   },
   "631": {
     "id": "631",
@@ -4077,7 +4225,8 @@
     },
     "cost": 2,
     "Element": "Magica",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Bestie"
   },
   "632": {
     "id": "632",
@@ -4109,7 +4258,8 @@
     },
     "cost": 3,
     "Element": "Magica",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Priester"
   },
   "634": {
     "id": "634",
@@ -4125,7 +4275,8 @@
     },
     "cost": 4,
     "Element": "Magica",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Magier"
   },
   "635": {
     "id": "635",
@@ -4141,7 +4292,8 @@
     },
     "cost": 5,
     "Element": "Magica",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Magier"
   },
   "636": {
     "id": "636",
@@ -4173,7 +4325,8 @@
     },
     "cost": 2,
     "Element": "Aeris",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Gefolge"
   },
   "638": {
     "id": "638",
@@ -4189,7 +4342,8 @@
     },
     "cost": 4,
     "Element": "Aeris",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Gefolge"
   },
   "639": {
     "id": "639",
@@ -4205,7 +4359,8 @@
     },
     "cost": 5,
     "Element": "Aeris",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Krieger"
   },
   "640": {
     "id": "640",
@@ -4221,7 +4376,8 @@
     },
     "cost": 6,
     "Element": "Aeris",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Anführer"
   },
   "641": {
     "id": "641",
@@ -4237,7 +4393,8 @@
     },
     "cost": 7,
     "Element": "Aeris",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Anführer"
   },
   "643": {
     "id": "643",
@@ -4253,7 +4410,8 @@
     },
     "cost": 3,
     "Element": "Terra",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Gefolge"
   },
   "644": {
     "id": "644",
@@ -4269,7 +4427,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Krieger"
   },
   "645": {
     "id": "645",
@@ -4285,7 +4444,8 @@
     },
     "cost": 4,
     "Element": "Terra",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Priester"
   },
   "646": {
     "id": "646",
@@ -4301,7 +4461,8 @@
     },
     "cost": 7,
     "Element": "Terra",
-    "rarity": "Rare"
+    "rarity": "Rare",
+    "Kartentyp": "Gefolge"
   },
   "647": {
     "id": "647",
@@ -4375,11 +4536,11 @@
       "front": {
         "name": "Gegenwind",
         "type": "Ereignis",
-        "cost": 3,
+        "cost": 1,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/651.jpg"
       }
     },
-    "cost": 3,
+    "cost": 1,
     "Element": "Aeris",
     "rarity": "Rare"
   },
