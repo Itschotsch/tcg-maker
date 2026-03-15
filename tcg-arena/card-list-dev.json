@@ -252,11 +252,11 @@
       "front": {
         "name": "Giftiges Dornengestrüpp",
         "type": "Ereignis",
-        "cost": 4,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/187.jpg"
       }
     },
-    "cost": 4,
+    "cost": 5,
     "Element": "Terra",
     "rarity": "Uncommon"
   },
@@ -616,11 +616,11 @@
   },
   "235": {
     "id": "235",
-    "name": "Feuertänzerin",
+    "name": "Soraya Phönixflamme",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Feuertänzerin",
+        "name": "Soraya Phönixflamme",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/235.jpg"
@@ -633,11 +633,11 @@
   },
   "237": {
     "id": "237",
-    "name": "Flammentanz",
+    "name": "Zerschmettern",
     "type": "Ereignis",
     "face": {
       "front": {
-        "name": "Flammentanz",
+        "name": "Zerschmettern",
         "type": "Ereignis",
         "cost": 8,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/237.jpg"
@@ -665,11 +665,11 @@
   },
   "271": {
     "id": "271",
-    "name": "Ignis-Fanatiker",
+    "name": "Hagen, der Zerstörer",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Ignis-Fanatiker",
+        "name": "Hagen, der Zerstörer",
         "type": "Charakter",
         "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/271.jpg"
@@ -1037,11 +1037,11 @@
   },
   "350": {
     "id": "350",
-    "name": "Rasender Rekrut",
+    "name": "Jannik",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Rasender Rekrut",
+        "name": "Jannik",
         "type": "Charakter",
         "cost": 2,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/350.jpg"
@@ -1054,11 +1054,11 @@
   },
   "351": {
     "id": "351",
-    "name": "Stürmischer Veteran",
+    "name": "Adrean",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Stürmischer Veteran",
+        "name": "Adrean",
         "type": "Charakter",
         "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/351.jpg"
@@ -1139,11 +1139,11 @@
   },
   "358": {
     "id": "358",
-    "name": "Aeriskind",
+    "name": "Egon Scarpa",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Aeriskind",
+        "name": "Egon Scarpa",
         "type": "Charakter",
         "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/358.jpg"
@@ -1227,11 +1227,11 @@
       "front": {
         "name": "Vulkanausbruch",
         "type": "Ereignis",
-        "cost": 4,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/366.jpg"
       }
     },
-    "cost": 4,
+    "cost": 5,
     "Element": "Ignis",
     "rarity": "Uncommon"
   },
@@ -1287,11 +1287,11 @@
   },
   "372": {
     "id": "372",
-    "name": "Veteran",
+    "name": "Laus",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Veteran",
+        "name": "Laus",
         "type": "Charakter",
         "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/372.jpg"
@@ -1338,11 +1338,11 @@
   },
   "376": {
     "id": "376",
-    "name": "Stürmische Zauberin",
+    "name": "Elysia Feuerbach",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Stürmische Zauberin",
+        "name": "Elysia Feuerbach",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/376.jpg"
@@ -1423,11 +1423,11 @@
   },
   "384": {
     "id": "384",
-    "name": "Schildkanalisiererin",
+    "name": "Captain Maddox",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Schildkanalisiererin",
+        "name": "Captain Maddox",
         "type": "Charakter",
         "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/384.jpg"
@@ -1598,11 +1598,11 @@
       "front": {
         "name": "Dahlia bint Ishaq al-Bahar, die Wissenssucherin",
         "type": "Charakter",
-        "cost": 5,
+        "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/402.jpg"
       }
     },
-    "cost": 5,
+    "cost": 3,
     "Element": "Aqua",
     "rarity": "Rare",
     "Kartentyp": "Abenteurer"
@@ -1912,11 +1912,11 @@
       "front": {
         "name": "Keroth, Thul'Heen des Südlichen Siegels",
         "type": "Charakter",
-        "cost": 6,
+        "cost": 7,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/470.jpg"
       }
     },
-    "cost": 6,
+    "cost": 7,
     "Element": "Terra",
     "rarity": "Rare",
     "Kartentyp": "Anführer"
@@ -2099,11 +2099,11 @@
       "front": {
         "name": "Thulmann, Weibel der Armee Bjarturs",
         "type": "Charakter",
-        "cost": 5,
+        "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/482.jpg"
       }
     },
-    "cost": 5,
+    "cost": 4,
     "Element": "Terra",
     "rarity": "Rare",
     "Kartentyp": "Anführer"
@@ -2747,11 +2747,11 @@
   },
   "528": {
     "id": "528",
-    "name": "Flinker Schwertkämpfer",
+    "name": "Gillian von Schrattenflueh",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Flinker Schwertkämpfer",
+        "name": "Gillian von Schrattenflueh",
         "type": "Charakter",
         "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/528.jpg"
@@ -2764,11 +2764,11 @@
   },
   "530": {
     "id": "530",
-    "name": "Reinhard vom Greifenberg",
+    "name": "Reinhard vom Greifenberg, Söldner der Morgenröte",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Reinhard vom Greifenberg",
+        "name": "Reinhard vom Greifenberg, Söldner der Morgenröte",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/530.jpg"
@@ -2869,11 +2869,11 @@
       "front": {
         "name": "Umleitung",
         "type": "Ereignis",
-        "cost": 2,
+        "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/537.jpg"
       }
     },
-    "cost": 2,
+    "cost": 3,
     "Element": "Magica",
     "rarity": "Common"
   },
@@ -2912,11 +2912,11 @@
   },
   "540": {
     "id": "540",
-    "name": "Erfahrener Söldner",
+    "name": "Luuk aus Rosenthal",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Erfahrener Söldner",
+        "name": "Luuk aus Rosenthal",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/540.jpg"
@@ -3032,11 +3032,11 @@
       "front": {
         "name": "Schwere Erschöpfung",
         "type": "Ereignis",
-        "cost": 3,
+        "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/549.jpg"
       }
     },
-    "cost": 3,
+    "cost": 4,
     "Element": "Terra",
     "rarity": "Common"
   },
@@ -3106,7 +3106,7 @@
     "cost": 5,
     "Element": "Terra",
     "rarity": "Uncommon",
-    "Kartentyp": "Krieger"
+    "Kartentyp": "Adel"
   },
   "555": {
     "id": "555",
@@ -3315,11 +3315,11 @@
       "front": {
         "name": "EU13",
         "type": "Ereignis",
-        "cost": 3,
+        "cost": 2,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/567.jpg"
       }
     },
-    "cost": 3,
+    "cost": 2,
     "Element": "Aeris",
     "rarity": "Uncommon"
   },
@@ -3477,11 +3477,11 @@
       "front": {
         "name": "MU08",
         "type": "Ereignis",
-        "cost": 3,
+        "cost": 2,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/582.jpg"
       }
     },
-    "cost": 3,
+    "cost": 2,
     "Element": "Magica",
     "rarity": "Uncommon"
   },
@@ -3632,11 +3632,11 @@
   },
   "594": {
     "id": "594",
-    "name": "Eron Breitenstein",
+    "name": "Eron Breitenstein, Seneschall",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Eron Breitenstein",
+        "name": "Eron Breitenstein, Seneschall",
         "type": "Charakter",
         "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/594.jpg"
@@ -3930,11 +3930,11 @@
   },
   "614": {
     "id": "614",
-    "name": "IU11",
+    "name": "Hermann Richter",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "IU11",
+        "name": "Hermann Richter",
         "type": "Charakter",
         "cost": 6,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/614.jpg"
@@ -3943,7 +3943,7 @@
     "cost": 6,
     "Element": "Ignis",
     "rarity": "Uncommon",
-    "Kartentyp": "Anführer"
+    "Kartentyp": "Krieger"
   },
   "615": {
     "id": "615",
@@ -4077,11 +4077,11 @@
   },
   "623": {
     "id": "623",
-    "name": "IR05",
+    "name": "17",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "IR05",
+        "name": "17",
         "type": "Charakter",
         "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/623.jpg"
@@ -4090,15 +4090,15 @@
     "cost": 5,
     "Element": "Ignis",
     "rarity": "Rare",
-    "Kartentyp": "Adel"
+    "Kartentyp": "Abenteurer"
   },
   "624": {
     "id": "624",
-    "name": "Theo, Landsknecht",
+    "name": "Theo Kohlfeld, schiesswütiger Landsknecht",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Theo, Landsknecht",
+        "name": "Theo Kohlfeld, schiesswütiger Landsknecht",
         "type": "Charakter",
         "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/624.jpg"
@@ -4162,11 +4162,11 @@
   },
   "628": {
     "id": "628",
-    "name": "Jakob Conrad Cuculus, Bankier",
+    "name": "Jakob Conrad Cuculus, skrupelloser Bankier",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "Jakob Conrad Cuculus, Bankier",
+        "name": "Jakob Conrad Cuculus, skrupelloser Bankier",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/628.jpg"
@@ -4330,11 +4330,11 @@
   },
   "638": {
     "id": "638",
-    "name": "ER04",
+    "name": "Owen Schattenweber, zwielichtiger Geschichtenerzähler",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "ER04",
+        "name": "Owen Schattenweber, zwielichtiger Geschichtenerzähler",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/638.jpg"
@@ -4432,11 +4432,11 @@
   },
   "645": {
     "id": "645",
-    "name": "TR07",
+    "name": "Taynara Lyanne Idtris",
     "type": "Charakter",
     "face": {
       "front": {
-        "name": "TR07",
+        "name": "Taynara Lyanne Idtris",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/645.jpg"
@@ -4445,7 +4445,7 @@
     "cost": 4,
     "Element": "Terra",
     "rarity": "Rare",
-    "Kartentyp": "Priester"
+    "Kartentyp": "Gefolge"
   },
   "646": {
     "id": "646",
@@ -4552,11 +4552,11 @@
       "front": {
         "name": "Treibjagd",
         "type": "Ereignis",
-        "cost": 4,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/652.jpg"
       }
     },
-    "cost": 4,
+    "cost": 5,
     "Element": "Aeris",
     "rarity": "Rare"
   },
@@ -4632,11 +4632,11 @@
       "front": {
         "name": "Kraftentzug",
         "type": "Ereignis",
-        "cost": 2,
+        "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/657.jpg"
       }
     },
-    "cost": 2,
+    "cost": 3,
     "Element": "Magica",
     "rarity": "Rare"
   },
@@ -4792,11 +4792,11 @@
       "front": {
         "name": "Druckpunkte",
         "type": "Ereignis",
-        "cost": 2,
+        "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/667.jpg"
       }
     },
-    "cost": 2,
+    "cost": 4,
     "Element": "Aqua",
     "rarity": "Rare"
   },
@@ -4840,11 +4840,11 @@
       "front": {
         "name": "Rückenwelle",
         "type": "Ereignis",
-        "cost": 6,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/dev/670.jpg"
       }
     },
-    "cost": 6,
+    "cost": 5,
     "Element": "Aqua",
     "rarity": "Rare"
   },
@@ -4957,6 +4957,7 @@
       }
     },
     "cost": 4,
+    "Element": "",
     "rarity": "Rare"
   },
   "678": {
