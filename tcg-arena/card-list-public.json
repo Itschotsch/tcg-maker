@@ -659,21 +659,6 @@
       }
     }
   },
-  "352": {
-    "id": "352",
-    "name": "Soldat Gourmand  Prasser",
-    "type": "Charakter",
-    "Element": "Terra",
-    "cost": 2,
-    "face": {
-      "front": {
-        "name": "Soldat Gourmand  Prasser",
-        "type": "Charakter",
-        "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/352.jpg"
-      }
-    }
-  },
   "353": {
     "id": "353",
     "name": "Wächterin von Irgendwo",
@@ -929,21 +914,6 @@
       }
     }
   },
-  "397": {
-    "id": "397",
-    "name": "Naruk, aus dem Wald",
-    "type": "Charakter",
-    "Element": "Ignis",
-    "cost": 3,
-    "face": {
-      "front": {
-        "name": "Naruk, aus dem Wald",
-        "type": "Charakter",
-        "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/397.jpg"
-      }
-    }
-  },
   "400": {
     "id": "400",
     "name": "Salazar der Reisende",
@@ -1184,21 +1154,6 @@
       }
     }
   },
-  "471": {
-    "id": "471",
-    "name": "Eurestes, Archon des Südlichen Siegels",
-    "type": "Charakter",
-    "Element": "Aeris",
-    "cost": 7,
-    "face": {
-      "front": {
-        "name": "Eurestes, Archon des Südlichen Siegels",
-        "type": "Charakter",
-        "cost": 7,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/471.jpg"
-      }
-    }
-  },
   "472": {
     "id": "472",
     "name": "Carmille, Beamtin der Hofkanzlei",
@@ -1271,21 +1226,6 @@
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/477.jpg"
-      }
-    }
-  },
-  "478": {
-    "id": "478",
-    "name": "[Alt] Tekkadahn",
-    "type": "Charakter",
-    "Element": "Terra",
-    "cost": 4,
-    "face": {
-      "front": {
-        "name": "[Alt] Tekkadahn",
-        "type": "Charakter",
-        "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/478.jpg"
       }
     }
   },
@@ -1859,21 +1799,6 @@
       }
     }
   },
-  "553": {
-    "id": "553",
-    "name": "Rodrick",
-    "type": "Charakter",
-    "Element": "Terra",
-    "cost": 4,
-    "face": {
-      "front": {
-        "name": "Rodrick",
-        "type": "Charakter",
-        "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/553.jpg"
-      }
-    }
-  },
   "554": {
     "id": "554",
     "name": "Sir Roven Silverblade",
@@ -2324,21 +2249,6 @@
       }
     }
   },
-  "629": {
-    "id": "629",
-    "name": "Herr Strauß, Fantenjäger",
-    "type": "Charakter",
-    "Element": "Aqua",
-    "cost": 4,
-    "face": {
-      "front": {
-        "name": "Herr Strauß, Fantenjäger",
-        "type": "Charakter",
-        "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/629.jpg"
-      }
-    }
-  },
   "630": {
     "id": "630",
     "name": "Teichherr Rodan, Der Froschkönig",
@@ -2459,21 +2369,6 @@
       }
     }
   },
-  "640": {
-    "id": "640",
-    "name": "Joel Siegesmund, Heerführer des Westens",
-    "type": "Charakter",
-    "Element": "Aeris",
-    "cost": 6,
-    "face": {
-      "front": {
-        "name": "Joel Siegesmund, Heerführer des Westens",
-        "type": "Charakter",
-        "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/640.jpg"
-      }
-    }
-  },
   "641": {
     "id": "641",
     "name": "Sir Lothar von Albstein",
@@ -2486,21 +2381,6 @@
         "type": "Charakter",
         "cost": 7,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/641.jpg"
-      }
-    }
-  },
-  "644": {
-    "id": "644",
-    "name": "Leo",
-    "type": "Charakter",
-    "Element": "Terra",
-    "cost": 4,
-    "face": {
-      "front": {
-        "name": "Leo",
-        "type": "Charakter",
-        "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/644.jpg"
       }
     }
   },
