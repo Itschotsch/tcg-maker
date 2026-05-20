@@ -1,19 +1,4 @@
 {
-  "3": {
-    "id": "3",
-    "name": "Weißer Greif",
-    "type": "Charakter",
-    "Element": "Aeris",
-    "cost": 6,
-    "face": {
-      "front": {
-        "name": "Weißer Greif",
-        "type": "Charakter",
-        "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/3.jpg"
-      }
-    }
-  },
   "54": {
     "id": "54",
     "name": "Aufstrebende Pyromanin",
@@ -149,21 +134,6 @@
       }
     }
   },
-  "187": {
-    "id": "187",
-    "name": "Giftiges Dornengestrüpp",
-    "type": "Ereignis",
-    "Element": "Terra",
-    "cost": 4,
-    "face": {
-      "front": {
-        "name": "Giftiges Dornengestrüpp",
-        "type": "Ereignis",
-        "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/187.jpg"
-      }
-    }
-  },
   "188": {
     "id": "188",
     "name": "Friedensbote",
@@ -224,6 +194,21 @@
       }
     }
   },
+  "200": {
+    "id": "200",
+    "name": "Großer Ignisschrein",
+    "type": "Manifestation",
+    "Element": "Ignis",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "Großer Ignisschrein",
+        "type": "Manifestation",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/200.jpg"
+      }
+    }
+  },
   "201": {
     "id": "201",
     "name": "Trügerischer Aqua-Brunnen",
@@ -239,48 +224,48 @@
       }
     }
   },
-  "211": {
-    "id": "211",
-    "name": "Großer Magicaschrein",
+  "205": {
+    "id": "205",
+    "name": "Kleiner Ignisschrein",
     "type": "Manifestation",
-    "Element": "Magica",
-    "cost": 8,
+    "Element": "Ignis",
+    "cost": 2,
     "face": {
       "front": {
-        "name": "Großer Magicaschrein",
+        "name": "Kleiner Ignisschrein",
         "type": "Manifestation",
-        "cost": 8,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/211.jpg"
+        "cost": 2,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/205.jpg"
       }
     }
   },
-  "213": {
-    "id": "213",
-    "name": "Zeitspiel",
+  "217": {
+    "id": "217",
+    "name": "Moment zum Durchatmen",
     "type": "Ereignis",
     "Element": "Aeris",
     "cost": 3,
     "face": {
       "front": {
-        "name": "Zeitspiel",
+        "name": "Moment zum Durchatmen",
         "type": "Ereignis",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/213.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/217.jpg"
       }
     }
   },
-  "215": {
-    "id": "215",
-    "name": "Den Kreislauf ehren",
-    "type": "Ereignis",
-    "Element": "Terra",
-    "cost": 4,
+  "218": {
+    "id": "218",
+    "name": "Duell-Arena",
+    "type": "Manifestation",
+    "Element": "Ignis",
+    "cost": 3,
     "face": {
       "front": {
-        "name": "Den Kreislauf ehren",
-        "type": "Ereignis",
-        "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/215.jpg"
+        "name": "Duell-Arena",
+        "type": "Manifestation",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/218.jpg"
       }
     }
   },
@@ -296,21 +281,6 @@
         "type": "Ereignis",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/219.jpg"
-      }
-    }
-  },
-  "221": {
-    "id": "221",
-    "name": "“Halt!”",
-    "type": "Ereignis",
-    "Element": "Magica",
-    "cost": 3,
-    "face": {
-      "front": {
-        "name": "“Halt!”",
-        "type": "Ereignis",
-        "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/221.jpg"
       }
     }
   },
@@ -334,12 +304,12 @@
     "name": "Vorstürmen",
     "type": "Ereignis",
     "Element": "Terra",
-    "cost": 3,
+    "cost": 2,
     "face": {
       "front": {
         "name": "Vorstürmen",
         "type": "Ereignis",
-        "cost": 3,
+        "cost": 2,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/223.jpg"
       }
     }
@@ -359,60 +329,60 @@
       }
     }
   },
-  "226": {
-    "id": "226",
-    "name": "Die Sanduhr drehen",
+  "225": {
+    "id": "225",
+    "name": "Mystische Frucht Terras",
     "type": "Ereignis",
-    "Element": "Aeris",
-    "cost": 2,
+    "Element": "Terra",
+    "cost": 4,
     "face": {
       "front": {
-        "name": "Die Sanduhr drehen",
+        "name": "Mystische Frucht Terras",
         "type": "Ereignis",
-        "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/226.jpg"
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/225.jpg"
+      }
+    }
+  },
+  "227": {
+    "id": "227",
+    "name": "Schubsen",
+    "type": "Ereignis",
+    "Element": "Aqua",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Schubsen",
+        "type": "Ereignis",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/227.jpg"
       }
     }
   },
   "235": {
     "id": "235",
-    "name": "Feuertänzerin",
+    "name": "Soraya Phönixflamme",
     "type": "Charakter",
     "Element": "Ignis",
     "cost": 4,
     "face": {
       "front": {
-        "name": "Feuertänzerin",
+        "name": "Soraya Phönixflamme",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/235.jpg"
       }
     }
   },
-  "246": {
-    "id": "246",
-    "name": "Kraftkugelsammler",
-    "type": "Charakter",
-    "Element": "Ungeprägt",
-    "cost": 3,
-    "face": {
-      "front": {
-        "name": "Kraftkugelsammler",
-        "type": "Charakter",
-        "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/246.jpg"
-      }
-    }
-  },
   "271": {
     "id": "271",
-    "name": "Ignis-Fanatiker",
+    "name": "Hagen, der Zerstörer",
     "type": "Charakter",
     "Element": "Ignis",
     "cost": 3,
     "face": {
       "front": {
-        "name": "Ignis-Fanatiker",
+        "name": "Hagen, der Zerstörer",
         "type": "Charakter",
         "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/271.jpg"
@@ -449,17 +419,32 @@
       }
     }
   },
-  "292": {
-    "id": "292",
-    "name": "Eisernes Terrakind",
+  "285": {
+    "id": "285",
+    "name": "Iriel-Elisha",
     "type": "Charakter",
     "Element": "Terra",
-    "cost": 3,
+    "cost": 4,
     "face": {
       "front": {
-        "name": "Eisernes Terrakind",
+        "name": "Iriel-Elisha",
         "type": "Charakter",
-        "cost": 3,
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/285.jpg"
+      }
+    }
+  },
+  "292": {
+    "id": "292",
+    "name": "Eva vom Strand",
+    "type": "Charakter",
+    "Element": "Terra",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Eva vom Strand",
+        "type": "Charakter",
+        "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/292.jpg"
       }
     }
@@ -524,6 +509,51 @@
       }
     }
   },
+  "311": {
+    "id": "311",
+    "name": "Wächterin von Irgendwie",
+    "type": "Charakter",
+    "Element": "Aqua",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Wächterin von Irgendwie",
+        "type": "Charakter",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/311.jpg"
+      }
+    }
+  },
+  "317": {
+    "id": "317",
+    "name": "Wächter aus Dun Aisleang",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 2,
+    "face": {
+      "front": {
+        "name": "Wächter aus Dun Aisleang",
+        "type": "Charakter",
+        "cost": 2,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/317.jpg"
+      }
+    }
+  },
+  "319": {
+    "id": "319",
+    "name": "Wächter von Irgendwas",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 2,
+    "face": {
+      "front": {
+        "name": "Wächter von Irgendwas",
+        "type": "Charakter",
+        "cost": 2,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/319.jpg"
+      }
+    }
+  },
   "323": {
     "id": "323",
     "name": "Aurelia, die Lichtverpflichtete",
@@ -539,21 +569,6 @@
       }
     }
   },
-  "327": {
-    "id": "327",
-    "name": "Drache des Südlichen Siegels",
-    "type": "Charakter",
-    "Element": "Aeris",
-    "cost": 6,
-    "face": {
-      "front": {
-        "name": "Drache des Südlichen Siegels",
-        "type": "Charakter",
-        "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/327.jpg"
-      }
-    }
-  },
   "328": {
     "id": "328",
     "name": "Koloss aus der Tiefe",
@@ -566,21 +581,6 @@
         "type": "Charakter",
         "cost": 7,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/328.jpg"
-      }
-    }
-  },
-  "329": {
-    "id": "329",
-    "name": "Vulkan-Golem",
-    "type": "Charakter",
-    "Element": "Ignis",
-    "cost": 7,
-    "face": {
-      "front": {
-        "name": "Vulkan-Golem",
-        "type": "Charakter",
-        "cost": 7,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/329.jpg"
       }
     }
   },
@@ -629,30 +629,15 @@
       }
     }
   },
-  "343": {
-    "id": "343",
-    "name": "Stoßgebet zu den Elementen",
-    "type": "Ereignis",
-    "Element": "Aqua",
-    "cost": 1,
-    "face": {
-      "front": {
-        "name": "Stoßgebet zu den Elementen",
-        "type": "Ereignis",
-        "cost": 1,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/343.jpg"
-      }
-    }
-  },
   "350": {
     "id": "350",
-    "name": "Rasender Rekrut",
+    "name": "Jannik, rasender Rekrut",
     "type": "Charakter",
     "Element": "Ignis",
     "cost": 2,
     "face": {
       "front": {
-        "name": "Rasender Rekrut",
+        "name": "Jannik, rasender Rekrut",
         "type": "Charakter",
         "cost": 2,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/350.jpg"
@@ -661,13 +646,13 @@
   },
   "351": {
     "id": "351",
-    "name": "Stürmischer Veteran",
+    "name": "Adrean",
     "type": "Charakter",
     "Element": "Ignis",
     "cost": 5,
     "face": {
       "front": {
-        "name": "Stürmischer Veteran",
+        "name": "Adrean",
         "type": "Charakter",
         "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/351.jpg"
@@ -676,31 +661,31 @@
   },
   "352": {
     "id": "352",
-    "name": "Stadtwache",
+    "name": "Soldat Gourmand  Prasser",
     "type": "Charakter",
     "Element": "Terra",
     "cost": 2,
     "face": {
       "front": {
-        "name": "Stadtwache",
+        "name": "Soldat Gourmand  Prasser",
         "type": "Charakter",
         "cost": 2,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/352.jpg"
       }
     }
   },
-  "354": {
-    "id": "354",
-    "name": "Baumgeist",
+  "353": {
+    "id": "353",
+    "name": "Wächterin von Irgendwo",
     "type": "Charakter",
-    "Element": "Terra",
-    "cost": 6,
+    "Element": "Ignis",
+    "cost": 2,
     "face": {
       "front": {
-        "name": "Baumgeist",
+        "name": "Wächterin von Irgendwo",
         "type": "Charakter",
-        "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/354.jpg"
+        "cost": 2,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/353.jpg"
       }
     }
   },
@@ -719,6 +704,21 @@
       }
     }
   },
+  "358": {
+    "id": "358",
+    "name": "Egon Scarpa",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Egon Scarpa",
+        "type": "Charakter",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/358.jpg"
+      }
+    }
+  },
   "359": {
     "id": "359",
     "name": "Johannes v.d. Schaufel, leichtsinniger Duellant",
@@ -731,51 +731,6 @@
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/359.jpg"
-      }
-    }
-  },
-  "360": {
-    "id": "360",
-    "name": "Schrein der Jagt",
-    "type": "Manifestation",
-    "Element": "Aeris",
-    "cost": 3,
-    "face": {
-      "front": {
-        "name": "Schrein der Jagt",
-        "type": "Manifestation",
-        "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/360.jpg"
-      }
-    }
-  },
-  "361": {
-    "id": "361",
-    "name": "Rast in der Schankstube",
-    "type": "Ereignis",
-    "Element": "Ungeprägt",
-    "cost": 6,
-    "face": {
-      "front": {
-        "name": "Rast in der Schankstube",
-        "type": "Ereignis",
-        "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/361.jpg"
-      }
-    }
-  },
-  "363": {
-    "id": "363",
-    "name": "Duellforderung",
-    "type": "Ereignis",
-    "Element": "Ignis",
-    "cost": 3,
-    "face": {
-      "front": {
-        "name": "Duellforderung",
-        "type": "Ereignis",
-        "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/363.jpg"
       }
     }
   },
@@ -799,55 +754,25 @@
     "name": "Ermutigende Ansprache",
     "type": "Ereignis",
     "Element": "Terra",
-    "cost": 3,
+    "cost": 5,
     "face": {
       "front": {
         "name": "Ermutigende Ansprache",
         "type": "Ereignis",
-        "cost": 3,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/365.jpg"
-      }
-    }
-  },
-  "366": {
-    "id": "366",
-    "name": "Vulkanausbruch",
-    "type": "Ereignis",
-    "Element": "Ignis",
-    "cost": 4,
-    "face": {
-      "front": {
-        "name": "Vulkanausbruch",
-        "type": "Ereignis",
-        "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/366.jpg"
-      }
-    }
-  },
-  "367": {
-    "id": "367",
-    "name": "Sternenschauer",
-    "type": "Ereignis",
-    "Element": "Ungeprägt",
-    "cost": 8,
-    "face": {
-      "front": {
-        "name": "Sternenschauer",
-        "type": "Ereignis",
-        "cost": 8,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/367.jpg"
       }
     }
   },
   "368": {
     "id": "368",
-    "name": "Gottesschrein",
+    "name": "Monolith des Schutzes",
     "type": "Manifestation",
     "Element": "Magica",
     "cost": 3,
     "face": {
       "front": {
-        "name": "Gottesschrein",
+        "name": "Monolith des Schutzes",
         "type": "Manifestation",
         "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/368.jpg"
@@ -856,43 +781,28 @@
   },
   "370": {
     "id": "370",
-    "name": "Namenloser Soldat",
+    "name": "Wächter von Irgendwem",
     "type": "Charakter",
     "Element": "Terra",
     "cost": 2,
     "face": {
       "front": {
-        "name": "Namenloser Soldat",
+        "name": "Wächter von Irgendwem",
         "type": "Charakter",
         "cost": 2,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/370.jpg"
       }
     }
   },
-  "371": {
-    "id": "371",
-    "name": "Rekrut aus Steinfurt",
-    "type": "Charakter",
-    "Element": "Aqua",
-    "cost": 1,
-    "face": {
-      "front": {
-        "name": "Rekrut aus Steinfurt",
-        "type": "Charakter",
-        "cost": 1,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/371.jpg"
-      }
-    }
-  },
   "372": {
     "id": "372",
-    "name": "Veteran",
+    "name": "Laus",
     "type": "Charakter",
     "Element": "Ignis",
     "cost": 3,
     "face": {
       "front": {
-        "name": "Veteran",
+        "name": "Laus",
         "type": "Charakter",
         "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/372.jpg"
@@ -914,18 +824,48 @@
       }
     }
   },
-  "381": {
-    "id": "381",
-    "name": "Schneller Säbel",
+  "374": {
+    "id": "374",
+    "name": "Wache des Trosses",
     "type": "Charakter",
-    "Element": "Aeris",
-    "cost": 2,
+    "Element": "Aqua",
+    "cost": 3,
     "face": {
       "front": {
-        "name": "Schneller Säbel",
+        "name": "Wache des Trosses",
         "type": "Charakter",
-        "cost": 2,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/381.jpg"
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/374.jpg"
+      }
+    }
+  },
+  "376": {
+    "id": "376",
+    "name": "Elysia Feuerbach",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Elysia Feuerbach",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/376.jpg"
+      }
+    }
+  },
+  "378": {
+    "id": "378",
+    "name": "Champion von Magica",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Champion von Magica",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/378.jpg"
       }
     }
   },
@@ -944,78 +884,78 @@
       }
     }
   },
-  "389": {
-    "id": "389",
-    "name": "Hühne",
+  "384": {
+    "id": "384",
+    "name": "Captain Maddox",
     "type": "Charakter",
-    "Element": "Terra",
+    "Element": "Aqua",
     "cost": 3,
     "face": {
       "front": {
-        "name": "Hühne",
+        "name": "Captain Maddox",
         "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/389.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/384.jpg"
       }
     }
   },
-  "392": {
-    "id": "392",
-    "name": "Mord",
-    "type": "Ereignis",
-    "Element": "Ungeprägt",
-    "cost": 6,
+  "390": {
+    "id": "390",
+    "name": "Runa Dreyschuß",
+    "type": "Charakter",
+    "Element": "Ignis",
+    "cost": 3,
     "face": {
       "front": {
-        "name": "Mord",
-        "type": "Ereignis",
-        "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/392.jpg"
+        "name": "Runa Dreyschuß",
+        "type": "Charakter",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/390.jpg"
+      }
+    }
+  },
+  "394": {
+    "id": "394",
+    "name": "Leon, ehrsamer Meuchelmörder",
+    "type": "Charakter",
+    "Element": "Aqua",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Leon, ehrsamer Meuchelmörder",
+        "type": "Charakter",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/394.jpg"
       }
     }
   },
   "397": {
     "id": "397",
-    "name": "Sprengmeister",
+    "name": "Naruk, aus dem Wald",
     "type": "Charakter",
     "Element": "Ignis",
-    "cost": 4,
+    "cost": 3,
     "face": {
       "front": {
-        "name": "Sprengmeister",
+        "name": "Naruk, aus dem Wald",
         "type": "Charakter",
-        "cost": 4,
+        "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/397.jpg"
       }
     }
   },
   "400": {
     "id": "400",
-    "name": "Glücksritter",
+    "name": "Salazar der Reisende",
     "type": "Charakter",
     "Element": "Magica",
-    "cost": 3,
-    "face": {
-      "front": {
-        "name": "Glücksritter",
-        "type": "Charakter",
-        "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/400.jpg"
-      }
-    }
-  },
-  "401": {
-    "id": "401",
-    "name": "Trügerischer See",
-    "type": "Manifestation",
-    "Element": "Aqua",
     "cost": 4,
     "face": {
       "front": {
-        "name": "Trügerischer See",
-        "type": "Manifestation",
+        "name": "Salazar der Reisende",
+        "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/401.jpg"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/400.jpg"
       }
     }
   },
@@ -1024,12 +964,12 @@
     "name": "Dahlia bint Ishaq al-Bahar, die Wissenssucherin",
     "type": "Charakter",
     "Element": "Aqua",
-    "cost": 5,
+    "cost": 3,
     "face": {
       "front": {
         "name": "Dahlia bint Ishaq al-Bahar, die Wissenssucherin",
         "type": "Charakter",
-        "cost": 5,
+        "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/402.jpg"
       }
     }
@@ -1046,6 +986,21 @@
         "type": "Charakter",
         "cost": 3,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/403.jpg"
+      }
+    }
+  },
+  "404": {
+    "id": "404",
+    "name": "Kleiner Magicaschrein",
+    "type": "Manifestation",
+    "Element": "Magica",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Kleiner Magicaschrein",
+        "type": "Manifestation",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/404.jpg"
       }
     }
   },
@@ -1079,21 +1034,6 @@
       }
     }
   },
-  "452": {
-    "id": "452",
-    "name": "Verheerendes Beben",
-    "type": "Ereignis",
-    "Element": "Terra",
-    "cost": 3,
-    "face": {
-      "front": {
-        "name": "Verheerendes Beben",
-        "type": "Ereignis",
-        "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/452.jpg"
-      }
-    }
-  },
   "453": {
     "id": "453",
     "name": "Aramis von Rabenstein, Priester des Lichts",
@@ -1121,51 +1061,6 @@
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/454.jpg"
-      }
-    }
-  },
-  "456": {
-    "id": "456",
-    "name": "Artillerie-Bombardment",
-    "type": "Ereignis",
-    "Element": "Ignis",
-    "cost": 6,
-    "face": {
-      "front": {
-        "name": "Artillerie-Bombardment",
-        "type": "Ereignis",
-        "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/456.jpg"
-      }
-    }
-  },
-  "457": {
-    "id": "457",
-    "name": "Die wilde Jagt",
-    "type": "Ereignis",
-    "Element": "Aeris",
-    "cost": 6,
-    "face": {
-      "front": {
-        "name": "Die wilde Jagt",
-        "type": "Ereignis",
-        "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/457.jpg"
-      }
-    }
-  },
-  "459": {
-    "id": "459",
-    "name": "Ausmerzen",
-    "type": "Ereignis",
-    "Element": "Magica",
-    "cost": 5,
-    "face": {
-      "front": {
-        "name": "Ausmerzen",
-        "type": "Ereignis",
-        "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/459.jpg"
       }
     }
   },
@@ -1199,18 +1094,18 @@
       }
     }
   },
-  "464": {
-    "id": "464",
-    "name": "Pekars Segen",
-    "type": "Manifestation",
-    "Element": "Magica",
-    "cost": 5,
+  "465": {
+    "id": "465",
+    "name": "Formation brechen",
+    "type": "Ereignis",
+    "Element": "Aeris",
+    "cost": 4,
     "face": {
       "front": {
-        "name": "Pekars Segen",
-        "type": "Manifestation",
-        "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/464.jpg"
+        "name": "Formation brechen",
+        "type": "Ereignis",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/465.jpg"
       }
     }
   },
@@ -1229,18 +1124,78 @@
       }
     }
   },
+  "467": {
+    "id": "467",
+    "name": "Babette E.Y. MacMetth",
+    "type": "Charakter",
+    "Element": "Terra",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Babette E.Y. MacMetth",
+        "type": "Charakter",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/467.jpg"
+      }
+    }
+  },
+  "468": {
+    "id": "468",
+    "name": "Janthe O'Leary",
+    "type": "Charakter",
+    "Element": "Terra",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Janthe O'Leary",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/468.jpg"
+      }
+    }
+  },
+  "469": {
+    "id": "469",
+    "name": "James Rian, Soldat von Bjartur",
+    "type": "Charakter",
+    "Element": "Terra",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "James Rian, Soldat von Bjartur",
+        "type": "Charakter",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/469.jpg"
+      }
+    }
+  },
   "470": {
     "id": "470",
     "name": "Keroth, Thul'Heen des Südlichen Siegels",
     "type": "Charakter",
     "Element": "Terra",
-    "cost": 6,
+    "cost": 7,
     "face": {
       "front": {
         "name": "Keroth, Thul'Heen des Südlichen Siegels",
         "type": "Charakter",
-        "cost": 6,
+        "cost": 7,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/470.jpg"
+      }
+    }
+  },
+  "471": {
+    "id": "471",
+    "name": "Eurestes, Archon des Südlichen Siegels",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 7,
+    "face": {
+      "front": {
+        "name": "Eurestes, Archon des Südlichen Siegels",
+        "type": "Charakter",
+        "cost": 7,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/471.jpg"
       }
     }
   },
@@ -1276,16 +1231,31 @@
   },
   "475": {
     "id": "475",
-    "name": "Sirka Sorlissos, Hüterin der Halephischen Wälder",
+    "name": "Sirka Sorlissos, Hüterin der Wälder",
     "type": "Charakter",
     "Element": "Terra",
     "cost": 4,
     "face": {
       "front": {
-        "name": "Sirka Sorlissos, Hüterin der Halephischen Wälder",
+        "name": "Sirka Sorlissos, Hüterin der Wälder",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/475.jpg"
+      }
+    }
+  },
+  "476": {
+    "id": "476",
+    "name": "Nene, aufstrebende Novizin",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Nene, aufstrebende Novizin",
+        "type": "Charakter",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/476.jpg"
       }
     }
   },
@@ -1306,13 +1276,13 @@
   },
   "478": {
     "id": "478",
-    "name": "Tekkadahn, Waffenmeister Terras",
+    "name": "[Alt] Tekkadahn",
     "type": "Charakter",
     "Element": "Terra",
     "cost": 4,
     "face": {
       "front": {
-        "name": "Tekkadahn, Waffenmeister Terras",
+        "name": "[Alt] Tekkadahn",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/478.jpg"
@@ -1321,13 +1291,13 @@
   },
   "479": {
     "id": "479",
-    "name": "Sir Beolf, Leutnant des Südlichen Siegels",
+    "name": "Sir Beolf, Hauptmann des Südlichen Siegels",
     "type": "Charakter",
     "Element": "Terra",
     "cost": 5,
     "face": {
       "front": {
-        "name": "Sir Beolf, Leutnant des Südlichen Siegels",
+        "name": "Sir Beolf, Hauptmann des Südlichen Siegels",
         "type": "Charakter",
         "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/479.jpg"
@@ -1351,13 +1321,13 @@
   },
   "481": {
     "id": "481",
-    "name": "Ectelias, der Waldläufer",
+    "name": "Ecthelias, der Waldläufer",
     "type": "Charakter",
     "Element": "Aeris",
     "cost": 4,
     "face": {
       "front": {
-        "name": "Ectelias, der Waldläufer",
+        "name": "Ecthelias, der Waldläufer",
         "type": "Charakter",
         "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/481.jpg"
@@ -1369,12 +1339,12 @@
     "name": "Thulmann, Weibel der Armee Bjarturs",
     "type": "Charakter",
     "Element": "Terra",
-    "cost": 5,
+    "cost": 4,
     "face": {
       "front": {
         "name": "Thulmann, Weibel der Armee Bjarturs",
         "type": "Charakter",
-        "cost": 5,
+        "cost": 4,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/482.jpg"
       }
     }
@@ -1396,15 +1366,15 @@
   },
   "484": {
     "id": "484",
-    "name": "Eron, Ignis-Priester im Orden von Grauenfurt",
+    "name": "Eron von Grauenfurt, Ignis-Priester",
     "type": "Charakter",
     "Element": "Ignis",
-    "cost": 4,
+    "cost": 5,
     "face": {
       "front": {
-        "name": "Eron, Ignis-Priester im Orden von Grauenfurt",
+        "name": "Eron von Grauenfurt, Ignis-Priester",
         "type": "Charakter",
-        "cost": 4,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/484.jpg"
       }
     }
@@ -1414,12 +1384,12 @@
     "name": "Cherin, Aeris-Priesterin",
     "type": "Charakter",
     "Element": "Aeris",
-    "cost": 3,
+    "cost": 5,
     "face": {
       "front": {
         "name": "Cherin, Aeris-Priesterin",
         "type": "Charakter",
-        "cost": 3,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/485.jpg"
       }
     }
@@ -1429,12 +1399,12 @@
     "name": "Sarius, Kundschafter der Hofkanzlei",
     "type": "Charakter",
     "Element": "Aqua",
-    "cost": 4,
+    "cost": 5,
     "face": {
       "front": {
         "name": "Sarius, Kundschafter der Hofkanzlei",
         "type": "Charakter",
-        "cost": 4,
+        "cost": 5,
         "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/486.jpg"
       }
     }
@@ -1544,21 +1514,6 @@
       }
     }
   },
-  "494": {
-    "id": "494",
-    "name": "“Keilformation bilden!”",
-    "type": "Ereignis",
-    "Element": "Terra",
-    "cost": 3,
-    "face": {
-      "front": {
-        "name": "“Keilformation bilden!”",
-        "type": "Ereignis",
-        "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/494.jpg"
-      }
-    }
-  },
   "496": {
     "id": "496",
     "name": "Kenrik, Söldner der Morgenröte",
@@ -1634,64 +1589,964 @@
       }
     }
   },
+  "506": {
+    "id": "506",
+    "name": "Scamall le Casúr, Söldner der Morgenröte",
+    "type": "Charakter",
+    "Element": "Ignis",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Scamall le Casúr, Söldner der Morgenröte",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/506.jpg"
+      }
+    }
+  },
+  "517": {
+    "id": "517",
+    "name": "Verlegener Blick",
+    "type": "Ereignis",
+    "Element": "Aqua",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Verlegener Blick",
+        "type": "Ereignis",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/517.jpg"
+      }
+    }
+  },
+  "518": {
+    "id": "518",
+    "name": "Kleiner Aquaschrein",
+    "type": "Manifestation",
+    "Element": "Aqua",
+    "cost": 2,
+    "face": {
+      "front": {
+        "name": "Kleiner Aquaschrein",
+        "type": "Manifestation",
+        "cost": 2,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/518.jpg"
+      }
+    }
+  },
+  "519": {
+    "id": "519",
+    "name": "Labor des Giftmischers",
+    "type": "Manifestation",
+    "Element": "Aqua",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Labor des Giftmischers",
+        "type": "Manifestation",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/519.jpg"
+      }
+    }
+  },
+  "520": {
+    "id": "520",
+    "name": "Elias Greer",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 2,
+    "face": {
+      "front": {
+        "name": "Elias Greer",
+        "type": "Charakter",
+        "cost": 2,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/520.jpg"
+      }
+    }
+  },
+  "522": {
+    "id": "522",
+    "name": "Ser Trystan Eisenfaust",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "Ser Trystan Eisenfaust",
+        "type": "Charakter",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/522.jpg"
+      }
+    }
+  },
+  "523": {
+    "id": "523",
+    "name": "Thea Eisenfeder",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Thea Eisenfeder",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/523.jpg"
+      }
+    }
+  },
+  "524": {
+    "id": "524",
+    "name": "Cari Eisenfeder, Knappin der Gunnarswacht",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Cari Eisenfeder, Knappin der Gunnarswacht",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/524.jpg"
+      }
+    }
+  },
+  "525": {
+    "id": "525",
+    "name": "Gwendolin Eisenfeder",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Gwendolin Eisenfeder",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/525.jpg"
+      }
+    }
+  },
+  "528": {
+    "id": "528",
+    "name": "Gillian von Schrattenflueh",
+    "type": "Charakter",
+    "Element": "Ignis",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Gillian von Schrattenflueh",
+        "type": "Charakter",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/528.jpg"
+      }
+    }
+  },
+  "530": {
+    "id": "530",
+    "name": "Reinhard vom Greifenberg, Söldner der Morgenröte",
+    "type": "Charakter",
+    "Element": "Ignis",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Reinhard vom Greifenberg, Söldner der Morgenröte",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/530.jpg"
+      }
+    }
+  },
+  "533": {
+    "id": "533",
+    "name": "Retzak, von den Kor'kalai",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Retzak, von den Kor'kalai",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/533.jpg"
+      }
+    }
+  },
+  "535": {
+    "id": "535",
+    "name": "Einfacher Schutzzauber",
+    "type": "Ereignis",
+    "Element": "Magica",
+    "cost": 2,
+    "face": {
+      "front": {
+        "name": "Einfacher Schutzzauber",
+        "type": "Ereignis",
+        "cost": 2,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/535.jpg"
+      }
+    }
+  },
+  "536": {
+    "id": "536",
+    "name": "Magische Übereinkunft",
+    "type": "Ereignis",
+    "Element": "Magica",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Magische Übereinkunft",
+        "type": "Ereignis",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/536.jpg"
+      }
+    }
+  },
+  "539": {
+    "id": "539",
+    "name": "Charon, Wächter des Waldes",
+    "type": "Charakter",
+    "Element": "Terra",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Charon, Wächter des Waldes",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/539.jpg"
+      }
+    }
+  },
+  "540": {
+    "id": "540",
+    "name": "Luuk aus Rosenthal, Soldat von Bjartur",
+    "type": "Charakter",
+    "Element": "Terra",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Luuk aus Rosenthal, Soldat von Bjartur",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/540.jpg"
+      }
+    }
+  },
   "551": {
     "id": "551",
     "name": "Bromus",
+    "type": "Charakter",
+    "Element": "Terra",
+    "cost": 6,
     "face": {
       "front": {
         "name": "Bromus",
+        "type": "Charakter",
         "cost": 6,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/551.jpg",
-        "type": "Charakter"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/551.jpg"
       }
-    },
-    "cost": 6,
-    "type": "Charakter",
-    "Element": "Terra"
+    }
   },
   "552": {
     "id": "552",
     "name": "Miriam",
+    "type": "Charakter",
+    "Element": "Ignis",
+    "cost": 4,
     "face": {
       "front": {
         "name": "Miriam",
+        "type": "Charakter",
         "cost": 4,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/552.jpg",
-        "type": "Charakter"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/552.jpg"
       }
-    },
-    "cost": 4,
+    }
+  },
+  "553": {
+    "id": "553",
+    "name": "Rodrick",
     "type": "Charakter",
-    "Element": "Ignis"
+    "Element": "Terra",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Rodrick",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/553.jpg"
+      }
+    }
+  },
+  "554": {
+    "id": "554",
+    "name": "Sir Roven Silverblade",
+    "type": "Charakter",
+    "Element": "Terra",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "Sir Roven Silverblade",
+        "type": "Charakter",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/554.jpg"
+      }
+    }
+  },
+  "558": {
+    "id": "558",
+    "name": "Heerlager",
+    "type": "Manifestation",
+    "Element": "Terra",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Heerlager",
+        "type": "Manifestation",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/558.jpg"
+      }
+    }
+  },
+  "560": {
+    "id": "560",
+    "name": "Kompass",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Kompass",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/560.jpg"
+      }
+    }
+  },
+  "561": {
+    "id": "561",
+    "name": "Wächter von Irgendwann",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 2,
+    "face": {
+      "front": {
+        "name": "Wächter von Irgendwann",
+        "type": "Charakter",
+        "cost": 2,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/561.jpg"
+      }
+    }
+  },
+  "562": {
+    "id": "562",
+    "name": "Willow aus Gloria",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Willow aus Gloria",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/562.jpg"
+      }
+    }
+  },
+  "563": {
+    "id": "563",
+    "name": "Henning aus Gloria",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "Henning aus Gloria",
+        "type": "Charakter",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/563.jpg"
+      }
+    }
+  },
+  "568": {
+    "id": "568",
+    "name": "Flinkes Manöver",
+    "type": "Ereignis",
+    "Element": "Aeris",
+    "cost": 1,
+    "face": {
+      "front": {
+        "name": "Flinkes Manöver",
+        "type": "Ereignis",
+        "cost": 1,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/568.jpg"
+      }
+    }
+  },
+  "570": {
+    "id": "570",
+    "name": "Verheerender Pfeilhagel",
+    "type": "Ereignis",
+    "Element": "Aeris",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Verheerender Pfeilhagel",
+        "type": "Ereignis",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/570.jpg"
+      }
+    }
+  },
+  "574": {
+    "id": "574",
+    "name": "Celine, Tochter der Leviathane",
+    "type": "Charakter",
+    "Element": "Aqua",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Celine, Tochter der Leviathane",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/574.jpg"
+      }
+    }
+  },
+  "580": {
+    "id": "580",
+    "name": "Vialaychanne, gutmütige Magierin",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Vialaychanne, gutmütige Magierin",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/580.jpg"
+      }
+    }
+  },
+  "586": {
+    "id": "586",
+    "name": "Arkaner Gegenschlag",
+    "type": "Ereignis",
+    "Element": "Magica",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Arkaner Gegenschlag",
+        "type": "Ereignis",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/586.jpg"
+      }
+    }
+  },
+  "590": {
+    "id": "590",
+    "name": "Amara",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Amara",
+        "type": "Charakter",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/590.jpg"
+      }
+    }
   },
   "592": {
     "id": "592",
     "name": "Dr. Viktoire Ladon Crick",
+    "type": "Charakter",
+    "Element": "Aqua",
+    "cost": 3,
     "face": {
       "front": {
         "name": "Dr. Viktoire Ladon Crick",
+        "type": "Charakter",
         "cost": 3,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/592.jpg",
-        "type": "Charakter"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/592.jpg"
       }
-    },
-    "cost": 3,
-    "type": "Charakter",
-    "Element": "Aqua"
+    }
   },
   "594": {
     "id": "594",
-    "name": "Eron Breitenstein",
+    "name": "Eron Breitenstein, Seneschall",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 5,
     "face": {
       "front": {
-        "name": "Eron Breitenstein",
+        "name": "Eron Breitenstein, Seneschall",
+        "type": "Charakter",
         "cost": 5,
-        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/594.jpg",
-        "type": "Charakter"
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/594.jpg"
       }
-    },
-    "cost": 5,
+    }
+  },
+  "595": {
+    "id": "595",
+    "name": "Horizon Yvane Tilly",
     "type": "Charakter",
-    "Element": "Aeris"
+    "Element": "Ignis",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "Horizon Yvane Tilly",
+        "type": "Charakter",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/595.jpg"
+      }
+    }
+  },
+  "596": {
+    "id": "596",
+    "name": "Bootsmann Holger, der Dreimaster",
+    "type": "Charakter",
+    "Element": "Aqua",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Bootsmann Holger, der Dreimaster",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/596.jpg"
+      }
+    }
+  },
+  "597": {
+    "id": "597",
+    "name": "Walays von Rabenschrey, Thul'Heen des Westens",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 7,
+    "face": {
+      "front": {
+        "name": "Walays von Rabenschrey, Thul'Heen des Westens",
+        "type": "Charakter",
+        "cost": 7,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/597.jpg"
+      }
+    }
+  },
+  "598": {
+    "id": "598",
+    "name": "Angus Mc Reed, Hochland-Kundschafter",
+    "type": "Charakter",
+    "Element": "Aqua",
+    "cost": 2,
+    "face": {
+      "front": {
+        "name": "Angus Mc Reed, Hochland-Kundschafter",
+        "type": "Charakter",
+        "cost": 2,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/598.jpg"
+      }
+    }
+  },
+  "599": {
+    "id": "599",
+    "name": "Fianna",
+    "type": "Charakter",
+    "Element": "Aqua",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Fianna",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/599.jpg"
+      }
+    }
+  },
+  "610": {
+    "id": "610",
+    "name": "Leaf, Waffenmeister des Südens",
+    "type": "Charakter",
+    "Element": "Ignis",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Leaf, Waffenmeister des Südens",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/610.jpg"
+      }
+    }
+  },
+  "613": {
+    "id": "613",
+    "name": "Awisandum",
+    "type": "Charakter",
+    "Element": "Ignis",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "Awisandum",
+        "type": "Charakter",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/613.jpg"
+      }
+    }
+  },
+  "614": {
+    "id": "614",
+    "name": "Hermann Richter",
+    "type": "Charakter",
+    "Element": "Ignis",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "Hermann Richter",
+        "type": "Charakter",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/614.jpg"
+      }
+    }
+  },
+  "616": {
+    "id": "616",
+    "name": "Soldzahlung",
+    "type": "Ereignis",
+    "Element": "Ignis",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Soldzahlung",
+        "type": "Ereignis",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/616.jpg"
+      }
+    }
+  },
+  "621": {
+    "id": "621",
+    "name": "Nehek, Seelengefäß",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Nehek, Seelengefäß",
+        "type": "Charakter",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/621.jpg"
+      }
+    }
+  },
+  "622": {
+    "id": "622",
+    "name": "Zah-cheno, der Flügelmann",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "Zah-cheno, der Flügelmann",
+        "type": "Charakter",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/622.jpg"
+      }
+    }
+  },
+  "623": {
+    "id": "623",
+    "name": "17",
+    "type": "Charakter",
+    "Element": "Ignis",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "17",
+        "type": "Charakter",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/623.jpg"
+      }
+    }
+  },
+  "625": {
+    "id": "625",
+    "name": "Celebringor",
+    "type": "Charakter",
+    "Element": "Ignis",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "Celebringor",
+        "type": "Charakter",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/625.jpg"
+      }
+    }
+  },
+  "626": {
+    "id": "626",
+    "name": "Pius Paul Pixner",
+    "type": "Charakter",
+    "Element": "Ignis",
+    "cost": 7,
+    "face": {
+      "front": {
+        "name": "Pius Paul Pixner",
+        "type": "Charakter",
+        "cost": 7,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/626.jpg"
+      }
+    }
+  },
+  "627": {
+    "id": "627",
+    "name": "Pater Bertram",
+    "type": "Charakter",
+    "Element": "Ignis",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Pater Bertram",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/627.jpg"
+      }
+    }
+  },
+  "628": {
+    "id": "628",
+    "name": "Jakob Conrad Cuculus, skrupelloser Bankier",
+    "type": "Charakter",
+    "Element": "Aqua",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Jakob Conrad Cuculus, skrupelloser Bankier",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/628.jpg"
+      }
+    }
+  },
+  "629": {
+    "id": "629",
+    "name": "Herr Strauß, Fantenjäger",
+    "type": "Charakter",
+    "Element": "Aqua",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Herr Strauß, Fantenjäger",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/629.jpg"
+      }
+    }
+  },
+  "630": {
+    "id": "630",
+    "name": "Teichherr Rodan, Der Froschkönig",
+    "type": "Charakter",
+    "Element": "Aqua",
+    "cost": 6,
+    "face": {
+      "front": {
+        "name": "Teichherr Rodan, Der Froschkönig",
+        "type": "Charakter",
+        "cost": 6,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/630.jpg"
+      }
+    }
+  },
+  "632": {
+    "id": "632",
+    "name": "Der Lichtbringer, Astralgestalt",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 6,
+    "face": {
+      "front": {
+        "name": "Der Lichtbringer, Astralgestalt",
+        "type": "Charakter",
+        "cost": 6,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/632.jpg"
+      }
+    }
+  },
+  "633": {
+    "id": "633",
+    "name": "Bruder Jeremias, Inquisitor",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Bruder Jeremias, Inquisitor",
+        "type": "Charakter",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/633.jpg"
+      }
+    }
+  },
+  "634": {
+    "id": "634",
+    "name": "Ylva, Seelenwächterin",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Ylva, Seelenwächterin",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/634.jpg"
+      }
+    }
+  },
+  "635": {
+    "id": "635",
+    "name": "Fenija, die Listige",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "Fenija, die Listige",
+        "type": "Charakter",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/635.jpg"
+      }
+    }
+  },
+  "636": {
+    "id": "636",
+    "name": "Azrael, Erzdämon",
+    "type": "Charakter",
+    "Element": "Magica",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "Azrael, Erzdämon",
+        "type": "Charakter",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/636.jpg"
+      }
+    }
+  },
+  "637": {
+    "id": "637",
+    "name": "Lila Hirthe, naive Wirtstochter",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 2,
+    "face": {
+      "front": {
+        "name": "Lila Hirthe, naive Wirtstochter",
+        "type": "Charakter",
+        "cost": 2,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/637.jpg"
+      }
+    }
+  },
+  "638": {
+    "id": "638",
+    "name": "Owen Schattenweber, zwielichtiger Geschichtenerzähler",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Owen Schattenweber, zwielichtiger Geschichtenerzähler",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/638.jpg"
+      }
+    }
+  },
+  "640": {
+    "id": "640",
+    "name": "Joel Siegesmund, Heerführer des Westens",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 6,
+    "face": {
+      "front": {
+        "name": "Joel Siegesmund, Heerführer des Westens",
+        "type": "Charakter",
+        "cost": 6,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/640.jpg"
+      }
+    }
+  },
+  "641": {
+    "id": "641",
+    "name": "Sir Lothar von Albstein",
+    "type": "Charakter",
+    "Element": "Aeris",
+    "cost": 7,
+    "face": {
+      "front": {
+        "name": "Sir Lothar von Albstein",
+        "type": "Charakter",
+        "cost": 7,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/641.jpg"
+      }
+    }
+  },
+  "644": {
+    "id": "644",
+    "name": "Leo",
+    "type": "Charakter",
+    "Element": "Terra",
+    "cost": 4,
+    "face": {
+      "front": {
+        "name": "Leo",
+        "type": "Charakter",
+        "cost": 4,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/644.jpg"
+      }
+    }
+  },
+  "649": {
+    "id": "649",
+    "name": "Eisstarre",
+    "type": "Ereignis",
+    "Element": "Aeris",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Eisstarre",
+        "type": "Ereignis",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/649.jpg"
+      }
+    }
+  },
+  "673": {
+    "id": "673",
+    "name": "Schwarzer Haufen",
+    "type": "Ereignis",
+    "Element": "Ignis",
+    "cost": 3,
+    "face": {
+      "front": {
+        "name": "Schwarzer Haufen",
+        "type": "Ereignis",
+        "cost": 3,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/673.jpg"
+      }
+    }
+  },
+  "676": {
+    "id": "676",
+    "name": "Rohe Gewalt",
+    "type": "Ereignis",
+    "Element": "Ignis",
+    "cost": 5,
+    "face": {
+      "front": {
+        "name": "Rohe Gewalt",
+        "type": "Ereignis",
+        "cost": 5,
+        "image": "https://itschotsch.github.io/tcg-maker/tcg-arena/images/public/676.jpg"
+      }
+    }
   }
 }
